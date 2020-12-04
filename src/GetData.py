@@ -22,7 +22,7 @@ from pyproj import Geod
 from utils import *
 
 
-class FaultData:
+class AbstractFaultProcess:
 
     def __init__(self, name):
         self.name = name
@@ -41,9 +41,16 @@ class FaultData:
         with open(config, "r") as fp:
             self.config = json.load(fp)
 
+
     def updateConfig(self):
         with open(os.path.join(self.dir, "config.json"), "w") as fp:
             json.dump(self.config, fp, indent=4)
+
+
+class FaultData(AbstractFaultProcess):
+
+    def __init__(self, name):
+        super().__init__(name)
 
     def getCatalog(self, minMag=5.0, extent=0.5,
                    startTime=UTCDateTime("1950-01-01"),
@@ -242,7 +249,7 @@ class FaultData:
                     content['ddist'].append(
                         np.abs(r1.along_strike_distance - r2.along_strike_distance))
         pd.DataFrame(content).to_csv(
-            os.path.join(self.dir, "catalog-pair.csv"))
+            os.path.join(self.dir, "catalog-pair.csv"), index=False)
 
     def getWaveform(self,
                     groupVelocityWindow=[5.0, 3.0],  # km/s
@@ -305,7 +312,7 @@ class FaultData:
                 if not np.isnan(r.azi):
                     key = f"{x[0]}-{r.net}-{r.sta}.sac"
                     if key not in existed:
-                        # obspy async client not available, so bear with this sequential download
+                        # obspy async client is not available, so bear this sequential download
                         print(f"Trying {key} ...")
                         getAndSave(x[0], x[1], r.net, r.sta, r.dist)
 
@@ -314,5 +321,5 @@ f = FaultData("Discovery")
 # f.getCatalog()
 # f.getCandidateStations()
 # f.getCandidateEvents()
-# f.getEventPairs()
+f.getEventPairs()
 # f.getWaveform()

@@ -2,6 +2,7 @@ import os
 from typing import *
 
 import pandas as pd
+import numpy as np
 from obspy.clients.fdsn import Client
 
 baseDir = os.path.join(os.path.dirname(__file__), "..")
