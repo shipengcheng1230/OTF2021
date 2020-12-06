@@ -210,17 +210,17 @@ class PlotProcedure(AbstractFaultProcess):
         beachballSizePt2xOnMap = lambda x: beachballSizePt2x(x) * (ax1.get_xlim()[1] - ax1.get_xlim()[0])
 
         def _get_fm_fc_(eid, isrelocated=True):
-            np1 = self.fm[eid]["np1"]
+            np1 = self.fm[str(eid)]["np1"]
             bcc = "tab:red" if isrelocated else "silver"
-            if np.isnan(self.fm[eid]["np1"][0]):
-                if np.isnan(self.fm[eid]["mt"][0]):
+            if np.isnan(self.fm[str(eid)]["np1"][0]):
+                if np.isnan(self.fm[str(eid)]["mt"][0]):
                     _fm = [1.0, 1.0, 1.0, 0.0, 0.0, 0.0] # mimic scatter solid circle
                     bcc = "lightpink" if isrelocated else "white"
                 else:
                     # _fm = fms[str(self.df.id.iloc[0])]["mt"] # not use, need rotation matrix
                     pass
             else:
-                _fm = self.fm[eid]["np1"]
+                _fm = self.fm[str(eid)]["np1"]
 
             if len(_fm) != 6:
                 _fm[0] += rotatediff
@@ -327,6 +327,6 @@ class PlotProcedure(AbstractFaultProcess):
         fig.savefig(output, dpi=600)
         plt.close(fig)
 
-
-f = PlotProcedure("Discovery")
-f.plotTimeSpaceLayout2()
+if __name__ == "__main__":
+    f = PlotProcedure("Wilkes")
+    f.plotTimeSpaceLayout2()

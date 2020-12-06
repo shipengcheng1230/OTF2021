@@ -36,6 +36,11 @@ class AbstractFaultProcess:
                     {
                         "ref": {"lat": 0.0, "lon": 0.0},
                         "magCutOff": 5.0,
+                        "adjust": {
+                            "1": {"lon": 0.0, "lat": 0.0}
+                        },
+                        "extent": [-180, 180, -90, 90],
+                        "ruler": 10,
                     },
                     fp, indent=4)
         with open(config, "r") as fp:
@@ -58,7 +63,7 @@ class FaultData(AbstractFaultProcess):
                    ):
 
         try:
-            cat = client.get_events(
+            cat = clientUSGS.get_events(
                 starttime=startTime,
                 endtime=endTime,
                 minmagnitude=minMag,
@@ -87,7 +92,7 @@ class FaultData(AbstractFaultProcess):
             self.dir, "catalog.csv"), index=False)
 
         mt = {}
-        with ThreadPoolExecutor(max_workers=2) as executor:
+        with ThreadPoolExecutor(max_workers=6) as executor:
             futures2key = {executor.submit(
                 FaultData.getMomentTensorByEventID, eid): eid for eid in content["id"]}
             for future in as_completed(futures2key):
@@ -103,7 +108,7 @@ class FaultData(AbstractFaultProcess):
 
     @staticmethod
     def getMomentTensorByEventID(eid):
-        e = client.get_events(eventid=eid)
+        e = clientUSGS.get_events(eventid=eid)
         fm = e[0].focal_mechanisms
         if not fm:
             return [np.nan for _ in range(3)], [np.nan for _ in range(3)], [np.nan for _ in range(6)]
@@ -268,7 +273,7 @@ class FaultData(AbstractFaultProcess):
                 groupVelocityWindow[0], dist / \
                 groupVelocityWindow[1]  # seconds
             t0 = UTCDateTime(tstr)
-            st = client.get_waveforms(
+            st = clientIRIS.get_waveforms(
                 net, sta, "*", channel, t0+dt1, t0+dt2, attach_response=True)
             try:
                 st.remove_response()
@@ -311,15 +316,26 @@ class FaultData(AbstractFaultProcess):
             for r in dfStations.itertuples():
                 if not np.isnan(r.azi):
                     key = f"{x[0]}-{r.net}-{r.sta}.sac"
-                    if key not in existed:
+                    if (not existed) or key not in existed:
                         # obspy async client is not available, so bear this sequential download
                         print(f"Trying {key} ...")
                         getAndSave(x[0], x[1], r.net, r.sta, r.dist)
 
 if __name__ == "__main__":
-    f = FaultData("Gofar")
-    f.getCatalog()
-    f.getCandidateStations()
-    f.getCandidateEvents()
-    f.getEventPairs()
-    f.getWaveform()
+
+    for r in dfFaults.iterrows():
+        rec = dict(r[1])
+        if rec["Good Bathymetry"] == 1 and rec["key"] > 79:
+            f = FaultData(rec["Name"])
+            # f.getCatalog()
+            # f.getCandidateStations()
+            # f.getCandidateEvents()
+            # f.getEventPairs()
+            # f.getWaveform()
+
+    # f = FaultData("Wilkes")
+    # f.getCatalog()
+    # f.getCandidateStations()
+    # f.getCandidateEvents()
+    # f.getEventPairs()
+    # f.getWaveform()

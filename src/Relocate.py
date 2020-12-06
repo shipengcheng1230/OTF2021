@@ -94,7 +94,7 @@ def cc(fa, id1, t1, lat1, lon1, mag1, id2, t2, lat2, lon2, mag2):
             x_azi.append(res.x[2])
         return nsigma*np.std(x_cmt), nsigma*np.std(x_dist), nsigma*np.std(x_azi)
 
-    fm1, fm2 = fa.fm[id1]["np1"], fa.fm[id2]["np1"]
+    fm1, fm2 = fa.fm[str(id1)]["np1"], fa.fm[str(id1)]["np1"]
     wv1, wv2 = [], []
     content = {x: [] for x in ["azi", "dt",
                                "cc", "net", "sta", "staLat", "staLon"]}
@@ -645,10 +645,11 @@ def optimize(fa):
 
     G = buildPairGraph()
     G = traverseGraph(G, True)
-    optimizeLocation(G, relocateTwoWay=True, relocateGlobal=True)
+    optimizeLocation(G, relocateTwoWay=True, relocateGlobal=False)
     mergeCatalogue()
 
+if __name__ == "__main__":
 
-f = RelocationProcedure("Discovery")
-# crossCorrelate(f)
-optimize(f)
+    f = RelocationProcedure("Wilkes")
+    crossCorrelate(f)
+    optimize(f)

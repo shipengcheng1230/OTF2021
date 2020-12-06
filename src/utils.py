@@ -13,7 +13,8 @@ if not os.path.isdir(faultsDir):
 dfFaults = pd.read_excel(os.path.join(baseDir, "faults.xlsx"))
 dfStations = pd.read_csv(os.path.join(baseDir, "stations.csv"))
 try:
-    client = Client("IRIS", timeout=30)
+    clientUSGS = Client("USGS", timeout=30)
+    clientIRIS = Client("IRIS", timeout=30)
 except FDSNException:
     print("Client not accessible, retry later.")
 
