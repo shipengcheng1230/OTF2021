@@ -87,7 +87,7 @@ class FaultData(AbstractFaultProcess):
             self.dir, "catalog.csv"), index=False)
 
         mt = {}
-        with ThreadPoolExecutor(max_workers=10) as executor:
+        with ThreadPoolExecutor(max_workers=2) as executor:
             futures2key = {executor.submit(
                 FaultData.getMomentTensorByEventID, eid): eid for eid in content["id"]}
             for future in as_completed(futures2key):
@@ -316,10 +316,10 @@ class FaultData(AbstractFaultProcess):
                         print(f"Trying {key} ...")
                         getAndSave(x[0], x[1], r.net, r.sta, r.dist)
 
-
-f = FaultData("Discovery")
-# f.getCatalog()
-# f.getCandidateStations()
-# f.getCandidateEvents()
-f.getEventPairs()
-# f.getWaveform()
+if __name__ == "__main__":
+    f = FaultData("Gofar")
+    f.getCatalog()
+    f.getCandidateStations()
+    f.getCandidateEvents()
+    f.getEventPairs()
+    f.getWaveform()

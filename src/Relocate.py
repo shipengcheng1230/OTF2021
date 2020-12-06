@@ -1,23 +1,28 @@
+import itertools
 import json
 import multiprocessing as mp
+import operator
 import os
-from datetime import datetime
-from concurrent.futures import ProcessPoolExecutor, wait, as_completed
+from collections import namedtuple, deque
+from concurrent.futures import ProcessPoolExecutor, as_completed, wait
 from copy import copy
-from collections import namedtuple
+from datetime import datetime
 
 import cartopy.crs as ccrs
 import cartopy.feature as cfeature
+import copy
 import matplotlib.pyplot as plt
+import networkx as nx
 import numpy as np
+import nlopt
 import pandas as pd
 from matplotlib import gridspec
 from obspy import read
-from obspy.signal.cross_correlation import correlate, xcorr_max
-from pyproj import Geod
-from scipy.optimize import curve_fit, least_squares
 from obspy.imaging.beachball import beach
 from obspy.io.sac.util import SacIOError
+from obspy.signal.cross_correlation import correlate, xcorr_max
+from pyproj import Geod
+from scipy.optimize import curve_fit, least_squares, minimize
 
 from GetData import AbstractFaultProcess
 from utils import *
@@ -77,7 +82,7 @@ def cc(fa, id1, t1, lat1, lon1, mag1, id2, t2, lat2, lon2, mag2):
             residual_cosine(res.x, _azi, _dx)))
         return res.x, err
 
-    def bootstrap_uncertainty(x, y, p0, numiters=200, stderr=3.75, nsigma=1.0):
+    def bootstrap_uncertainty(x, y, p0, numiters=300, stderr=3.75, nsigma=1.0):
         x_cmt, x_dist, x_azi = [], [], []
         n = len(y)
         for i in range(numiters):
@@ -163,7 +168,7 @@ def cc(fa, id1, t1, lat1, lon1, mag1, id2, t2, lat2, lon2, mag2):
         'numHighCC': len(highcc),
     }
     with open(nameBase + ".json", "w") as fp:
-        json.dump(summary, fp)
+        json.dump(summary, fp, indent=4)
 
     def plotCosineFit():
         fig = plt.figure(figsize=(8, 10))
@@ -269,10 +274,23 @@ def cc(fa, id1, t1, lat1, lon1, mag1, id2, t2, lat2, lon2, mag2):
         ax2.legend([l1, l2, l3], ["$\mathrm{cc} \geq \;$"+f"{outlierCC:.2f}", "$\mathrm{cc} <\;$" +
                                   f"{outlierCC:.2f}", fa.name], loc="lower left", bbox_to_anchor=(-0.60, 0.0))
         fig.savefig(nameBase + ".pdf")
-        print(f"Saved {nameBase}.")
+        print(f"Saved {os.path.basename(nameBase)}.")
         plt.close(fig)
 
     plotCosineFit()
+
+
+def crossCorrelate(fa):
+    dfPairss = pd.read_csv(os.path.join(fa.dir, "catalog-pair.csv"))
+    futures = []
+    # for r in dfPairss.itertuples(index=True):
+    #     print(f"{r.Index + 1}/{dfPairss.shape[0]} ...")
+    #     cc(fa, r.id1, r.t1, r.lat1, r.lon1, r.mag1, r.id2, r.t2, r.lat2, r.lon2, r.mag2)
+    with ProcessPoolExecutor(max_workers=20) as executor:
+        for r in dfPairss.itertuples(index=True):
+            futures.append(executor.submit(cc, fa, r.id1, r.t1, r.lat1,
+                                           r.lon1, r.mag1, r.id2, r.t2, r.lat2, r.lon2, r.mag2))
+        [future.result() for future in as_completed(futures)]
 
 
 class RelocationProcedure(AbstractFaultProcess):
@@ -290,22 +308,347 @@ class RelocationProcedure(AbstractFaultProcess):
         self.relocationConfig = kwargs
 
 
-def crossCorrelate(fa):
-    dfPairs = pd.read_csv(os.path.join(fa.dir, "catalog-pair.csv"))
-    futures = []
-    # for r in dfPairs.itertuples(index=True):
-    #     print(f"{r.Index + 1}/{dfPairs.shape[0]} ...")
-    #     cc(fa, r.id1, r.t1, r.lat1, r.lon1, r.mag1, r.id2, r.t2, r.lat2, r.lon2, r.mag2)
-    with ProcessPoolExecutor(max_workers=20) as executor:
-        for r in dfPairs.itertuples(index=True):
-            futures.append(executor.submit(cc, fa, r.id1, r.t1, r.lat1,
-                                           r.lon1, r.mag1, r.id2, r.t2, r.lat2, r.lon2, r.mag2))
-        [future.result() for future in as_completed(futures)]
+def optimize(fa):
 
+    def formEdge(x: dict, linkNum: int = 8):
+        return \
+            (not np.isnan(x['B'])) and \
+            (not np.isinf(x['dB'])) and \
+            x['numHighCC'] >= linkNum
 
-def optimize(self):
-    pass
+    def buildPairGraph():
+        dfPairs = pd.read_csv(os.path.join(fa.dir, "catalog-pair.csv"))
+        files = (x for x in os.listdir(fa.ccDir) if x.endswith(".json"))
+        pairkey2row = {(r.id1, r.id2): r for r in dfPairs.itertuples()}
+
+        G = nx.Graph()
+        for file in files:
+            with open(os.path.join(fa.ccDir, file), "r") as fp:
+                data = json.load(fp)
+                if formEdge(data):
+                    info = os.path.splitext(file)[0].split('-')
+                    id1, id2 = map(str, info)
+                    r = pairkey2row.get((id1, id2), None)
+                    if not r:
+                        continue
+                    if id1 != r.id1 or id2 != r.id2:
+                        raise ValueError("pair id mismatch.")
+
+                    # duplicate hashing is ignored
+                    G.add_node(id1,
+                               lat=r.lat1, lon=r.lon1, mag=r.mag1,
+                               t=r.t1, group=-1)
+                    G.add_node(id2,
+                               lat=r.lat2, lon=r.lon2, mag=r.mag2,
+                               t=r.t2, group=-1)
+                    G.add_edge(id1, id2,
+                               B=data['B'], C=data['C'],
+                               dB=data['dB'], dC=data['dC'])
+        return G
+
+    def traverseGraph(G, relocateOneWay=True):
+        # BFS, relocate one group of events by single reference abiding shortest path
+        # This, however, does not account for discrepancy with direct observation and
+        # new locations. Using optimization is perferred, see below.
+
+        # If not relocate, it aims to idenfity groups and label accordingly.
+        def traverse(n):
+            queueSet.add(n)
+            for k in G.adj[n].keys():
+                if (not visited[k]) and (k not in queueSet):
+                    if relocateOneWay:
+                        B, C = G.adj[n][k]['B'], G.adj[n][k]['C']
+                        C = C if IDTimePair[n] < IDTimePair[k] else C + 180.0  # only change `B` or `C`, not both
+                        lat1, lon1 = G.nodes.data(
+                            'lat')[n], G.nodes.data('lon')[n]
+                        lon2, lat2, _ = geod.fwd(lon1, lat1, C, B*1e3)
+                        G.nodes[k].update(lat=lat2, lon=lon2)
+                    visited[k] = True
+                    IDTimePairDynamic.pop(k, None)
+                    G.nodes[k].update(group=groupid)
+                    Q.append(k)
+                    queueSet.add(k)
+
+        geod = Geod(ellps="WGS84")
+        Q = deque()
+        queueSet = set()
+        visited = dict(G.nodes.data('visited'))
+        IDTimePair = dict(G.nodes.data("t"))
+        IDTimePairDynamic = dict(G.nodes.data("t"))
+        groupid = 1
+
+        while count := sum([1 for (k, v) in visited.items() if not v]) > 0:
+            # use newest event as reference
+            startID = max(IDTimePairDynamic, key=IDTimePairDynamic.get)
+            Q.append(startID)
+            visited[startID] = True
+            IDTimePairDynamic.pop(startID)
+            G.nodes[startID].update(group=groupid)
+            while Q:
+                traverse(Q.popleft())
+            groupid += 1
+        return G
+
+    def traverseOptimizeGraph(G):
+        Q = deque()
+        geod = Geod(ellps="WGS84")
+        optimized = dict(G.nodes.data('visited'))
+        queueSet = set()
+        IDTimePair = dict(G.nodes.data("t"))
+        IDTimePair2 = dict(G.nodes.data("t"))
+
+        def optimizeNodeLocation(node):
+
+            def objective(x, lons, lats, B, C, dB, dC):
+                res = 0.0
+                for i in range(len(lons)):
+                    fz, _, dist = geod.inv(x[0], x[1], lons[i], lats[i])
+                    fz, dist = _normalize_fz_dist(fz, dist)
+                    res += np.abs(angularDiff(fz, C[i]) / dC[i]) + \
+                        np.abs((dist/1e3 - B[i]) / dB[i])
+                return res
+
+            ks = G.adj[node].keys()
+            queueSet.add(node)
+            IDTimePair.pop(node, None)
+            for k in ks:
+                if (not optimized[k]) and (k not in queueSet):
+                    Q.append(k)
+                    queueSet.add(k)
+                    IDTimePair.pop(k, None)
+
+            lons = np.array([G.nodes.data('lon')[k] for k in ks])
+            lats = np.array([G.nodes.data('lat')[k] for k in ks])
+            x0 = np.array([angularMean(lons), angularMean(lats)])
+            Bs = np.array([G.adj[node][k]['B'] for k in ks])
+            Cs = np.array([G.adj[node][k]['C'] for k in ks])
+            dBs = np.array([G.adj[node][k]['dB'] for k in ks])
+            dCs = np.array([G.adj[node][k]['dC'] for k in ks])
+            for i, k in enumerate(ks):
+                if IDTimePair2[node] > IDTimePair2[k]:  # correction for direction
+                    Cs[i] += 180.0
+                if Bs[i] < 0:  # correction for negative distance
+                    Bs[i] *= -1
+                    Cs[i] += 180.0
+                Cs[i] %= 360  # correction for azimuth angle between [0, 360)
+            res = minimize(objective, x0, args=(
+                lons, lats, Bs, Cs, dBs, dCs), method="Nelder-Mead")
+            G.nodes[node].update(lat=res.x[1], lon=res.x[0])
+            optimized[node] = True
+
+        while count := sum([1 for (k, v) in optimized.items() if not v]) > 0:
+            # startID = min([k for (k, v) in optimized.items() if not v])
+            startID = max(IDTimePair, key=IDTimePair.get)
+            Q.append(startID)
+            IDTimePair.pop(startID)
+            while Q:
+                optimizeNodeLocation(Q.popleft())
+        return G
+
+    def optimizeLocation(G, relocateTwoWay=True, relocateTwoWayIter=5, relocateGlobal=True):
+        if relocateTwoWay:
+            for _ in range(relocateTwoWayIter):
+                traverseOptimizeGraph(G)
+
+        data = {k: G.nodes[k] for k in G.nodes}
+        uniqueGroupID = set([data[k]['group'] for k in data.keys()])
+        linkContent = {x: [] for x in [
+            "id1", "t1", "lat1", "lon1", "mag1",
+            "id2", "t2", "lat2", "lon2", "mag2",
+            "dist", "B", "dB",
+            "azi", "C", "dC",
+            "group", "weight",
+        ]}
+        geod = Geod(ellps="WGS84")
+        IDTimePair = dict(G.nodes.data("t"))
+
+        for gid in uniqueGroupID:
+            es = [x for x in G.edges if data[x[0]]['group'] == gid]
+            es.sort(key=lambda x: (IDTimePair[x[1]], IDTimePair[x[0]]), reverse=True)
+            pks = list(set(itertools.chain(*es)))
+            pks.sort(key=lambda x: IDTimePair[x], reverse=True)
+            id2t = {k: IDTimePair[k] for k in pks}
+            masterId = max(id2t, key=id2t.get)
+            masterLat, masterLon = data[masterId]['lat'], data[masterId]['lon']
+            key2id = {pks[i]: i for i in range(len(pks))}
+            Bs = [G.edges[x]['B'] for x in es]
+            Cs = [G.edges[x]['C'] for x in es]
+            dBs = [G.edges[x]['dB'] for x in es]
+            dCs = [G.edges[x]['dC'] for x in es]
+            lat0 = np.array([data[x]['lat'] for x in pks])
+            lon0 = np.array([data[x]['lon'] for x in pks])
+            u0 = [[lat0[i], lon0[i]] for i in range(len(pks))]
+            u0 = list(itertools.chain(*u0))
+            u0.append(1)  # initial weight
+
+            if not relocateGlobal:
+                x = u0
+            else:
+                avglat0, avglon0 = angularMean(lat0), angularMean(lon0)
+                searchRange = 10.0  # within 10 degree, should be sufficient
+                # not rigorously right,
+                # but we don't have events at polar region or date changing line
+                lblat = np.clip(lat0 - searchRange, -90, 90)
+                ublat = np.clip(lat0 + searchRange, -90, 90)
+                lblon = np.clip(lon0 - searchRange, -180, 180)
+                ublon = np.clip(lon0 + searchRange, -180, 180)
+
+                lb = [[x, y] for x, y in zip(lblat, lblon)]
+                lb = list(itertools.chain(*lb))
+                lb.append(0.2)  # lower bound for relative weight
+                ub = [[x, y] for x, y in zip(ublat, ublon)]
+                ub = list(itertools.chain(*ub))
+                ub.append(2)  # upper bound for relative weight
+
+                objective, masterLatitudeConstraint, masterLongitudeConstraint = \
+                    objectiveFuncFactory(
+                        masterId, masterLat, masterLon, Bs, Cs, dBs, dCs, key2id, es)
+
+                opt = nlopt.opt(nlopt.LN_COBYLA, 2*len(pks)+1)
+                opt.set_min_objective(objective)
+                opt.add_equality_constraint(masterLatitudeConstraint, 1e-5)
+                opt.add_equality_constraint(masterLongitudeConstraint, 1e-5)
+                opt.set_lower_bounds(lb)
+                opt.set_upper_bounds(ub)
+                opt.set_xtol_rel(1e-5)
+                x = opt.optimize(u0)
+
+            for e in es:
+                _add_link_content(linkContent, G, e, x, key2id, geod)
+
+        pd.DataFrame(linkContent).to_csv(os.path.join(
+            fa.dir, "catalog-link.csv"), index=False)
+        content = {'id': [], 'time': [], 'lat': [],
+                   'lon': [], 'mag': [], 'group': []}
+        content['id'].extend(linkContent['id1'])
+        content['id'].extend(linkContent['id2'])
+        content['time'].extend(linkContent['t1'])
+        content['time'].extend(linkContent['t2'])
+        content['lat'].extend(linkContent['lat1'])
+        content['lat'].extend(linkContent['lat2'])
+        content['lon'].extend(linkContent['lon1'])
+        content['lon'].extend(linkContent['lon2'])
+        content['mag'].extend(linkContent['mag1'])
+        content['mag'].extend(linkContent['mag2'])
+        content['group'].extend(linkContent['group'])
+        content['group'].extend(linkContent['group'])
+        pd.DataFrame(content).drop_duplicates(subset=['id'], keep='last').sort_values(
+            by="time").to_csv(os.path.join(fa.dir, "catalog-relocated.csv"), index=False)
+
+    def _add_link_content(linkContent, G, e, sol, key2id, geod):
+        # repeated code
+        id1, id2 = key2id[e[0]], key2id[e[1]]
+        lat1, lon1 = sol[2*id1], sol[2*id1+1]
+        lat2, lon2 = sol[2*id2], sol[2*id2+1]
+
+        linkContent['id1'].append(e[0])
+        linkContent['t1'].append(G.nodes[e[0]]['t'])
+        linkContent['lat1'].append(lat1)
+        linkContent['lon1'].append(lon1)
+        linkContent['mag1'].append(G.nodes[e[0]]['mag'])
+        linkContent['id2'].append(e[1])
+        linkContent['t2'].append(G.nodes[e[1]]['t'])
+        linkContent['lat2'].append(lat2)
+        linkContent['lon2'].append(lon2)
+        linkContent['mag2'].append(G.nodes[e[1]]['mag'])
+        fz, dist = _objection_val(sol, e, key2id, geod)
+        linkContent['dist'].append(dist/1e3)
+        linkContent['azi'].append(fz)
+        bb, cc = G.edges[e]['B'], G.edges[e]['C'] % 360
+        cc, bb = _normalize_fz_dist(cc, bb)
+        linkContent['B'].append(bb)
+        linkContent['C'].append(cc)
+        linkContent['dB'].append(G.edges[e]['dB'])
+        linkContent['dC'].append(G.edges[e]['dC'] % 360)
+        linkContent['group'].append(G.nodes[e[0]]['group'])
+        linkContent['weight'].append(sol[-1])
+
+    def mergeCatalogue():
+        content_strs = ['id', 'time', 'lat', 'lon', 'mag', 'group']
+        content = {x: [] for x in content_strs}
+        dforg = pd.read_csv(os.path.join(fa.dir, "catalog.csv"))
+        dfcc = pd.read_csv(os.path.join(fa.dir, "catalog-relocated.csv"))
+        relocatedID = set(dfcc["id"].to_list())
+        for r in dfcc.itertuples():
+            content['id'].append(r.id)
+            content['time'].append(r.time)
+            content['lat'].append(r.lat)
+            content['lon'].append(r.lon)
+            content['mag'].append(r.mag)
+            content['group'].append(r.group)
+        for r in dforg.itertuples():
+            if r.id not in relocatedID:
+                mw = mag2mw(r.mag, r.magType)
+                content['id'].append(r.id)
+                content['time'].append(r.time)
+                content['lat'].append(r.lat)
+                content['lon'].append(r.lon)
+                content['mag'].append(mw)
+                content['group'].append(-1)
+        pd.DataFrame(content).sort_values(by=["time"]).to_csv(
+            os.path.join(fa.dir, "catalog-merged.csv"), index=False)
+
+    def _objection_val(sol, e: list, key2id: dict, geod):
+        id1, id2 = key2id[e[0]], key2id[e[1]]
+        lat1, lon1 = sol[2*id1], sol[2*id1+1]
+        lat2, lon2 = sol[2*id2], sol[2*id2+1]
+        fz, _, dist = geod.inv(lon1, lat1, lon2, lat2)
+        fz, dist = _normalize_fz_dist(fz, dist)
+        return fz, dist
+
+    def _normalize_fz_dist(fz: float, dist: float):
+        if dist < 0:
+            dist *= -1
+            fz += 180.0
+        fz %= 360
+        return fz, dist
+
+    def objectiveFuncFactory(masterID, masterLat, masterLon, Bs, Cs, dBs, dCs, key2id, es, weight=1.0):
+        # weight denotes relative contribution between `dist` and `azi`
+        geod = Geod(ellps="WGS84")
+        _B = copy.copy(Bs)
+        _C = list(map(lambda x: x % 360, Cs))
+        _dB = copy.copy(dBs)
+        _dC = list(map(lambda x: x % 360, dCs))
+        for i in range(len(_B)):
+            _C[i], _B[i] = _normalize_fz_dist(_C[i], _B[i])
+            _dC[i], _dB[i] = _normalize_fz_dist(_dC[i], _dB[i])
+            if _dC[i] > 180:
+                _dC[i] = 360.0 - _dC[i]
+
+        _dB2 = [x**2 for x in _dB]
+        _dC2 = [x**2 for x in _dC]
+
+        def objective(x, grad):
+            # x = [lat_1, lon_1, lat_2, lon_2, ..., lat_n, lon_n, weight]
+            if grad.size > 0:
+                raise RuntimeError("Use gradient free method!")
+
+            y = 0.0
+            for i, e in enumerate(es):
+                fz, dist = _objection_val(x, e, key2id, geod)
+                y += np.abs((dist/1e3 - _B[i]) / _dB[i]) + \
+                    x[-1] * np.abs(angularDiff(fz, _C[i]) / _dC[i])
+            return np.sqrt(y)
+
+        def masterLatitudeConstraint(x, grad):
+            if grad.size > 0:
+                raise RuntimeError("Use gradient free method!")
+            return x[2 * key2id[masterID]] - masterLat
+
+        def masterLongitudeConstraint(x, grad):
+            if grad.size > 0:
+                raise RuntimeError("User gradient free method!")
+            return x[2 * key2id[masterID] + 1] - masterLon
+
+        return objective, masterLatitudeConstraint, masterLongitudeConstraint
+
+    G = buildPairGraph()
+    G = traverseGraph(G, True)
+    optimizeLocation(G, relocateTwoWay=True, relocateGlobal=True)
+    mergeCatalogue()
 
 
 f = RelocationProcedure("Discovery")
-crossCorrelate(f)
+# crossCorrelate(f)
+optimize(f)

@@ -4,6 +4,7 @@ from typing import *
 import pandas as pd
 import numpy as np
 from obspy.clients.fdsn import Client
+from obspy.clients.fdsn.header import FDSNException, FDSNNoDataException
 
 baseDir = os.path.join(os.path.dirname(__file__), "..")
 faultsDir = os.path.join(baseDir, "faults")
@@ -58,3 +59,26 @@ def isTransform(fm, criterion=25.0):
         return False
     rake = fm[-1] % 180
     return rake <= criterion or (180.0 - rake) <= criterion
+
+def moment2RuptureLength(mw):
+    # Wells, D. L., & Coppersmith, K. J. (1994).
+    # New empirical relationships among magnitude, rupture length, rupture width, rupture area, and surface displacement.
+    # Bulletin of the Seismological Society of America, 84(4), 974–1002.
+
+    # subsurface rupture length
+    return 10 ** (-2.57 + 0.62 * mw)
+
+def momentAlongStrike(xdist, xrs, mws, npts=200):
+    # notice xdist in [km]
+    arr = np.zeros(npts)
+    dx = xdist / npts
+    rr = np.linspace(0, 1, npts)
+    for (xr, mw) in zip(xrs, mws):
+        l = moment2RuptureLength(mw) # [km]
+        lr = l / xdist
+        left = max(0, xr - lr/2)
+        right = min(1, xr + lr/2)
+        ileft = np.argmax(rr >= left)
+        iright = np.argmax(rr > right)
+        arr[ileft: iright] += mag2moment(mw) / l / 1e3
+    return arr, rr
