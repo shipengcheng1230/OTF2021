@@ -13,8 +13,9 @@ if not os.path.isdir(faultsDir):
 dfFaults = pd.read_excel(os.path.join(baseDir, "faults.xlsx"))
 dfStations = pd.read_csv(os.path.join(baseDir, "stations.csv"))
 try:
-    clientUSGS = Client("USGS", timeout=30)
-    clientIRIS = Client("IRIS", timeout=30)
+    # clientUSGS = Client("USGS", timeout=30)
+    # clientIRIS = Client("IRIS", timeout=30)
+    pass
 except FDSNException:
     print("Client not accessible, retry later.")
 
@@ -69,7 +70,7 @@ def moment2RuptureLength(mw):
     # subsurface rupture length
     return 10 ** (-2.57 + 0.62 * mw)
 
-def momentAlongStrike(xdist, xrs, mws, npts=200):
+def momentAlongStrike(xdist, xrs, mws, npts=500):
     # notice xdist in [km]
     arr = np.zeros(npts)
     dx = xdist / npts

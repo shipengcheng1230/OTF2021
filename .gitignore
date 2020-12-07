@@ -4,3 +4,4 @@
 *.pyc
 faults/*/cc/*.csv
 faults/*/cc/*.json
+collections/

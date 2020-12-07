@@ -1,0 +1,70 @@
+time,mag,magType,lat,lon,dep,text,id
+1959-04-19 07:26:16,6.0,mw,-44.975,-80.377,15000.0,"off the coast of Aisen, Chile",iscgem881814
+1968-12-07 20:35:19,5.8,mw,-44.983,-80.485,10000.0,"off the coast of Aisen, Chile",iscgem813968
+1973-02-08 09:38:43.700000,5.4,mb,-44.96,-77.854,33000.0,"off the coast of Aisen, Chile",usp00000ey
+1973-10-01 00:37:40,5.1,ms,-43.93,-82.292,33000.0,West Chile Rise,usp00003mm
+1973-11-23 20:15:30.400000,5.3,mb,-44.972,-80.28,33000.0,"off the coast of Aisen, Chile",usp000048j
+1973-11-29 17:07:29.400000,5.3,mb,-44.285,-81.708,33000.0,West Chile Rise,usp00004bu
+1974-07-05 04:58:55.400000,5.2,mb,-44.78,-80.009,33000.0,"off the coast of Aisen, Chile",usp000070f
+1978-05-29 17:20:28.600000,6.0,ms,-44.855,-79.413,33000.0,"off the coast of Aisen, Chile",usp0000utu
+1980-03-06 20:37:02.200000,5.5,mb,-44.319,-82.084,10000.0,West Chile Rise,usp00015v7
+1980-04-09 19:56:26,5.5,mb,-44.612,-80.1,10000.0,"off the coast of Aisen, Chile",usp00016hs
+1982-08-23 15:18:55.820000,5.1,mb,-44.84,-81.83,10000.0,West Chile Rise,usp0001p76
+1982-08-24 01:27:37.690000,5.2,mb,-44.865,-81.452,10000.0,West Chile Rise,usp0001p7j
+1983-02-28 22:44:19.540000,5.5,ms,-43.977,-79.062,10000.0,"off the coast of Los Lagos, Chile",usp0001tcz
+1983-11-26 23:29:08.900000,5.3,mb,-44.368,-80.147,10000.0,"off the coast of Aisen, Chile",usp000203b
+1983-12-10 17:37:55.750000,5.1,ms,-44.361,-78.13,10000.0,"off the coast of Aisen, Chile",usp00020d6
+1984-10-04 10:55:40.140000,5.0,mb,-44.485,-78.454,33000.0,"off the coast of Aisen, Chile",usp00027x2
+1985-03-30 13:08:00.500000,5.2,mb,-45.695,-78.444,10000.0,"off the coast of Aisen, Chile",usp0002daj
+1985-06-11 02:03:20.180000,5.0,mb,-44.968,-80.222,10000.0,"off the coast of Aisen, Chile",usp0002fr5
+1986-12-25 17:17:34.200000,6.4,mw,-44.891,-80.105,10000.0,"off the coast of Aisen, Chile",usp000314z
+1986-12-25 17:17:39,6.3,mwc,-44.46,-78.84,10000.0,"off the coast of Aisen, Chile",gcmtb122586a
+1987-04-08 09:18:34.690000,5.0,ms,-43.812,-78.887,10000.0,"off the coast of Los Lagos, Chile",usp0003406
+1989-02-21 22:08:54.760000,5.6,mw,-44.462,-78.766,25600.0,"off the coast of Aisen, Chile",usp0003s5j
+1991-02-13 06:17:23.070000,5.7,mw,-44.361,-79.529,10000.0,"off the coast of Aisen, Chile",usp0004mw5
+1991-11-20 04:40:49.770000,5.6,mw,-44.92,-80.956,10000.0,"off the coast of Aisen, Chile",usp0004zca
+1993-08-25 05:25:32.270000,6.2,mw,-44.718,-79.958,10000.0,"off the coast of Aisen, Chile",usp0005z5p
+1995-11-17 02:40:50.460000,5.8,mw,-45.1,-79.924,33000.0,"off the coast of Aisen, Chile",usp00076zp
+1997-11-05 06:09:14.010000,5.6,mwc,-43.756,-78.18,10000.0,"off the coast of Los Lagos, Chile",usp0008a3u
+1998-01-19 18:23:59.660000,6.2,mwc,-44.971,-79.488,10000.0,"off the coast of Aisen, Chile",usp0008enm
+1998-05-08 17:42:21.870000,5.3,mwc,-45.692,-77.63,33000.0,"off the coast of Aisen, Chile",usp0008mpr
+1998-11-06 08:01:11.480000,5.9,mwc,-44.432,-79.112,10000.0,"off the coast of Aisen, Chile",usp0008xpu
+1998-12-24 08:56:40.140000,5.3,mwc,-44.314,-81.75,10000.0,West Chile Rise,usp000903g
+2001-02-19 14:31:55,5.8,mwc,-45.097,-79.284,10000.0,"off the coast of Aisen, Chile",usp000a9xx
+2002-03-11 23:45:14.780000,5.7,mwc,-44.536,-79.7,33000.0,"off the coast of Aisen, Chile",usp000b054
+2002-07-18 21:53:12.820000,5.2,mwc,-44.715,-79.754,10000.0,"off the coast of Aisen, Chile",usp000b8bs
+2002-08-04 09:50:25.230000,5.9,mwb,-45.022,-80.732,10000.0,"off the coast of Aisen, Chile",usp000b99x
+2003-01-09 09:49:07.800000,5.9,mwc,-44.444,-79.243,10000.0,"off the coast of Aisen, Chile",usp000bna7
+2004-12-12 19:36:56.560000,5.4,mwc,-44.334,-82.13,10000.0,West Chile Rise,usp000dajd
+2005-06-15 19:52:24.820000,6.4,mwb,-44.865,-80.562,10000.0,"off the coast of Aisen, Chile",usp000dt52
+2007-05-07 11:15:16.230000,6.1,mwb,-44.85,-80.453,10000.0,"off the coast of Aisen, Chile",usp000fbf8
+2007-05-16 16:48:09.800000,5.4,mwc,-45.021,-80.722,8500.0,"off the coast of Aisen, Chile",usp000fc3j
+2007-10-24 03:16:30.790000,5.0,mwc,-44.338,-81.367,10000.0,West Chile Rise,usp000fr53
+2008-03-22 13:22:59.470000,5.4,mwc,-44.057,-81.987,10000.0,West Chile Rise,usp000g220
+2008-05-20 15:16:04.410000,5.6,mwc,-44.451,-78.207,10000.0,"off the coast of Aisen, Chile",usp000g7ay
+2009-02-28 00:50:08.550000,5.2,mwc,-45.114,-80.698,10000.0,"off the coast of Aisen, Chile",usp000gufb
+2009-03-12 11:03:10.560000,5.0,mwc,-45.019,-78.061,10000.0,"off the coast of Aisen, Chile",usp000guxb
+2009-05-18 17:26:29.500000,5.1,mwc,-44.885,-80.76,10000.0,"off the coast of Aisen, Chile",usp000gx9h
+2009-11-24 17:45:12,5.1,mwc,-45.5,-80.5,10000.0,"off the coast of Aisen, Chile",gcmtc200911241745a
+2009-12-15 11:34:43.210000,5.4,mwc,-44.475,-81.943,10000.0,West Chile Rise,usp000h52d
+2011-10-03 22:03:02.810000,5.0,mwc,-43.797,-82.633,10000.0,West Chile Rise,usp000j8w2
+2011-10-03 23:22:11.590000,5.0,mwc,-44.519,-81.783,10000.0,West Chile Rise,usp000j8w7
+2011-12-23 04:18:42.450000,5.0,mwc,-44.313,-79.345,10000.0,"off the coast of Aisen, Chile",usp000jchn
+2012-05-18 02:00:39.490000,6.3,mww,-44.806,-80.159,10000.0,"off the coast of Aisen, Chile",usp000jkj5
+2013-01-23 07:42:58.960000,5.4,mwb,-44.617,-79.084,11500.0,"off the coast of Aisen, Chile",usp000jyrc
+2013-05-20 09:49:04.470000,6.4,mww,-44.866,-80.746,10000.0,"Off the coast of Aisen, Chile",usb000gzlm
+2014-01-07 12:06:09.640000,5.0,mb,-44.4215,-79.2358,10000.0,"Off the coast of Aisen, Chile",usc000ly6j
+2014-09-22 18:35:46.670000,5.1,mb,-44.4748,-81.8604,10000.0,West Chile Rise,usb000sf01
+2014-10-24 11:21:21.420000,5.2,mb,-44.3237,-82.0554,10000.0,West Chile Rise,usb000sqah
+2015-03-06 10:39:49,5.1,mb,-44.4072,-78.3931,10000.0,"Off the coast of Aisen, Chile",usc000tvi4
+2016-07-27 01:25:12.940000,5.9,mww,-44.4113,-79.0594,10000.0,"Off the coast of Aisen, Chile",us20006hzu
+2017-02-28 17:35:40.370000,5.6,mww,-44.793,-80.8972,10000.0,"Off the coast of Aisen, Chile",us100085qu
+2017-05-06 14:51:40.790000,5.4,mww,-44.3017,-78.2247,10000.0,"Off the coast of Aisen, Chile",us10008q3x
+2017-08-15 02:24:51.390000,5.1,mb,-43.818,-82.056,10000.0,West Chile Rise,us2000a89r
+2017-08-15 02:26:15.050000,5.1,mb,-43.9555,-82.4503,10000.0,West Chile Rise,us2000a89t
+2018-03-08 14:15:18.270000,5.3,mww,-43.9851,-81.8003,10000.0,West Chile Rise,us1000d1fn
+2018-06-23 02:31:35.770000,5.1,mww,-44.4479,-79.7167,10000.0,"Off the coast of Aisen, Chile",us1000ezal
+2019-05-24 06:16:17.088000,5.0,mww,-44.6681,-80.5208,10000.0,"Off the coast of Aisen, Chile",us60003rka
+2019-11-23 12:50:40.780000,5.3,mww,-44.2654,-81.8925,10000.0,West Chile Rise,us70006c7a
+2020-02-01 16:04:05.570000,5.0,mwr,-44.7055,-81.2487,10000.0,West Chile Rise,us60007m6x
+2020-03-23 17:46:12.125000,5.1,mww,-44.478,-78.9908,10000.0,"Off the coast of Aisen, Chile",us70008emr

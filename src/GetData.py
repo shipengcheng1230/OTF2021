@@ -56,6 +56,8 @@ class FaultData(AbstractFaultProcess):
 
     def __init__(self, name):
         super().__init__(name)
+        self.clientUSGS = Client("USGS", timeout=30)
+        self.clientIRIS = Client("IRIS", timeout=30)
 
     def getCatalog(self, minMag=5.0, extent=0.5,
                    startTime=UTCDateTime("1950-01-01"),
@@ -63,7 +65,7 @@ class FaultData(AbstractFaultProcess):
                    ):
 
         try:
-            cat = clientUSGS.get_events(
+            cat = self.clientUSGS.get_events(
                 starttime=startTime,
                 endtime=endTime,
                 minmagnitude=minMag,
@@ -94,7 +96,7 @@ class FaultData(AbstractFaultProcess):
         mt = {}
         with ThreadPoolExecutor(max_workers=6) as executor:
             futures2key = {executor.submit(
-                FaultData.getMomentTensorByEventID, eid): eid for eid in content["id"]}
+                FaultData.getMomentTensorByEventID, self.clientUSGS, eid): eid for eid in content["id"]}
             for future in as_completed(futures2key):
                 eid = futures2key[future]
                 try:
@@ -107,8 +109,8 @@ class FaultData(AbstractFaultProcess):
                 json.dump(mt, fp, indent=4)
 
     @staticmethod
-    def getMomentTensorByEventID(eid):
-        e = clientUSGS.get_events(eventid=eid)
+    def getMomentTensorByEventID(client, eid):
+        e = client.get_events(eventid=eid)
         fm = e[0].focal_mechanisms
         if not fm:
             return [np.nan for _ in range(3)], [np.nan for _ in range(3)], [np.nan for _ in range(6)]
@@ -273,7 +275,7 @@ class FaultData(AbstractFaultProcess):
                 groupVelocityWindow[0], dist / \
                 groupVelocityWindow[1]  # seconds
             t0 = UTCDateTime(tstr)
-            st = clientIRIS.get_waveforms(
+            st = self.clientIRIS.get_waveforms(
                 net, sta, "*", channel, t0+dt1, t0+dt2, attach_response=True)
             try:
                 st.remove_response()
@@ -303,7 +305,7 @@ class FaultData(AbstractFaultProcess):
                     print(f"Saving {waveFileName}")
                     st[0].write(waveFilePath, format="SAC")
             finally:
-                if os.path.getsize(waveFilePath) == 0:
+                if os.path.isfile(waveFilePath) and os.path.getsize(waveFilePath) == 0:
                     os.remove(waveFilePath)
 
         toDownload = \
@@ -318,24 +320,28 @@ class FaultData(AbstractFaultProcess):
                     key = f"{x[0]}-{r.net}-{r.sta}.sac"
                     if (not existed) or key not in existed:
                         # obspy async client is not available, so bear this sequential download
-                        print(f"Trying {key} ...")
+                        print(f"Trying {self.name}: {key} ...")
                         getAndSave(x[0], x[1], r.net, r.sta, r.dist)
 
-if __name__ == "__main__":
-
-    for r in dfFaults.iterrows():
-        rec = dict(r[1])
-        if rec["Good Bathymetry"] == 1 and rec["key"] > 79:
-            f = FaultData(rec["Name"])
-            # f.getCatalog()
-            # f.getCandidateStations()
-            # f.getCandidateEvents()
-            # f.getEventPairs()
-            # f.getWaveform()
-
-    # f = FaultData("Wilkes")
+def getAllData(name: str):
+    f = FaultData(name)
     # f.getCatalog()
     # f.getCandidateStations()
     # f.getCandidateEvents()
     # f.getEventPairs()
-    # f.getWaveform()
+    f.getWaveform()
+
+if __name__ == "__main__":
+
+    df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] == 1) & (dfFaults["key"] > 79)]
+    names = df2["Name"].to_list()
+
+    for name in names:
+        getAllData(name.strip())
+
+    # You may get refused by the server if you open too many clients at the same time
+    # with ProcessPoolExecutor(max_workers=20) as executor:
+    #     futures = []
+    #     for name in names:
+    #         futures.append(executor.submit(getAllData, name))
+    #     [future.result() for future in as_completed(futures)]

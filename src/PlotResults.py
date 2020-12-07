@@ -116,11 +116,12 @@ class PlotProcedure(AbstractFaultProcess):
         ax1pos = ax1.get_position().bounds
         ax2pos = ax2.get_position().bounds
 
-        ax1.add_wms(
-            wms="https://www.gmrt.org/services/mapserver/wms_merc?",
-            layers=["GMRT"],
-            cmap=plt.cm.get_cmap("ocean"),
-        )
+        for x in [ax1, ax2]:
+            x.add_wms(
+                wms="https://www.gmrt.org/services/mapserver/wms_merc?",
+                layers=["GMRT"],
+                cmap=plt.cm.get_cmap("ocean"),
+            )
         gl = ax1.gridlines(draw_labels=True, color='black', alpha=0.5, linestyle='--', zorder=1, x_inline=False, y_inline=False)
         gl.ylabels_left = False
         gl.ylabels_right = True
@@ -264,7 +265,7 @@ class PlotProcedure(AbstractFaultProcess):
                 ax2.scatter(x, y, s=3**2, fc=bcc, ec="k", transform=ccrs.PlateCarree())
 
         dfMerged = pd.read_csv(os.path.join(self.dir, "catalog-merged.csv"))
-        for r in dfMerged.iloc[::-1].itertuples():
+        for r in dfMerged.itertuples():
             _add_beachball(r, r.group != -1)
 
         attempt = datetime(1990, 1, 1) # cutoff of attempting relocation
@@ -328,5 +329,10 @@ class PlotProcedure(AbstractFaultProcess):
         plt.close(fig)
 
 if __name__ == "__main__":
-    f = PlotProcedure("Wilkes")
-    f.plotTimeSpaceLayout2()
+
+    df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] == 1) & (dfFaults["key"] > 79)]
+    names = df2["Name"].to_list()
+
+    for name in names:
+        f = PlotProcedure(name.strip())
+        f.plotTimeSpaceLayout2()

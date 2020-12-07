@@ -131,6 +131,12 @@ def cc(fa, id1, t1, lat1, lon1, mag1, id2, t2, lat2, lon2, mag2):
             os.remove(wavePath2)
             continue
 
+        if st1[0].stats["sampling_rate"] != st2[0].stats["sampling_rate"]:
+            maxSamplingRate = max(st1[0].stats["sampling_rate"], st2[0].stats["sampling_rate"])
+            for ss in [st1, st2]:
+                if maxSamplingRate != ss[0].stats["sampling_rate"]:
+                    ss.resample(maxSamplingRate, no_filter=True)
+
         cc = correlate(
             st1[0], st2[0], demean=True, normalize='naive',
             shift=min(st1[0].stats.npts, st2[0].stats.npts, int(
@@ -445,7 +451,7 @@ def optimize(fa):
                 optimizeNodeLocation(Q.popleft())
         return G
 
-    def optimizeLocation(G, relocateTwoWay=True, relocateTwoWayIter=5, relocateGlobal=True):
+    def optimizeLocation(G, relocateTwoWay=True, relocateTwoWayIter=6, relocateGlobal=True):
         if relocateTwoWay:
             for _ in range(relocateTwoWayIter):
                 traverseOptimizeGraph(G)
@@ -650,6 +656,10 @@ def optimize(fa):
 
 if __name__ == "__main__":
 
-    f = RelocationProcedure("Wilkes")
-    crossCorrelate(f)
-    optimize(f)
+    df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] == 1) & (dfFaults["key"] > 79)]
+    names = df2["Name"].to_list()
+
+    for name in names:
+        f = RelocationProcedure(name.strip())
+        crossCorrelate(f)
+        optimize(f)
