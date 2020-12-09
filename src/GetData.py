@@ -54,14 +54,16 @@ class AbstractFaultProcess:
 
 class FaultData(AbstractFaultProcess):
 
-    def __init__(self, name):
+    def __init__(self, name, catalogClient="USGS", waveClient="IRIS"):
         super().__init__(name)
-        self.clientUSGS = Client("USGS", timeout=30)
-        self.clientIRIS = Client("IRIS", timeout=30)
+        self.clientUSGS = Client(catalogClient, timeout=30)
+        self.clientIRIS = Client(waveClient, timeout=30)
 
     def getCatalog(self, minMag=5.0, extent=0.5,
                    startTime=UTCDateTime("1950-01-01"),
-                   endTime=UTCDateTime("2020-06-01")
+                   endTime=UTCDateTime("2020-06-01"),
+                   suffix="",
+                   mt=True,
                    ):
 
         try:
@@ -91,7 +93,10 @@ class FaultData(AbstractFaultProcess):
         content["id"] = [parse_qs(urlparse(x.resource_id.id).query)[
             "eventid"][0] for x in cat]
         pd.DataFrame(content).to_csv(os.path.join(
-            self.dir, "catalog.csv"), index=False)
+            self.dir, "catalog" + suffix + ".csv"), index=False)
+
+        if not mt:
+            return
 
         mt = {}
         with ThreadPoolExecutor(max_workers=6) as executor:
@@ -320,7 +325,7 @@ class FaultData(AbstractFaultProcess):
                     key = f"{x[0]}-{r.net}-{r.sta}.sac"
                     if (not existed) or key not in existed:
                         # obspy async client is not available, so bear this sequential download
-                        print(f"Trying {self.name}: {key} ...")
+                        # print(f"Trying {self.name}: {key} ...")
                         getAndSave(x[0], x[1], r.net, r.sta, r.dist)
 
 def getAllData(name: str):
