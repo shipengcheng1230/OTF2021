@@ -1,0 +1,68 @@
+time,mag,magType,lat,lon,dep,text,id
+1951-09-27 19:24:15,6.0,mw,49.311,-128.857,15000.0,"Vancouver Island, Canada region",iscgem894736
+1953-12-04 14:54:52,6.4,mw,49.314,-129.196,15000.0,"Vancouver Island, Canada region",iscgem892256
+1956-06-28 22:58:54,6.4,mw,49.011,-129.277,15000.0,"Vancouver Island, Canada region",iscgem888407
+1957-04-13 03:44:03,5.8,mw,48.211,-128.809,15000.0,"Vancouver Island, Canada region",iscgem886378
+1960-04-01 14:12:13,5.8,mw,48.953,-128.877,15000.0,"Vancouver Island, Canada region",iscgem878713
+1960-09-30 06:35:11,5.6,mw,49.445,-129.522,15000.0,"Vancouver Island, Canada region",iscgem880439
+1960-12-01 20:49:51,6.2,mw,48.937,-129.399,20000.0,"Vancouver Island, Canada region",iscgem880899
+1961-10-29 09:12:20,5.8,mw,48.859,-128.756,15000.0,"Vancouver Island, Canada region",iscgem877609
+1962-06-02 12:26:09,5.8,mw,49.559,-130.176,15000.0,"Vancouver Island, Canada region",iscgem874831
+1971-11-20 21:24:41,5.8,mw,48.714,-129.651,15000.0,"Vancouver Island, Canada region",iscgem778692
+1971-12-05 05:50:08,6.0,mw,49.452,-129.853,10000.0,"Vancouver Island, Canada region",iscgem777492
+1971-12-08 08:38:23,5.6,mw,49.125,-128.817,15000.0,"Vancouver Island, Canada region",iscgem777577
+1976-12-20 17:12:41,5.1,mb,49.078,-128.961,10000.0,"Vancouver Island, Canada region",usp0000kv1
+1976-12-20 20:33:07.800000,6.7,ms,48.802,-129.292,10000.0,"Vancouver Island, Canada region",usp0000kv9
+1976-12-20 21:06:39.100000,5.1,mb,48.901,-128.716,10000.0,"Vancouver Island, Canada region",usp0000kva
+1976-12-20 21:12:48.800000,5.1,mb,49.159,-129.019,10000.0,"Vancouver Island, Canada region",usp0000kvb
+1978-06-11 14:55:25.500000,6.1,ms,49.262,-129.502,10000.0,"Vancouver Island, Canada region",usp0000uzy
+1980-12-17 16:21:58.800000,6.8,ms,49.479,-129.496,10000.0,"Vancouver Island, Canada region",usp0001bax
+1988-05-26 19:01:34.460000,5.2,mw,49.084,-128.34,10000.0,"Vancouver Island, Canada region",usp0003gdx
+1990-12-28 11:16:39.720000,5.1,ms,48.716,-128.316,10000.0,"Vancouver Island, Canada region",usp0004jwb
+1991-12-19 04:41:37.210000,5.6,ms,48.973,-128.77,10000.0,"Vancouver Island, Canada region",usp00050n4
+1991-12-19 04:44:07.880000,5.6,ms,48.938,-128.71,10000.0,"Vancouver Island, Canada region",usp00050n5
+1991-12-19 04:45:44.600000,5.3,mb,48.928,-128.555,10000.0,"Vancouver Island, Canada region",usp00050n6
+1992-01-02 16:40:40.600000,6.1,mwb,48.738,-129.233,10000.0,"Vancouver Island, Canada region",usp000519m
+1992-01-13 06:08:44.180000,5.4,mw,49.15,-128.998,10000.0,"Vancouver Island, Canada region",usp00051r8
+1993-02-07 16:29:12.960000,5.0,ms,49.359,-128.597,10000.0,"Vancouver Island, Canada region",usp0005mrx
+1994-02-12 07:04:42.040000,5.4,ms,49.233,-129.097,10000.0,"Vancouver Island, Canada region",usp00068dx
+1996-10-09 07:12:25.920000,5.8,mwc,49.737,-129.605,10000.0,"Vancouver Island, Canada region",usp0007r4h
+1999-07-02 11:45:31.290000,6.0,mwb,49.371,-129.204,10000.0,"Vancouver Island, Canada region",usp0009axx
+2001-01-11 00:04:03,6.0,mwc,48.89,-129.31,10000.0,"Vancouver Island, Canada region",usp000a7fx
+2001-01-23 09:39:25,5.9,mwb,49.33,-128.79,10000.0,"Vancouver Island, Canada region",usp000a878
+2001-01-23 14:43:12,5.4,mwc,49.17,-129.1,10000.0,"Vancouver Island, Canada region",usp000a881
+2001-05-02 02:05:46,5.3,mwc,49.91,-130.15,10000.0,"Vancouver Island, Canada region",usp000ae9y
+2001-09-12 12:50:16,5.1,mb,48.81,-128.56,10000.0,"Vancouver Island, Canada region",usp000ap1r
+2001-09-12 22:24:54,5.3,mwc,48.72,-128.64,10000.0,"Vancouver Island, Canada region",usp000ap2m
+2001-09-12 22:30:21,5.2,mb,48.72,-128.67,10000.0,"Vancouver Island, Canada region",usp000ap2n
+2001-09-13 09:56:58,5.1,mwc,48.79,-128.62,10000.0,"Vancouver Island, Canada region",usp000ap3g
+2001-09-14 04:45:08,6.0,mwc,48.69,-128.71,10000.0,"Vancouver Island, Canada region",usp000ap50
+2001-09-14 20:46:22,5.0,mb,48.78,-128.69,10000.0,"Vancouver Island, Canada region",usp000ap6p
+2001-09-15 10:50:39,5.5,mwc,48.56,-128.56,10000.0,"Vancouver Island, Canada region",usp000ap7j
+2001-09-16 23:20:09,5.8,mwb,48.54,-128.6,10000.0,"Vancouver Island, Canada region",usp000apan
+2001-09-18 00:30:50,5.1,mw,48.49,-128.76,10000.0,"Vancouver Island, Canada region",usp000apcr
+2003-12-19 05:32:52,5.4,mwc,48.85,-129.19,10000.0,"Vancouver Island, Canada region",usp000cfhy
+2004-11-02 09:30:47.320000,5.1,mwc,49.4,-128.652,10000.0,"Vancouver Island, Canada region",usp000d7h2
+2004-11-02 10:02:12.820000,6.7,mwb,49.277,-128.772,10000.0,"Vancouver Island, Canada region",usp000d7h4
+2004-11-02 11:47:11.730000,5.2,mwr,49.201,-128.973,10000.0,"Vancouver Island, Canada region",usp000d7he
+2004-11-02 13:11:05.130000,5.2,mwr,49.259,-128.98,10000.0,"Vancouver Island, Canada region",usp000d7hp
+2004-11-02 14:03:44.140000,5.1,mwc,49.237,-129.051,10000.0,"Vancouver Island, Canada region",usp000d7hs
+2004-11-02 17:23:42,5.2,mwc,49.572,-128.589,10000.0,"Vancouver Island, Canada region",usp000d7j5
+2005-11-19 12:40:04.370000,5.3,mwc,48.792,-128.598,10000.0,"Vancouver Island, Canada region",usp000e4gd
+2008-04-27 21:17:59.800000,5.2,mwc,48.685,-128.888,10000.0,"Vancouver Island, Canada region",usp000g4zv
+2008-08-25 22:24:56.850000,5.1,mwc,49.022,-128.493,10000.0,"Vancouver Island, Canada region",usp000gfj0
+2008-09-06 01:10:20.670000,5.2,mwc,49.791,-130.113,10000.0,"Vancouver Island, Canada region",usp000gggj
+2008-09-06 11:25:57.830000,5.0,mwc,49.869,-130.084,10000.0,"Vancouver Island, Canada region",usp000gghg
+2008-12-25 08:11:58.790000,5.8,mwc,49.128,-128.621,10000.0,"Vancouver Island, Canada region",usp000greb
+2010-07-19 17:15:04.560000,5.4,mwc,49.46,-130.047,10000.0,"Vancouver Island, Canada region",usp000hfz8
+2010-10-04 14:51:54.540000,5.3,mwc,49.357,-129.315,10000.0,"Vancouver Island, Canada region",usp000hmkr
+2012-11-08 02:01:50.630000,6.1,mww,49.231,-128.477,13700.0,"Vancouver Island, Canada region",usp000jv6k
+2016-03-18 22:46:56.830000,5.5,mww,49.673,-129.8485,10000.0,"207km WSW of Port Hardy, Canada",us20005awl
+2017-02-12 03:47:40.170000,5.0,mwr,49.3075,-129.3552,10000.0,"207km SW of Port Hardy, Canada",us20008j9n
+2017-02-23 06:04:58.100000,5.1,mww,49.7062,-129.2457,10000.0,"170km SW of Port Hardy, Canada",us20008lph
+2017-02-24 12:28:24.830000,5.2,mww,49.6697,-129.1491,10000.0,"168km SW of Port Hardy, Canada",us20008m0k
+2018-10-22 05:39:39.590000,6.5,mww,49.2586,-129.4124,10000.0,"214km SW of Port Hardy, Canada",us1000hfgn
+2018-10-22 06:16:26.450000,6.8,mww,49.3346,-129.289,10000.0,"202km SW of Port Hardy, Canada",us1000hfgv
+2018-10-22 06:22:48.120000,6.5,mww,49.297,-129.7237,10000.0,"227km SW of Port Hardy, Canada",us1000hfh3
+2018-10-22 16:27:00.900000,5.2,mww,49.0689,-128.9922,10000.0,"213km SSW of Port Hardy, Canada",us1000hfn8
+2018-12-09 16:20:13.320000,5.4,mww,49.0257,-128.8745,10000.0,"213km SSW of Port Hardy, Canada",us1000i5cf

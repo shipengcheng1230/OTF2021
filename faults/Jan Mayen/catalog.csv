@@ -1,0 +1,47 @@
+time,mag,magType,lat,lon,dep,text,id
+1951-06-06 16:10:56,6.4,mw,71.218,-8.889,15000.0,Jan Mayen Island region,iscgem894397
+1952-12-10 05:58:10,5.9,mw,71.12,-6.789,15000.0,Jan Mayen Island region,iscgem893874
+1954-05-09 14:14:35,5.4,mw,70.991,-13.014,15000.0,Jan Mayen Island region,iscgem890643
+1955-02-06 02:27:56,5.9,mw,70.758,-14.183,15000.0,Jan Mayen Island region,iscgem889190
+1960-10-28 04:18:44,5.9,mw,71.292,-9.134,15000.0,Jan Mayen Island region,iscgem880638
+1961-04-29 09:29:16,5.7,mw,71.163,-7.904,15000.0,Jan Mayen Island region,iscgem876479
+1971-03-23 09:26:29,6.2,mw,70.974,-6.978,15000.0,Jan Mayen Island region,iscgem786547
+1972-09-08 11:34:47,6.0,mw,71.467,-10.375,15000.0,Jan Mayen Island region,iscgem769213
+1972-10-25 18:25:55,5.6,mw,70.992,-6.533,15000.0,Jan Mayen Island region,iscgem768683
+1973-01-04 08:03:50.400000,5.1,mb,71.109,-7.666,33000.0,Jan Mayen Island region,usp000000z
+1973-09-27 12:29:04.300000,5.6,ms,71.541,-12.098,33000.0,Jan Mayen Island region,usp00003k5
+1975-04-16 01:27:18.700000,6.5,ms,71.516,-10.427,13000.0,Jan Mayen Island region,usp0000amw
+1979-11-20 17:36:01.200000,5.6,mb,71.192,-8.029,10000.0,Jan Mayen Island region,usp000143u
+1984-07-30 12:16:42.920000,5.8,mw,71.5,-11.974,10000.0,Jan Mayen Island region,usp000263q
+1985-01-06 12:06:40.990000,5.0,mb,71.088,-7.748,10000.0,Jan Mayen Island region,usp0002asu
+1985-01-07 21:53:16.160000,5.0,mw,71.144,-7.439,10000.0,Jan Mayen Island region,usp0002auh
+1985-06-16 00:37:13.570000,5.1,mb,71.362,-11.148,10000.0,Jan Mayen Island region,usp0002fvz
+1988-12-13 04:01:38.950000,6.0,mw,71.134,-7.634,10000.0,Jan Mayen Island region,usp0003ptn
+1990-09-10 12:17:36.610000,5.0,mb,70.77,-13.803,10000.0,Jan Mayen Island region,usp0004ej2
+1991-03-30 12:58:34.190000,5.2,mw,71.083,-7.568,10000.0,Jan Mayen Island region,usp0004prj
+1993-07-02 04:11:04.550000,5.7,mw,71.511,-11.422,10000.0,Jan Mayen Island region,usp0005vgp
+1997-12-13 07:02:03.640000,5.6,mwc,71.254,-8.329,10000.0,Jan Mayen Island region,usp0008cjs
+2000-05-21 19:58:47.410000,6.0,mwc,71.19,-8.263,10000.0,Jan Mayen Island region,usp0009t9n
+2000-05-24 01:10:50.790000,5.3,mwc,71.224,-8.783,10000.0,Jan Mayen Island region,usp0009td8
+2000-06-21 14:56:25.080000,5.2,mwc,70.787,-13.594,10000.0,Jan Mayen Island region,usp0009uxt
+2000-07-17 08:18:48.010000,5.1,mwc,70.897,-13.322,10000.0,Jan Mayen Island region,usp0009wnn
+2001-08-01 09:20:08.720000,5.0,mb,71.077,-13.027,10000.0,Jan Mayen Island region,usp000aknv
+2003-06-19 12:59:24.410000,5.5,mwb,71.122,-7.577,10000.0,Jan Mayen Island region,usp000c08j
+2004-04-14 23:07:39.940000,6.0,mwb,71.067,-7.747,12200.0,Jan Mayen Island region,usp000csgu
+2005-07-25 16:02:07.570000,5.5,mwb,71.111,-7.432,10000.0,Jan Mayen Island region,usp000dvwr
+2005-11-07 01:49:38.390000,5.0,mwc,71.689,-12.064,23600.0,Jan Mayen Island region,usp000e3nh
+2007-12-06 10:52:33.130000,5.4,mwb,71.331,-9.34,10000.0,Jan Mayen Island region,usp000ftxe
+2008-05-06 19:51:11.370000,5.0,mwc,71.479,-12.582,10000.0,Jan Mayen Island region,usp000g5pb
+2008-11-07 21:40:57.050000,5.1,mwc,71.688,-11.817,10000.0,Jan Mayen Island region,usp000gn6u
+2009-09-21 08:30:13.980000,5.6,mwc,71.037,-7.67,10000.0,Jan Mayen Island region,usp000h1r2
+2010-02-22 16:55:01.850000,5.3,mwc,70.896,-6.523,10000.0,Jan Mayen Island region,usp000h7jw
+2010-06-03 04:32:42.550000,5.6,mwc,70.712,-14.384,10000.0,Jan Mayen Island region,usp000hdgx
+2010-06-03 10:16:15.170000,5.0,mwc,70.766,-14.295,10000.0,Jan Mayen Island region,usp000hdhg
+2011-01-29 06:55:27.520000,6.2,mwc,70.931,-6.657,15000.0,Jan Mayen Island region,usp000htt3
+2011-10-25 02:32:17.800000,5.1,mwc,70.879,-6.786,10000.0,Jan Mayen Island region,usp000j9vf
+2012-08-30 13:43:25.170000,6.8,mww,71.441,-10.605,14000.0,Jan Mayen Island region,usp000jr55
+2012-08-30 13:51:05.880000,5.2,mb,70.94,-7.936,10000.0,Jan Mayen Island region,usp000jr56
+2015-06-30 07:40:01.390000,5.3,mwb,70.9823,-7.7137,10000.0,"37km E of Olonkinbyen, Svalbard and Jan Mayen",us10002mig
+2016-09-03 06:55:37.250000,5.0,mb,71.0184,-7.5587,10000.0,"43km ENE of Olonkinbyen, Svalbard and Jan Mayen",us10006jwi
+2018-11-09 01:49:40.050000,6.7,mww,71.6312,-11.2431,10000.0,"120km NW of Olonkinbyen, Svalbard and Jan Mayen",us1000hpim
+2018-11-15 00:09:05.700000,5.2,mww,71.3012,-9.2614,10000.0,"46km NNW of Olonkinbyen, Svalbard and Jan Mayen",us1000hrys

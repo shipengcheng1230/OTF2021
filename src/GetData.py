@@ -198,6 +198,7 @@ class FaultData(AbstractFaultProcess):
                    c='tab:purple', transform=ccrs.PlateCarree(), zorder=2)
         ax.set_title(self.name)
         fig.savefig(os.path.join(self.dir, "stations.pdf"))
+        plt.close(fig)
 
     def getCandidateEvents(self,
                            timeFunc=lambda t: t >= datetime.datetime(
@@ -330,19 +331,20 @@ class FaultData(AbstractFaultProcess):
 
 def getAllData(name: str):
     f = FaultData(name)
-    # f.getCatalog()
-    # f.getCandidateStations()
-    # f.getCandidateEvents()
-    # f.getEventPairs()
-    f.getWaveform()
+    f.getCatalog()
+    f.getCandidateStations()
+    f.getCandidateEvents()
+    f.getEventPairs()
+    # f.getWaveform()
 
 if __name__ == "__main__":
 
-    df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] == 1) & (dfFaults["key"] > 79)]
+    df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] == 1) & (dfFaults["key"] <= 79)]
     names = df2["Name"].to_list()
 
     for name in names:
-        getAllData(name.strip())
+        if name not in ["Gofar", "Discovery", "Wilkes"]:
+            getAllData(name.strip())
 
     # You may get refused by the server if you open too many clients at the same time
     # with ProcessPoolExecutor(max_workers=20) as executor:
