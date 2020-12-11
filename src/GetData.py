@@ -308,7 +308,7 @@ class FaultData(AbstractFaultProcess):
                     st.detrend(type="constant")
                     st.filter(
                         type="bandpass", freqmin=filterHzWindow[0], freqmax=filterHzWindow[1], zerophase=True)
-                    print(f"Saving {waveFileName}")
+                    print(f"Saving {self.name} - {waveFileName}")
                     st[0].write(waveFilePath, format="SAC")
             finally:
                 if os.path.isfile(waveFilePath) and os.path.getsize(waveFilePath) == 0:
@@ -335,20 +335,20 @@ def getAllData(name: str):
     f.getCandidateStations()
     f.getCandidateEvents()
     f.getEventPairs()
-    # f.getWaveform()
+    f.getWaveform()
 
 if __name__ == "__main__":
 
-    df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] == 1) & (dfFaults["key"] <= 79)]
+    df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] == 0) & (dfFaults["key"] <= 150)]
     names = df2["Name"].to_list()
 
-    for name in names:
-        if name not in ["Gofar", "Discovery", "Wilkes"]:
-            getAllData(name.strip())
+    # for name in names:
+    #     if name not in ["Gofar", "Discovery", "Wilkes"]:
+    #         getAllData(name.strip())
 
     # You may get refused by the server if you open too many clients at the same time
-    # with ProcessPoolExecutor(max_workers=20) as executor:
-    #     futures = []
-    #     for name in names:
-    #         futures.append(executor.submit(getAllData, name))
-    #     [future.result() for future in as_completed(futures)]
+    with ProcessPoolExecutor(max_workers=4) as executor:
+        futures = []
+        for name in names:
+            futures.append(executor.submit(getAllData, name))
+        [future.result() for future in as_completed(futures)]

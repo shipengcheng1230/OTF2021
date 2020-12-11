@@ -273,7 +273,7 @@ class PlotProcedure(AbstractFaultProcess):
         magcutoff = self.config["magCutOff"]
         ax0.text(0.02, datetime(1991, 6, 1), f"Relocate \nMw$\geq${magcutoff:.1f}", color="lightcoral", backgroundcolor=(0.9, 0.9, 0.9, 0.5), zorder=6)
 
-        def momentHist():
+        def momentHist(func=momentAlongStrikeEllipsoid):
             xs, mws = [], [] # all event after 1950
             xs2, mws2 = [], [] # all event after 1995/1990
             xs3, mws3 = [], [] # all relocated event
@@ -299,9 +299,9 @@ class PlotProcedure(AbstractFaultProcess):
                     xs3.append(xr); mws3.append(r.mag)
 
             xdist = dist_func_complete(ax1, [0.0, 0.5], [1.0, 0.5]) / 1000 # km
-            arr, rr = momentAlongStrike(xdist, xs, mws)
-            arr2, rr2 = momentAlongStrike(xdist, xs2, mws2)
-            arr3, rr3 = momentAlongStrike(xdist, xs3, mws3)
+            arr, rr = func(xdist, xs, mws)
+            arr2, rr2 = func(xdist, xs2, mws2)
+            arr3, rr3 = func(xdist, xs3, mws3)
             ax3.plot(rr, arr / (2020-1950) / 1e20, color="lightslategray", label="since 1950")
             ax3.plot(rr2, arr2 / (2020-1990) / 1e20, color="royalblue", label="since 1990")
             ax3.plot(rr3, arr3 / (2020-1990) / 1e20, color="deeppink", label="relocated only") # relocate attempt after 1990
@@ -310,6 +310,21 @@ class PlotProcedure(AbstractFaultProcess):
                 bbox_to_anchor=(0.5, 0.80), fontsize='xx-small', title_fontsize="xx-small")
             ax3.set_ylim(bottom=0)
             ax3.set_ylabel("Unit Moment Rate\n($ 10 ^{20} \cdot \mathrm{N} \;/ \;\mathrm{yr}$)")
+
+            if "edge" in self.config:
+                l = self.config["edge"]["l"]
+                r = self.config["edge"]["r"]
+                edges = []
+                for x in [l, r]:
+                    xp, yp = transform_xy_xyproj(rotatedpole, x[1], x[0])
+                    xr, _ = transform_xyproj_xyr(ax1, xp, yp)
+                    edges.append(xr)
+
+                rect = Rectangle((edges[0], 0), edges[1] - edges[0], 1, transform=ax3.transAxes, fc="lightgray", alpha=0.6)
+                ax3.add_patch(rect)
+                creepPct = creepPercentage(arr3 / (2020-1990), rr3, edges[0], edges[1], 0.05)
+                self.config["creepPercentage"] = creepPct
+                self.updateConfig()
 
         momentHist()
 
@@ -333,6 +348,6 @@ if __name__ == "__main__":
     df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] == 1) & (dfFaults["key"] > 79)]
     names = df2["Name"].to_list()
 
-    for name in names:
+    for name in ["Discovery"]:
         f = PlotProcedure(name.strip())
         f.plotTimeSpaceLayout2()

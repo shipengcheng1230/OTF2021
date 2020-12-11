@@ -84,3 +84,34 @@ def momentAlongStrike(xdist, xrs, mws, npts=500):
         iright = np.argmax(rr > right)
         arr[ileft: iright] += mag2moment(mw) / l / 1e3
     return arr, rr
+
+def momentAlongStrikeEllipsoid(xdist, xrs, mws, npts=500):
+    arr = np.zeros(npts)
+    dx = xdist / npts
+    rr = np.linspace(0, 1, npts)
+    for (xr, mw) in zip(xrs, mws):
+        l = moment2RuptureLength(mw) # [km]
+        lr = l / xdist
+        left = max(0, xr - lr/2)
+        right = min(1, xr + lr/2)
+        ileft = np.argmax(rr >= left)
+        iright = np.argmax(rr > right)
+        # arr[ileft: iright] += mag2moment(mw) / l / 1e3
+        m = mag2moment(mw)
+        a = lr / 2
+        b = m * 2 / np.pi / a # ellipsoid, assume a = 0.5, s = pi * a * b
+        for i in range(ileft, iright):
+            arr[i] += np.sqrt((1 - (rr[i] - left - a) ** 2 / a ** 2) * b ** 2) / xdist / 1e3
+    return arr, rr
+
+def creepPercentage(arr, rr, left, right, thred):
+    ileft = np.argmax(rr >= left)
+    iright = np.argmax(rr > right)
+    total = iright - ileft
+    count = 0
+    thred = np.max(arr) * thred
+    for i in range(ileft, iright):
+        if arr[i] <= thred:
+            count += 1
+
+    return count / total
