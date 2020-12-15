@@ -319,6 +319,8 @@ class PlotProcedure(AbstractFaultProcess):
                     xp, yp = transform_xy_xyproj(rotatedpole, x[1], x[0])
                     xr, _ = transform_xyproj_xyr(ax1, xp, yp)
                     edges.append(xr)
+                if edges[0] > edges[1]:
+                    edges.reverse()
 
                 rect = Rectangle((edges[0], 0), edges[1] - edges[0], 1, transform=ax3.transAxes, fc="lightgray", alpha=0.6)
                 ax3.add_patch(rect)
@@ -348,6 +350,6 @@ if __name__ == "__main__":
     df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] == 1) & (dfFaults["key"] > 79)]
     names = df2["Name"].to_list()
 
-    for name in ["15'20"]:
+    for name in ["Alula Fartak"]:
         f = PlotProcedure(name.strip())
         f.plotTimeSpaceLayout2()
