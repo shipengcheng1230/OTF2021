@@ -4,7 +4,7 @@ import json
 import os
 from collections import namedtuple
 from concurrent.futures import (ProcessPoolExecutor, ThreadPoolExecutor,
-                                as_completed)
+                                as_completed, wait)
 from typing import *
 from urllib.parse import parse_qs, urlparse
 
@@ -327,28 +327,43 @@ class FaultData(AbstractFaultProcess):
                     if (not existed) or key not in existed:
                         # obspy async client is not available, so bear this sequential download
                         # print(f"Trying {self.name}: {key} ...")
-                        getAndSave(x[0], x[1], r.net, r.sta, r.dist)
+                        try:
+                            getAndSave(x[0], x[1], r.net, r.sta, r.dist)
+                        except:
+                            continue
+        return None
+
 
 def getAllData(name: str):
     f = FaultData(name)
-    f.getCatalog()
-    f.getCandidateStations()
-    f.getCandidateEvents()
-    f.getEventPairs()
+    # f.getCatalog()
+    # f.getCandidateStations()
+    # f.getCandidateEvents()
+    # f.getEventPairs()
     f.getWaveform()
+    return 0
 
 if __name__ == "__main__":
 
-    df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] == 0) & (dfFaults["key"] <= 150)]
+    df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] == 0) & (dfFaults["key"] <= 79)]
     names = df2["Name"].to_list()
-
+    names.extend(["Tasman", "Balleny", "Sovanco"])
     # for name in names:
     #     if name not in ["Gofar", "Discovery", "Wilkes"]:
     #         getAllData(name.strip())
 
     # You may get refused by the server if you open too many clients at the same time
-    with ProcessPoolExecutor(max_workers=4) as executor:
-        futures = []
-        for name in names:
-            futures.append(executor.submit(getAllData, name))
-        [future.result() for future in as_completed(futures)]
+    i = 0
+    while True:
+        with ProcessPoolExecutor(max_workers=16) as executor:
+            futures = []
+            for name in names:
+                futures.append(executor.submit(getAllData, name))
+            try:
+                # [future.result() for future in as_completed(futures)]
+                wait(futures)
+            except Exception as e:
+                print(f"Retry {i} ......")
+                i += 1
+            else:
+                exit()

@@ -82,7 +82,7 @@ def cc(fa, id1, t1, lat1, lon1, mag1, id2, t2, lat2, lon2, mag2):
             residual_cosine(res.x, _azi, _dx)))
         return res.x, err
 
-    def bootstrap_uncertainty(x, y, p0, numiters=300, stderr=3.75, nsigma=1.0):
+    def bootstrap_uncertainty(x, y, p0, numiters=400, stderr=3.75, nsigma=1.0):
         x_cmt, x_dist, x_azi = [], [], []
         n = len(y)
         for i in range(numiters):
@@ -451,7 +451,7 @@ def optimize(fa):
                 optimizeNodeLocation(Q.popleft())
         return G
 
-    def optimizeLocation(G, relocateTwoWay=True, relocateTwoWayIter=6, relocateGlobal=True):
+    def optimizeLocation(G, relocateTwoWay=True, relocateTwoWayIter=8, relocateGlobal=True):
         if relocateTwoWay:
             for _ in range(relocateTwoWayIter):
                 traverseOptimizeGraph(G)
@@ -656,10 +656,10 @@ def optimize(fa):
 
 if __name__ == "__main__":
 
-    df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] == 1) & (dfFaults["key"] > 79)]
+    df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] != 3) & (dfFaults["key"] <= 79)]
     names = df2["Name"].to_list()
 
-    for name in names:
+    for name in ["15'20"]:
         f = RelocationProcedure(name.strip())
         crossCorrelate(f)
         optimize(f)

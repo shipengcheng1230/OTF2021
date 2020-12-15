@@ -1,0 +1,24 @@
+time,mag,magType,lat,lon,dep,text,id
+1961-12-26 06:17:35,5.9,mw,-43.917,38.706,15000.0,Prince Edward Islands region,iscgem877871
+1982-03-18 07:56:30.640000,5.0,mb,-43.64,38.869,10000.0,Prince Edward Islands region,usp0001k6d
+1984-05-26 03:58:51.680000,5.0,mb,-43.301,38.965,10000.0,Prince Edward Islands region,usp00024mw
+1984-05-26 03:58:56.950000,6.7,mw,-43.548,38.944,10000.0,Prince Edward Islands region,usp00024mx
+1984-05-26 13:27:16.560000,5.6,mw,-44.095,39.065,10000.0,Prince Edward Islands region,usp00024n7
+1984-05-30 07:43:41.490000,5.0,mb,-43.917,38.994,10000.0,Prince Edward Islands region,usp00024qv
+1986-05-30 16:34:54.330000,5.0,mb,-44.22,39.054,10000.0,Prince Edward Islands region,usp0002um1
+1989-06-13 22:59:33.410000,5.5,mw,-43.342,38.969,10000.0,Prince Edward Islands region,usp0003w8k
+1996-10-06 07:44:59.720000,5.5,mwc,-43.417,39.181,10000.0,Prince Edward Islands region,usp0007r02
+2001-02-26 06:03:29.600000,5.6,mwc,-43.31,39.283,10000.0,Prince Edward Islands region,usp000aadq
+2002-10-22 06:38:48.170000,5.2,mwc,-43.978,39.017,10000.0,Prince Edward Islands region,usp000bf0h
+2009-11-09 00:21:38.940000,5.5,mwc,-43.462,39.613,10000.0,Prince Edward Islands region,usp000h3w0
+2010-07-12 19:24:04.070000,5.2,mwc,-43.45,39.932,10000.0,Prince Edward Islands region,usp000hf75
+2013-03-06 10:30:53.700000,5.2,mb,-43.473,39.988,10000.0,Prince Edward Islands region,usc000fgx6
+2013-03-06 12:28:14.600000,5.1,mb,-43.417,39.673,10000.0,Prince Edward Islands region,usc000fgyu
+2013-03-07 06:39:25.060000,5.1,mb,-43.437,39.571,10000.0,Prince Edward Islands region,usb000fgyd
+2013-03-11 12:52:12.200000,5.0,mb,-43.349,39.564,10000.0,Prince Edward Islands region,usb000fis0
+2016-11-19 12:47:05.100000,5.1,mb,-44.2101,39.0547,16160.0,Prince Edward Islands region,us10007aj3
+2016-11-20 03:19:56.190000,5.1,mb,-44.3457,39.1283,10000.0,Prince Edward Islands region,us10007asg
+2016-11-20 15:29:35.350000,5.0,mb,-44.2459,39.1518,10000.0,Prince Edward Islands region,us10007ax6
+2016-11-20 17:56:13.970000,5.2,mb,-44.2612,39.2326,10000.0,Prince Edward Islands region,us10007ayr
+2016-11-20 22:44:36.060000,5.0,mb,-44.2408,39.1295,10000.0,Prince Edward Islands region,us10007b08
+2016-11-21 13:00:24.330000,5.1,mb,-44.1498,38.2898,10000.0,Prince Edward Islands region,us10007b4z

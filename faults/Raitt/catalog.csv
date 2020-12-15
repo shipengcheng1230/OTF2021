@@ -1,0 +1,25 @@
+time,mag,magType,lat,lon,dep,text,id
+1981-08-05 20:40:06.240000,5.1,ms,-54.534,-119.04,10000.0,southern East Pacific Rise,usp0001f4j
+1982-09-30 09:45:33.410000,5.3,ms,-55.057,-118.613,10000.0,southern East Pacific Rise,usp0001pxm
+1987-02-10 12:28:13.070000,5.4,ms,-54.809,-119.229,10000.0,southern East Pacific Rise,usp00032c0
+1990-10-02 16:11:48.390000,5.1,ms,-54.405,-119.54,10000.0,southern East Pacific Rise,usp0004f9w
+1993-07-22 03:51:15.720000,5.2,ms,-54.538,-119.444,10000.0,southern East Pacific Rise,usp0005x4z
+1993-07-22 06:16:09.490000,6.0,mw,-54.439,-119.333,10000.0,southern East Pacific Rise,usp0005x57
+1995-03-20 17:34:50.880000,5.6,mw,-54.792,-118.778,10000.0,southern East Pacific Rise,usp0006ufx
+1998-01-25 08:56:34.930000,5.5,mwc,-54.778,-119.306,10000.0,southern East Pacific Rise,usp0008ey3
+1999-08-16 21:31:28.790000,5.4,mwc,-54.741,-118.527,10000.0,southern East Pacific Rise,usp0009d4v
+2001-10-15 14:11:19.520000,5.4,mwc,-54.282,-119.305,10000.0,southern East Pacific Rise,usp000aqzd
+2003-12-24 16:43:07.060000,5.2,mwc,-54.468,-120.576,10000.0,southern East Pacific Rise,usp000cfyf
+2006-10-18 20:15:50.630000,5.3,mwc,-54.576,-118.527,10000.0,southern East Pacific Rise,usp000evfw
+2006-11-17 15:14:28.010000,5.2,mwc,-54.518,-119.616,10000.0,southern East Pacific Rise,usp000ey0s
+2006-11-17 19:52:33.860000,5.2,mwc,-54.33,-120.024,10000.0,southern East Pacific Rise,usp000ey1s
+2007-03-13 07:37:51.330000,5.2,mwc,-55.077,-120.21,10000.0,southern East Pacific Rise,usp000f6mn
+2007-03-13 15:47:40.680000,5.1,mwc,-54.245,-120.768,10000.0,southern East Pacific Rise,usp000f6n8
+2008-07-29 20:56:22.350000,5.8,mwb,-54.727,-118.783,10000.0,southern East Pacific Rise,usp000gdds
+2009-10-06 08:31:41.570000,5.1,mwc,-54.562,-119.025,10000.0,southern East Pacific Rise,usp000h2eg
+2009-11-15 01:51:35.900000,5.1,mwc,-54.916,-120.45,10000.0,southern East Pacific Rise,usp000h422
+2011-02-26 19:24:20.980000,5.4,mwc,-54.655,-119.305,10000.0,southern East Pacific Rise,usp000hv44
+2016-09-05 02:35:25.650000,5.3,mb,-54.8189,-118.9656,16050.0,Southern East Pacific Rise,us10006kfa
+2018-02-23 21:53:04.570000,5.0,mb,-54.2297,-121.0213,10000.0,Southern East Pacific Rise,us2000db5b
+2018-06-30 09:48:06.780000,5.4,mww,-54.6293,-119.4109,10000.0,Southern East Pacific Rise,us2000fs69
+2020-02-27 22:20:36.921000,5.4,mww,-54.4859,-118.9469,10000.0,Southern East Pacific Rise,us600085my

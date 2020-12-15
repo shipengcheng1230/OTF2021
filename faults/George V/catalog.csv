@@ -1,0 +1,119 @@
+time,mag,magType,lat,lon,dep,text,id
+1951-12-23 06:30:22,6.2,mw,-52.186,139.725,15000.0,west of Macquarie Island,iscgem895056
+1958-01-17 07:15:42,6.3,mw,-51.822,139.812,15000.0,western Indian-Antarctic Ridge,iscgem883706
+1958-06-07 12:55:08,5.8,mw,-52.835,140.163,15000.0,west of Macquarie Island,iscgem884522
+1959-08-21 08:03:19,6.2,mw,-50.408,139.394,15000.0,western Indian-Antarctic Ridge,iscgem882702
+1959-08-21 08:05:38,6.1,mw,-50.582,139.193,15000.0,western Indian-Antarctic Ridge,iscgem882703
+1959-08-21 09:37:53,6.0,mw,-50.307,139.285,15000.0,western Indian-Antarctic Ridge,iscgem882704
+1961-12-05 13:01:05,6.3,mw,-50.864,139.395,15000.0,western Indian-Antarctic Ridge,iscgem877779
+1962-07-16 02:04:55,5.7,mw,-52.143,139.299,15000.0,west of Macquarie Island,iscgem875048
+1964-07-28 18:40:06,6.2,mw,-51.325,139.308,20000.0,western Indian-Antarctic Ridge,iscgem866400
+1965-02-04 03:25:00,6.1,mw,-51.84,139.741,10000.0,western Indian-Antarctic Ridge,iscgem859200
+1970-07-02 00:56:14,6.1,mw,-51.015,139.266,10000.0,western Indian-Antarctic Ridge,iscgem793407
+1973-07-26 13:39:15.800000,5.6,mb,-52.801,140.04,33000.0,west of Macquarie Island,usp00002v9
+1973-11-16 23:08:49,5.8,ms,-51.183,139.528,33000.0,western Indian-Antarctic Ridge,usp0000464
+1974-07-02 07:15:46.100000,5.4,mb,-54.139,140.206,33000.0,west of Macquarie Island,usp00006zc
+1974-10-29 09:51:19.900000,5.2,ms,-51.821,139.439,33000.0,western Indian-Antarctic Ridge,usp00008kx
+1974-11-05 19:21:55.600000,5.1,mb,-53.117,140.209,33000.0,west of Macquarie Island,usp00008pt
+1975-04-11 00:10:35.100000,6.3,ms,-50.803,139.095,33000.0,western Indian-Antarctic Ridge,usp0000aju
+1975-05-01 03:20:31.600000,5.5,ms,-52.758,140.4,33000.0,west of Macquarie Island,usp0000av5
+1975-05-30 17:46:24.500000,6.1,ms,-50.416,139.351,33000.0,western Indian-Antarctic Ridge,usp0000b8b
+1975-05-30 17:49:41.500000,5.4,mb,-50.067,139.263,45000.0,western Indian-Antarctic Ridge,usp0000b8c
+1976-01-23 18:33:30.300000,5.9,ms,-50.319,139.562,33000.0,western Indian-Antarctic Ridge,usp0000epc
+1976-04-14 15:26:16.800000,6.2,ms,-51.905,139.471,33000.0,western Indian-Antarctic Ridge,usp0000fw1
+1976-05-11 11:29:06.200000,6.1,ms,-51.506,139.678,33000.0,western Indian-Antarctic Ridge,usp0000g9g
+1976-05-11 15:50:41.600000,6.6,ms,-51.603,139.683,33000.0,western Indian-Antarctic Ridge,usp0000g9k
+1978-02-08 09:29:10.500000,5.2,mb,-53.723,140.621,33000.0,west of Macquarie Island,usp0000svq
+1978-02-27 00:37:24.200000,5.5,ms,-53.795,140.797,10000.0,west of Macquarie Island,usp0000t5q
+1980-07-06 12:23:00.500000,5.2,ms,-51.129,139.247,10000.0,western Indian-Antarctic Ridge,usp00018pr
+1980-07-06 12:25:42,5.5,ms,-51.019,139.359,10000.0,western Indian-Antarctic Ridge,usp00018ps
+1981-09-28 00:13:29.840000,5.0,ms,-53.171,140.093,10000.0,west of Macquarie Island,usp0001g4w
+1982-03-10 22:35:31.130000,5.2,mb,-50.282,139.577,10000.0,western Indian-Antarctic Ridge,usp0001k25
+1982-07-20 22:31:30.600000,5.1,mb,-52.446,140.463,10000.0,west of Macquarie Island,usp0001nh4
+1982-10-24 22:28:22.300000,5.2,ms,-53.657,140.991,10000.0,west of Macquarie Island,usp0001qgg
+1983-06-14 00:59:28.810000,5.2,mb,-53.574,140.744,10000.0,west of Macquarie Island,usp0001w2y
+1983-06-23 12:05:19,5.6,ms,-51.722,139.573,10000.0,western Indian-Antarctic Ridge,usp0001wac
+1983-08-13 23:07:53.760000,5.3,mb,-50.629,139.934,10000.0,western Indian-Antarctic Ridge,usp0001xnk
+1984-04-18 19:22:32.370000,5.0,mb,-50.451,140.205,10000.0,western Indian-Antarctic Ridge,usp00023nh
+1985-05-17 22:20:42.070000,5.0,mb,-51.708,138.943,10000.0,western Indian-Antarctic Ridge,usp0002exm
+1986-12-05 06:56:34.680000,6.0,mw,-51.257,139.199,10000.0,western Indian-Antarctic Ridge,usp00030n2
+1987-07-28 09:49:48.570000,5.3,mw,-52.601,139.774,10000.0,west of Macquarie Island,usp000370h
+1987-09-23 15:14:56.290000,6.2,mw,-50.716,139.279,10000.0,western Indian-Antarctic Ridge,usp00038n5
+1987-09-23 15:22:46.220000,6.1,mw,-50.468,139.528,10000.0,western Indian-Antarctic Ridge,usp00038n6
+1988-12-31 20:54:24.010000,5.4,mw,-51.206,139.415,10000.0,western Indian-Antarctic Ridge,usp0003qcq
+1989-04-13 03:52:16,5.9,mw,-52.919,140.099,15000.0,west of Macquarie Island,iscgem407189
+1989-04-13 04:04:30.140000,5.1,mb,-53.482,140.176,10000.0,west of Macquarie Island,usp0003twx
+1989-09-05 19:49:03.810000,5.7,mw,-52.81,140.316,10000.0,west of Macquarie Island,usp0003z8u
+1989-10-17 22:51:59.270000,5.0,ms,-52.051,138.792,10000.0,west of Macquarie Island,usp00040t5
+1989-12-23 23:39:10.950000,5.3,mw,-52.522,140.309,10000.0,west of Macquarie Island,usp00043gp
+1991-01-17 13:01:28.950000,5.0,ms,-51.443,140.564,10000.0,western Indian-Antarctic Ridge,usp0004kt3
+1991-01-18 10:45:18.470000,6.3,mw,-51.145,139.415,10000.0,western Indian-Antarctic Ridge,usp0004kuf
+1992-02-02 00:22:05.990000,6.0,mw,-51.654,139.406,10000.0,western Indian-Antarctic Ridge,usp00052gx
+1992-02-02 00:31:30.940000,6.3,mw,-51.547,139.704,10000.0,western Indian-Antarctic Ridge,usp00052gy
+1993-01-13 18:50:42.510000,6.3,mw,-50.791,139.505,9900.0,western Indian-Antarctic Ridge,usp0005kqg
+1993-10-02 02:51:28.620000,5.3,mb,-50.147,138.892,10000.0,western Indian-Antarctic Ridge,usp00061bj
+1993-10-14 12:02:35.560000,6.0,mw,-50.436,139.904,10000.0,western Indian-Antarctic Ridge,usp00061zq
+1994-07-29 21:29:16.830000,5.0,mb,-53.535,140.117,33000.0,west of Macquarie Island,usp0006g9y
+1995-05-24 13:06:10.530000,5.5,mw,-52.261,139.805,10000.0,west of Macquarie Island,usp0006xye
+1996-10-06 05:23:20.830000,5.0,mb,-52.672,140.319,10000.0,west of Macquarie Island,usp0007qzw
+1996-10-06 06:33:16.350000,5.4,mwc,-52.652,140.174,10000.0,west of Macquarie Island,usp0007r00
+1997-04-26 10:11:54,5.6,mwc,-53.404,139.709,33000.0,west of Macquarie Island,usp00081a6
+1997-05-12 19:00:22.310000,5.4,mwc,-51.391,139.553,10000.0,western Indian-Antarctic Ridge,usp000826h
+1997-06-02 21:08:51.460000,5.5,mwc,-53.547,140.118,10000.0,west of Macquarie Island,usp0008335
+1997-10-03 02:42:31.890000,5.4,mwc,-53.61,140.4,10000.0,west of Macquarie Island,usp00088e4
+1998-05-19 14:23:13.610000,5.2,mwc,-53.779,140.737,10000.0,west of Macquarie Island,usp0008ncq
+1998-05-27 03:24:17.060000,5.7,mwc,-50.462,139.489,10000.0,western Indian-Antarctic Ridge,usp0008ns3
+1999-12-16 14:17:54.760000,6.0,mwc,-50.149,138.989,10000.0,western Indian-Antarctic Ridge,usp0009jx8
+1999-12-17 00:27:28.870000,6.0,mwc,-50.26,139.423,10000.0,western Indian-Antarctic Ridge,usp0009jxp
+2000-06-07 00:42:12.850000,5.2,mwc,-51.882,139.441,10000.0,western Indian-Antarctic Ridge,usp0009u58
+2000-06-11 11:55:12.340000,6.6,mwc,-50.579,139.55,10000.0,western Indian-Antarctic Ridge,usp0009ue0
+2002-04-08 03:48:55.240000,6.2,mwc,-51.068,139.269,10000.0,western Indian-Antarctic Ridge,usp000b1z0
+2002-05-02 18:25:29.500000,5.2,mwc,-51.834,139.717,10000.0,western Indian-Antarctic Ridge,usp000b3ky
+2003-01-17 07:03:19.080000,5.2,mwc,-52.384,140.42,10000.0,west of Macquarie Island,usp000bnpp
+2003-04-29 17:56:38.270000,5.4,mwc,-50.472,139.318,10000.0,western Indian-Antarctic Ridge,usp000bw7u
+2004-06-09 22:49:44.450000,5.4,mb,-51.566,139.656,10000.0,western Indian-Antarctic Ridge,usp000cxhu
+2004-06-09 22:52:08.800000,6.4,mwc,-51.603,139.615,10000.0,western Indian-Antarctic Ridge,usp000cxhv
+2004-09-01 04:55:28.310000,5.2,mwc,-53.653,140.867,10000.0,west of Macquarie Island,usp000d3b0
+2005-02-06 01:25:43.220000,5.3,mwc,-52.978,140.391,10000.0,west of Macquarie Island,usp000dfk6
+2005-02-06 01:28:48.080000,5.6,mwc,-52.824,140.228,10000.0,west of Macquarie Island,usp000dfk7
+2005-03-30 16:00:52.240000,5.3,mwc,-53.61,140.817,10000.0,west of Macquarie Island,usp000dkp4
+2005-09-21 04:29:32,5.3,mwc,-50.256,139.269,10000.0,western Indian-Antarctic Ridge,usp000dzus
+2006-02-08 06:39:39.590000,5.1,mwc,-53.874,140.786,10000.0,west of Macquarie Island,usp000e9rp
+2006-11-16 11:20:44.740000,5.5,mwc,-51.874,139.755,10000.0,western Indian-Antarctic Ridge,usp000exu2
+2006-11-16 20:29:54.970000,6.1,mwb,-51.996,139.473,10000.0,western Indian-Antarctic Ridge,usp000exwe
+2007-03-24 17:29:29.980000,5.8,mwb,-53.814,140.789,10000.0,west of Macquarie Island,usp000f7af
+2008-04-13 21:57:09.140000,5.1,mwc,-53.11,140.411,10000.0,west of Macquarie Island,usp000g3v4
+2008-05-10 06:17:32.450000,5.1,mwc,-51.46,139.129,10000.0,western Indian-Antarctic Ridge,usp000g5zp
+2009-09-24 00:34:07,5.1,mwc,-53.693,140.733,10000.0,west of Macquarie Island,usp000h1tn
+2009-12-05 06:03:36.340000,5.1,mwc,-51.491,139.207,10000.0,western Indian-Antarctic Ridge,usp000h4rg
+2010-04-29 23:48:07.830000,5.8,mwc,-51.021,139.394,24200.0,western Indian-Antarctic Ridge,usp000hc3a
+2010-06-30 05:02:49.670000,5.2,mwc,-50.592,139.324,10000.0,western Indian-Antarctic Ridge,usp000heqd
+2010-07-06 18:02:10.140000,5.3,mwc,-53.73,140.606,10000.0,west of Macquarie Island,usp000hez5
+2010-07-06 18:28:22.420000,5.0,mb,-53.752,140.728,10000.0,west of Macquarie Island,usp000hez7
+2010-12-27 15:27:26.540000,5.3,mwc,-50.808,139.237,10000.0,western Indian-Antarctic Ridge,usp000hs4h
+2010-12-27 17:02:32.880000,5.6,mwc,-50.811,139.375,10000.0,western Indian-Antarctic Ridge,usp000hs4q
+2011-01-04 06:06:04.890000,5.4,mwc,-52.08,139.505,16300.0,west of Macquarie Island,usp000hsjh
+2011-10-20 16:07:22.760000,5.1,mwc,-52.504,140.233,3600.0,west of Macquarie Island,usp000j9m1
+2012-04-22 12:20:46.120000,5.4,mwc,-52.753,140.329,9200.0,west of Macquarie Island,usp000jjdn
+2012-04-22 13:11:19.700000,5.6,mwc,-52.867,140.29,12200.0,west of Macquarie Island,usp000jjdr
+2012-05-23 22:59:52.700000,6.0,mww,-50.42,139.516,10000.0,western Indian-Antarctic Ridge,usp000jkuj
+2012-05-23 23:19:18.050000,5.9,mwc,-50.352,139.536,6600.0,western Indian-Antarctic Ridge,usp000jkup
+2014-09-09 18:15:00.010000,5.0,mb,-51.3942,138.9332,14680.0,Western Indian-Antarctic Ridge,usb000sast
+2014-11-09 07:12:04.960000,5.0,ms_20,-51.5859,139.7238,10000.0,Western Indian-Antarctic Ridge,usc000svt8
+2015-05-25 17:48:43.920000,5.2,mb,-51.8469,139.2734,10000.0,Western Indian-Antarctic Ridge,us10002c1s
+2015-11-22 15:34:07.930000,5.0,mb,-53.6562,140.4975,10000.0,West of Macquarie Island,us100040c9
+2016-01-01 02:00:39.950000,6.3,mww,-50.5575,139.4489,10000.0,Western Indian-Antarctic Ridge,us10004ant
+2016-02-27 21:29:43.570000,6.1,mww,-51.7897,139.5956,10000.0,Western Indian-Antarctic Ridge,us10004t7g
+2016-04-12 20:23:10.620000,5.0,mb,-53.6681,140.9637,10000.0,West of Macquarie Island,us20005hla
+2016-06-13 17:41:00.940000,5.0,mb,-50.906,139.44,10000.0,Western Indian-Antarctic Ridge,us2000644p
+2016-07-08 16:48:42.820000,5.4,mb,-54.2339,140.8128,10000.0,West of Macquarie Island,us100061yi
+2016-11-21 08:31:38.350000,5.5,mwb,-53.7502,140.5246,10000.0,West of Macquarie Island,us10007b3d
+2016-11-21 08:36:25.400000,5.0,mb,-53.7388,140.8188,10000.0,West of Macquarie Island,us10007b3h
+2016-12-04 05:59:19.660000,5.0,mb,-52.0961,139.5156,10000.0,West of Macquarie Island,us10007erl
+2017-04-09 00:14:30.750000,5.5,mww,-52.1762,139.6642,10000.0,West of Macquarie Island,us10008fye
+2017-11-21 01:04:36.370000,5.5,mww,-51.9757,139.6977,10000.0,Western Indian-Antarctic Ridge,us2000bs5i
+2018-06-30 04:48:10.400000,5.3,mww,-51.156,139.3463,10000.0,Western Indian-Antarctic Ridge,us2000fryb
+2019-04-15 23:41:50.016000,5.0,mb,-51.3422,139.1491,10000.0,Western Indian-Antarctic Ridge,us70003bea
+2019-04-18 14:46:01.733000,6.3,mww,-51.127,139.321,10000.0,Western Indian-Antarctic Ridge,us700038m1
+2019-08-21 12:58:08.111000,5.4,mww,-50.3333,139.3652,10000.0,Western Indian-Antarctic Ridge,us600057ws
+2019-08-21 14:28:25.652000,6.0,mww,-50.3302,139.324,10000.0,Western Indian-Antarctic Ridge,us600057xt

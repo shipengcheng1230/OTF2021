@@ -1,0 +1,77 @@
+time,mag,magType,lat,lon,dep,text,id
+1955-02-04 07:21:53,6.3,mw,-17.091,66.715,15000.0,Mauritius - Reunion region,iscgem889183
+1955-04-06 12:50:58,6.1,mw,-17.304,66.405,15000.0,Mauritius - Reunion region,iscgemsup889401
+1958-07-03 05:45:17,6.2,mw,-17.877,65.243,15000.0,Mauritius - Reunion region,iscgem884663
+1960-05-19 10:11:58,6.1,mw,-17.616,66.166,15000.0,Mauritius - Reunion region,iscgem879087
+1973-05-28 20:27:11.200000,5.9,ms,-18.125,65.293,33000.0,Mauritius - Reunion region,usp00001yp
+1974-12-09 10:50:07.900000,5.0,mb,-17.018,66.873,33000.0,Mauritius - Reunion region,usp0000927
+1976-06-19 15:00:46.700000,6.1,ms,-18.02,65.414,33000.0,Mauritius - Reunion region,usp0000gys
+1979-08-22 12:24:11.700000,5.3,mb,-17.548,66.044,10000.0,Mauritius - Reunion region,usp00012jm
+1980-01-10 09:00:51.400000,5.0,mb,-16.423,67.041,10000.0,Mid-Indian Ridge,usp00014y4
+1980-04-14 19:11:55.600000,5.7,ms,-17.199,66.787,10000.0,Mauritius - Reunion region,usp00016n2
+1980-11-29 01:36:36.400000,5.1,mb,-17.97,65.363,10000.0,Mauritius - Reunion region,usp0001b2n
+1981-11-07 09:42:55.430000,6.0,ms,-17.088,66.691,10000.0,Mauritius - Reunion region,usp0001gux
+1982-11-25 00:36:28.670000,5.0,mb,-17.052,66.875,10000.0,Mauritius - Reunion region,usp0001r3p
+1983-08-12 11:14:49.090000,5.4,ms,-17.786,65.822,10000.0,Mauritius - Reunion region,usp0001xmn
+1984-09-17 06:41:43.280000,6.2,mw,-18.038,65.643,10000.0,Mauritius - Reunion region,usp00027f9
+1985-02-03 14:46:09.320000,5.0,mw,-18.352,64.597,10000.0,"Rodrigues region, Mauritius",usp0002bkm
+1985-12-01 06:16:39.700000,5.4,mw,-16.547,66.708,10000.0,Mid-Indian Ridge,usp0002nee
+1988-05-04 00:01:32.080000,5.9,mw,-17.328,66.629,10000.0,Mauritius - Reunion region,usp0003fmv
+1988-08-11 13:29:20.600000,6.2,mw,-18.062,65.418,10000.0,Mauritius - Reunion region,usp0003jvv
+1990-03-07 18:22:03.190000,5.9,mw,-17.295,66.675,10000.0,Mauritius - Reunion region,usp00046a1
+1990-12-06 01:16:55.140000,5.0,mb,-16.69,66.764,10000.0,Mid-Indian Ridge,usp0004hst
+1991-05-08 09:42:13.390000,5.1,mb,-16.602,66.884,10000.0,Mid-Indian Ridge,usp0004rda
+1991-11-05 21:16:16.020000,6.5,mw,-16.908,66.162,10000.0,Mid-Indian Ridge,usp0004yuw
+1992-08-21 09:54:51.310000,5.1,mb,-18.321,65.097,10000.0,Mauritius - Reunion region,usp0005cu7
+1992-10-31 18:23:19.400000,5.1,mb,-17.544,65.422,10000.0,Mauritius - Reunion region,usp0005g4s
+1992-12-16 09:49:40.990000,5.4,mw,-17.136,66.916,10000.0,Mauritius - Reunion region,usp0005jbw
+1995-05-06 20:59:03.250000,5.3,mw,-17.039,66.945,10000.0,Mauritius - Reunion region,usp0006x05
+1995-06-27 21:12:56.210000,5.5,mw,-17.175,66.871,10000.0,Mauritius - Reunion region,usp0006zta
+1995-09-17 17:09:20.620000,6.0,ms,-17.093,66.707,8300.0,Mauritius - Reunion region,usp00073h0
+1995-09-17 23:14:40.040000,5.0,mb,-17.505,65.959,10000.0,Mauritius - Reunion region,usp00073hd
+1996-01-18 23:00:36.290000,5.0,mb,-18.575,65.197,10000.0,Mauritius - Reunion region,usp0007bb6
+1996-08-22 19:37:09.480000,5.1,mwc,-17.315,66.762,10000.0,Mauritius - Reunion region,usp0007nxm
+2000-01-22 21:14:31.760000,5.5,mwc,-17.657,66.857,10000.0,Mauritius - Reunion region,usp0009mhg
+2000-03-12 08:42:23.570000,5.3,mwc,-16.619,67.4,10000.0,Mid-Indian Ridge,usp0009pkz
+2000-04-07 19:08:27.830000,6.3,mwc,-18.045,65.517,10000.0,Mauritius - Reunion region,usp0009qyy
+2001-11-05 17:11:47.830000,5.0,mb,-17.805,64.941,10000.0,Mauritius - Reunion region,usp000as9w
+2003-05-28 16:15:18.940000,6.2,mwb,-17.646,66.116,10000.0,Mauritius - Reunion region,usp000bydf
+2004-02-26 20:32:21.850000,6.3,mwc,-18.171,66.419,10000.0,Mauritius - Reunion region,usp000cndk
+2004-09-19 23:24:19.940000,5.4,mwc,-17.714,64.732,10000.0,Mauritius - Reunion region,usp000d4pd
+2006-06-28 16:06:37,5.3,mwc,-17.587,65.902,10000.0,Mauritius - Reunion region,usp000emgc
+2006-07-12 23:06:20.260000,5.5,mwc,-17.64,65.769,10000.0,Mauritius - Reunion region,usp000eng1
+2006-08-30 16:13:39.710000,5.7,mwc,-17.65,65.943,10000.0,Mauritius - Reunion region,usp000es3u
+2007-01-07 10:14:37.610000,5.1,mwc,-17.665,65.734,10000.0,Mauritius - Reunion region,usp000f1vr
+2007-03-15 16:26:04.410000,5.1,mwc,-16.938,67.045,10000.0,Mid-Indian Ridge,usp000f6sa
+2007-04-04 19:58:03.800000,5.9,mwc,-17.23,66.79,10000.0,Mauritius - Reunion region,usp000f8pd
+2007-04-24 18:21:12.830000,5.3,mwc,-16.475,67.328,10000.0,Mid-Indian Ridge,usp000fagv
+2008-06-11 16:10:53.620000,5.3,mwc,-17.937,65.522,10000.0,Mauritius - Reunion region,usp000g98a
+2008-08-22 07:47:39.580000,6.0,mwc,-17.769,65.394,6000.0,Mauritius - Reunion region,usp000gf7u
+2008-09-01 00:37:39.050000,5.1,mwc,-18.579,65.541,10000.0,Mauritius - Reunion region,usp000gg47
+2008-09-01 08:28:19.850000,5.0,mwc,-18.614,65.376,10000.0,Mauritius - Reunion region,usp000gg52
+2008-10-09 02:33:34.100000,5.0,mwc,-17.332,66.536,10000.0,Mauritius - Reunion region,usp000gjrk
+2009-03-09 03:44:23.320000,5.2,mwc,-17.178,66.797,10000.0,Mauritius - Reunion region,usp000gusa
+2009-04-10 06:51:47.480000,5.2,mb,-18.467,65.94,10000.0,Mauritius - Reunion region,usp000gvzw
+2009-04-15 14:07:09.980000,5.2,mb,-18.492,65.951,10000.0,Mauritius - Reunion region,usp000gw67
+2009-05-11 21:37:05.840000,5.0,mwc,-17.246,66.642,10000.0,Mauritius - Reunion region,usp000gx18
+2009-10-12 03:15:47.280000,6.2,mwc,-17.099,66.688,10000.0,Mauritius - Reunion region,usp000h2sy
+2009-12-18 07:32:59.660000,5.8,mwc,-17.73,65.867,10000.0,Mauritius - Reunion region,usp000h555
+2010-01-02 00:21:59.690000,5.0,mwc,-16.593,67.324,10000.0,Mid-Indian Ridge,usp000h5kj
+2010-08-16 03:30:53.310000,6.3,mwc,-17.759,65.647,9800.0,Mauritius - Reunion region,usp000hj9t
+2010-10-07 20:58:52.600000,5.0,mwc,-18.644,65.492,10000.0,Mauritius - Reunion region,usp000hmqx
+2010-10-07 21:03:11.330000,5.0,mwc,-18.619,65.35,10000.0,Mauritius - Reunion region,usp000hmqy
+2010-11-08 12:28:33.160000,5.0,mwc,-17.409,66.073,10000.0,Mauritius - Reunion region,usp000hp9j
+2011-09-24 22:08:40.130000,5.1,mwc,-18.609,65.47,10000.0,Mauritius - Reunion region,usp000j8gw
+2011-10-25 00:44:22.630000,5.1,mwc,-17.821,66.249,10000.0,Mauritius - Reunion region,usp000j9vd
+2011-12-23 17:51:57.940000,5.1,mb,-17.436,66.337,10000.0,Mauritius - Reunion region,usp000jcjm
+2012-02-16 02:20:28.730000,5.8,mww,-17.839,65.405,10000.0,Mauritius - Reunion region,usp000jf01
+2012-07-07 22:49:20.080000,5.0,mb,-17.083,66.882,10000.0,Mauritius - Reunion region,usp000jnqy
+2012-07-26 05:33:33.020000,6.7,mww,-17.592,66.391,20000.0,Mauritius - Reunion region,usp000jpfh
+2013-10-31 09:01:59.770000,5.0,mb,-18.6018,65.3061,10000.0,"232km ENE of Ile Rodrigues, Mauritius",usc000ksan
+2014-07-28 08:03:09.820000,5.4,mwb,-17.3193,66.7757,10000.0,Mauritius - Reunion region,usb000rxvu
+2015-04-19 05:32:14.740000,5.3,mb,-17.1065,66.5842,10000.0,Mauritius - Reunion region,us200027lr
+2015-10-27 11:04:58.390000,5.4,mwc,-16.6216,66.5479,10000.0,Mid-Indian Ridge,us10003rtl
+2017-07-19 12:16:23.560000,6.0,mww,-17.4154,66.4836,10000.0,Mauritius - Reunion region,us20009xz4
+2018-07-25 15:11:12.040000,5.0,mb,-17.0968,66.7756,10000.0,Mauritius - Reunion region,us2000gdj1
+2019-04-01 18:39:05.857000,6.0,mww,-18.2058,65.3656,10000.0,"262km NE of Port Mathurin, Mauritius",us2000k8ri
+2019-11-17 08:26:28.956000,5.1,mb,-16.4204,66.7073,10000.0,Mid-Indian Ridge,us7000693a

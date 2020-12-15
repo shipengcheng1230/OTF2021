@@ -348,6 +348,6 @@ if __name__ == "__main__":
     df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] == 1) & (dfFaults["key"] > 79)]
     names = df2["Name"].to_list()
 
-    for name in ["Discovery"]:
+    for name in ["15'20"]:
         f = PlotProcedure(name.strip())
         f.plotTimeSpaceLayout2()

@@ -1,0 +1,37 @@
+time,mag,magType,lat,lon,dep,text,id
+1956-05-19 20:02:19,6.3,mw,-42.182,41.962,15000.0,Prince Edward Islands region,iscgem888269
+1958-07-08 22:48:40,6.0,mw,-42.899,42.353,15000.0,Prince Edward Islands region,iscgem884698
+1973-11-28 08:12:31.400000,5.9,ms,-41.861,42.77,33000.0,Prince Edward Islands region,usp00004b3
+1977-08-17 10:41:41.400000,5.1,mb,-40.867,42.854,33000.0,Southwest Indian Ridge,usp0000q52
+1981-04-26 02:40:09.410000,5.0,mb,-40.848,43.387,10000.0,Southwest Indian Ridge,usp0001dc9
+1981-08-12 06:17:01.250000,5.1,mb,-42.807,41.706,10000.0,Prince Edward Islands region,usp0001f87
+1984-07-27 21:40:15.180000,5.1,mw,-40.999,43.195,10000.0,Southwest Indian Ridge,usp0002611
+1984-07-29 18:15:08.020000,5.3,mw,-40.946,43.422,10000.0,Southwest Indian Ridge,usp000262t
+1984-07-30 00:10:32.760000,5.3,mw,-41.001,43.425,10000.0,Prince Edward Islands region,usp0002636
+1984-08-03 12:28:43.940000,5.5,mw,-40.929,43.274,10000.0,Southwest Indian Ridge,usp000266g
+1984-08-03 17:16:24.190000,5.0,mb,-41.055,43.406,10000.0,Prince Edward Islands region,usp000266p
+1984-08-19 06:34:45.300000,5.5,mb,-41.039,43.182,10000.0,Prince Edward Islands region,usp00026hk
+1984-08-27 02:14:06.410000,5.2,mb,-41.271,43.073,10000.0,Prince Edward Islands region,usp00026s1
+1986-10-14 13:07:19.130000,6.2,mw,-43.142,41.776,10000.0,Prince Edward Islands region,usp0002yxy
+1993-07-13 23:31:20.330000,5.1,mb,-42.697,42.192,10000.0,Prince Edward Islands region,usp0005w7k
+1997-04-28 12:07:37.830000,6.8,mwc,-42.504,42.686,10000.0,Prince Edward Islands region,usp00081ec
+1998-05-19 10:41:13.130000,5.6,mwc,-43.187,41.809,10000.0,Prince Edward Islands region,usp0008nch
+1999-06-20 07:38:09.800000,5.3,mwc,-41.139,42.981,10000.0,Prince Edward Islands region,usp0009a73
+2004-06-27 12:51:50.350000,5.3,mwc,-40.921,43.306,10000.0,Southwest Indian Ridge,usp000cyzd
+2004-06-28 00:54:05.210000,5.0,mwc,-40.774,43.319,10000.0,Southwest Indian Ridge,usp000cz12
+2004-07-17 03:38:57.780000,5.0,mwc,-40.7,43.229,10000.0,Southwest Indian Ridge,usp000d0ae
+2004-08-04 03:46:16.900000,5.3,mwc,-40.779,43.201,10000.0,Southwest Indian Ridge,usp000d1e5
+2005-05-10 06:40:22.130000,5.3,mwc,-42.737,42.333,10000.0,Prince Edward Islands region,usp000dqc9
+2005-07-04 11:36:05.650000,6.3,mwc,-42.283,42.37,10000.0,Prince Edward Islands region,usp000duh0
+2005-09-22 16:19:42.880000,5.3,mwc,-40.868,43.255,10000.0,Southwest Indian Ridge,usp000dzyh
+2006-12-06 12:05:49.500000,5.1,mwc,-43.044,41.762,10000.0,Prince Edward Islands region,usp000ezna
+2007-01-23 04:16:07.370000,5.5,mwc,-43.139,41.647,10000.0,Prince Edward Islands region,usp000f3ca
+2007-03-24 07:39:38.650000,5.4,mwc,-42.625,42.035,10000.0,Prince Edward Islands region,usp000f79k
+2008-03-29 15:12:03.180000,5.5,mwc,-41.055,42.525,10000.0,Prince Edward Islands region,usp000g2n0
+2009-06-24 04:40:05.540000,5.3,mwc,-41.693,42.582,10000.0,Prince Edward Islands region,usp000gyj0
+2009-07-02 22:15:29.930000,5.3,mwc,-41.776,42.459,10000.0,Prince Edward Islands region,usp000gyvu
+2009-07-19 03:28:21.040000,5.1,mwc,-41.657,42.25,10000.0,Prince Edward Islands region,usp000gzea
+2013-06-09 00:36:27.300000,5.1,mb,-42.688,41.669,10000.0,Prince Edward Islands region,usc000hjkk
+2018-04-19 21:09:17,6.0,mww,-42.7797,42.1877,10000.0,Prince Edward Islands region,us1000dnuj
+2018-07-10 04:19:15.240000,5.0,mb,-41.0643,43.4213,10000.0,Prince Edward Islands region,us2000g0v1
+2019-01-22 19:01:43.580000,6.7,mww,-43.1219,42.3568,13000.0,Prince Edward Islands region,us2000j7dn
