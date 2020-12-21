@@ -345,13 +345,11 @@ def getAllData(name: str):
 
 if __name__ == "__main__":
 
-    df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] == 0) & (dfFaults["key"] <= 79)]
+    df2 = dfFaults.loc[dfFaults["Good Bathymetry"] == 1]
     names = df2["Name"].to_list()
-    names.extend(["Tasman", "Balleny", "Sovanco"])
-    names = ["Tasman"]
     for name in names:
-        if name not in ["Gofar", "Discovery", "Wilkes"]:
-            getAllData(name.strip())
+        print(name)
+        getAllData(name.strip())
 
     # You may get refused by the server if you open too many clients at the same time
     # You may not get all the waveform on the first request

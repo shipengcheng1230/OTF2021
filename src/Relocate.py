@@ -3,6 +3,7 @@ import json
 import multiprocessing as mp
 import operator
 import os
+import shutil
 from collections import namedtuple, deque
 from concurrent.futures import ProcessPoolExecutor, as_completed, wait
 from copy import copy
@@ -289,6 +290,10 @@ def cc(fa, id1, t1, lat1, lon1, mag1, id2, t2, lat2, lon2, mag2):
 def crossCorrelate(fa):
     dfPairss = pd.read_csv(os.path.join(fa.dir, "catalog-pair.csv"))
     futures = []
+
+    ccFiles = [os.path.join(fa.ccDir, x) for x in os.listdir(fa.ccDir)]
+    for f in ccFiles:
+        os.remove(f)
     # for r in dfPairss.itertuples(index=True):
     #     print(f"{r.Index + 1}/{dfPairss.shape[0]} ...")
     #     cc(fa, r.id1, r.t1, r.lat1, r.lon1, r.mag1, r.id2, r.t2, r.lat2, r.lon2, r.mag2)
@@ -656,10 +661,11 @@ def optimize(fa):
 
 if __name__ == "__main__":
 
-    df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] != 3) & (dfFaults["key"] <= 79)]
+    df2 = dfFaults.loc[dfFaults["Good Bathymetry"] == 1]
     names = df2["Name"].to_list()
 
-    for name in ["Tasman"]:
+    for name in names:
+        print(name)
         f = RelocationProcedure(name.strip())
         crossCorrelate(f)
         optimize(f)
