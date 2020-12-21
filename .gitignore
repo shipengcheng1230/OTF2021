@@ -5,3 +5,4 @@
 faults/*/cc/*.csv
 faults/*/cc/*.json
 collections/
+__pycache__

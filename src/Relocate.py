@@ -512,11 +512,11 @@ def optimize(fa):
 
                 opt = nlopt.opt(nlopt.LN_COBYLA, 2*len(pks)+1)
                 opt.set_min_objective(objective)
-                opt.add_equality_constraint(masterLatitudeConstraint, 1e-5)
-                opt.add_equality_constraint(masterLongitudeConstraint, 1e-5)
+                opt.add_equality_constraint(masterLatitudeConstraint, 1e-6)
+                opt.add_equality_constraint(masterLongitudeConstraint, 1e-6)
                 opt.set_lower_bounds(lb)
                 opt.set_upper_bounds(ub)
-                opt.set_xtol_rel(1e-5)
+                opt.set_xtol_rel(1e-6)
                 x = opt.optimize(u0)
 
             for e in es:
@@ -659,7 +659,7 @@ if __name__ == "__main__":
     df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] != 3) & (dfFaults["key"] <= 79)]
     names = df2["Name"].to_list()
 
-    for name in ["15'20"]:
+    for name in ["Tasman"]:
         f = RelocationProcedure(name.strip())
         crossCorrelate(f)
         optimize(f)

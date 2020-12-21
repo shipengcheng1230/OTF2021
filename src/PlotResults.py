@@ -39,6 +39,9 @@ class PlotProcedure(AbstractFaultProcess):
         with open(os.path.join(self.dir, "mt.json")) as fp:
             self.fm = json.load(fp)
 
+        for i in range(2, 5):
+            self.config["adjust"].setdefault(str(i), {"lat": 0.0, "lon": 0.0})
+
     def plotTimeSpaceLayout2(self, overWrite=True):
         output = os.path.join(self.dir, "layout2.pdf")
         if not overWrite and os.path.isfile(output):
@@ -118,8 +121,9 @@ class PlotProcedure(AbstractFaultProcess):
 
         for x in [ax1, ax2]:
             x.add_wms(
-                wms="https://www.gmrt.org/services/mapserver/wms_merc?",
-                layers=["GMRT"],
+                # wms="https://www.gmrt.org/services/mapserver/wms_merc?",
+                wms="https://www.gebco.net/data_and_products/gebco_web_services/2019/mapserv?",
+                layers=["GEBCO_2019_Grid"],
                 cmap=plt.cm.get_cmap("ocean"),
             )
         gl = ax1.gridlines(draw_labels=True, color='black', alpha=0.5, linestyle='--', zorder=1, x_inline=False, y_inline=False)
@@ -350,6 +354,6 @@ if __name__ == "__main__":
     df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] == 1) & (dfFaults["key"] > 79)]
     names = df2["Name"].to_list()
 
-    for name in ["Alula Fartak"]:
+    for name in ["Zeewolf"]:
         f = PlotProcedure(name.strip())
         f.plotTimeSpaceLayout2()
