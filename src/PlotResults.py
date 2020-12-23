@@ -328,9 +328,13 @@ class PlotProcedure(AbstractFaultProcess):
 
                 rect = Rectangle((edges[0], 0), edges[1] - edges[0], 1, transform=ax3.transAxes, fc="lightgray", alpha=0.6)
                 ax3.add_patch(rect)
-                creepPct = creepPercentage(arr3 / (2020-1990), rr3, edges[0], edges[1], 0.05)
+                thrd = 0.05
+                peak = np.max(arr3) / (2020-1990) / 1e20
+                creepPct = creepPercentage(arr3 / (2020-1990), rr3, edges[0], edges[1], thrd)
+                ax3.plot([0.0, 1.0], [thrd * peak, thrd * peak], linestyle=":", color="green", linewidth=1.0)
                 self.config["creepPercentage"] = creepPct
                 self.updateConfig()
+                ax3.text(0.90, 0.8, f"{creepPct:.2f}", transform=ax3.transAxes)
 
         momentHist()
 
@@ -351,9 +355,9 @@ class PlotProcedure(AbstractFaultProcess):
 
 if __name__ == "__main__":
 
-    df2 = dfFaults.loc[dfFaults["Good Bathymetry"] == 1]
+    df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] == 1) | (dfFaults["key"] < 80)]
     names = df2["Name"].to_list()
-
+    # names = ["Tasman"]
     for name in names:
         print(name)
         f = PlotProcedure(name.strip())

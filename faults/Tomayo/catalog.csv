@@ -1,39 +1,40 @@
 time,mag,magType,lat,lon,dep,text,id
-1950-10-31 20:22:32,5.9,mw,23.158,-108.277,15000.0,Gulf of California,iscgem896011
-1951-08-20 05:49:59,5.7,mw,23.003,-108.586,15000.0,Gulf of California,iscgem894633
-1952-02-17 17:28:59,5.8,mw,23.841,-108.014,20000.0,Gulf of California,iscgem892495
-1952-02-17 17:36:02,5.8,mw,23.337,-107.952,20000.0,Gulf of California,iscgem892496
-1952-03-05 15:46:10,6.4,mw,23.662,-108.76,10000.0,Gulf of California,iscgem892574
-1969-11-01 11:08:24,6.6,mw,23.148,-107.988,10000.0,Gulf of California,iscgem801757
-1971-01-19 03:16:56,6.0,mw,23.757,-108.692,35000.0,Gulf of California,iscgem788372
-1975-06-14 02:25:59,5.2,mb,23.059,-108.038,33000.0,Gulf of California,usp0000bhe
-1986-09-25 06:15:54.830000,6.0,mw,23.032,-108.061,10000.0,Gulf of California,usp0002yc2
-1987-08-21 23:00:52.840000,5.5,mw,23.893,-108.738,10000.0,Gulf of California,usp00037q7
-1988-04-26 01:42:55.600000,5.9,mw,22.913,-108.023,10000.0,"off the coast of Baja California Sur, Mexico",usp0003fcp
-1988-08-21 11:15:49.510000,5.6,mw,23.385,-108.379,10000.0,Gulf of California,usp0003k7m
-1990-10-25 03:24:09.150000,5.3,mw,23.83,-108.715,10000.0,Gulf of California,usp0004g4q
-1991-01-17 17:22:52.490000,5.3,mw,23.686,-108.877,10000.0,Gulf of California,usp0004ktb
-1997-01-12 15:02:18.900000,5.0,mb,23.867,-108.335,23800.0,Gulf of California,usp0007vsz
-1998-07-07 20:01:35.900000,5.5,mwc,23.714,-108.395,10000.0,Gulf of California,usp0008r4h
-1998-11-05 14:47:02.870000,5.5,mwc,23.643,-108.787,10000.0,Gulf of California,usp0008xne
-1999-01-10 20:36:06.580000,5.2,mwc,22.939,-108.02,33000.0,"off the coast of Baja California Sur, Mexico",usp00090x3
-1999-03-12 07:07:40.410000,5.3,mwc,22.219,-107.368,10000.0,"off the coast of Sinaloa, Mexico",usp00094by
-1999-07-16 13:45:25.580000,5.3,mwc,23.775,-108.708,10000.0,Gulf of California,usp0009bq6
-2000-12-08 16:56:18.530000,5.5,mwc,22.706,-107.552,10000.0,"off the coast of Sinaloa, Mexico",usp000a5qs
-2002-10-03 16:08:29.620000,6.5,mwc,23.324,-108.53,10000.0,Gulf of California,usp000bdqx
-2003-07-02 05:11:34.830000,5.6,mwb,22.904,-108.191,10000.0,"off the coast of Baja California Sur, Mexico",usp000c1fm
-2004-02-09 00:01:46,5.1,mwc,23.753,-108.784,10000.0,Gulf of California,usp000ckse
-2004-02-09 00:04:08.520000,5.2,mwc,23.68,-108.774,10000.0,Gulf of California,usp000cksf
-2004-02-18 10:59:19.380000,5.9,mwc,23.639,-108.821,10000.0,Gulf of California,usp000cmfn
-2005-06-05 08:28:50.900000,5.6,mwb,23.674,-108.366,10000.0,Gulf of California,usp000ds95
-2009-01-05 10:59:30.470000,5.5,mwb,23.808,-108.757,10000.0,Gulf of California,usp000gs7c
-2009-07-11 15:34:15.100000,5.1,mwc,22.191,-108.295,4000.0,"off the coast of Baja California Sur, Mexico",usp000gz4v
-2010-06-13 07:48:47.810000,5.2,mwc,22.739,-108.008,10000.0,"off the coast of Baja California Sur, Mexico",usp000hdxj
-2010-06-13 08:41:21.400000,5.0,mwc,22.866,-107.816,10000.0,"off the coast of Sinaloa, Mexico",usp000hdxn
-2010-10-27 12:49:37.270000,5.0,mwc,22.964,-108.373,10000.0,"off the coast of Baja California Sur, Mexico",usp000hnnw
-2010-10-28 02:22:25.270000,5.6,mwc,23.084,-108.454,10000.0,Gulf of California,usp000hnpe
-2012-10-05 20:02:10.660000,5.5,mwc,23.582,-108.512,10000.0,Gulf of California,usp000jtm4
-2014-10-08 02:40:53.110000,6.1,mww,23.8441,-108.3311,10000.0,"111km WSW of El Dorado, Mexico",usb000sjt0
-2017-09-22 05:33:43.940000,5.6,mww,23.5482,-108.831,10000.0,"103km ENE of San Jose del Cabo, Mexico",us2000at0m
-2018-10-08 12:05:56.150000,5.5,mww,23.6344,-108.9329,7000.0,"100km NE of San Jose del Cabo, Mexico",us1000h8pv
+2020-11-13 19:04:13.139000,5.3,mww,22.3893,-107.7924,10000.0,"170 km WSW of Mazatlán, Mexico",us7000celp
 2020-05-22 08:46:06.973000,6.1,mww,22.4152,-108.1275,10000.0,"173 km ESE of La Playa, Mexico",us70009n5p
+2018-10-08 12:05:56.150000,5.5,mww,23.6344,-108.9329,7000.0,"100km NE of San Jose del Cabo, Mexico",us1000h8pv
+2017-09-22 05:33:43.940000,5.6,mww,23.5482,-108.831,10000.0,"103km ENE of San Jose del Cabo, Mexico",us2000at0m
+2014-10-08 02:40:53.110000,6.1,mww,23.8441,-108.3311,10000.0,"111km WSW of El Dorado, Mexico",usb000sjt0
+2012-10-05 20:02:10.660000,5.5,mwc,23.582,-108.512,10000.0,Gulf of California,usp000jtm4
+2010-10-28 02:22:25.270000,5.6,mwc,23.084,-108.454,10000.0,Gulf of California,usp000hnpe
+2010-10-27 12:49:37.270000,5.0,mwc,22.964,-108.373,10000.0,"off the coast of Baja California Sur, Mexico",usp000hnnw
+2010-06-13 08:41:21.400000,5.0,mwc,22.866,-107.816,10000.0,"off the coast of Sinaloa, Mexico",usp000hdxn
+2010-06-13 07:48:47.810000,5.2,mwc,22.739,-108.008,10000.0,"off the coast of Baja California Sur, Mexico",usp000hdxj
+2009-07-11 15:34:15.100000,5.1,mwc,22.191,-108.295,4000.0,"off the coast of Baja California Sur, Mexico",usp000gz4v
+2009-01-05 10:59:30.470000,5.5,mwb,23.808,-108.757,10000.0,Gulf of California,usp000gs7c
+2005-06-05 08:28:50.900000,5.6,mwb,23.674,-108.366,10000.0,Gulf of California,usp000ds95
+2004-02-18 10:59:19.380000,5.9,mwc,23.639,-108.821,10000.0,Gulf of California,usp000cmfn
+2004-02-09 00:04:08.520000,5.2,mwc,23.68,-108.774,10000.0,Gulf of California,usp000cksf
+2004-02-09 00:01:46,5.1,mwc,23.753,-108.784,10000.0,Gulf of California,usp000ckse
+2003-07-02 05:11:34.830000,5.6,mwb,22.904,-108.191,10000.0,"off the coast of Baja California Sur, Mexico",usp000c1fm
+2002-10-03 16:08:29.620000,6.5,mwc,23.324,-108.53,10000.0,Gulf of California,usp000bdqx
+2000-12-08 16:56:18.530000,5.5,mwc,22.706,-107.552,10000.0,"off the coast of Sinaloa, Mexico",usp000a5qs
+1999-07-16 13:45:25.580000,5.3,mwc,23.775,-108.708,10000.0,Gulf of California,usp0009bq6
+1999-03-12 07:07:40.410000,5.3,mwc,22.219,-107.368,10000.0,"off the coast of Sinaloa, Mexico",usp00094by
+1999-01-10 20:36:06.580000,5.2,mwc,22.939,-108.02,33000.0,"off the coast of Baja California Sur, Mexico",usp00090x3
+1998-11-05 14:47:02.870000,5.5,mwc,23.643,-108.787,10000.0,Gulf of California,usp0008xne
+1998-07-07 20:01:35.900000,5.5,mwc,23.714,-108.395,10000.0,Gulf of California,usp0008r4h
+1997-01-12 15:02:18.900000,5.0,mb,23.867,-108.335,23800.0,Gulf of California,usp0007vsz
+1991-01-17 17:22:52.490000,5.3,mw,23.686,-108.877,10000.0,Gulf of California,usp0004ktb
+1990-10-25 03:24:09.150000,5.3,mw,23.83,-108.715,10000.0,Gulf of California,usp0004g4q
+1988-08-21 11:15:49.510000,5.6,mw,23.385,-108.379,10000.0,Gulf of California,usp0003k7m
+1988-04-26 01:42:55.600000,5.9,mw,22.913,-108.023,10000.0,"off the coast of Baja California Sur, Mexico",usp0003fcp
+1987-08-21 23:00:52.840000,5.5,mw,23.893,-108.738,10000.0,Gulf of California,usp00037q7
+1986-09-25 06:15:54.830000,6.0,mw,23.032,-108.061,10000.0,Gulf of California,usp0002yc2
+1975-06-14 02:25:59,5.2,mb,23.059,-108.038,33000.0,Gulf of California,usp0000bhe
+1971-01-19 03:16:56,6.0,mw,23.757,-108.692,35000.0,Gulf of California,iscgem788372
+1969-11-01 11:08:24,6.6,mw,23.148,-107.988,10000.0,Gulf of California,iscgem801757
+1952-03-05 15:46:10,6.4,mw,23.662,-108.76,10000.0,Gulf of California,iscgem892574
+1952-02-17 17:36:02,5.8,mw,23.337,-107.952,20000.0,Gulf of California,iscgem892496
+1952-02-17 17:28:59,5.8,mw,23.841,-108.014,20000.0,Gulf of California,iscgem892495
+1951-08-20 05:49:59,5.7,mw,23.003,-108.586,15000.0,Gulf of California,iscgem894633
+1950-10-31 20:22:32,5.9,mw,23.158,-108.277,15000.0,Gulf of California,iscgem896011

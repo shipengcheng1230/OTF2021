@@ -369,7 +369,8 @@ def optimize(fa):
                 if (not visited[k]) and (k not in queueSet):
                     if relocateOneWay:
                         B, C = G.adj[n][k]['B'], G.adj[n][k]['C']
-                        C = C if IDTimePair[n] < IDTimePair[k] else C + 180.0  # only change `B` or `C`, not both
+                        # all pairs id1 is more recent than id2
+                        C = C if IDTimePair[n] > IDTimePair[k] else C + 180.0  # only change `B` or `C`, not both
                         lat1, lon1 = G.nodes.data(
                             'lat')[n], G.nodes.data('lon')[n]
                         lon2, lat2, _ = geod.fwd(lon1, lat1, C, B*1e3)
@@ -436,7 +437,8 @@ def optimize(fa):
             dBs = np.array([G.adj[node][k]['dB'] for k in ks])
             dCs = np.array([G.adj[node][k]['dC'] for k in ks])
             for i, k in enumerate(ks):
-                if IDTimePair2[node] > IDTimePair2[k]:  # correction for direction
+                # all pairs id1 is more recent than id2
+                if IDTimePair2[node] < IDTimePair2[k]:  # correction for direction
                     Cs[i] += 180.0
                 if Bs[i] < 0:  # correction for negative distance
                     Bs[i] *= -1
@@ -456,7 +458,7 @@ def optimize(fa):
                 optimizeNodeLocation(Q.popleft())
         return G
 
-    def optimizeLocation(G, relocateTwoWay=True, relocateTwoWayIter=8, relocateGlobal=True):
+    def optimizeLocation(G, relocateTwoWay=True, relocateTwoWayIter=5, relocateGlobal=True):
         if relocateTwoWay:
             for _ in range(relocateTwoWayIter):
                 traverseOptimizeGraph(G)
@@ -475,7 +477,7 @@ def optimize(fa):
 
         for gid in uniqueGroupID:
             es = [x for x in G.edges if data[x[0]]['group'] == gid]
-            es.sort(key=lambda x: (IDTimePair[x[1]], IDTimePair[x[0]]), reverse=True)
+            es.sort(key=lambda x: (IDTimePair[x[0]], IDTimePair[x[1]]), reverse=True)
             pks = list(set(itertools.chain(*es)))
             pks.sort(key=lambda x: IDTimePair[x], reverse=True)
             id2t = {k: IDTimePair[k] for k in pks}
@@ -525,7 +527,7 @@ def optimize(fa):
                 x = opt.optimize(u0)
 
             for e in es:
-                _add_link_content(linkContent, G, e, x, key2id, geod)
+                _add_link_content(linkContent, G, e, x, key2id, geod, IDTimePair)
 
         pd.DataFrame(linkContent).to_csv(os.path.join(
             fa.dir, "catalog-link.csv"), index=False)
@@ -546,9 +548,13 @@ def optimize(fa):
         pd.DataFrame(content).drop_duplicates(subset=['id'], keep='last').sort_values(
             by="time").to_csv(os.path.join(fa.dir, "catalog-relocated.csv"), index=False)
 
-    def _add_link_content(linkContent, G, e, sol, key2id, geod):
+    def _add_link_content(linkContent, G, e, sol, key2id, geod, IDTimePair):
         # repeated code
+        # all pairs id1 is more recent than id2
+        if IDTimePair[e[0]] < IDTimePair[e[1]]:
+            e = (e[1], e[0])
         id1, id2 = key2id[e[0]], key2id[e[1]]
+
         lat1, lon1 = sol[2*id1], sol[2*id1+1]
         lat2, lon2 = sol[2*id2], sol[2*id2+1]
 
@@ -661,9 +667,8 @@ def optimize(fa):
 
 if __name__ == "__main__":
 
-    df2 = dfFaults.loc[dfFaults["Good Bathymetry"] == 1]
+    df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] == 1) | (dfFaults["key"] < 80)]
     names = df2["Name"].to_list()
-
     for name in names:
         print(name)
         f = RelocationProcedure(name.strip())

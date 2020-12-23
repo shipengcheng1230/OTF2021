@@ -1,215 +1,216 @@
 time,mag,magType,lat,lon,dep,text,id
-1952-07-06 06:10:48,5.6,mw,-0.008,-16.685,15000.0,north of Ascension Island,iscgem893113
-1953-02-19 15:17:45,6.4,mw,-0.147,-17.987,15000.0,north of Ascension Island,iscgem891504
-1953-08-14 22:23:59,5.9,mw,-0.792,-20.188,15000.0,central Mid-Atlantic Ridge,iscgem891920
-1954-04-30 23:04:34,6.5,mw,-0.242,-18.669,15000.0,central Mid-Atlantic Ridge,iscgem890586
-1954-06-20 22:07:57,5.7,mw,0.09,-17.84,15000.0,north of Ascension Island,iscgem890775
-1954-08-06 16:19:50,5.9,mw,-1.297,-23.507,15000.0,central Mid-Atlantic Ridge,iscgem890935
-1956-09-20 23:03:09,6.0,mw,-1.291,-24.021,15000.0,central Mid-Atlantic Ridge,iscgem888712
-1958-09-03 03:44:27,6.2,mw,-0.068,-17.816,15000.0,north of Ascension Island,iscgem885091
-1959-06-07 13:39:42,5.8,mw,-0.119,-17.711,15000.0,north of Ascension Island,iscgem882194
-1959-09-04 18:26:44,5.8,mw,-1.329,-23.849,15000.0,central Mid-Atlantic Ridge,iscgem882814
-1961-02-18 17:02:10,5.6,mw,-1.518,-15.902,10000.0,north of Ascension Island,iscgem876144
-1961-05-06 19:38:07,5.8,mw,-1.518,-15.362,15000.0,north of Ascension Island,iscgem876528
-1962-02-04 21:29:36,6.0,mw,-0.68,-20.152,15000.0,central Mid-Atlantic Ridge,iscgem874198
-1962-03-26 12:04:56,5.8,mw,-0.503,-19.609,15000.0,central Mid-Atlantic Ridge,iscgem874425
-1963-07-08 11:05:04,5.6,mw,-0.062,-17.929,15000.0,north of Ascension Island,iscgem872683
-1964-01-27 01:12:21,5.6,mw,-0.058,-17.863,10000.0,north of Ascension Island,iscgem871534
-1964-09-28 05:04:54,5.6,mw,-1.38,-24.048,20000.0,central Mid-Atlantic Ridge,iscgem864726
-1965-08-16 12:36:22,6.2,mw,-0.53,-19.951,15000.0,central Mid-Atlantic Ridge,iscgem854661
-1965-11-15 11:18:50,6.1,mw,-0.224,-18.645,10000.0,central Mid-Atlantic Ridge,iscgem852463
-1966-10-19 08:01:34,7.0,mw,-1.571,-15.611,15000.0,north of Ascension Island,iscgem842636
-1967-01-24 09:29:11,6.5,mw,-0.922,-21.081,10000.0,central Mid-Atlantic Ridge,iscgem840094
-1970-12-25 12:53:36,5.9,mw,-0.394,-19.24,15000.0,central Mid-Atlantic Ridge,iscgem789478
-1971-08-05 01:58:53,6.9,mw,-0.773,-22.082,20000.0,central Mid-Atlantic Ridge,iscgem780929
-1973-07-29 01:14:17.300000,5.2,mb,-1.097,-24.679,33000.0,central Mid-Atlantic Ridge,usp00002wu
-1973-08-28 15:01:59.100000,6.8,ms,-0.189,-18.027,33000.0,central Mid-Atlantic Ridge,usp000038s
-1973-11-15 06:05:57.400000,5.2,mb,-1.361,-15.935,33000.0,north of Ascension Island,usp000045m
-1973-11-15 15:06:35.500000,5.5,mb,-1.374,-15.791,33000.0,north of Ascension Island,usp000045r
-1974-01-06 14:32:39.900000,5.3,mb,-1.503,-15.525,33000.0,north of Ascension Island,usp00004ua
-1974-03-23 21:40:34.800000,5.3,ms,0.345,-24.667,33000.0,central Mid-Atlantic Ridge,usp00005qm
-1974-08-12 14:17:05.100000,5.0,mb,-0.021,-16.463,33000.0,north of Ascension Island,usp00007k8
-1974-10-23 11:46:56,5.1,ms,-1.008,-15.968,33000.0,north of Ascension Island,usp00008hv
-1975-01-07 08:31:14.700000,5.0,mb,-0.871,-15.952,33000.0,north of Ascension Island,usp00009e0
-1975-10-13 11:57:40.200000,5.0,mb,-0.916,-22.052,33000.0,central Mid-Atlantic Ridge,usp0000d4j
-1976-08-16 02:27:38.600000,5.2,mb,-0.778,-16.046,25000.0,north of Ascension Island,usp0000hv2
-1977-01-31 02:16:57.300000,5.0,mb,-1.249,-23.528,33000.0,central Mid-Atlantic Ridge,usp0000mdy
-1978-03-19 18:43:40.800000,5.4,mb,-1.481,-15.611,33000.0,north of Ascension Island,usp0000tfu
-1979-02-22 18:30:58.400000,5.6,ms,-0.161,-17.72,10000.0,north of Ascension Island,usp0000yyx
-1979-06-28 04:14:43.900000,5.6,mb,0.384,-24.966,10000.0,central Mid-Atlantic Ridge,usp00011ka
-1980-01-22 04:06:45.400000,5.0,mb,-1.444,-15.596,10000.0,north of Ascension Island,usp000153m
-1980-10-27 08:46:40.800000,5.5,mb,-0.146,-24.85,10000.0,central Mid-Atlantic Ridge,usp0001ah2
-1981-03-03 09:21:06.880000,5.0,mb,-0.415,-19.778,10000.0,central Mid-Atlantic Ridge,usp0001cga
-1981-03-08 08:43:45.440000,5.3,ms,-0.159,-24.82,10000.0,central Mid-Atlantic Ridge,usp0001ckk
-1981-03-08 13:35:43.880000,5.1,ms,-0.205,-24.586,10000.0,central Mid-Atlantic Ridge,usp0001cku
-1981-07-07 21:10:57.780000,6.4,ms,-0.166,-18.837,10000.0,central Mid-Atlantic Ridge,usp0001ejv
-1981-09-22 06:29:22.360000,5.0,mb,-1.142,-24.496,10000.0,central Mid-Atlantic Ridge,usp0001g1e
-1981-10-16 15:43:20.160000,5.5,ms,-0.2,-16.512,10000.0,north of Ascension Island,usp0001ggd
-1982-01-03 14:09:50.450000,6.5,ms,-0.972,-21.87,10000.0,central Mid-Atlantic Ridge,usp0001hvb
-1982-01-05 13:44:43.570000,5.2,mb,-0.895,-21.925,10000.0,central Mid-Atlantic Ridge,usp0001hwe
-1982-05-26 20:04:04.890000,5.0,ms,-0.322,-19.332,10000.0,central Mid-Atlantic Ridge,usp0001mj4
-1982-08-12 08:41:49.310000,5.6,ms,-1.568,-24.291,10000.0,central Mid-Atlantic Ridge,usp0001nzy
-1982-08-30 08:39:25.240000,5.0,mb,0.002,-17.599,10000.0,north of Ascension Island,usp0001paz
-1982-08-30 11:20:22.470000,5.1,ms,-0.033,-17.697,10000.0,north of Ascension Island,usp0001pb3
-1982-10-01 05:35:47.360000,5.0,ms,-1.635,-15.609,10000.0,north of Ascension Island,usp0001pyb
-1982-12-02 03:20:13.950000,5.2,mb,-1.204,-23.75,10000.0,central Mid-Atlantic Ridge,usp0001r7y
-1983-09-08 20:36:12.870000,5.0,mb,0.175,-16.961,10000.0,north of Ascension Island,usp0001y73
-1983-09-25 18:41:17.040000,5.1,mb,-1.102,-24.42,10000.0,central Mid-Atlantic Ridge,usp0001ynt
-1983-10-13 13:06:38.220000,5.6,mb,-0.854,-21.816,10000.0,central Mid-Atlantic Ridge,usp0001yz7
-1983-11-22 05:31:24.580000,5.0,mb,-1.32,-15.827,10000.0,north of Ascension Island,usp0001zzg
-1983-12-21 07:09:08.160000,5.0,mb,-0.055,-17.873,10000.0,north of Ascension Island,usp00020p6
-1984-04-22 06:14:21.580000,6.2,mw,-0.541,-19.857,10000.0,central Mid-Atlantic Ridge,usp00023sd
-1984-10-09 11:23:12.550000,5.4,mw,-0.556,-19.787,10000.0,central Mid-Atlantic Ridge,usp0002814
-1984-12-08 12:24:41.430000,5.9,mw,-1.068,-23.454,10000.0,central Mid-Atlantic Ridge,usp00029vv
-1985-06-04 12:06:03.770000,5.7,mw,-0.379,-19.541,10000.0,central Mid-Atlantic Ridge,usp0002fh5
-1985-07-18 22:35:52.890000,5.0,mb,0.22,-16.795,10000.0,north of Ascension Island,usp0002gwe
-1986-06-24 06:56:54.590000,6.4,mw,-0.085,-17.824,21600.0,north of Ascension Island,usp0002vbx
-1986-07-05 10:22:09.150000,5.0,mb,-0.394,-16.127,10000.0,north of Ascension Island,usp0002vqs
-1986-08-11 19:43:13.180000,5.3,mw,-0.075,-17.852,10000.0,north of Ascension Island,usp0002x26
-1986-12-29 12:39:19.410000,5.4,mw,-0.592,-19.835,10000.0,central Mid-Atlantic Ridge,usp000318g
-1987-02-01 06:56:01.350000,5.6,mw,-0.114,-17.789,10000.0,north of Ascension Island,usp000323b
-1987-03-12 23:10:30.780000,5.5,mw,-0.268,-18.147,10000.0,central Mid-Atlantic Ridge,usp000338b
-1987-05-05 10:50:55.370000,6.2,mw,-0.003,-19.152,10000.0,central Mid-Atlantic Ridge,usp00034ra
-1987-06-07 14:48:49.990000,5.8,mw,-0.378,-19.076,10000.0,central Mid-Atlantic Ridge,usp00035m4
-1988-08-27 16:52:24,5.5,mwc,0.89,-20.99,10000.0,central Mid-Atlantic Ridge,gcmtb082788d
-1988-08-27 16:52:24.550000,5.5,mw,-0.941,-20.93,10000.0,central Mid-Atlantic Ridge,usp0003kez
-1988-09-08 20:14:47,5.2,mw,-0.831,-22.291,10000.0,central Mid-Atlantic Ridge,usp0003kte
-1989-02-04 15:51:52.330000,5.8,mw,0.082,-16.658,10000.0,north of Ascension Island,usp0003rhy
-1989-06-17 20:47:14.620000,5.5,mw,-1.437,-24.169,10000.0,central Mid-Atlantic Ridge,usp0003wcd
-1989-07-09 09:46:39.620000,5.7,mw,-1.577,-15.548,10000.0,north of Ascension Island,usp0003x5d
-1989-07-14 15:43:18.130000,5.8,mw,-1.472,-15.546,10000.0,north of Ascension Island,usp0003xaq
-1989-08-31 11:04:58.680000,5.5,mw,-0.174,-17.801,10000.0,north of Ascension Island,usp0003z38
-1989-09-02 18:09:58.630000,5.4,ms,0.08,-24.866,10000.0,central Mid-Atlantic Ridge,usp0003z5k
-1989-09-02 22:00:26.990000,5.0,mb,0.175,-24.858,10000.0,central Mid-Atlantic Ridge,usp0003z5q
-1989-11-15 04:00:40.670000,5.5,mw,-0.584,-19.985,10000.0,central Mid-Atlantic Ridge,usp000421t
-1989-11-15 04:15:57.070000,5.2,mb,-0.495,-19.808,10000.0,central Mid-Atlantic Ridge,usp000421u
-1989-11-21 20:36:19.120000,5.7,mw,-0.64,-19.79,10000.0,central Mid-Atlantic Ridge,usp000429w
-1989-11-22 05:46:32.460000,5.4,mw,-0.56,-19.714,10000.0,central Mid-Atlantic Ridge,usp00042aa
-1989-11-25 12:11:14.090000,5.3,mw,-0.603,-19.774,10000.0,central Mid-Atlantic Ridge,usp00042dw
-1990-06-07 23:40:25.310000,5.6,mw,-1.211,-24.419,10000.0,central Mid-Atlantic Ridge,usp0004a8b
-1990-07-14 05:54:25.490000,6.6,mw,0.003,-17.376,11100.0,north of Ascension Island,usp0004bu4
-1990-07-14 07:24:39.680000,5.7,mw,-0.074,-17.523,11700.0,north of Ascension Island,usp0004bu7
-1990-11-13 20:13:29.380000,5.0,mb,-0.062,-16.671,10000.0,north of Ascension Island,usp0004gw8
-1992-07-25 09:12:19.150000,5.6,mw,0.461,-25.105,10000.0,central Mid-Atlantic Ridge,usp0005bf0
-1992-10-09 09:34:51,5.3,mw,-0.936,-15.966,10000.0,north of Ascension Island,usp0005f40
-1992-11-04 20:31:04.050000,5.0,mb,-0.59,-17.466,10000.0,north of Ascension Island,usp0005ga2
-1992-12-26 19:52:24.900000,6.8,mw,-0.564,-19.318,27100.0,central Mid-Atlantic Ridge,usp0005jwt
-1993-01-07 07:42:26.330000,5.7,mw,0.136,-16.972,10000.0,north of Ascension Island,usp0005kdm
-1993-02-04 18:04:28.010000,5.5,mw,-1.286,-24.277,10000.0,central Mid-Atlantic Ridge,usp0005mmr
-1993-02-18 10:10:48.460000,6.3,mw,-0.457,-19.454,10000.0,central Mid-Atlantic Ridge,usp0005n9a
-1993-06-17 22:37:58.910000,5.3,mb,-0.097,-16.614,10000.0,north of Ascension Island,usp0005urj
-1993-07-21 00:30:16.920000,5.5,mb,-0.087,-16.71,10000.0,north of Ascension Island,usp0005x2k
-1993-09-04 04:35:01.360000,5.1,mb,-0.059,-16.587,10000.0,north of Ascension Island,usp0005zqm
-1993-09-18 13:22:56.640000,5.2,mb,0.247,-16.228,10000.0,north of Ascension Island,usp00060k6
-1993-09-21 13:09:08.510000,5.4,mb,0.356,-16.394,10000.0,north of Ascension Island,usp00060sj
-1994-03-14 04:30:07.660000,6.0,mb,-1.083,-23.929,10000.0,central Mid-Atlantic Ridge,usp00069pf
-1994-03-14 04:30:15.750000,7.0,mw,-1.278,-23.569,10000.0,central Mid-Atlantic Ridge,usp00069pg
-1994-05-17 20:00:40.080000,5.4,mb,-0.134,-16.608,10000.0,north of Ascension Island,usp0006cqq
-1994-05-25 14:31:22.650000,5.2,mb,-0.259,-16.461,10000.0,north of Ascension Island,usp0006d3s
-1994-08-29 17:36:20.810000,5.8,mw,-0.404,-19.172,10000.0,central Mid-Atlantic Ridge,usp0006hnz
-1994-11-14 11:27:56.190000,5.3,mw,-0.028,-16.935,10000.0,north of Ascension Island,usp0006nmf
-1994-11-22 17:10:24.260000,5.0,mb,-0.23,-16.211,10000.0,north of Ascension Island,usp0006p2k
-1995-05-18 00:06:27.460000,6.8,mw,-0.893,-21.996,12200.0,central Mid-Atlantic Ridge,usp0006xma
-1995-06-07 11:43:14.970000,5.1,mw,-0.308,-15.984,10000.0,north of Ascension Island,usp0006yr1
-1995-07-06 08:07:05.030000,5.2,mw,-1.44,-24.053,10000.0,central Mid-Atlantic Ridge,usp000707h
-1996-01-29 10:27:07.610000,5.1,mw,-0.943,-15.916,22400.0,north of Ascension Island,usp0007bxy
-1996-11-01 14:38:04.660000,5.2,mwc,-0.233,-18.01,10000.0,central Mid-Atlantic Ridge,usp0007s95
-1996-11-28 21:25:58.850000,6.3,mwc,-1.222,-24.17,10000.0,central Mid-Atlantic Ridge,usp0007tpr
-1997-05-16 17:50:09.650000,5.2,mwc,-0.029,-16.734,10000.0,north of Ascension Island,usp00082cx
-1997-05-21 20:23:01.090000,5.4,mwc,0.015,-16.759,10000.0,north of Ascension Island,usp00082n6
-1997-09-01 12:36:29.560000,5.6,mwc,-1.59,-15.572,10000.0,north of Ascension Island,usp000870d
-1997-09-01 22:59:28.610000,5.5,mwc,0.027,-16.806,10000.0,north of Ascension Island,usp000870z
-1997-09-26 14:00:05.830000,5.5,mwc,0.124,-16.923,10000.0,north of Ascension Island,usp0008826
-1997-11-10 12:47:33.970000,5.6,mwc,0.05,-16.893,10000.0,north of Ascension Island,usp0008ady
-1998-01-19 12:30:06.160000,5.7,mwc,-0.653,-20.109,10000.0,central Mid-Atlantic Ridge,usp0008emz
-1998-03-29 07:14:58.980000,6.1,mwc,-0.239,-17.932,10000.0,north of Ascension Island,usp0008j6u
-1998-04-10 16:40:38.580000,6.2,mwb,-1.322,-15.651,10000.0,north of Ascension Island,usp0008jub
-1998-07-09 16:23:41.710000,5.4,ms,-1.368,-15.933,10000.0,north of Ascension Island,usp0008r8c
-1998-07-10 08:20:32.680000,5.0,mwc,-1.328,-15.858,10000.0,north of Ascension Island,usp0008r97
-1998-07-26 03:38:24.590000,5.1,mwc,-0.768,-20.959,10000.0,central Mid-Atlantic Ridge,usp0008s6a
-1999-03-16 14:42:54.360000,5.3,mwc,0.029,-16.807,10000.0,north of Ascension Island,usp00094md
-2000-04-29 15:17:10.220000,5.3,mwc,-1.272,-15.922,10000.0,north of Ascension Island,usp0009s2b
-2000-04-29 15:20:06.670000,5.4,mwc,-1.164,-15.871,10000.0,north of Ascension Island,usp0009s2c
-2000-07-14 05:22:01.750000,5.4,mwc,-0.914,-16.144,10000.0,north of Ascension Island,usp0009wfh
-2000-07-15 03:13:23.040000,5.6,mwc,-0.44,-19.595,10000.0,central Mid-Atlantic Ridge,usp0009wj6
-2000-10-27 09:10:05.130000,5.8,mwc,-1.595,-24.576,10000.0,central Mid-Atlantic Ridge,usp000a2gd
-2001-01-05 11:54:13.680000,5.5,mwc,-0.657,-22.074,10000.0,central Mid-Atlantic Ridge,usp000a75s
-2001-01-24 05:34:32.470000,5.7,mwc,-0.596,-19.863,10000.0,central Mid-Atlantic Ridge,usp000a89r
-2001-11-15 01:03:06.060000,6.3,mwc,-1.587,-15.578,10000.0,north of Ascension Island,usp000asx5
-2002-03-07 07:10:13.500000,5.6,mwc,-1.319,-24.481,10000.0,central Mid-Atlantic Ridge,usp000azvc
-2002-06-12 19:52:47.360000,5.6,mwc,-0.676,-20.722,10000.0,central Mid-Atlantic Ridge,usp000b61s
-2003-06-06 06:59:44.260000,5.0,mb,-0.721,-16.086,10000.0,north of Ascension Island,usp000bz6j
-2003-11-09 19:52:36.820000,6.6,mwc,-0.674,-19.689,10000.0,central Mid-Atlantic Ridge,usp000ccg3
-2003-11-09 22:56:25.550000,5.4,mwc,-0.472,-19.692,10000.0,central Mid-Atlantic Ridge,usp000ccge
-2003-12-21 07:40:45.830000,6.6,mwc,-0.769,-20.601,10000.0,central Mid-Atlantic Ridge,usp000cfqj
-2003-12-23 05:58:37.190000,5.8,mwb,-0.696,-20.33,10000.0,central Mid-Atlantic Ridge,usp000cfuv
-2004-03-03 20:24:44.740000,5.4,mwc,-0.733,-16.131,10000.0,north of Ascension Island,usp000cp0q
-2005-01-12 08:40:03.650000,6.8,mwb,-0.878,-21.194,10000.0,central Mid-Atlantic Ridge,usp000dd5a
-2005-01-29 21:01:09.040000,5.5,mwc,-1.626,-15.516,10000.0,north of Ascension Island,usp000df5r
-2005-03-21 16:14:38.530000,5.4,mwc,-1.056,-24.585,21900.0,central Mid-Atlantic Ridge,usp000djqt
-2005-03-28 00:01:30.510000,5.2,mwc,-0.299,-20.776,10000.0,central Mid-Atlantic Ridge,usp000dk6u
-2006-03-30 03:14:40.740000,5.2,mwc,-1.311,-15.921,10000.0,north of Ascension Island,usp000ed8f
-2006-04-08 22:03:03.920000,5.3,mwc,-0.253,-18.142,10000.0,central Mid-Atlantic Ridge,usp000edz9
-2006-10-31 06:42:41.140000,5.0,mwc,-1.118,-24.698,10000.0,central Mid-Atlantic Ridge,usp000ewbx
-2006-11-05 10:05:28.880000,5.1,mwc,-0.962,-23.563,10000.0,central Mid-Atlantic Ridge,usp000ewp0
-2006-12-03 08:19:51.310000,5.6,mwc,-0.538,-19.738,10000.0,central Mid-Atlantic Ridge,usp000eze2
-2007-07-31 22:55:31.120000,6.2,mwc,-0.162,-17.795,11000.0,north of Ascension Island,usp000fhjf
-2007-08-20 12:37:06.660000,5.7,mwc,-0.256,-18.175,10000.0,central Mid-Atlantic Ridge,usp000fk9h
-2008-04-24 12:14:49.920000,6.5,mwc,-1.182,-23.471,10000.0,central Mid-Atlantic Ridge,usp000g4r4
-2008-05-24 13:21:29.890000,5.1,mwc,-0.304,-18.813,10000.0,central Mid-Atlantic Ridge,usp000g7nc
-2008-07-27 21:15:42.400000,5.9,mwc,-0.253,-18.287,17000.0,central Mid-Atlantic Ridge,usp000gd9j
-2008-08-11 23:38:38.310000,6.0,mwc,-1.02,-21.843,13000.0,central Mid-Atlantic Ridge,usp000gef7
-2008-08-12 00:49:03.620000,5.3,mwc,-0.99,-22.05,10000.0,central Mid-Atlantic Ridge,usp000geff
-2008-08-28 15:22:18.940000,5.2,mb,-0.134,-17.626,10000.0,north of Ascension Island,usp000gfux
-2008-08-28 15:22:23.200000,6.3,mwc,-0.252,-17.358,12000.0,north of Ascension Island,usp000gfuy
-2008-10-21 23:04:36.460000,5.1,mwc,0.071,-17.574,10000.0,north of Ascension Island,usp000gks8
-2009-02-24 00:46:40.420000,5.2,mwc,-0.255,-18.315,10000.0,central Mid-Atlantic Ridge,usp000guaz
-2009-06-24 11:12:21.970000,5.3,mwc,0.175,-16.878,10000.0,north of Ascension Island,usp000gyj9
-2009-11-20 19:31:26.110000,5.5,mwc,-0.18,-18.002,5000.0,central Mid-Atlantic Ridge,usp000h48r
-2009-12-09 16:00:43.330000,6.4,mwc,-0.642,-21.072,10000.0,central Mid-Atlantic Ridge,usp000h4wq
-2010-02-02 06:45:06.070000,5.1,mb,-0.343,-16.109,10000.0,north of Ascension Island,usp000h6vf
-2010-03-26 09:36:56.790000,5.0,mwc,-1.279,-15.833,10000.0,north of Ascension Island,usp000h9zz
-2010-07-31 11:36:56.590000,5.5,mwc,-0.763,-16.025,10000.0,north of Ascension Island,usp000hh7q
-2010-09-18 11:17:19.290000,5.0,mwc,-0.478,-19.613,10000.0,central Mid-Atlantic Ridge,usp000hkwh
-2010-10-28 21:41:14.050000,5.1,mwc,-0.456,-19.984,10000.0,central Mid-Atlantic Ridge,usp000hnqm
-2010-11-14 11:21:43.070000,5.3,mwc,-0.158,-18.102,10000.0,central Mid-Atlantic Ridge,usp000hpk8
-2011-02-12 02:53:15.100000,5.7,mwc,0.079,-17.018,10000.0,north of Ascension Island,usp000huda
-2011-02-15 21:59:02.520000,5.4,mwc,-0.042,-17.927,10000.0,north of Ascension Island,usp000huk0
-2011-11-29 00:30:29.120000,5.9,mww,-1.602,-15.45,10000.0,north of Ascension Island,usp000jbjx
-2012-08-16 14:14:30.900000,5.1,mb,-0.269,-18.759,10000.0,central Mid-Atlantic Ridge,usp000jqcv
-2012-08-17 00:12:10.390000,5.2,mb,-0.353,-18.707,10000.0,central Mid-Atlantic Ridge,usp000jqdb
-2013-01-12 21:50:17.480000,5.1,mwb,0.002,-17.057,10000.0,north of Ascension Island,usp000jyb7
-2013-07-22 22:15:10.220000,5.2,mb,-1.298,-15.989,9900.0,North of Ascension Island,usb000ikb1
-2013-07-22 22:19:05.280000,5.3,mb,-1.254,-15.975,9800.0,North of Ascension Island,usb000ikba
-2013-07-22 22:51:03.070000,5.1,mb,-1.251,-15.783,9900.0,North of Ascension Island,usb000ikd7
-2014-01-06 16:02:11.340000,5.1,mb,-1.1161,-23.5957,10000.0,Central Mid-Atlantic Ridge,usc000lxr3
-2014-03-29 07:46:50.190000,5.9,mww,-0.848,-21.9196,12000.0,Central Mid-Atlantic Ridge,usc000nvs8
-2014-04-11 21:22:30.780000,5.0,mb,-1.1769,-24.349,10000.0,Central Mid-Atlantic Ridge,usc000pgxb
-2014-06-30 01:46:22.940000,5.6,mww,0.0541,-17.3427,10000.0,North of Ascension Island,usb000rz1n
-2014-12-27 22:31:18.340000,5.3,mb,-0.6519,-20.7392,10000.0,Central Mid-Atlantic Ridge,usc000tab8
-2015-02-09 07:59:31.550000,5.3,mb,0.203,-17.1288,10000.0,North of Ascension Island,usc000tnbc
-2015-07-23 03:56:53.370000,5.5,mwb,-0.6942,-21.1776,8550.0,Central Mid-Atlantic Ridge,us20002zfa
-2015-11-24 20:45:02.330000,5.5,mwb,-0.0981,-17.834,10000.0,North of Ascension Island,us100040uv
-2015-12-18 11:46:48.270000,5.4,mww,-1.3395,-15.8313,10000.0,North of Ascension Island,us1000483e
-2015-12-28 19:24:15.480000,5.1,mb,-0.5089,-19.9606,10000.0,Central Mid-Atlantic Ridge,us10004a4l
-2016-01-07 10:50:31.440000,5.1,mb,-1.0801,-15.9516,10000.0,North of Ascension Island,us10004c2p
-2016-05-07 16:07:08.190000,5.2,mb,-0.2723,-18.94,10000.0,Central Mid-Atlantic Ridge,us10005fr3
-2016-07-26 05:49:19.100000,5.9,mwb,-0.2711,-18.6431,10000.0,Central Mid-Atlantic Ridge,us20006hnx
-2016-08-23 17:47:43.930000,5.0,mb,-1.2451,-15.8358,10000.0,North of Ascension Island,us10006g1c
-2016-08-29 04:29:57.860000,7.1,mww,-0.0456,-17.8255,10000.0,North of Ascension Island,us20006uy6
-2016-08-29 08:20:36.620000,5.0,mb,-0.1168,-17.9729,10000.0,North of Ascension Island,us20006uzv
-2016-09-28 22:12:13.030000,5.0,mb,0.0238,-17.8172,10000.0,North of Ascension Island,us10006tn0
-2016-10-27 01:03:12.310000,5.6,mww,-1.5056,-15.5911,10000.0,North of Ascension Island,us10007287
-2017-01-26 21:49:21.150000,5.0,mb,-0.1163,-18.6235,10000.0,Central Mid-Atlantic Ridge,us20008iqr
-2017-11-30 06:32:50.760000,6.5,mww,-1.0802,-23.4323,10000.0,Central Mid-Atlantic Ridge,us1000bj7t
-2018-02-15 08:27:22.040000,5.6,mww,-0.0684,-17.8411,10000.0,North of Ascension Island,us2000d2jg
-2018-02-20 00:53:04.240000,5.3,mww,-0.3455,-19.8656,10000.0,Central Mid-Atlantic Ridge,us2000d51n
-2018-06-19 00:04:02.180000,5.0,mb,-0.1585,-18.332,10000.0,Central Mid-Atlantic Ridge,us1000euzx
-2018-07-11 05:47:26.980000,5.3,mww,-1.4908,-15.4351,10000.0,North of Ascension Island,us2000g1xx
-2018-07-23 10:35:59.590000,6.0,mww,-0.2994,-19.252,10000.0,Central Mid-Atlantic Ridge,us2000gbr3
-2018-08-03 18:50:53.890000,5.8,mww,-0.8711,-21.9958,10000.0,Central Mid-Atlantic Ridge,us1000g2vt
-2019-07-10 21:43:48.887000,5.2,mww,0.0107,-16.9632,10000.0,North of Ascension Island,us70004hcq
-2020-01-06 01:29:20.741000,5.6,mww,0.231,-16.9866,10000.0,North of Ascension Island,us70006v42
-2020-01-16 09:58:19.100000,5.6,mww,0.1168,-17.09,10000.0,North of Ascension Island,us700070uj
-2020-03-10 07:20:58.662000,5.0,mb,-0.6018,-20.7191,10000.0,Central Mid-Atlantic Ridge,us60008d2b
+2020-09-24 00:27:49.022000,5.8,mww,-0.2363,-18.8067,10000.0,central Mid-Atlantic Ridge,us6000c0cs
 2020-03-22 20:43:08.126000,5.6,mww,-0.705,-21.1768,10000.0,Central Mid-Atlantic Ridge,us70008e74
+2020-03-10 07:20:58.662000,5.0,mb,-0.6018,-20.7191,10000.0,Central Mid-Atlantic Ridge,us60008d2b
+2020-01-16 09:58:19.100000,5.6,mww,0.1168,-17.09,10000.0,North of Ascension Island,us700070uj
+2020-01-06 01:29:20.741000,5.6,mww,0.231,-16.9866,10000.0,North of Ascension Island,us70006v42
+2019-07-10 21:43:48.887000,5.2,mww,0.0107,-16.9632,10000.0,North of Ascension Island,us70004hcq
+2018-08-03 18:50:53.890000,5.8,mww,-0.8711,-21.9958,10000.0,Central Mid-Atlantic Ridge,us1000g2vt
+2018-07-23 10:35:59.590000,6.0,mww,-0.2994,-19.252,10000.0,Central Mid-Atlantic Ridge,us2000gbr3
+2018-07-11 05:47:26.980000,5.3,mww,-1.4908,-15.4351,10000.0,North of Ascension Island,us2000g1xx
+2018-06-19 00:04:02.180000,5.0,mb,-0.1585,-18.332,10000.0,Central Mid-Atlantic Ridge,us1000euzx
+2018-02-20 00:53:04.240000,5.3,mww,-0.3455,-19.8656,10000.0,Central Mid-Atlantic Ridge,us2000d51n
+2018-02-15 08:27:22.040000,5.6,mww,-0.0684,-17.8411,10000.0,North of Ascension Island,us2000d2jg
+2017-11-30 06:32:50.760000,6.5,mww,-1.0802,-23.4323,10000.0,Central Mid-Atlantic Ridge,us1000bj7t
+2017-01-26 21:49:21.150000,5.0,mb,-0.1163,-18.6235,10000.0,Central Mid-Atlantic Ridge,us20008iqr
+2016-10-27 01:03:12.310000,5.6,mww,-1.5056,-15.5911,10000.0,North of Ascension Island,us10007287
+2016-09-28 22:12:13.030000,5.0,mb,0.0238,-17.8172,10000.0,North of Ascension Island,us10006tn0
+2016-08-29 08:20:36.620000,5.0,mb,-0.1168,-17.9729,10000.0,North of Ascension Island,us20006uzv
+2016-08-29 04:29:57.860000,7.1,mww,-0.0456,-17.8255,10000.0,North of Ascension Island,us20006uy6
+2016-08-23 17:47:43.930000,5.0,mb,-1.2451,-15.8358,10000.0,North of Ascension Island,us10006g1c
+2016-07-26 05:49:19.100000,5.9,mwb,-0.2711,-18.6431,10000.0,Central Mid-Atlantic Ridge,us20006hnx
+2016-05-07 16:07:08.190000,5.2,mb,-0.2723,-18.94,10000.0,Central Mid-Atlantic Ridge,us10005fr3
+2016-01-07 10:50:31.440000,5.1,mb,-1.0801,-15.9516,10000.0,North of Ascension Island,us10004c2p
+2015-12-28 19:24:15.480000,5.1,mb,-0.5089,-19.9606,10000.0,Central Mid-Atlantic Ridge,us10004a4l
+2015-12-18 11:46:48.270000,5.4,mww,-1.3395,-15.8313,10000.0,North of Ascension Island,us1000483e
+2015-11-24 20:45:02.330000,5.5,mwb,-0.0981,-17.834,10000.0,North of Ascension Island,us100040uv
+2015-07-23 03:56:53.370000,5.5,mwb,-0.6942,-21.1776,8550.0,Central Mid-Atlantic Ridge,us20002zfa
+2015-02-09 07:59:31.550000,5.3,mb,0.203,-17.1288,10000.0,North of Ascension Island,usc000tnbc
+2014-12-27 22:31:18.340000,5.3,mb,-0.6519,-20.7392,10000.0,Central Mid-Atlantic Ridge,usc000tab8
+2014-06-30 01:46:22.940000,5.6,mww,0.0541,-17.3427,10000.0,North of Ascension Island,usb000rz1n
+2014-04-11 21:22:30.780000,5.0,mb,-1.1769,-24.349,10000.0,Central Mid-Atlantic Ridge,usc000pgxb
+2014-03-29 07:46:50.190000,5.9,mww,-0.848,-21.9196,12000.0,Central Mid-Atlantic Ridge,usc000nvs8
+2014-01-06 16:02:11.340000,5.1,mb,-1.1161,-23.5957,10000.0,Central Mid-Atlantic Ridge,usc000lxr3
+2013-07-22 22:51:03.070000,5.1,mb,-1.251,-15.783,9900.0,North of Ascension Island,usb000ikd7
+2013-07-22 22:19:05.280000,5.3,mb,-1.254,-15.975,9800.0,North of Ascension Island,usb000ikba
+2013-07-22 22:15:10.220000,5.2,mb,-1.298,-15.989,9900.0,North of Ascension Island,usb000ikb1
+2013-01-12 21:50:17.480000,5.1,mwb,0.002,-17.057,10000.0,north of Ascension Island,usp000jyb7
+2012-08-17 00:12:10.390000,5.2,mb,-0.353,-18.707,10000.0,central Mid-Atlantic Ridge,usp000jqdb
+2012-08-16 14:14:30.900000,5.1,mb,-0.269,-18.759,10000.0,central Mid-Atlantic Ridge,usp000jqcv
+2011-11-29 00:30:29.120000,5.9,mww,-1.602,-15.45,10000.0,north of Ascension Island,usp000jbjx
+2011-02-15 21:59:02.520000,5.4,mwc,-0.042,-17.927,10000.0,north of Ascension Island,usp000huk0
+2011-02-12 02:53:15.100000,5.7,mwc,0.079,-17.018,10000.0,north of Ascension Island,usp000huda
+2010-11-14 11:21:43.070000,5.3,mwc,-0.158,-18.102,10000.0,central Mid-Atlantic Ridge,usp000hpk8
+2010-10-28 21:41:14.050000,5.1,mwc,-0.456,-19.984,10000.0,central Mid-Atlantic Ridge,usp000hnqm
+2010-09-18 11:17:19.290000,5.0,mwc,-0.478,-19.613,10000.0,central Mid-Atlantic Ridge,usp000hkwh
+2010-07-31 11:36:56.590000,5.5,mwc,-0.763,-16.025,10000.0,north of Ascension Island,usp000hh7q
+2010-03-26 09:36:56.790000,5.0,mwc,-1.279,-15.833,10000.0,north of Ascension Island,usp000h9zz
+2010-02-02 06:45:06.070000,5.1,mb,-0.343,-16.109,10000.0,north of Ascension Island,usp000h6vf
+2009-12-09 16:00:43.330000,6.4,mwc,-0.642,-21.072,10000.0,central Mid-Atlantic Ridge,usp000h4wq
+2009-11-20 19:31:26.110000,5.5,mwc,-0.18,-18.002,5000.0,central Mid-Atlantic Ridge,usp000h48r
+2009-06-24 11:12:21.970000,5.3,mwc,0.175,-16.878,10000.0,north of Ascension Island,usp000gyj9
+2009-02-24 00:46:40.420000,5.2,mwc,-0.255,-18.315,10000.0,central Mid-Atlantic Ridge,usp000guaz
+2008-10-21 23:04:36.460000,5.1,mwc,0.071,-17.574,10000.0,north of Ascension Island,usp000gks8
+2008-08-28 15:22:23.200000,6.3,mwc,-0.252,-17.358,12000.0,north of Ascension Island,usp000gfuy
+2008-08-28 15:22:18.940000,5.2,mb,-0.134,-17.626,10000.0,north of Ascension Island,usp000gfux
+2008-08-12 00:49:03.620000,5.3,mwc,-0.99,-22.05,10000.0,central Mid-Atlantic Ridge,usp000geff
+2008-08-11 23:38:38.310000,6.0,mwc,-1.02,-21.843,13000.0,central Mid-Atlantic Ridge,usp000gef7
+2008-07-27 21:15:42.400000,5.9,mwc,-0.253,-18.287,17000.0,central Mid-Atlantic Ridge,usp000gd9j
+2008-05-24 13:21:29.890000,5.1,mwc,-0.304,-18.813,10000.0,central Mid-Atlantic Ridge,usp000g7nc
+2008-04-24 12:14:49.920000,6.5,mwc,-1.182,-23.471,10000.0,central Mid-Atlantic Ridge,usp000g4r4
+2007-08-20 12:37:06.660000,5.7,mwc,-0.256,-18.175,10000.0,central Mid-Atlantic Ridge,usp000fk9h
+2007-07-31 22:55:31.120000,6.2,mwc,-0.162,-17.795,11000.0,north of Ascension Island,usp000fhjf
+2006-12-03 08:19:51.310000,5.6,mwc,-0.538,-19.738,10000.0,central Mid-Atlantic Ridge,usp000eze2
+2006-11-05 10:05:28.880000,5.1,mwc,-0.962,-23.563,10000.0,central Mid-Atlantic Ridge,usp000ewp0
+2006-10-31 06:42:41.140000,5.0,mwc,-1.118,-24.698,10000.0,central Mid-Atlantic Ridge,usp000ewbx
+2006-04-08 22:03:03.920000,5.3,mwc,-0.253,-18.142,10000.0,central Mid-Atlantic Ridge,usp000edz9
+2006-03-30 03:14:40.740000,5.2,mwc,-1.311,-15.921,10000.0,north of Ascension Island,usp000ed8f
+2005-03-28 00:01:30.510000,5.2,mwc,-0.299,-20.776,10000.0,central Mid-Atlantic Ridge,usp000dk6u
+2005-03-21 16:14:38.530000,5.4,mwc,-1.056,-24.585,21900.0,central Mid-Atlantic Ridge,usp000djqt
+2005-01-29 21:01:09.040000,5.5,mwc,-1.626,-15.516,10000.0,north of Ascension Island,usp000df5r
+2005-01-12 08:40:03.650000,6.8,mwb,-0.878,-21.194,10000.0,central Mid-Atlantic Ridge,usp000dd5a
+2004-03-03 20:24:44.740000,5.4,mwc,-0.733,-16.131,10000.0,north of Ascension Island,usp000cp0q
+2003-12-23 05:58:37.190000,5.8,mwb,-0.696,-20.33,10000.0,central Mid-Atlantic Ridge,usp000cfuv
+2003-12-21 07:40:45.830000,6.6,mwc,-0.769,-20.601,10000.0,central Mid-Atlantic Ridge,usp000cfqj
+2003-11-09 22:56:25.550000,5.4,mwc,-0.472,-19.692,10000.0,central Mid-Atlantic Ridge,usp000ccge
+2003-11-09 19:52:36.820000,6.6,mwc,-0.674,-19.689,10000.0,central Mid-Atlantic Ridge,usp000ccg3
+2003-06-06 06:59:44.260000,5.0,mb,-0.721,-16.086,10000.0,north of Ascension Island,usp000bz6j
+2002-06-12 19:52:47.360000,5.6,mwc,-0.676,-20.722,10000.0,central Mid-Atlantic Ridge,usp000b61s
+2002-03-07 07:10:13.500000,5.6,mwc,-1.319,-24.481,10000.0,central Mid-Atlantic Ridge,usp000azvc
+2001-11-15 01:03:06.060000,6.3,mwc,-1.587,-15.578,10000.0,north of Ascension Island,usp000asx5
+2001-01-24 05:34:32.470000,5.7,mwc,-0.596,-19.863,10000.0,central Mid-Atlantic Ridge,usp000a89r
+2001-01-05 11:54:13.680000,5.5,mwc,-0.657,-22.074,10000.0,central Mid-Atlantic Ridge,usp000a75s
+2000-10-27 09:10:05.130000,5.8,mwc,-1.595,-24.576,10000.0,central Mid-Atlantic Ridge,usp000a2gd
+2000-07-15 03:13:23.040000,5.6,mwc,-0.44,-19.595,10000.0,central Mid-Atlantic Ridge,usp0009wj6
+2000-07-14 05:22:01.750000,5.4,mwc,-0.914,-16.144,10000.0,north of Ascension Island,usp0009wfh
+2000-04-29 15:20:06.670000,5.4,mwc,-1.164,-15.871,10000.0,north of Ascension Island,usp0009s2c
+2000-04-29 15:17:10.220000,5.3,mwc,-1.272,-15.922,10000.0,north of Ascension Island,usp0009s2b
+1999-03-16 14:42:54.360000,5.3,mwc,0.029,-16.807,10000.0,north of Ascension Island,usp00094md
+1998-07-26 03:38:24.590000,5.1,mwc,-0.768,-20.959,10000.0,central Mid-Atlantic Ridge,usp0008s6a
+1998-07-10 08:20:32.680000,5.0,mwc,-1.328,-15.858,10000.0,north of Ascension Island,usp0008r97
+1998-07-09 16:23:41.710000,5.4,ms,-1.368,-15.933,10000.0,north of Ascension Island,usp0008r8c
+1998-04-10 16:40:38.580000,6.2,mwb,-1.322,-15.651,10000.0,north of Ascension Island,usp0008jub
+1998-03-29 07:14:58.980000,6.1,mwc,-0.239,-17.932,10000.0,north of Ascension Island,usp0008j6u
+1998-01-19 12:30:06.160000,5.7,mwc,-0.653,-20.109,10000.0,central Mid-Atlantic Ridge,usp0008emz
+1997-11-10 12:47:33.970000,5.6,mwc,0.05,-16.893,10000.0,north of Ascension Island,usp0008ady
+1997-09-26 14:00:05.830000,5.5,mwc,0.124,-16.923,10000.0,north of Ascension Island,usp0008826
+1997-09-01 22:59:28.610000,5.5,mwc,0.027,-16.806,10000.0,north of Ascension Island,usp000870z
+1997-09-01 12:36:29.560000,5.6,mwc,-1.59,-15.572,10000.0,north of Ascension Island,usp000870d
+1997-05-21 20:23:01.090000,5.4,mwc,0.015,-16.759,10000.0,north of Ascension Island,usp00082n6
+1997-05-16 17:50:09.650000,5.2,mwc,-0.029,-16.734,10000.0,north of Ascension Island,usp00082cx
+1996-11-28 21:25:58.850000,6.3,mwc,-1.222,-24.17,10000.0,central Mid-Atlantic Ridge,usp0007tpr
+1996-11-01 14:38:04.660000,5.2,mwc,-0.233,-18.01,10000.0,central Mid-Atlantic Ridge,usp0007s95
+1996-01-29 10:27:07.610000,5.1,mw,-0.943,-15.916,22400.0,north of Ascension Island,usp0007bxy
+1995-07-06 08:07:05.030000,5.2,mw,-1.44,-24.053,10000.0,central Mid-Atlantic Ridge,usp000707h
+1995-06-07 11:43:14.970000,5.1,mw,-0.308,-15.984,10000.0,north of Ascension Island,usp0006yr1
+1995-05-18 00:06:27.460000,6.8,mw,-0.893,-21.996,12200.0,central Mid-Atlantic Ridge,usp0006xma
+1994-11-22 17:10:24.260000,5.0,mb,-0.23,-16.211,10000.0,north of Ascension Island,usp0006p2k
+1994-11-14 11:27:56.190000,5.3,mw,-0.028,-16.935,10000.0,north of Ascension Island,usp0006nmf
+1994-08-29 17:36:20.810000,5.8,mw,-0.404,-19.172,10000.0,central Mid-Atlantic Ridge,usp0006hnz
+1994-05-25 14:31:22.650000,5.2,mb,-0.259,-16.461,10000.0,north of Ascension Island,usp0006d3s
+1994-05-17 20:00:40.080000,5.4,mb,-0.134,-16.608,10000.0,north of Ascension Island,usp0006cqq
+1994-03-14 04:30:15.750000,7.0,mw,-1.278,-23.569,10000.0,central Mid-Atlantic Ridge,usp00069pg
+1994-03-14 04:30:07.660000,6.0,mb,-1.083,-23.929,10000.0,central Mid-Atlantic Ridge,usp00069pf
+1993-09-21 13:09:08.510000,5.4,mb,0.356,-16.394,10000.0,north of Ascension Island,usp00060sj
+1993-09-18 13:22:56.640000,5.2,mb,0.247,-16.228,10000.0,north of Ascension Island,usp00060k6
+1993-09-04 04:35:01.360000,5.1,mb,-0.059,-16.587,10000.0,north of Ascension Island,usp0005zqm
+1993-07-21 00:30:16.920000,5.5,mb,-0.087,-16.71,10000.0,north of Ascension Island,usp0005x2k
+1993-06-17 22:37:58.910000,5.3,mb,-0.097,-16.614,10000.0,north of Ascension Island,usp0005urj
+1993-02-18 10:10:48.460000,6.3,mw,-0.457,-19.454,10000.0,central Mid-Atlantic Ridge,usp0005n9a
+1993-02-04 18:04:28.010000,5.5,mw,-1.286,-24.277,10000.0,central Mid-Atlantic Ridge,usp0005mmr
+1993-01-07 07:42:26.330000,5.7,mw,0.136,-16.972,10000.0,north of Ascension Island,usp0005kdm
+1992-12-26 19:52:24.900000,6.8,mw,-0.564,-19.318,27100.0,central Mid-Atlantic Ridge,usp0005jwt
+1992-11-04 20:31:04.050000,5.0,mb,-0.59,-17.466,10000.0,north of Ascension Island,usp0005ga2
+1992-10-09 09:34:51,5.3,mw,-0.936,-15.966,10000.0,north of Ascension Island,usp0005f40
+1992-07-25 09:12:19.150000,5.6,mw,0.461,-25.105,10000.0,central Mid-Atlantic Ridge,usp0005bf0
+1990-11-13 20:13:29.380000,5.0,mb,-0.062,-16.671,10000.0,north of Ascension Island,usp0004gw8
+1990-07-14 07:24:39.680000,5.7,mw,-0.074,-17.523,11700.0,north of Ascension Island,usp0004bu7
+1990-07-14 05:54:25.490000,6.6,mw,0.003,-17.376,11100.0,north of Ascension Island,usp0004bu4
+1990-06-07 23:40:25.310000,5.6,mw,-1.211,-24.419,10000.0,central Mid-Atlantic Ridge,usp0004a8b
+1989-11-25 12:11:14.090000,5.3,mw,-0.603,-19.774,10000.0,central Mid-Atlantic Ridge,usp00042dw
+1989-11-22 05:46:32.460000,5.4,mw,-0.56,-19.714,10000.0,central Mid-Atlantic Ridge,usp00042aa
+1989-11-21 20:36:19.120000,5.7,mw,-0.64,-19.79,10000.0,central Mid-Atlantic Ridge,usp000429w
+1989-11-15 04:15:57.070000,5.2,mb,-0.495,-19.808,10000.0,central Mid-Atlantic Ridge,usp000421u
+1989-11-15 04:00:40.670000,5.5,mw,-0.584,-19.985,10000.0,central Mid-Atlantic Ridge,usp000421t
+1989-09-02 22:00:26.990000,5.0,mb,0.175,-24.858,10000.0,central Mid-Atlantic Ridge,usp0003z5q
+1989-09-02 18:09:58.630000,5.4,ms,0.08,-24.866,10000.0,central Mid-Atlantic Ridge,usp0003z5k
+1989-08-31 11:04:58.680000,5.5,mw,-0.174,-17.801,10000.0,north of Ascension Island,usp0003z38
+1989-07-14 15:43:18.130000,5.8,mw,-1.472,-15.546,10000.0,north of Ascension Island,usp0003xaq
+1989-07-09 09:46:39.620000,5.7,mw,-1.577,-15.548,10000.0,north of Ascension Island,usp0003x5d
+1989-06-17 20:47:14.620000,5.5,mw,-1.437,-24.169,10000.0,central Mid-Atlantic Ridge,usp0003wcd
+1989-02-04 15:51:52.330000,5.8,mw,0.082,-16.658,10000.0,north of Ascension Island,usp0003rhy
+1988-09-08 20:14:47,5.2,mw,-0.831,-22.291,10000.0,central Mid-Atlantic Ridge,usp0003kte
+1988-08-27 16:52:24.550000,5.5,mw,-0.941,-20.93,10000.0,central Mid-Atlantic Ridge,usp0003kez
+1988-08-27 16:52:24,5.5,mwc,0.89,-20.99,10000.0,central Mid-Atlantic Ridge,gcmtb082788d
+1987-06-07 14:48:49.990000,5.8,mw,-0.378,-19.076,10000.0,central Mid-Atlantic Ridge,usp00035m4
+1987-05-05 10:50:55.370000,6.2,mw,-0.003,-19.152,10000.0,central Mid-Atlantic Ridge,usp00034ra
+1987-03-12 23:10:30.780000,5.5,mw,-0.268,-18.147,10000.0,central Mid-Atlantic Ridge,usp000338b
+1987-02-01 06:56:01.350000,5.6,mw,-0.114,-17.789,10000.0,north of Ascension Island,usp000323b
+1986-12-29 12:39:19.410000,5.4,mw,-0.592,-19.835,10000.0,central Mid-Atlantic Ridge,usp000318g
+1986-08-11 19:43:13.180000,5.3,mw,-0.075,-17.852,10000.0,north of Ascension Island,usp0002x26
+1986-07-05 10:22:09.150000,5.0,mb,-0.394,-16.127,10000.0,north of Ascension Island,usp0002vqs
+1986-06-24 06:56:54.590000,6.4,mw,-0.085,-17.824,21600.0,north of Ascension Island,usp0002vbx
+1985-07-18 22:35:52.890000,5.0,mb,0.22,-16.795,10000.0,north of Ascension Island,usp0002gwe
+1985-06-04 12:06:03.770000,5.7,mw,-0.379,-19.541,10000.0,central Mid-Atlantic Ridge,usp0002fh5
+1984-12-08 12:24:41.430000,5.9,mw,-1.068,-23.454,10000.0,central Mid-Atlantic Ridge,usp00029vv
+1984-10-09 11:23:12.550000,5.4,mw,-0.556,-19.787,10000.0,central Mid-Atlantic Ridge,usp0002814
+1984-04-22 06:14:21.580000,6.2,mw,-0.541,-19.857,10000.0,central Mid-Atlantic Ridge,usp00023sd
+1983-12-21 07:09:08.160000,5.0,mb,-0.055,-17.873,10000.0,north of Ascension Island,usp00020p6
+1983-11-22 05:31:24.580000,5.0,mb,-1.32,-15.827,10000.0,north of Ascension Island,usp0001zzg
+1983-10-13 13:06:38.220000,5.6,mb,-0.854,-21.816,10000.0,central Mid-Atlantic Ridge,usp0001yz7
+1983-09-25 18:41:17.040000,5.1,mb,-1.102,-24.42,10000.0,central Mid-Atlantic Ridge,usp0001ynt
+1983-09-08 20:36:12.870000,5.0,mb,0.175,-16.961,10000.0,north of Ascension Island,usp0001y73
+1982-12-02 03:20:13.950000,5.2,mb,-1.204,-23.75,10000.0,central Mid-Atlantic Ridge,usp0001r7y
+1982-10-01 05:35:47.360000,5.0,ms,-1.635,-15.609,10000.0,north of Ascension Island,usp0001pyb
+1982-08-30 11:20:22.470000,5.1,ms,-0.033,-17.697,10000.0,north of Ascension Island,usp0001pb3
+1982-08-30 08:39:25.240000,5.0,mb,0.002,-17.599,10000.0,north of Ascension Island,usp0001paz
+1982-08-12 08:41:49.310000,5.6,ms,-1.568,-24.291,10000.0,central Mid-Atlantic Ridge,usp0001nzy
+1982-05-26 20:04:04.890000,5.0,ms,-0.322,-19.332,10000.0,central Mid-Atlantic Ridge,usp0001mj4
+1982-01-05 13:44:43.570000,5.2,mb,-0.895,-21.925,10000.0,central Mid-Atlantic Ridge,usp0001hwe
+1982-01-03 14:09:50.450000,6.5,ms,-0.972,-21.87,10000.0,central Mid-Atlantic Ridge,usp0001hvb
+1981-10-16 15:43:20.160000,5.5,ms,-0.2,-16.512,10000.0,north of Ascension Island,usp0001ggd
+1981-09-22 06:29:22.360000,5.0,mb,-1.142,-24.496,10000.0,central Mid-Atlantic Ridge,usp0001g1e
+1981-07-07 21:10:57.780000,6.4,ms,-0.166,-18.837,10000.0,central Mid-Atlantic Ridge,usp0001ejv
+1981-03-08 13:35:43.880000,5.1,ms,-0.205,-24.586,10000.0,central Mid-Atlantic Ridge,usp0001cku
+1981-03-08 08:43:45.440000,5.3,ms,-0.159,-24.82,10000.0,central Mid-Atlantic Ridge,usp0001ckk
+1981-03-03 09:21:06.880000,5.0,mb,-0.415,-19.778,10000.0,central Mid-Atlantic Ridge,usp0001cga
+1980-10-27 08:46:40.800000,5.5,mb,-0.146,-24.85,10000.0,central Mid-Atlantic Ridge,usp0001ah2
+1980-01-22 04:06:45.400000,5.0,mb,-1.444,-15.596,10000.0,north of Ascension Island,usp000153m
+1979-06-28 04:14:43.900000,5.6,mb,0.384,-24.966,10000.0,central Mid-Atlantic Ridge,usp00011ka
+1979-02-22 18:30:58.400000,5.6,ms,-0.161,-17.72,10000.0,north of Ascension Island,usp0000yyx
+1978-03-19 18:43:40.800000,5.4,mb,-1.481,-15.611,33000.0,north of Ascension Island,usp0000tfu
+1977-01-31 02:16:57.300000,5.0,mb,-1.249,-23.528,33000.0,central Mid-Atlantic Ridge,usp0000mdy
+1976-08-16 02:27:38.600000,5.2,mb,-0.778,-16.046,25000.0,north of Ascension Island,usp0000hv2
+1975-10-13 11:57:40.200000,5.0,mb,-0.916,-22.052,33000.0,central Mid-Atlantic Ridge,usp0000d4j
+1975-01-07 08:31:14.700000,5.0,mb,-0.871,-15.952,33000.0,north of Ascension Island,usp00009e0
+1974-10-23 11:46:56,5.1,ms,-1.008,-15.968,33000.0,north of Ascension Island,usp00008hv
+1974-08-12 14:17:05.100000,5.0,mb,-0.021,-16.463,33000.0,north of Ascension Island,usp00007k8
+1974-03-23 21:40:34.800000,5.3,ms,0.345,-24.667,33000.0,central Mid-Atlantic Ridge,usp00005qm
+1974-01-06 14:32:39.900000,5.3,mb,-1.503,-15.525,33000.0,north of Ascension Island,usp00004ua
+1973-11-15 15:06:35.500000,5.5,mb,-1.374,-15.791,33000.0,north of Ascension Island,usp000045r
+1973-11-15 06:05:57.400000,5.2,mb,-1.361,-15.935,33000.0,north of Ascension Island,usp000045m
+1973-08-28 15:01:59.100000,6.8,ms,-0.189,-18.027,33000.0,central Mid-Atlantic Ridge,usp000038s
+1973-07-29 01:14:17.300000,5.2,mb,-1.097,-24.679,33000.0,central Mid-Atlantic Ridge,usp00002wu
+1971-08-05 01:58:53,6.9,mw,-0.773,-22.082,20000.0,central Mid-Atlantic Ridge,iscgem780929
+1970-12-25 12:53:36,5.9,mw,-0.394,-19.24,15000.0,central Mid-Atlantic Ridge,iscgem789478
+1967-01-24 09:29:11,6.5,mw,-0.922,-21.081,10000.0,central Mid-Atlantic Ridge,iscgem840094
+1966-10-19 08:01:34,7.0,mw,-1.571,-15.611,15000.0,north of Ascension Island,iscgem842636
+1965-11-15 11:18:50,6.1,mw,-0.224,-18.645,10000.0,central Mid-Atlantic Ridge,iscgem852463
+1965-08-16 12:36:22,6.2,mw,-0.53,-19.951,15000.0,central Mid-Atlantic Ridge,iscgem854661
+1964-09-28 05:04:54,5.6,mw,-1.38,-24.048,20000.0,central Mid-Atlantic Ridge,iscgem864726
+1964-01-27 01:12:21,5.6,mw,-0.058,-17.863,10000.0,north of Ascension Island,iscgem871534
+1963-07-08 11:05:04,5.6,mw,-0.062,-17.929,15000.0,north of Ascension Island,iscgem872683
+1962-03-26 12:04:56,5.8,mw,-0.503,-19.609,15000.0,central Mid-Atlantic Ridge,iscgem874425
+1962-02-04 21:29:36,6.0,mw,-0.68,-20.152,15000.0,central Mid-Atlantic Ridge,iscgem874198
+1961-05-06 19:38:07,5.8,mw,-1.518,-15.362,15000.0,north of Ascension Island,iscgem876528
+1961-02-18 17:02:10,5.6,mw,-1.518,-15.902,10000.0,north of Ascension Island,iscgem876144
+1959-09-04 18:26:44,5.8,mw,-1.329,-23.849,15000.0,central Mid-Atlantic Ridge,iscgem882814
+1959-06-07 13:39:42,5.8,mw,-0.119,-17.711,15000.0,north of Ascension Island,iscgem882194
+1958-09-03 03:44:27,6.2,mw,-0.068,-17.816,15000.0,north of Ascension Island,iscgem885091
+1956-09-20 23:03:09,6.0,mw,-1.291,-24.021,15000.0,central Mid-Atlantic Ridge,iscgem888712
+1954-08-06 16:19:50,5.9,mw,-1.297,-23.507,15000.0,central Mid-Atlantic Ridge,iscgem890935
+1954-06-20 22:07:57,5.7,mw,0.09,-17.84,15000.0,north of Ascension Island,iscgem890775
+1954-04-30 23:04:34,6.5,mw,-0.242,-18.669,15000.0,central Mid-Atlantic Ridge,iscgem890586
+1953-08-14 22:23:59,5.9,mw,-0.792,-20.188,15000.0,central Mid-Atlantic Ridge,iscgem891920
+1953-02-19 15:17:45,6.4,mw,-0.147,-17.987,15000.0,north of Ascension Island,iscgem891504
+1952-07-06 06:10:48,5.6,mw,-0.008,-16.685,15000.0,north of Ascension Island,iscgem893113

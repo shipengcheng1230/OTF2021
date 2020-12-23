@@ -1,5 +1,5 @@
 time,mag,magType,lat,lon,dep,text,id
-1982-11-17 16:11:37.080000,5.0,mb,-29.684,-13.668,10000.0,southern Mid-Atlantic Ridge,usp0001qzb
-1994-06-10 10:46:52.990000,5.2,ms,-29.498,-13.682,10000.0,southern Mid-Atlantic Ridge,usp0006e1r
-2009-05-11 14:32:30.370000,5.2,mwc,-30.054,-13.899,10000.0,southern Mid-Atlantic Ridge,usp000gx0y
 2018-02-04 09:06:50.670000,5.0,mb,-29.5522,-13.6381,10000.0,Southern Mid-Atlantic Ridge,us1000cflk
+2009-05-11 14:32:30.370000,5.2,mwc,-30.054,-13.899,10000.0,southern Mid-Atlantic Ridge,usp000gx0y
+1994-06-10 10:46:52.990000,5.2,ms,-29.498,-13.682,10000.0,southern Mid-Atlantic Ridge,usp0006e1r
+1982-11-17 16:11:37.080000,5.0,mb,-29.684,-13.668,10000.0,southern Mid-Atlantic Ridge,usp0001qzb

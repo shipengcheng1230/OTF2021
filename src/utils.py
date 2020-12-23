@@ -10,7 +10,7 @@ baseDir = os.path.join(os.path.dirname(__file__), "..")
 faultsDir = os.path.join(baseDir, "faults")
 if not os.path.isdir(faultsDir):
     os.mkdir(faultsDir)
-dfFaults = pd.read_excel(os.path.join(baseDir, "faults.xlsx"))
+dfFaults = pd.read_excel(os.path.join(baseDir, "faults.xlsx"), engine='openpyxl')
 dfStations = pd.read_csv(os.path.join(baseDir, "stations.csv"))
 try:
     # clientUSGS = Client("USGS", timeout=30)

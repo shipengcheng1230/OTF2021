@@ -1,309 +1,312 @@
 time,mag,magType,lat,lon,dep,text,id
-1950-04-14 19:59:59,6.2,mw,-35.981,-102.471,15000.0,southeast of Easter Island,iscgem895370
-1952-08-28 12:57:00,6.2,mw,-35.359,-106.215,10000.0,southern East Pacific Rise,iscgem893334
-1954-07-30 08:46:06,6.6,mw,-36.215,-97.363,10000.0,West Chile Rise,iscgem890900
-1954-08-02 23:28:38,5.8,mw,-36.331,-101.334,15000.0,southeast of Easter Island,iscgem890914
-1958-09-25 20:24:48,5.8,mw,-36.149,-99.703,15000.0,southeast of Easter Island,iscgem885181
-1958-11-14 05:04:29,5.8,mw,-36.079,-102.705,15000.0,southeast of Easter Island,iscgem885512
-1958-12-14 07:11:31,6.0,mw,-34.87,-108.837,15000.0,southern East Pacific Rise,iscgem885698
-1958-12-30 08:38:02,5.9,mw,-35.334,-106.736,15000.0,southern East Pacific Rise,iscgem885778
-1959-04-22 20:26:50,5.8,mw,-36.427,-98.484,15000.0,southeast of Easter Island,iscgem881851
-1959-12-17 16:48:59,5.7,mw,-35.919,-102.769,15000.0,southeast of Easter Island,iscgem883490
-1960-06-12 07:19:48,6.2,mw,-36.281,-98.015,15000.0,southeast of Easter Island,iscgem879487
-1960-09-14 04:57:13,5.9,mw,-35.304,-106.133,15000.0,southern East Pacific Rise,iscgem880327
-1963-06-15 15:30:37,5.8,mw,-36.25,-99.155,15000.0,southeast of Easter Island,iscgem872517
-1963-12-04 15:59:42,6.2,mw,-35.815,-102.868,10000.0,southeast of Easter Island,iscgem873653
-1964-10-06 07:17:56,6.2,mw,-36.243,-100.825,10000.0,southeast of Easter Island,iscgem863302
-1965-09-13 16:15:45,6.1,mw,-36.448,-97.6,15000.0,West Chile Rise,iscgem853817
-1970-10-22 06:13:59,5.6,mw,-36.36,-97.337,10000.0,West Chile Rise,iscgem791328
-1970-10-23 11:01:27,5.7,mw,-36.533,-97.292,10000.0,West Chile Rise,iscgem791347
-1973-02-15 07:54:26.900000,5.3,mb,-36.109,-101.018,33000.0,southeast of Easter Island,usp00000hw
-1973-06-25 15:03:18.700000,5.1,ms,-35.873,-103.928,33000.0,southeast of Easter Island,usp00002d6
-1973-09-09 20:17:16.400000,5.2,mb,-34.994,-109.536,33000.0,southern East Pacific Rise,usp00003cx
-1974-02-04 09:09:41.400000,5.1,mb,-35.572,-104.84,33000.0,southeast of Easter Island,usp000055v
-1974-03-31 04:48:50.200000,5.2,ms,-35.984,-103.178,33000.0,southeast of Easter Island,usp00005tg
-1974-06-26 13:43:35.300000,5.6,ms,-36.558,-98.2,33000.0,southeast of Easter Island,usp00006wu
-1974-07-06 12:20:58.700000,5.1,mb,-34.989,-108.037,33000.0,southern East Pacific Rise,usp000070t
-1974-11-03 18:35:59,5.1,mb,-34.828,-108.304,33000.0,southern East Pacific Rise,usp00008nx
-1975-04-20 11:40:39.900000,6.2,ms,-36.403,-98.794,33000.0,southeast of Easter Island,usp0000aq6
-1975-12-08 00:01:48.100000,5.4,mb,-34.777,-108.167,33000.0,southern East Pacific Rise,usp0000duv
-1976-03-25 01:41:26.900000,5.0,mb,-36.89,-98.066,33000.0,southeast of Easter Island,usp0000fks
-1976-04-26 19:19:25.300000,5.0,mb,-34.866,-108.908,33000.0,southern East Pacific Rise,usp0000g2a
-1977-02-23 01:49:41.100000,5.1,ms,-36.344,-99.049,33000.0,southeast of Easter Island,usp0000mpd
-1977-07-07 15:03:38.800000,5.2,mb,-34.938,-107.817,33000.0,southern East Pacific Rise,usp0000pmt
-1978-03-06 00:22:19.200000,5.7,ms,-35.523,-102.586,33000.0,southeast of Easter Island,usp0000t8g
-1978-04-03 11:28:27.800000,5.1,mb,-35.778,-100.809,33000.0,southeast of Easter Island,usp0000twr
-1978-06-17 08:47:03.700000,5.1,mb,-36.06,-100.629,33000.0,southeast of Easter Island,usp0000v3k
-1978-12-19 07:29:00.200000,5.4,ms,-35.386,-106.62,10000.0,southern East Pacific Rise,usp0000xzu
-1979-04-14 02:40:37.600000,5.4,mb,-35.139,-106.851,10000.0,southern East Pacific Rise,usp0000zzg
-1979-04-14 07:50:14.300000,5.1,mb,-35.035,-106.891,10000.0,southern East Pacific Rise,usp0000zzh
-1979-04-14 10:00:24.900000,6.5,ms,-36.007,-102.601,10000.0,southeast of Easter Island,usp0000zzp
-1979-06-10 06:32:50.800000,6.0,ms,-36.28,-97.953,10000.0,West Chile Rise,usp000116j
-1979-07-12 23:22:17.400000,5.5,mb,-36.314,-98.03,10000.0,southeast of Easter Island,usp00011u5
-1980-01-27 16:38:01.100000,5.9,ms,-35.379,-105.869,10000.0,southern East Pacific Rise,usp000157h
-1980-08-03 13:42:35.400000,5.1,mb,-35.58,-104.629,10000.0,southeast of Easter Island,usp000198n
-1980-09-26 20:26:34.800000,5.0,ms,-35.898,-102.938,10000.0,southeast of Easter Island,usp0001a01
-1980-10-22 22:59:54.100000,5.6,ms,-36.495,-98.605,10000.0,southeast of Easter Island,usp0001acq
-1980-10-22 23:27:16.600000,5.0,mb,-35.107,-104.084,10000.0,southeast of Easter Island,usp0001acr
-1981-06-10 04:06:10.240000,5.0,ms,-35.8,-102.167,10000.0,southeast of Easter Island,usp0001e2n
-1981-07-06 08:25:59.250000,5.1,ms,-36.233,-101.09,10000.0,southeast of Easter Island,usp0001ej6
-1981-08-22 23:47:41.490000,5.2,mb,-35.829,-103.302,10000.0,southeast of Easter Island,usp0001fek
-1981-09-06 16:43:19.910000,5.4,mb,-36.173,-100.702,10000.0,southeast of Easter Island,usp0001fqc
-1981-09-18 14:17:32.160000,5.0,mb,-35.246,-110.343,10000.0,southern East Pacific Rise,usp0001fyw
-1981-12-20 01:19:00,5.0,mb,-35.29,-105.442,10000.0,southern East Pacific Rise,usp0001hh8
-1982-05-17 02:39:26.120000,5.0,mb,-35.35,-103.84,10000.0,southeast of Easter Island,usp0001mcq
-1982-06-15 01:20:35.210000,5.3,ms,-36.517,-98.651,10000.0,southeast of Easter Island,usp0001mxt
-1982-08-08 04:40:51.120000,5.0,mb,-36.239,-97.607,10000.0,West Chile Rise,usp0001nwp
-1982-08-27 03:56:49.500000,5.2,mb,-35.462,-104.846,10000.0,southeast of Easter Island,usp0001p92
-1982-09-09 06:40:21.400000,5.0,ms,-35.546,-102.423,10000.0,southeast of Easter Island,usp0001pg0
-1983-01-13 09:23:47.990000,5.6,mb,-35.813,-102.631,10000.0,southeast of Easter Island,usp0001s6j
-1983-01-28 23:11:05.860000,5.5,ms,-36.226,-100.974,10000.0,southeast of Easter Island,usp0001spj
-1983-06-17 11:33:16.670000,5.6,mb,-36.383,-97.524,10000.0,West Chile Rise,usp0001w5c
-1983-07-26 04:14:20.820000,5.0,ms,-36.283,-98.814,10000.0,southeast of Easter Island,usp0001x49
-1983-08-20 08:30:34.160000,5.3,mb,-36.251,-101.542,10000.0,southeast of Easter Island,usp0001xtb
-1983-10-02 23:02:14.840000,5.3,mb,-34.322,-107.757,10000.0,southern East Pacific Rise,usp0001yst
-1983-11-09 01:57:50.110000,5.4,mb,-36.185,-100.24,10000.0,southeast of Easter Island,usp0001znv
-1984-02-12 18:58:54.370000,5.1,mb,-34.875,-107.629,10000.0,southern East Pacific Rise,usp00021y7
-1984-05-10 09:51:02.400000,5.6,mw,-36.269,-98.886,10000.0,southeast of Easter Island,usp000248h
-1985-05-06 07:33:58.410000,5.7,mw,-36.407,-98.868,10000.0,southeast of Easter Island,usp0002egj
-1985-11-12 03:34:18.350000,6.3,mw,-36.499,-98.158,10000.0,southeast of Easter Island,usp0002mph
-1985-12-05 08:25:42.800000,5.2,mb,-35.247,-109.438,10000.0,southern East Pacific Rise,usp0002njk
-1986-01-12 14:00:55.090000,5.4,mw,-36.011,-102.215,10000.0,southeast of Easter Island,usp0002pzy
-1986-04-09 01:44:39.820000,5.1,mb,-34.876,-108.125,10000.0,southern East Pacific Rise,usp0002ssb
-1986-06-05 09:01:15.450000,5.8,mw,-36.351,-97.382,10000.0,West Chile Rise,usp0002utb
-1986-06-19 17:18:58.210000,5.4,mw,-36.108,-100.7,10000.0,southeast of Easter Island,usp0002v70
-1986-06-24 23:53:32.570000,5.2,mw,-36.075,-100.473,10000.0,southeast of Easter Island,usp0002vcu
-1986-08-01 14:09:24.970000,5.5,mw,-35.88,-103.702,10000.0,southeast of Easter Island,usp0002wsn
-1986-12-05 01:45:36.110000,5.8,mw,-36.474,-97.628,10000.0,West Chile Rise,usp00030mr
-1987-06-09 22:46:11.560000,5.6,mw,-35.278,-106.666,10000.0,southern East Pacific Rise,usp00035p3
-1987-07-21 13:27:12.970000,5.8,mw,-36.295,-97.252,10000.0,West Chile Rise,usp00036tu
-1987-08-09 08:24:19.660000,5.6,mw,-35.141,-104.064,10000.0,southeast of Easter Island,usp00037cx
-1987-10-06 14:39:53.090000,5.4,mw,-36.092,-101.166,10000.0,southeast of Easter Island,usp0003911
-1987-10-28 18:24:02,5.4,mb,-36.078,-100.843,10000.0,southeast of Easter Island,usp00039pv
-1988-02-11 02:56:10.100000,5.6,mw,-35.616,-102.268,10000.0,southeast of Easter Island,usp0003cy1
-1988-03-28 18:36:26.470000,5.9,mw,-36.039,-102.843,10000.0,southeast of Easter Island,usp0003edy
-1988-10-01 09:43:24.500000,6.3,mw,-35.315,-106.048,10000.0,southern East Pacific Rise,usp0003me6
-1988-10-09 17:03:53.020000,5.6,mw,-35.942,-103.212,10000.0,southeast of Easter Island,usp0003mp3
-1988-11-13 23:40:12.090000,5.3,mw,-34.827,-108.599,10000.0,southern East Pacific Rise,usp0003num
-1989-04-22 04:48:30.850000,5.5,mw,-35.576,-102.935,10000.0,southeast of Easter Island,usp0003u7d
-1989-07-07 12:27:46,5.8,mwc,-36.86,-97.63,10000.0,West Chile Rise,gcmtb070789a
-1989-07-07 12:27:51.080000,5.8,mw,-36.265,-99.25,10000.0,southeast of Easter Island,usp0003x2e
-1989-09-06 09:10:39.230000,6.0,mw,-36.087,-103.171,10000.0,southeast of Easter Island,usp0003z9c
-1990-05-06 16:46:13.220000,5.7,mw,-35.253,-104.142,10000.0,southeast of Easter Island,usp00048ya
-1990-05-07 16:46:10.110000,5.2,mb,-35.248,-105.212,10000.0,southern East Pacific Rise,usp00048zv
-1990-05-22 13:25:36.320000,6.1,mw,-36.299,-97.876,33000.0,West Chile Rise,usp00049mb
-1990-07-28 13:59:48.700000,5.6,mw,-36.423,-104.519,10000.0,southeast of Easter Island,usp0004cnr
-1990-08-19 17:44:58.790000,5.7,mw,-34.597,-107.776,10000.0,southern East Pacific Rise,usp0004dnb
-1990-09-13 17:08:47.210000,5.0,mb,-36.54,-97.69,10000.0,West Chile Rise,usp0004ep4
-1990-09-24 21:37:59.220000,5.0,ms,-36.288,-97.53,10000.0,West Chile Rise,usp0004f17
-1990-09-26 15:40:42.430000,5.6,mw,-36.19,-100.795,10000.0,southeast of Easter Island,usp0004f30
-1991-01-16 23:26:54.960000,5.0,mb,-34.992,-104.4,10000.0,West Chile Rise,usp0004ksj
-1991-05-10 23:30:44.540000,5.1,mb,-36.999,-98.929,10000.0,southeast of Easter Island,usp0004rg0
-1991-06-05 16:43:07.670000,5.4,mw,-36.042,-100.732,10000.0,southeast of Easter Island,usp0004sje
-1991-12-15 06:12:59.360000,5.0,ms,-36.486,-98.518,10000.0,southeast of Easter Island,usp00050ft
-1992-05-22 13:06:07.930000,5.5,mw,-35.34,-105.89,10000.0,southern East Pacific Rise,usp00057wv
-1992-06-23 11:21:21.550000,6.1,mw,-36.104,-101.22,10000.0,southeast of Easter Island,usp00059he
-1992-07-17 20:01:25.820000,5.0,mb,-34.661,-105.212,10000.0,southern East Pacific Rise,usp0005b08
-1992-09-15 04:19:35.010000,5.5,mw,-36.278,-100.224,10000.0,southeast of Easter Island,usp0005e0c
-1992-11-04 04:53:05.060000,5.9,mw,-35.788,-102.281,10000.0,southeast of Easter Island,usp0005g8y
-1992-12-27 23:58:38.090000,5.3,mb,-35.972,-101.91,10000.0,southeast of Easter Island,usp0005jys
-1992-12-28 00:16:17.420000,5.3,mb,-34.33,-101.495,10000.0,West Chile Rise,usp0005jyt
-1992-12-28 05:31:25,5.2,mb,-34.005,-101.282,10000.0,West Chile Rise,usp0005jz9
-1993-05-10 02:01:10.830000,5.4,mw,-35.536,-103.95,10000.0,southeast of Easter Island,usp0005sgw
-1993-05-16 16:09:37.320000,5.4,mw,-34.325,-108.941,10000.0,southern East Pacific Rise,usp0005swq
-1993-07-21 13:03:10.930000,5.7,mw,-35.967,-97.976,10000.0,West Chile Rise,usp0005x3q
-1993-10-08 06:36:17.640000,5.8,mw,-35.903,-102.778,10000.0,southeast of Easter Island,usp00061nj
-1993-11-21 00:16:00.670000,5.4,mw,-35.959,-102.893,10000.0,southeast of Easter Island,usp00063zj
-1994-04-13 14:19:23.840000,5.4,mw,-33.975,-108.801,10000.0,southern East Pacific Rise,usp0006b1g
-1994-05-08 14:49:35.720000,5.6,mw,-35.731,-99.203,10000.0,southeast of Easter Island,usp0006c93
-1994-06-27 04:10:09.320000,6.1,mw,-36.236,-98.189,10000.0,southeast of Easter Island,usp0006evt
-1994-07-24 14:24:43.800000,5.4,mw,-36.182,-101.041,10000.0,southeast of Easter Island,usp0006g2s
-1994-08-24 22:05:58.140000,5.5,mw,-35.483,-104.892,10000.0,southeast of Easter Island,usp0006hf1
-1994-12-19 12:00:21.720000,5.0,mb,-34.659,-109.348,10000.0,southern East Pacific Rise,usp0006q7f
-1994-12-19 13:08:43.540000,5.2,mw,-34.458,-108.234,10000.0,southern East Pacific Rise,usp0006q7h
-1995-01-16 03:03:27.950000,5.2,mw,-35.36,-106.123,10000.0,southern East Pacific Rise,usp0006rdk
-1995-05-21 15:47:24.890000,5.5,mw,-35.939,-102.647,10000.0,southeast of Easter Island,usp0006xtp
-1995-09-29 13:32:39.430000,5.4,mw,-35.864,-103.402,10000.0,southeast of Easter Island,usp000745j
-1995-10-12 23:41:45.350000,6.0,mwb,-35.288,-106.266,8400.0,southern East Pacific Rise,usp000751x
-1996-09-09 03:21:47.220000,5.8,mwc,-35.402,-104.642,10000.0,southeast of Easter Island,usp0007pqa
-1997-03-13 06:27:58.070000,5.6,mwc,-36.468,-97.671,10000.0,West Chile Rise,usp0007yrg
-1997-03-14 09:42:58.660000,5.4,mwc,-34.127,-109.529,10000.0,southern East Pacific Rise,usp0007ytv
-1997-03-23 04:26:31.120000,5.4,mwc,-34.146,-109.341,10000.0,southern East Pacific Rise,usp0007za2
-1997-05-11 22:16:13.930000,6.5,mwc,-36.383,-97.703,10000.0,West Chile Rise,usp000824u
-1997-05-29 17:02:38.740000,6.5,mwc,-35.964,-102.511,10000.0,southeast of Easter Island,usp00082yt
-1997-06-10 21:53:55.020000,6.5,mwc,-35.815,-108.135,10000.0,southern East Pacific Rise,usp00083cd
-1997-09-11 22:20:09.520000,5.6,mwc,-36.23,-101.031,10000.0,southeast of Easter Island,usp00087e5
-1997-10-04 18:31:41.050000,5.7,mwc,-35.286,-106.708,10000.0,southern East Pacific Rise,usp00088he
-1997-11-12 03:26:37.580000,5.6,mwc,-35.598,-105.038,10000.0,southern East Pacific Rise,usp0008ah8
-1997-12-16 20:40:09.290000,5.7,mwc,-35.5,-105.92,10000.0,southern East Pacific Rise,usp0008crv
-1998-01-26 13:02:37.800000,5.5,mwc,-36.068,-100.968,10000.0,southeast of Easter Island,usp0008f03
-1998-01-31 23:30:42.050000,6.0,mwc,-35.763,-97.058,10000.0,West Chile Rise,usp0008f91
-1998-09-07 00:39:30.210000,6.1,mwc,-36.24,-97.711,10000.0,West Chile Rise,usp0008uj9
-1998-09-14 04:43:28.940000,6.1,mwc,-34.75,-107.981,10000.0,southern East Pacific Rise,usp0008uwq
-1999-01-16 00:19:13.850000,5.4,mwc,-35.873,-100.596,10000.0,southeast of Easter Island,usp000915t
-1999-04-28 06:34:55.050000,5.3,mwc,-35.221,-106.511,10000.0,southern East Pacific Rise,usp00096zf
-1999-04-29 18:26:37.720000,5.8,mwc,-35.781,-102.9,10000.0,southeast of Easter Island,usp0009724
-1999-05-11 15:56:10.060000,5.6,mwc,-36.368,-110.588,10000.0,southern East Pacific Rise,usp00097sv
-1999-05-11 16:05:10.940000,5.7,mwc,-36.31,-110.395,10000.0,southern East Pacific Rise,usp00097sx
-1999-07-13 12:26:42.260000,5.6,mwc,-35.487,-104.074,10000.0,southeast of Easter Island,usp0009bj5
-1999-10-05 02:59:59.070000,5.7,mwc,-35.841,-103.284,10000.0,southeast of Easter Island,usp0009ffr
-1999-12-09 08:34:10.070000,5.4,mwc,-34.556,-106.943,10000.0,southern East Pacific Rise,usp0009jn8
-1999-12-10 18:38:30.100000,6.5,mwc,-36.206,-97.316,10000.0,West Chile Rise,usp0009jpx
-1999-12-10 20:06:59.990000,5.2,mb,-36.234,-97.422,10000.0,West Chile Rise,usp0009jq0
-1999-12-11 09:03:45.200000,5.2,mb,-36.209,-97.398,10000.0,West Chile Rise,usp0009jqt
-2000-01-27 02:49:44.910000,5.4,mwc,-34.807,-105.459,10000.0,southern East Pacific Rise,usp0009mqk
-2000-02-17 18:26:21.950000,5.2,mwc,-34.945,-109.279,10000.0,southern East Pacific Rise,usp0009nkb
-2000-03-14 06:18:36.960000,5.4,mwc,-36.273,-96.888,10000.0,West Chile Rise,usp0009ppn
-2000-03-20 08:42:13.710000,5.3,mwc,-36.51,-97.23,10000.0,West Chile Rise,usp0009pya
-2000-04-04 10:59:45.010000,5.1,mwc,-36.372,-97.166,10000.0,West Chile Rise,usp0009qtd
-2000-09-01 00:07:12.210000,5.4,mwc,-36.136,-100.753,10000.0,southeast of Easter Island,usp0009zge
-2000-09-09 12:18:10.290000,5.9,mwc,-35.875,-103.064,10000.0,southeast of Easter Island,usp0009zym
-2000-10-25 05:26:38.890000,6.0,mwc,-34.605,-109.648,10000.0,southern East Pacific Rise,usp000a2cb
-2000-10-25 19:00:17.490000,6.1,mwc,-34.678,-109.458,10000.0,southern East Pacific Rise,usp000a2df
-2000-10-26 14:08:37.310000,5.5,mwc,-34.573,-109.37,10000.0,southern East Pacific Rise,usp000a2f4
-2000-12-09 22:49:47.690000,5.8,mwc,-36.388,-98.758,10000.0,southeast of Easter Island,usp000a5sx
-2001-03-30 07:31:01.810000,5.5,mwc,-34.734,-109.015,10000.0,southern East Pacific Rise,usp000ac7x
-2001-05-11 06:06:26.840000,5.5,mwc,-34.916,-108.065,10000.0,southern East Pacific Rise,usp000aert
-2001-11-04 15:39:36.380000,5.3,mwc,-36.201,-100.303,10000.0,southeast of Easter Island,usp000as7d
-2001-12-28 21:31:59.360000,5.9,mwc,-36.098,-100.644,10000.0,southeast of Easter Island,usp000avf4
-2001-12-29 17:29:44.850000,5.7,mwc,-35.017,-103.31,10000.0,southeast of Easter Island,usp000avga
-2002-01-16 18:45:22.300000,5.4,mwc,-36.233,-97.115,10000.0,West Chile Rise,usp000awm2
-2002-02-15 01:46:37.850000,6.0,mwb,-36.231,-100.301,10000.0,southeast of Easter Island,usp000aygn
-2002-05-22 18:57:19.430000,5.7,mwc,-36.344,-97.908,10000.0,West Chile Rise,usp000b4t4
-2004-01-29 01:25:15.680000,5.5,mwc,-35.418,-104.67,10000.0,southeast of Easter Island,usp000cjx0
-2004-03-01 13:56:28.510000,5.2,mwc,-36.169,-100.131,10000.0,southeast of Easter Island,usp000cntz
-2004-04-08 04:57:50.480000,6.4,mwc,-36.256,-97.827,10000.0,West Chile Rise,usp000crz0
-2004-05-22 20:14:48.280000,5.4,mwc,-35.739,-102.544,10000.0,southeast of Easter Island,usp000cvxj
-2004-06-11 12:25:04.410000,5.4,mwc,-35.245,-106.425,10000.0,southern East Pacific Rise,usp000cxpp
-2004-09-21 17:55:50.270000,5.3,mwc,-36.227,-101.481,10000.0,southeast of Easter Island,usp000d4th
-2005-02-10 04:42:00,5.0,mwc,-35.769,-103.922,10000.0,southeast of Easter Island,usp000dfu7
-2005-02-28 01:24:54.690000,5.9,mwc,-34.923,-107.865,10000.0,southern East Pacific Rise,usp000dh4p
-2005-02-28 09:39:23.390000,5.2,mwc,-34.99,-107.849,10000.0,southern East Pacific Rise,usp000dh5r
-2005-06-08 13:37:17.370000,5.6,mwb,-35.904,-102.907,10000.0,southeast of Easter Island,usp000dsh8
-2005-06-21 10:43:29.310000,5.8,mwb,-36.155,-100.959,10000.0,southeast of Easter Island,usp000dtkt
-2005-07-06 06:22:32.520000,5.9,mwc,-35.79,-102.807,10000.0,southeast of Easter Island,usp000dumu
-2005-07-10 04:46:31.240000,6.1,mwb,-36.31,-97.264,10000.0,West Chile Rise,usp000duw6
-2006-01-18 23:43:06.280000,5.8,mwb,-36.411,-100.496,10000.0,southeast of Easter Island,usp000e8f8
-2006-04-13 19:23:58.140000,5.2,mwc,-35.218,-106.994,10000.0,southern East Pacific Rise,usp000eeen
-2006-08-18 03:15:29.160000,5.2,mwc,-36.377,-98.736,10000.0,southeast of Easter Island,usp000er7q
-2006-09-08 00:47:12,5.2,mwc,-36.25,-104.25,10000.0,southeast of Easter Island,gcmtc200609080047a
-2006-10-04 07:40:16,5.0,mwc,-35.25,-108.25,10000.0,southern East Pacific Rise,gcmtc200610040740a
-2006-12-05 20:14:30.570000,5.8,mwb,-35.342,-104.546,10000.0,southeast of Easter Island,usp000ezkv
-2006-12-13 08:16:12.940000,5.0,mwc,-35.177,-104.456,10000.0,southeast of Easter Island,usp000f04d
-2006-12-15 23:57:10.420000,5.8,mwb,-35.327,-105.745,10000.0,southern East Pacific Rise,usp000f09x
-2007-02-27 16:13:51.340000,5.2,mwc,-35.941,-106.252,10000.0,southern East Pacific Rise,usp000f5sb
-2007-04-13 18:24:19.160000,6.1,mwb,-35.051,-108.836,10000.0,southern East Pacific Rise,usp000f9mq
-2007-04-14 10:00:52.220000,5.4,mwc,-36.4,-97.903,10000.0,West Chile Rise,usp000f9ph
-2007-04-15 17:05:28,5.1,mwc,-36.75,-97.75,10000.0,West Chile Rise,gcmtc200704151705a
-2007-05-26 02:44:46.900000,5.5,mwc,-35.928,-103.097,10000.0,southeast of Easter Island,usp000fcrs
-2007-05-29 18:15:50.760000,5.1,mwc,-35.837,-102.743,10000.0,southeast of Easter Island,usp000fd0d
-2007-06-14 13:37:40.920000,5.9,mwb,-36.208,-100.152,10000.0,southeast of Easter Island,usp000fe02
-2007-07-13 19:46:26.780000,5.1,mwc,-35.027,-107.993,10000.0,southern East Pacific Rise,usp000fg41
-2007-07-30 06:06:50.250000,5.5,mwb,-35.519,-103.846,10000.0,southeast of Easter Island,usp000fhe1
-2007-08-10 20:43:15.510000,5.3,mwc,-35.852,-102.904,10000.0,southeast of Easter Island,usp000fjbw
-2007-09-08 08:51:57.420000,5.3,mwc,-36.465,-98.291,10000.0,southeast of Easter Island,usp000fmpj
-2007-11-26 00:10:10.200000,5.2,mwc,-35.451,-104.973,10000.0,southeast of Easter Island,usp000ftaf
-2007-11-29 03:26:22.690000,6.3,mwc,-36.756,-97.404,10000.0,West Chile Rise,usp000ftgv
-2008-01-01 10:08:51.240000,5.0,mwc,-35.755,-103.692,10000.0,southeast of Easter Island,usp000fvsa
-2008-01-09 20:40:17.900000,5.3,mwc,-35.826,-102.176,10000.0,southeast of Easter Island,usp000fwbs
-2008-01-31 00:31:29.020000,5.2,mwc,-34.746,-108.87,10000.0,southern East Pacific Rise,usp000fxu3
-2008-02-07 19:44:47.960000,5.0,mwc,-35.859,-103.785,10000.0,southeast of Easter Island,usp000fydc
-2008-02-29 02:38:29.520000,5.7,mwb,-35.074,-108.968,10000.0,southern East Pacific Rise,usp000g090
-2008-04-28 12:53:28.950000,5.2,mwc,-36.62,-110.59,10000.0,southern East Pacific Rise,usp000g517
-2008-06-13 19:57:02.460000,5.0,mwc,-36.147,-100.037,10000.0,southeast of Easter Island,usp000g9gp
-2008-06-15 08:37:17.200000,6.0,mwc,-36.623,-107.45,10000.0,southern East Pacific Rise,usp000g9qe
-2008-08-17 21:28:38.030000,5.2,mwc,-34.814,-108.286,10000.0,southern East Pacific Rise,usp000gex5
-2008-09-06 17:37:41.520000,5.1,mwc,-35.597,-103.963,10000.0,southeast of Easter Island,usp000ggj1
-2008-09-28 15:34:12.310000,5.0,mwc,-35.947,-101.21,10000.0,southeast of Easter Island,usp000ghw7
-2008-10-28 19:59:12,5.0,mwc,-35.75,-104.75,10000.0,southeast of Easter Island,gcmtc200810281959a
-2009-01-01 06:27:51.220000,5.8,mwc,-34.84,-107.647,10000.0,southern East Pacific Rise,usp000gryu
-2009-01-01 12:42:05.700000,5.0,mwc,-34.876,-107.781,10000.0,southern East Pacific Rise,usp000grz9
-2009-01-02 08:31:38.600000,5.0,mwc,-34.799,-107.331,10000.0,southern East Pacific Rise,usp000gs09
-2009-02-15 18:27:27.810000,5.0,mwc,-36.372,-96.625,10000.0,West Chile Rise,usp000gu1f
-2009-06-02 00:22:01.610000,5.3,mwc,-35.855,-103.393,10000.0,southeast of Easter Island,usp000gxs6
-2009-06-05 13:39:10.160000,5.7,mwc,-35.418,-104.398,15000.0,southeast of Easter Island,usp000gxw3
-2009-06-08 11:01:40.890000,5.0,mwc,-34.949,-108.118,10000.0,southern East Pacific Rise,usp000gxzs
-2009-06-26 16:49:20,5.0,mwc,-36.25,-102.25,10000.0,southeast of Easter Island,gcmtc200906261649a
-2009-06-26 16:49:22.210000,5.0,mwc,-35.15,-102.027,10000.0,southeast of Easter Island,usp000gymx
-2009-07-08 19:23:37.730000,6.0,mwc,-36.004,-102.686,12000.0,southeast of Easter Island,usp000gz1t
-2009-07-09 05:40:05.520000,5.1,mwc,-36.009,-102.692,10000.0,southeast of Easter Island,usp000gz29
-2009-07-29 06:48:11.160000,5.3,mwc,-35.665,-103.331,10000.0,southeast of Easter Island,usp000gzs6
-2009-12-05 14:06:24,5.1,mwc,-36.75,-99.75,10000.0,southeast of Easter Island,gcmtc200912051406a
-2009-12-06 02:57:24.530000,5.0,mwc,-36.32,-96.769,10000.0,West Chile Rise,usp000h4sq
-2010-01-18 03:51:01.010000,5.1,mwc,-34.939,-108.557,10000.0,southern East Pacific Rise,usp000h699
-2010-02-18 19:47:39.120000,5.4,mwc,-35.029,-108.397,10000.0,southern East Pacific Rise,usp000h7ee
-2010-04-10 05:06:43.690000,5.4,mwc,-36.155,-100.992,10000.0,southeast of Easter Island,usp000hb3h
-2010-04-12 12:36:44.140000,5.3,mwc,-35.535,-105.451,10000.0,southern East Pacific Rise,usp000hb91
-2010-04-24 00:23:43.490000,5.2,mwc,-36.303,-99.775,10100.0,southeast of Easter Island,usp000hbu6
-2010-05-05 09:38:23,5.9,mwc,-35.949,-103.058,10000.0,southeast of Easter Island,usp000hcbj
-2010-06-12 09:05:03.970000,5.3,mwc,-35.392,-106.376,10000.0,southern East Pacific Rise,usp000hdvt
-2010-06-20 21:08:51.580000,5.6,mwc,-36.129,-100.176,23200.0,southeast of Easter Island,usp000heay
-2010-06-24 13:49:05.300000,5.1,mwc,-34.539,-108.393,10000.0,southern East Pacific Rise,usp000hefk
-2010-07-21 11:29:45.490000,5.3,mwc,-35.576,-104.013,10000.0,southeast of Easter Island,usp000hgb4
-2010-09-20 16:39:41.810000,5.1,mwc,-36.242,-100.754,10000.0,southeast of Easter Island,usp000hm02
-2010-10-23 23:31:11.490000,5.3,mwc,-34.791,-108.103,10000.0,southern East Pacific Rise,usp000hnfj
-2010-10-25 00:57:16.120000,5.2,mwc,-35.944,-102.789,10000.0,southeast of Easter Island,usp000hnha
-2010-11-12 19:01:29.970000,5.8,mwb,-35.958,-102.21,10000.0,southeast of Easter Island,usp000hpfw
-2010-11-21 08:25:54.270000,5.1,mwc,-34.869,-108.793,10000.0,southern East Pacific Rise,usp000hpxg
-2010-12-05 21:44:35.820000,5.9,mwb,-36.231,-100.826,12700.0,southeast of Easter Island,usp000hqjh
-2011-05-13 19:47:38.260000,5.0,mwc,-36.025,-97.985,10000.0,West Chile Rise,usp000j1j6
-2011-06-01 15:44:52.240000,5.1,mwc,-36.147,-100.194,10000.0,southeast of Easter Island,usp000j2j0
-2011-08-09 15:46:31.690000,5.0,mwc,-36.075,-101.836,10000.0,southeast of Easter Island,usp000j67q
-2011-10-31 19:14:06.470000,5.1,mwc,-35.468,-105.084,10000.0,southern East Pacific Rise,usp000ja5z
-2012-01-28 04:43:41.030000,5.6,mww,-36.793,-110.517,10000.0,southern East Pacific Rise,usp000je2e
-2012-03-17 19:50:20.560000,5.8,mww,-34.905,-107.644,11800.0,southern East Pacific Rise,usp000jgdf
-2012-03-30 06:19:33.170000,5.0,mb,-35.843,-101.463,10000.0,southeast of Easter Island,usp000jgzf
-2012-04-14 23:49:24.840000,5.0,mb,-36.3,-97.183,10000.0,West Chile Rise,usp000jhzr
-2012-05-02 17:06:05.530000,5.5,mwc,-35.883,-102.728,10000.0,southeast of Easter Island,usp000jjx9
-2012-08-16 13:24:44.360000,5.8,mww,-36.429,-98.905,10000.0,southeast of Easter Island,usp000jqcu
-2012-11-06 11:09:31.960000,5.5,mwb,-35.465,-104.8,10000.0,southeast of Easter Island,usp000jv3q
-2013-01-23 04:29:37.870000,5.1,mb,-34.625,-109.119,12400.0,southern East Pacific Rise,usp000jyr9
-2013-01-27 13:50:36.530000,5.1,mb,-35.254,-108.563,10000.0,Southern East Pacific Rise,usc000ewe6
-2013-01-27 19:32:40.410000,5.2,mb,-34.748,-108.964,10000.0,southern East Pacific Rise,usp000jyva
-2013-03-29 23:15:26.020000,5.4,mwb,-36.094,-100.432,10000.0,Southeast of Easter Island,usb000fw9h
-2013-04-18 21:26:36.200000,5.5,mwc,-34.343,-109.213,10000.0,Southern East Pacific Rise,us2013pda1
-2013-05-26 08:03:22.480000,5.0,mb,-36.033,-99.847,10100.0,Southeast of Easter Island,usb000h6jy
-2013-07-02 18:39:43.160000,5.5,mwb,-35.927,-102.964,10400.0,Southeast of Easter Island,usb000i52f
-2013-10-06 21:33:19.800000,6.2,mww,-36.7267,-97.4761,10280.0,West Chile Rise,usb000k7s0
-2014-04-15 13:31:32.540000,5.6,mwb,-36.0868,-101.2428,10000.0,Southeast of Easter Island,usb000pl8s
-2014-05-06 20:52:28.320000,6.3,mww,-36.1703,-97.054,16830.0,West Chile Rise,usb000qcg4
-2014-11-17 11:27:06.980000,5.5,mwc,-36.0008,-102.1971,19080.0,Southeast of Easter Island,usc000sy39
-2014-12-09 01:31:07.830000,5.1,mb,-34.5564,-108.867,15080.0,Southern East Pacific Rise,usc000t4qp
-2015-01-07 03:06:45.360000,5.2,mb,-36.3215,-103.6723,10000.0,Southeast of Easter Island,usc000tcar
-2015-01-18 23:13:36.680000,5.7,mww,-35.4555,-105.7571,8320.0,Southern East Pacific Rise,usc000th1c
-2015-05-25 16:20:27.510000,5.3,mwb,-35.2225,-104.2844,10000.0,Southeast of Easter Island,us10002c1g
-2015-06-05 20:02:54,5.4,mwb,-34.8726,-107.6523,5760.0,Southern East Pacific Rise,us20002mfl
-2015-06-09 06:41:38.740000,5.4,mwb,-35.3695,-105.8146,10000.0,Southern East Pacific Rise,us20002n6e
-2015-06-13 17:09:02.680000,5.1,mb,-35.0536,-107.2483,10000.0,Southern East Pacific Rise,us20002pn2
-2015-07-20 11:08:19.430000,5.7,mwb,-35.5251,-105.0838,14000.0,Southern East Pacific Rise,us20002ynd
-2015-09-24 15:57:19.530000,5.2,mb,-36.1551,-100.9621,10100.0,Southeast of Easter Island,us20003nr5
-2015-12-03 00:23:55.740000,5.0,mb,-34.4849,-109.2098,10000.0,Southern East Pacific Rise,us100042w1
-2015-12-03 03:02:34.500000,5.2,mb,-34.5735,-109.3484,10000.0,Southern East Pacific Rise,us100042wp
-2015-12-03 15:55:15.080000,5.0,mb,-33.98,-109.3331,14650.0,Southern East Pacific Rise,us1000431u
-2015-12-30 02:58:36.450000,5.0,mb,-34.4192,-109.3543,10000.0,Southern East Pacific Rise,us10004aci
-2016-07-10 02:32:42.440000,5.6,mwb,-35.8108,-103.2511,10000.0,Southeast of Easter Island,us100062b1
-2016-09-29 00:21:09.510000,5.5,mwc,-35.6012,-103.8967,10000.0,Southeast of Easter Island,us10006tpd
-2016-10-08 04:37:41.370000,5.6,mwc,-36.0277,-101.0092,10000.0,Southeast of Easter Island,us20007crf
-2016-10-13 20:40:50.990000,5.5,mwb,-35.4987,-103.9926,10000.0,Southeast of Easter Island,us20007dxq
-2016-10-24 01:55:06.930000,5.5,mwb,-35.9934,-102.634,10000.0,Southeast of Easter Island,us20007gb2
-2016-12-18 06:15:45.760000,5.5,mwb,-34.9886,-107.8694,10000.0,Southern East Pacific Rise,us2000826e
-2017-01-22 17:14:56.840000,5.1,mb,-35.4154,-99.4003,10000.0,Southeast of Easter Island,us10007uv7
-2017-04-20 22:04:14.880000,5.5,mwb,-36.2891,-98.4279,10000.0,Southeast of Easter Island,us10008jej
-2017-07-10 15:37:24.250000,5.7,mww,-36.1552,-100.6233,10000.0,Southeast of Easter Island,us100098ju
-2017-11-13 11:53:55.400000,5.0,mb,-36.3362,-97.1431,10000.0,West Chile Rise,us2000bmkq
-2017-11-20 05:20:22.100000,5.3,mww,-36.7233,-110.5472,10000.0,Southern East Pacific Rise,us2000bs68
-2018-05-06 05:10:01.780000,5.5,mww,-34.7077,-107.6167,10000.0,Southern East Pacific Rise,us1000dz6a
-2018-08-12 19:41:34.740000,5.5,mww,-35.6828,-102.3747,10000.0,Southeast of Easter Island,us1000g7ca
-2018-08-19 01:58:27.760000,5.1,mb,-35.3389,-106.118,10000.0,Southern East Pacific Rise,us1000gcry
-2018-09-26 17:33:35.770000,5.7,mww,-34.9411,-107.6082,10000.0,Southern East Pacific Rise,us1000h2tp
-2018-10-16 12:50:28.800000,5.3,mww,-35.4372,-104.1169,10000.0,Southeast of Easter Island,us1000hcvd
-2018-12-19 01:37:40.500000,6.3,mww,-36.1378,-101.0723,10000.0,Southeast of Easter Island,us2000iuya
-2019-03-06 07:20:45.287000,5.5,mww,-36.2223,-97.5292,10000.0,West Chile Rise,us1000jb5a
-2019-05-14 20:01:07.028000,5.0,mb,-35.7036,-103.8318,10000.0,Southeast of Easter Island,us70003l67
-2019-05-22 17:36:14.523000,5.4,mww,-36.098,-100.7443,10000.0,Southeast of Easter Island,us60003qs2
-2019-08-07 12:26:49.100000,5.3,mww,-34.8886,-108.2234,10000.0,Southern East Pacific Rise,us600051te
-2019-09-09 09:53:31.044000,5.5,mww,-36.3343,-99.2333,20350.0,Southeast of Easter Island,us70005dlz
-2019-09-27 15:11:29.893000,5.9,mww,-35.9171,-102.7817,10000.0,Southeast of Easter Island,us70005mls
-2020-01-22 18:33:40.491000,5.5,mww,-36.1265,-99.8985,10000.0,Southeast of Easter Island,us60007d0c
-2020-04-09 10:53:52.419000,5.0,mb,-35.8656,-103.8884,10000.0,Southeast of Easter Island,us70008sb4
+2020-11-04 12:28:42.280000,5.3,mww,-35.5799,-104.0024,10000.0,southeast of Easter Island,us7000caai
+2020-10-23 01:46:17.812000,5.9,mww,-36.3368,-97.1216,10000.0,West Chile Rise,us6000cbug
+2020-07-04 07:40:18.761000,5.3,mww,-35.0672,-107.3521,10000.0,southern East Pacific Rise,us7000ahty
 2020-05-14 05:55:21.140000,5.7,mww,-35.7864,-102.8976,10000.0,southeast of Easter Island,us70009fun
+2020-04-09 10:53:52.419000,5.0,mb,-35.8656,-103.8884,10000.0,Southeast of Easter Island,us70008sb4
+2020-01-22 18:33:40.491000,5.5,mww,-36.1265,-99.8985,10000.0,Southeast of Easter Island,us60007d0c
+2019-09-27 15:11:29.893000,5.9,mww,-35.9171,-102.7817,10000.0,Southeast of Easter Island,us70005mls
+2019-09-09 09:53:31.044000,5.5,mww,-36.3343,-99.2333,20350.0,Southeast of Easter Island,us70005dlz
+2019-08-07 12:26:49.100000,5.3,mww,-34.8886,-108.2234,10000.0,Southern East Pacific Rise,us600051te
+2019-05-22 17:36:14.523000,5.4,mww,-36.098,-100.7443,10000.0,Southeast of Easter Island,us60003qs2
+2019-05-14 20:01:07.028000,5.0,mb,-35.7036,-103.8318,10000.0,Southeast of Easter Island,us70003l67
+2019-03-06 07:20:45.287000,5.5,mww,-36.2223,-97.5292,10000.0,West Chile Rise,us1000jb5a
+2018-12-19 01:37:40.500000,6.3,mww,-36.1378,-101.0723,10000.0,Southeast of Easter Island,us2000iuya
+2018-10-16 12:50:28.800000,5.3,mww,-35.4372,-104.1169,10000.0,Southeast of Easter Island,us1000hcvd
+2018-09-26 17:33:35.770000,5.7,mww,-34.9411,-107.6082,10000.0,Southern East Pacific Rise,us1000h2tp
+2018-08-19 01:58:27.760000,5.1,mb,-35.3389,-106.118,10000.0,Southern East Pacific Rise,us1000gcry
+2018-08-12 19:41:34.740000,5.5,mww,-35.6828,-102.3747,10000.0,Southeast of Easter Island,us1000g7ca
+2018-05-06 05:10:01.780000,5.5,mww,-34.7077,-107.6167,10000.0,Southern East Pacific Rise,us1000dz6a
+2017-11-20 05:20:22.100000,5.3,mww,-36.7233,-110.5472,10000.0,Southern East Pacific Rise,us2000bs68
+2017-11-13 11:53:55.400000,5.0,mb,-36.3362,-97.1431,10000.0,West Chile Rise,us2000bmkq
+2017-07-10 15:37:24.250000,5.7,mww,-36.1552,-100.6233,10000.0,Southeast of Easter Island,us100098ju
+2017-04-20 22:04:14.880000,5.5,mwb,-36.2891,-98.4279,10000.0,Southeast of Easter Island,us10008jej
+2017-01-22 17:14:56.840000,5.1,mb,-35.4154,-99.4003,10000.0,Southeast of Easter Island,us10007uv7
+2016-12-18 06:15:45.760000,5.5,mwb,-34.9886,-107.8694,10000.0,Southern East Pacific Rise,us2000826e
+2016-10-24 01:55:06.930000,5.5,mwb,-35.9934,-102.634,10000.0,Southeast of Easter Island,us20007gb2
+2016-10-13 20:40:50.990000,5.5,mwb,-35.4987,-103.9926,10000.0,Southeast of Easter Island,us20007dxq
+2016-10-08 04:37:41.370000,5.6,mwc,-36.0277,-101.0092,10000.0,Southeast of Easter Island,us20007crf
+2016-09-29 00:21:09.510000,5.5,mwc,-35.6012,-103.8967,10000.0,Southeast of Easter Island,us10006tpd
+2016-07-10 02:32:42.440000,5.6,mwb,-35.8108,-103.2511,10000.0,Southeast of Easter Island,us100062b1
+2015-12-30 02:58:36.450000,5.0,mb,-34.4192,-109.3543,10000.0,Southern East Pacific Rise,us10004aci
+2015-12-03 15:55:15.080000,5.0,mb,-33.98,-109.3331,14650.0,Southern East Pacific Rise,us1000431u
+2015-12-03 03:02:34.500000,5.2,mb,-34.5735,-109.3484,10000.0,Southern East Pacific Rise,us100042wp
+2015-12-03 00:23:55.740000,5.0,mb,-34.4849,-109.2098,10000.0,Southern East Pacific Rise,us100042w1
+2015-09-24 15:57:19.530000,5.2,mb,-36.1551,-100.9621,10100.0,Southeast of Easter Island,us20003nr5
+2015-07-20 11:08:19.430000,5.7,mwb,-35.5251,-105.0838,14000.0,Southern East Pacific Rise,us20002ynd
+2015-06-13 17:09:02.680000,5.1,mb,-35.0536,-107.2483,10000.0,Southern East Pacific Rise,us20002pn2
+2015-06-09 06:41:38.740000,5.4,mwb,-35.3695,-105.8146,10000.0,Southern East Pacific Rise,us20002n6e
+2015-06-05 20:02:54,5.4,mwb,-34.8726,-107.6523,5760.0,Southern East Pacific Rise,us20002mfl
+2015-05-25 16:20:27.510000,5.3,mwb,-35.2225,-104.2844,10000.0,Southeast of Easter Island,us10002c1g
+2015-01-18 23:13:36.680000,5.7,mww,-35.4555,-105.7571,8320.0,Southern East Pacific Rise,usc000th1c
+2015-01-07 03:06:45.360000,5.2,mb,-36.3215,-103.6723,10000.0,Southeast of Easter Island,usc000tcar
+2014-12-09 01:31:07.830000,5.1,mb,-34.5564,-108.867,15080.0,Southern East Pacific Rise,usc000t4qp
+2014-11-17 11:27:06.980000,5.5,mwc,-36.0008,-102.1971,19080.0,Southeast of Easter Island,usc000sy39
+2014-05-06 20:52:28.320000,6.3,mww,-36.1703,-97.054,16830.0,West Chile Rise,usb000qcg4
+2014-04-15 13:31:32.540000,5.6,mwb,-36.0868,-101.2428,10000.0,Southeast of Easter Island,usb000pl8s
+2013-10-06 21:33:19.800000,6.2,mww,-36.7267,-97.4761,10280.0,West Chile Rise,usb000k7s0
+2013-07-02 18:39:43.160000,5.5,mwb,-35.927,-102.964,10400.0,Southeast of Easter Island,usb000i52f
+2013-05-26 08:03:22.480000,5.0,mb,-36.033,-99.847,10100.0,Southeast of Easter Island,usb000h6jy
+2013-04-18 21:26:36.200000,5.5,mwc,-34.343,-109.213,10000.0,Southern East Pacific Rise,us2013pda1
+2013-03-29 23:15:26.020000,5.4,mwb,-36.094,-100.432,10000.0,Southeast of Easter Island,usb000fw9h
+2013-01-27 19:32:40.410000,5.2,mb,-34.748,-108.964,10000.0,southern East Pacific Rise,usp000jyva
+2013-01-27 13:50:36.530000,5.1,mb,-35.254,-108.563,10000.0,Southern East Pacific Rise,usc000ewe6
+2013-01-23 04:29:37.870000,5.1,mb,-34.625,-109.119,12400.0,southern East Pacific Rise,usp000jyr9
+2012-11-06 11:09:31.960000,5.5,mwb,-35.465,-104.8,10000.0,southeast of Easter Island,usp000jv3q
+2012-08-16 13:24:44.360000,5.8,mww,-36.429,-98.905,10000.0,southeast of Easter Island,usp000jqcu
+2012-05-02 17:06:05.530000,5.5,mwc,-35.883,-102.728,10000.0,southeast of Easter Island,usp000jjx9
+2012-04-14 23:49:24.840000,5.0,mb,-36.3,-97.183,10000.0,West Chile Rise,usp000jhzr
+2012-03-30 06:19:33.170000,5.0,mb,-35.843,-101.463,10000.0,southeast of Easter Island,usp000jgzf
+2012-03-17 19:50:20.560000,5.8,mww,-34.905,-107.644,11800.0,southern East Pacific Rise,usp000jgdf
+2012-01-28 04:43:41.030000,5.6,mww,-36.793,-110.517,10000.0,southern East Pacific Rise,usp000je2e
+2011-10-31 19:14:06.470000,5.1,mwc,-35.468,-105.084,10000.0,southern East Pacific Rise,usp000ja5z
+2011-08-09 15:46:31.690000,5.0,mwc,-36.075,-101.836,10000.0,southeast of Easter Island,usp000j67q
+2011-06-01 15:44:52.240000,5.1,mwc,-36.147,-100.194,10000.0,southeast of Easter Island,usp000j2j0
+2011-05-13 19:47:38.260000,5.0,mwc,-36.025,-97.985,10000.0,West Chile Rise,usp000j1j6
+2010-12-05 21:44:35.820000,5.9,mwb,-36.231,-100.826,12700.0,southeast of Easter Island,usp000hqjh
+2010-11-21 08:25:54.270000,5.1,mwc,-34.869,-108.793,10000.0,southern East Pacific Rise,usp000hpxg
+2010-11-12 19:01:29.970000,5.8,mwb,-35.958,-102.21,10000.0,southeast of Easter Island,usp000hpfw
+2010-10-25 00:57:16.120000,5.2,mwc,-35.944,-102.789,10000.0,southeast of Easter Island,usp000hnha
+2010-10-23 23:31:11.490000,5.3,mwc,-34.791,-108.103,10000.0,southern East Pacific Rise,usp000hnfj
+2010-09-20 16:39:41.810000,5.1,mwc,-36.242,-100.754,10000.0,southeast of Easter Island,usp000hm02
+2010-07-21 11:29:45.490000,5.3,mwc,-35.576,-104.013,10000.0,southeast of Easter Island,usp000hgb4
+2010-06-24 13:49:05.300000,5.1,mwc,-34.539,-108.393,10000.0,southern East Pacific Rise,usp000hefk
+2010-06-20 21:08:51.580000,5.6,mwc,-36.129,-100.176,23200.0,southeast of Easter Island,usp000heay
+2010-06-12 09:05:03.970000,5.3,mwc,-35.392,-106.376,10000.0,southern East Pacific Rise,usp000hdvt
+2010-05-05 09:38:23,5.9,mwc,-35.949,-103.058,10000.0,southeast of Easter Island,usp000hcbj
+2010-04-24 00:23:43.490000,5.2,mwc,-36.303,-99.775,10100.0,southeast of Easter Island,usp000hbu6
+2010-04-12 12:36:44.140000,5.3,mwc,-35.535,-105.451,10000.0,southern East Pacific Rise,usp000hb91
+2010-04-10 05:06:43.690000,5.4,mwc,-36.155,-100.992,10000.0,southeast of Easter Island,usp000hb3h
+2010-02-18 19:47:39.120000,5.4,mwc,-35.029,-108.397,10000.0,southern East Pacific Rise,usp000h7ee
+2010-01-18 03:51:01.010000,5.1,mwc,-34.939,-108.557,10000.0,southern East Pacific Rise,usp000h699
+2009-12-06 02:57:24.530000,5.0,mwc,-36.32,-96.769,10000.0,West Chile Rise,usp000h4sq
+2009-12-05 14:06:24,5.1,mwc,-36.75,-99.75,10000.0,southeast of Easter Island,gcmtc200912051406a
+2009-07-29 06:48:11.160000,5.3,mwc,-35.665,-103.331,10000.0,southeast of Easter Island,usp000gzs6
+2009-07-09 05:40:05.520000,5.1,mwc,-36.009,-102.692,10000.0,southeast of Easter Island,usp000gz29
+2009-07-08 19:23:37.730000,6.0,mwc,-36.004,-102.686,12000.0,southeast of Easter Island,usp000gz1t
+2009-06-26 16:49:22.210000,5.0,mwc,-35.15,-102.027,10000.0,southeast of Easter Island,usp000gymx
+2009-06-26 16:49:20,5.0,mwc,-36.25,-102.25,10000.0,southeast of Easter Island,gcmtc200906261649a
+2009-06-08 11:01:40.890000,5.0,mwc,-34.949,-108.118,10000.0,southern East Pacific Rise,usp000gxzs
+2009-06-05 13:39:10.160000,5.7,mwc,-35.418,-104.398,15000.0,southeast of Easter Island,usp000gxw3
+2009-06-02 00:22:01.610000,5.3,mwc,-35.855,-103.393,10000.0,southeast of Easter Island,usp000gxs6
+2009-02-15 18:27:27.810000,5.0,mwc,-36.372,-96.625,10000.0,West Chile Rise,usp000gu1f
+2009-01-02 08:31:38.600000,5.0,mwc,-34.799,-107.331,10000.0,southern East Pacific Rise,usp000gs09
+2009-01-01 12:42:05.700000,5.0,mwc,-34.876,-107.781,10000.0,southern East Pacific Rise,usp000grz9
+2009-01-01 06:27:51.220000,5.8,mwc,-34.84,-107.647,10000.0,southern East Pacific Rise,usp000gryu
+2008-10-28 19:59:12,5.0,mwc,-35.75,-104.75,10000.0,southeast of Easter Island,gcmtc200810281959a
+2008-09-28 15:34:12.310000,5.0,mwc,-35.947,-101.21,10000.0,southeast of Easter Island,usp000ghw7
+2008-09-06 17:37:41.520000,5.1,mwc,-35.597,-103.963,10000.0,southeast of Easter Island,usp000ggj1
+2008-08-17 21:28:38.030000,5.2,mwc,-34.814,-108.286,10000.0,southern East Pacific Rise,usp000gex5
+2008-06-15 08:37:17.200000,6.0,mwc,-36.623,-107.45,10000.0,southern East Pacific Rise,usp000g9qe
+2008-06-13 19:57:02.460000,5.0,mwc,-36.147,-100.037,10000.0,southeast of Easter Island,usp000g9gp
+2008-04-28 12:53:28.950000,5.2,mwc,-36.62,-110.59,10000.0,southern East Pacific Rise,usp000g517
+2008-02-29 02:38:29.520000,5.7,mwb,-35.074,-108.968,10000.0,southern East Pacific Rise,usp000g090
+2008-02-07 19:44:47.960000,5.0,mwc,-35.859,-103.785,10000.0,southeast of Easter Island,usp000fydc
+2008-01-31 00:31:29.020000,5.2,mwc,-34.746,-108.87,10000.0,southern East Pacific Rise,usp000fxu3
+2008-01-09 20:40:17.900000,5.3,mwc,-35.826,-102.176,10000.0,southeast of Easter Island,usp000fwbs
+2008-01-01 10:08:51.240000,5.0,mwc,-35.755,-103.692,10000.0,southeast of Easter Island,usp000fvsa
+2007-11-29 03:26:22.690000,6.3,mwc,-36.756,-97.404,10000.0,West Chile Rise,usp000ftgv
+2007-11-26 00:10:10.200000,5.2,mwc,-35.451,-104.973,10000.0,southeast of Easter Island,usp000ftaf
+2007-09-08 08:51:57.420000,5.3,mwc,-36.465,-98.291,10000.0,southeast of Easter Island,usp000fmpj
+2007-08-10 20:43:15.510000,5.3,mwc,-35.852,-102.904,10000.0,southeast of Easter Island,usp000fjbw
+2007-07-30 06:06:50.250000,5.5,mwb,-35.519,-103.846,10000.0,southeast of Easter Island,usp000fhe1
+2007-07-13 19:46:26.780000,5.1,mwc,-35.027,-107.993,10000.0,southern East Pacific Rise,usp000fg41
+2007-06-14 13:37:40.920000,5.9,mwb,-36.208,-100.152,10000.0,southeast of Easter Island,usp000fe02
+2007-05-29 18:15:50.760000,5.1,mwc,-35.837,-102.743,10000.0,southeast of Easter Island,usp000fd0d
+2007-05-26 02:44:46.900000,5.5,mwc,-35.928,-103.097,10000.0,southeast of Easter Island,usp000fcrs
+2007-04-15 17:05:28,5.1,mwc,-36.75,-97.75,10000.0,West Chile Rise,gcmtc200704151705a
+2007-04-14 10:00:52.220000,5.4,mwc,-36.4,-97.903,10000.0,West Chile Rise,usp000f9ph
+2007-04-13 18:24:19.160000,6.1,mwb,-35.051,-108.836,10000.0,southern East Pacific Rise,usp000f9mq
+2007-02-27 16:13:51.340000,5.2,mwc,-35.941,-106.252,10000.0,southern East Pacific Rise,usp000f5sb
+2006-12-15 23:57:10.420000,5.8,mwb,-35.327,-105.745,10000.0,southern East Pacific Rise,usp000f09x
+2006-12-13 08:16:12.940000,5.0,mwc,-35.177,-104.456,10000.0,southeast of Easter Island,usp000f04d
+2006-12-05 20:14:30.570000,5.8,mwb,-35.342,-104.546,10000.0,southeast of Easter Island,usp000ezkv
+2006-10-04 07:40:16,5.0,mwc,-35.25,-108.25,10000.0,southern East Pacific Rise,gcmtc200610040740a
+2006-09-08 00:47:12,5.2,mwc,-36.25,-104.25,10000.0,southeast of Easter Island,gcmtc200609080047a
+2006-08-18 03:15:29.160000,5.2,mwc,-36.377,-98.736,10000.0,southeast of Easter Island,usp000er7q
+2006-04-13 19:23:58.140000,5.2,mwc,-35.218,-106.994,10000.0,southern East Pacific Rise,usp000eeen
+2006-01-18 23:43:06.280000,5.8,mwb,-36.411,-100.496,10000.0,southeast of Easter Island,usp000e8f8
+2005-07-10 04:46:31.240000,6.1,mwb,-36.31,-97.264,10000.0,West Chile Rise,usp000duw6
+2005-07-06 06:22:32.520000,5.9,mwc,-35.79,-102.807,10000.0,southeast of Easter Island,usp000dumu
+2005-06-21 10:43:29.310000,5.8,mwb,-36.155,-100.959,10000.0,southeast of Easter Island,usp000dtkt
+2005-06-08 13:37:17.370000,5.6,mwb,-35.904,-102.907,10000.0,southeast of Easter Island,usp000dsh8
+2005-02-28 09:39:23.390000,5.2,mwc,-34.99,-107.849,10000.0,southern East Pacific Rise,usp000dh5r
+2005-02-28 01:24:54.690000,5.9,mwc,-34.923,-107.865,10000.0,southern East Pacific Rise,usp000dh4p
+2005-02-10 04:42:00,5.0,mwc,-35.769,-103.922,10000.0,southeast of Easter Island,usp000dfu7
+2004-09-21 17:55:50.270000,5.3,mwc,-36.227,-101.481,10000.0,southeast of Easter Island,usp000d4th
+2004-06-11 12:25:04.410000,5.4,mwc,-35.245,-106.425,10000.0,southern East Pacific Rise,usp000cxpp
+2004-05-22 20:14:48.280000,5.4,mwc,-35.739,-102.544,10000.0,southeast of Easter Island,usp000cvxj
+2004-04-08 04:57:50.480000,6.4,mwc,-36.256,-97.827,10000.0,West Chile Rise,usp000crz0
+2004-03-01 13:56:28.510000,5.2,mwc,-36.169,-100.131,10000.0,southeast of Easter Island,usp000cntz
+2004-01-29 01:25:15.680000,5.5,mwc,-35.418,-104.67,10000.0,southeast of Easter Island,usp000cjx0
+2002-05-22 18:57:19.430000,5.7,mwc,-36.344,-97.908,10000.0,West Chile Rise,usp000b4t4
+2002-02-15 01:46:37.850000,6.0,mwb,-36.231,-100.301,10000.0,southeast of Easter Island,usp000aygn
+2002-01-16 18:45:22.300000,5.4,mwc,-36.233,-97.115,10000.0,West Chile Rise,usp000awm2
+2001-12-29 17:29:44.850000,5.7,mwc,-35.017,-103.31,10000.0,southeast of Easter Island,usp000avga
+2001-12-28 21:31:59.360000,5.9,mwc,-36.098,-100.644,10000.0,southeast of Easter Island,usp000avf4
+2001-11-04 15:39:36.380000,5.3,mwc,-36.201,-100.303,10000.0,southeast of Easter Island,usp000as7d
+2001-05-11 06:06:26.840000,5.5,mwc,-34.916,-108.065,10000.0,southern East Pacific Rise,usp000aert
+2001-03-30 07:31:01.810000,5.5,mwc,-34.734,-109.015,10000.0,southern East Pacific Rise,usp000ac7x
+2000-12-09 22:49:47.690000,5.8,mwc,-36.388,-98.758,10000.0,southeast of Easter Island,usp000a5sx
+2000-10-26 14:08:37.310000,5.5,mwc,-34.573,-109.37,10000.0,southern East Pacific Rise,usp000a2f4
+2000-10-25 19:00:17.490000,6.1,mwc,-34.678,-109.458,10000.0,southern East Pacific Rise,usp000a2df
+2000-10-25 05:26:38.890000,6.0,mwc,-34.605,-109.648,10000.0,southern East Pacific Rise,usp000a2cb
+2000-09-09 12:18:10.290000,5.9,mwc,-35.875,-103.064,10000.0,southeast of Easter Island,usp0009zym
+2000-09-01 00:07:12.210000,5.4,mwc,-36.136,-100.753,10000.0,southeast of Easter Island,usp0009zge
+2000-04-04 10:59:45.010000,5.1,mwc,-36.372,-97.166,10000.0,West Chile Rise,usp0009qtd
+2000-03-20 08:42:13.710000,5.3,mwc,-36.51,-97.23,10000.0,West Chile Rise,usp0009pya
+2000-03-14 06:18:36.960000,5.4,mwc,-36.273,-96.888,10000.0,West Chile Rise,usp0009ppn
+2000-02-17 18:26:21.950000,5.2,mwc,-34.945,-109.279,10000.0,southern East Pacific Rise,usp0009nkb
+2000-01-27 02:49:44.910000,5.4,mwc,-34.807,-105.459,10000.0,southern East Pacific Rise,usp0009mqk
+1999-12-11 09:03:45.200000,5.2,mb,-36.209,-97.398,10000.0,West Chile Rise,usp0009jqt
+1999-12-10 20:06:59.990000,5.2,mb,-36.234,-97.422,10000.0,West Chile Rise,usp0009jq0
+1999-12-10 18:38:30.100000,6.5,mwc,-36.206,-97.316,10000.0,West Chile Rise,usp0009jpx
+1999-12-09 08:34:10.070000,5.4,mwc,-34.556,-106.943,10000.0,southern East Pacific Rise,usp0009jn8
+1999-10-05 02:59:59.070000,5.7,mwc,-35.841,-103.284,10000.0,southeast of Easter Island,usp0009ffr
+1999-07-13 12:26:42.260000,5.6,mwc,-35.487,-104.074,10000.0,southeast of Easter Island,usp0009bj5
+1999-05-11 16:05:10.940000,5.7,mwc,-36.31,-110.395,10000.0,southern East Pacific Rise,usp00097sx
+1999-05-11 15:56:10.060000,5.6,mwc,-36.368,-110.588,10000.0,southern East Pacific Rise,usp00097sv
+1999-04-29 18:26:37.720000,5.8,mwc,-35.781,-102.9,10000.0,southeast of Easter Island,usp0009724
+1999-04-28 06:34:55.050000,5.3,mwc,-35.221,-106.511,10000.0,southern East Pacific Rise,usp00096zf
+1999-01-16 00:19:13.850000,5.4,mwc,-35.873,-100.596,10000.0,southeast of Easter Island,usp000915t
+1998-09-14 04:43:28.940000,6.1,mwc,-34.75,-107.981,10000.0,southern East Pacific Rise,usp0008uwq
+1998-09-07 00:39:30.210000,6.1,mwc,-36.24,-97.711,10000.0,West Chile Rise,usp0008uj9
+1998-01-31 23:30:42.050000,6.0,mwc,-35.763,-97.058,10000.0,West Chile Rise,usp0008f91
+1998-01-26 13:02:37.800000,5.5,mwc,-36.068,-100.968,10000.0,southeast of Easter Island,usp0008f03
+1997-12-16 20:40:09.290000,5.7,mwc,-35.5,-105.92,10000.0,southern East Pacific Rise,usp0008crv
+1997-11-12 03:26:37.580000,5.6,mwc,-35.598,-105.038,10000.0,southern East Pacific Rise,usp0008ah8
+1997-10-04 18:31:41.050000,5.7,mwc,-35.286,-106.708,10000.0,southern East Pacific Rise,usp00088he
+1997-09-11 22:20:09.520000,5.6,mwc,-36.23,-101.031,10000.0,southeast of Easter Island,usp00087e5
+1997-06-10 21:53:55.020000,6.5,mwc,-35.815,-108.135,10000.0,southern East Pacific Rise,usp00083cd
+1997-05-29 17:02:38.740000,6.5,mwc,-35.964,-102.511,10000.0,southeast of Easter Island,usp00082yt
+1997-05-11 22:16:13.930000,6.5,mwc,-36.383,-97.703,10000.0,West Chile Rise,usp000824u
+1997-03-23 04:26:31.120000,5.4,mwc,-34.146,-109.341,10000.0,southern East Pacific Rise,usp0007za2
+1997-03-14 09:42:58.660000,5.4,mwc,-34.127,-109.529,10000.0,southern East Pacific Rise,usp0007ytv
+1997-03-13 06:27:58.070000,5.6,mwc,-36.468,-97.671,10000.0,West Chile Rise,usp0007yrg
+1996-09-09 03:21:47.220000,5.8,mwc,-35.402,-104.642,10000.0,southeast of Easter Island,usp0007pqa
+1995-10-12 23:41:45.350000,6.0,mwb,-35.288,-106.266,8400.0,southern East Pacific Rise,usp000751x
+1995-09-29 13:32:39.430000,5.4,mw,-35.864,-103.402,10000.0,southeast of Easter Island,usp000745j
+1995-05-21 15:47:24.890000,5.5,mw,-35.939,-102.647,10000.0,southeast of Easter Island,usp0006xtp
+1995-01-16 03:03:27.950000,5.2,mw,-35.36,-106.123,10000.0,southern East Pacific Rise,usp0006rdk
+1994-12-19 13:08:43.540000,5.2,mw,-34.458,-108.234,10000.0,southern East Pacific Rise,usp0006q7h
+1994-12-19 12:00:21.720000,5.0,mb,-34.659,-109.348,10000.0,southern East Pacific Rise,usp0006q7f
+1994-08-24 22:05:58.140000,5.5,mw,-35.483,-104.892,10000.0,southeast of Easter Island,usp0006hf1
+1994-07-24 14:24:43.800000,5.4,mw,-36.182,-101.041,10000.0,southeast of Easter Island,usp0006g2s
+1994-06-27 04:10:09.320000,6.1,mw,-36.236,-98.189,10000.0,southeast of Easter Island,usp0006evt
+1994-05-08 14:49:35.720000,5.6,mw,-35.731,-99.203,10000.0,southeast of Easter Island,usp0006c93
+1994-04-13 14:19:23.840000,5.4,mw,-33.975,-108.801,10000.0,southern East Pacific Rise,usp0006b1g
+1993-11-21 00:16:00.670000,5.4,mw,-35.959,-102.893,10000.0,southeast of Easter Island,usp00063zj
+1993-10-08 06:36:17.640000,5.8,mw,-35.903,-102.778,10000.0,southeast of Easter Island,usp00061nj
+1993-07-21 13:03:10.930000,5.7,mw,-35.967,-97.976,10000.0,West Chile Rise,usp0005x3q
+1993-05-16 16:09:37.320000,5.4,mw,-34.325,-108.941,10000.0,southern East Pacific Rise,usp0005swq
+1993-05-10 02:01:10.830000,5.4,mw,-35.536,-103.95,10000.0,southeast of Easter Island,usp0005sgw
+1992-12-28 05:31:25,5.2,mb,-34.005,-101.282,10000.0,West Chile Rise,usp0005jz9
+1992-12-28 00:16:17.420000,5.3,mb,-34.33,-101.495,10000.0,West Chile Rise,usp0005jyt
+1992-12-27 23:58:38.090000,5.3,mb,-35.972,-101.91,10000.0,southeast of Easter Island,usp0005jys
+1992-11-04 04:53:05.060000,5.9,mw,-35.788,-102.281,10000.0,southeast of Easter Island,usp0005g8y
+1992-09-15 04:19:35.010000,5.5,mw,-36.278,-100.224,10000.0,southeast of Easter Island,usp0005e0c
+1992-07-17 20:01:25.820000,5.0,mb,-34.661,-105.212,10000.0,southern East Pacific Rise,usp0005b08
+1992-06-23 11:21:21.550000,6.1,mw,-36.104,-101.22,10000.0,southeast of Easter Island,usp00059he
+1992-05-22 13:06:07.930000,5.5,mw,-35.34,-105.89,10000.0,southern East Pacific Rise,usp00057wv
+1991-12-15 06:12:59.360000,5.0,ms,-36.486,-98.518,10000.0,southeast of Easter Island,usp00050ft
+1991-06-05 16:43:07.670000,5.4,mw,-36.042,-100.732,10000.0,southeast of Easter Island,usp0004sje
+1991-05-10 23:30:44.540000,5.1,mb,-36.999,-98.929,10000.0,southeast of Easter Island,usp0004rg0
+1991-01-16 23:26:54.960000,5.0,mb,-34.992,-104.4,10000.0,West Chile Rise,usp0004ksj
+1990-09-26 15:40:42.430000,5.6,mw,-36.19,-100.795,10000.0,southeast of Easter Island,usp0004f30
+1990-09-24 21:37:59.220000,5.0,ms,-36.288,-97.53,10000.0,West Chile Rise,usp0004f17
+1990-09-13 17:08:47.210000,5.0,mb,-36.54,-97.69,10000.0,West Chile Rise,usp0004ep4
+1990-08-19 17:44:58.790000,5.7,mw,-34.597,-107.776,10000.0,southern East Pacific Rise,usp0004dnb
+1990-07-28 13:59:48.700000,5.6,mw,-36.423,-104.519,10000.0,southeast of Easter Island,usp0004cnr
+1990-05-22 13:25:36.320000,6.1,mw,-36.299,-97.876,33000.0,West Chile Rise,usp00049mb
+1990-05-07 16:46:10.110000,5.2,mb,-35.248,-105.212,10000.0,southern East Pacific Rise,usp00048zv
+1990-05-06 16:46:13.220000,5.7,mw,-35.253,-104.142,10000.0,southeast of Easter Island,usp00048ya
+1989-09-06 09:10:39.230000,6.0,mw,-36.087,-103.171,10000.0,southeast of Easter Island,usp0003z9c
+1989-07-07 12:27:51.080000,5.8,mw,-36.265,-99.25,10000.0,southeast of Easter Island,usp0003x2e
+1989-07-07 12:27:46,5.8,mwc,-36.86,-97.63,10000.0,West Chile Rise,gcmtb070789a
+1989-04-22 04:48:30.850000,5.5,mw,-35.576,-102.935,10000.0,southeast of Easter Island,usp0003u7d
+1988-11-13 23:40:12.090000,5.3,mw,-34.827,-108.599,10000.0,southern East Pacific Rise,usp0003num
+1988-10-09 17:03:53.020000,5.6,mw,-35.942,-103.212,10000.0,southeast of Easter Island,usp0003mp3
+1988-10-01 09:43:24.500000,6.3,mw,-35.315,-106.048,10000.0,southern East Pacific Rise,usp0003me6
+1988-03-28 18:36:26.470000,5.9,mw,-36.039,-102.843,10000.0,southeast of Easter Island,usp0003edy
+1988-02-11 02:56:10.100000,5.6,mw,-35.616,-102.268,10000.0,southeast of Easter Island,usp0003cy1
+1987-10-28 18:24:02,5.4,mb,-36.078,-100.843,10000.0,southeast of Easter Island,usp00039pv
+1987-10-06 14:39:53.090000,5.4,mw,-36.092,-101.166,10000.0,southeast of Easter Island,usp0003911
+1987-08-09 08:24:19.660000,5.6,mw,-35.141,-104.064,10000.0,southeast of Easter Island,usp00037cx
+1987-07-21 13:27:12.970000,5.8,mw,-36.295,-97.252,10000.0,West Chile Rise,usp00036tu
+1987-06-09 22:46:11.560000,5.6,mw,-35.278,-106.666,10000.0,southern East Pacific Rise,usp00035p3
+1986-12-05 01:45:36.110000,5.8,mw,-36.474,-97.628,10000.0,West Chile Rise,usp00030mr
+1986-08-01 14:09:24.970000,5.5,mw,-35.88,-103.702,10000.0,southeast of Easter Island,usp0002wsn
+1986-06-24 23:53:32.570000,5.2,mw,-36.075,-100.473,10000.0,southeast of Easter Island,usp0002vcu
+1986-06-19 17:18:58.210000,5.4,mw,-36.108,-100.7,10000.0,southeast of Easter Island,usp0002v70
+1986-06-05 09:01:15.450000,5.8,mw,-36.351,-97.382,10000.0,West Chile Rise,usp0002utb
+1986-04-09 01:44:39.820000,5.1,mb,-34.876,-108.125,10000.0,southern East Pacific Rise,usp0002ssb
+1986-01-12 14:00:55.090000,5.4,mw,-36.011,-102.215,10000.0,southeast of Easter Island,usp0002pzy
+1985-12-05 08:25:42.800000,5.2,mb,-35.247,-109.438,10000.0,southern East Pacific Rise,usp0002njk
+1985-11-12 03:34:18.350000,6.3,mw,-36.499,-98.158,10000.0,southeast of Easter Island,usp0002mph
+1985-05-06 07:33:58.410000,5.7,mw,-36.407,-98.868,10000.0,southeast of Easter Island,usp0002egj
+1984-05-10 09:51:02.400000,5.6,mw,-36.269,-98.886,10000.0,southeast of Easter Island,usp000248h
+1984-02-12 18:58:54.370000,5.1,mb,-34.875,-107.629,10000.0,southern East Pacific Rise,usp00021y7
+1983-11-09 01:57:50.110000,5.4,mb,-36.185,-100.24,10000.0,southeast of Easter Island,usp0001znv
+1983-10-02 23:02:14.840000,5.3,mb,-34.322,-107.757,10000.0,southern East Pacific Rise,usp0001yst
+1983-08-20 08:30:34.160000,5.3,mb,-36.251,-101.542,10000.0,southeast of Easter Island,usp0001xtb
+1983-07-26 04:14:20.820000,5.0,ms,-36.283,-98.814,10000.0,southeast of Easter Island,usp0001x49
+1983-06-17 11:33:16.670000,5.6,mb,-36.383,-97.524,10000.0,West Chile Rise,usp0001w5c
+1983-01-28 23:11:05.860000,5.5,ms,-36.226,-100.974,10000.0,southeast of Easter Island,usp0001spj
+1983-01-13 09:23:47.990000,5.6,mb,-35.813,-102.631,10000.0,southeast of Easter Island,usp0001s6j
+1982-09-09 06:40:21.400000,5.0,ms,-35.546,-102.423,10000.0,southeast of Easter Island,usp0001pg0
+1982-08-27 03:56:49.500000,5.2,mb,-35.462,-104.846,10000.0,southeast of Easter Island,usp0001p92
+1982-08-08 04:40:51.120000,5.0,mb,-36.239,-97.607,10000.0,West Chile Rise,usp0001nwp
+1982-06-15 01:20:35.210000,5.3,ms,-36.517,-98.651,10000.0,southeast of Easter Island,usp0001mxt
+1982-05-17 02:39:26.120000,5.0,mb,-35.35,-103.84,10000.0,southeast of Easter Island,usp0001mcq
+1981-12-20 01:19:00,5.0,mb,-35.29,-105.442,10000.0,southern East Pacific Rise,usp0001hh8
+1981-09-18 14:17:32.160000,5.0,mb,-35.246,-110.343,10000.0,southern East Pacific Rise,usp0001fyw
+1981-09-06 16:43:19.910000,5.4,mb,-36.173,-100.702,10000.0,southeast of Easter Island,usp0001fqc
+1981-08-22 23:47:41.490000,5.2,mb,-35.829,-103.302,10000.0,southeast of Easter Island,usp0001fek
+1981-07-06 08:25:59.250000,5.1,ms,-36.233,-101.09,10000.0,southeast of Easter Island,usp0001ej6
+1981-06-10 04:06:10.240000,5.0,ms,-35.8,-102.167,10000.0,southeast of Easter Island,usp0001e2n
+1980-10-22 23:27:16.600000,5.0,mb,-35.107,-104.084,10000.0,southeast of Easter Island,usp0001acr
+1980-10-22 22:59:54.100000,5.6,ms,-36.495,-98.605,10000.0,southeast of Easter Island,usp0001acq
+1980-09-26 20:26:34.800000,5.0,ms,-35.898,-102.938,10000.0,southeast of Easter Island,usp0001a01
+1980-08-03 13:42:35.400000,5.1,mb,-35.58,-104.629,10000.0,southeast of Easter Island,usp000198n
+1980-01-27 16:38:01.100000,5.9,ms,-35.379,-105.869,10000.0,southern East Pacific Rise,usp000157h
+1979-07-12 23:22:17.400000,5.5,mb,-36.314,-98.03,10000.0,southeast of Easter Island,usp00011u5
+1979-06-10 06:32:50.800000,6.0,ms,-36.28,-97.953,10000.0,West Chile Rise,usp000116j
+1979-04-14 10:00:24.900000,6.5,ms,-36.007,-102.601,10000.0,southeast of Easter Island,usp0000zzp
+1979-04-14 07:50:14.300000,5.1,mb,-35.035,-106.891,10000.0,southern East Pacific Rise,usp0000zzh
+1979-04-14 02:40:37.600000,5.4,mb,-35.139,-106.851,10000.0,southern East Pacific Rise,usp0000zzg
+1978-12-19 07:29:00.200000,5.4,ms,-35.386,-106.62,10000.0,southern East Pacific Rise,usp0000xzu
+1978-06-17 08:47:03.700000,5.1,mb,-36.06,-100.629,33000.0,southeast of Easter Island,usp0000v3k
+1978-04-03 11:28:27.800000,5.1,mb,-35.778,-100.809,33000.0,southeast of Easter Island,usp0000twr
+1978-03-06 00:22:19.200000,5.7,ms,-35.523,-102.586,33000.0,southeast of Easter Island,usp0000t8g
+1977-07-07 15:03:38.800000,5.2,mb,-34.938,-107.817,33000.0,southern East Pacific Rise,usp0000pmt
+1977-02-23 01:49:41.100000,5.1,ms,-36.344,-99.049,33000.0,southeast of Easter Island,usp0000mpd
+1976-04-26 19:19:25.300000,5.0,mb,-34.866,-108.908,33000.0,southern East Pacific Rise,usp0000g2a
+1976-03-25 01:41:26.900000,5.0,mb,-36.89,-98.066,33000.0,southeast of Easter Island,usp0000fks
+1975-12-08 00:01:48.100000,5.4,mb,-34.777,-108.167,33000.0,southern East Pacific Rise,usp0000duv
+1975-04-20 11:40:39.900000,6.2,ms,-36.403,-98.794,33000.0,southeast of Easter Island,usp0000aq6
+1974-11-03 18:35:59,5.1,mb,-34.828,-108.304,33000.0,southern East Pacific Rise,usp00008nx
+1974-07-06 12:20:58.700000,5.1,mb,-34.989,-108.037,33000.0,southern East Pacific Rise,usp000070t
+1974-06-26 13:43:35.300000,5.6,ms,-36.558,-98.2,33000.0,southeast of Easter Island,usp00006wu
+1974-03-31 04:48:50.200000,5.2,ms,-35.984,-103.178,33000.0,southeast of Easter Island,usp00005tg
+1974-02-04 09:09:41.400000,5.1,mb,-35.572,-104.84,33000.0,southeast of Easter Island,usp000055v
+1973-09-09 20:17:16.400000,5.2,mb,-34.994,-109.536,33000.0,southern East Pacific Rise,usp00003cx
+1973-06-25 15:03:18.700000,5.1,ms,-35.873,-103.928,33000.0,southeast of Easter Island,usp00002d6
+1973-02-15 07:54:26.900000,5.3,mb,-36.109,-101.018,33000.0,southeast of Easter Island,usp00000hw
+1970-10-23 11:01:27,5.7,mw,-36.533,-97.292,10000.0,West Chile Rise,iscgem791347
+1970-10-22 06:13:59,5.6,mw,-36.36,-97.337,10000.0,West Chile Rise,iscgem791328
+1965-09-13 16:15:45,6.1,mw,-36.448,-97.6,15000.0,West Chile Rise,iscgem853817
+1964-10-06 07:17:56,6.2,mw,-36.243,-100.825,10000.0,southeast of Easter Island,iscgem863302
+1963-12-04 15:59:42,6.2,mw,-35.815,-102.868,10000.0,southeast of Easter Island,iscgem873653
+1963-06-15 15:30:37,5.8,mw,-36.25,-99.155,15000.0,southeast of Easter Island,iscgem872517
+1960-09-14 04:57:13,5.9,mw,-35.304,-106.133,15000.0,southern East Pacific Rise,iscgem880327
+1960-06-12 07:19:48,6.2,mw,-36.281,-98.015,15000.0,southeast of Easter Island,iscgem879487
+1959-12-17 16:48:59,5.7,mw,-35.919,-102.769,15000.0,southeast of Easter Island,iscgem883490
+1959-04-22 20:26:50,5.8,mw,-36.427,-98.484,15000.0,southeast of Easter Island,iscgem881851
+1958-12-30 08:38:02,5.9,mw,-35.334,-106.736,15000.0,southern East Pacific Rise,iscgem885778
+1958-12-14 07:11:31,6.0,mw,-34.87,-108.837,15000.0,southern East Pacific Rise,iscgem885698
+1958-11-14 05:04:29,5.8,mw,-36.079,-102.705,15000.0,southeast of Easter Island,iscgem885512
+1958-09-25 20:24:48,5.8,mw,-36.149,-99.703,15000.0,southeast of Easter Island,iscgem885181
+1954-08-02 23:28:38,5.8,mw,-36.331,-101.334,15000.0,southeast of Easter Island,iscgem890914
+1954-07-30 08:46:06,6.6,mw,-36.215,-97.363,10000.0,West Chile Rise,iscgem890900
+1952-08-28 12:57:00,6.2,mw,-35.359,-106.215,10000.0,southern East Pacific Rise,iscgem893334
+1950-04-14 19:59:59,6.2,mw,-35.981,-102.471,15000.0,southeast of Easter Island,iscgem895370

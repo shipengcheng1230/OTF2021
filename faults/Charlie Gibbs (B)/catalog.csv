@@ -1,20 +1,20 @@
 time,mag,magType,lat,lon,dep,text,id
-1954-12-11 12:57:13,6.3,mw,52.73,-32.013,15000.0,Reykjanes Ridge,iscgem891342
-1956-06-11 08:22:10,5.6,mw,52.163,-31.777,15000.0,northern Mid-Atlantic Ridge,iscgem888357
-1961-04-30 07:33:55,5.7,mw,52.438,-31.81,15000.0,northern Mid-Atlantic Ridge,iscgem876484
-1974-10-16 05:45:09.800000,6.9,ms,52.636,-32.07,33000.0,Reykjanes Ridge,usp00008eb
-1977-10-24 05:58:27.800000,5.0,ms,52.175,-31.556,33000.0,northern Mid-Atlantic Ridge,usp0000r6x
-1982-03-22 10:07:01.080000,5.2,mb,52.437,-31.7,10000.0,northern Mid-Atlantic Ridge,usp0001k9f
-1990-08-28 03:03:12.470000,5.3,mw,52.85,-31.887,28600.0,northern Mid-Atlantic Ridge,usp0004dzy
-1995-02-16 14:52:52.370000,5.3,mw,52.136,-30.225,10000.0,northern Mid-Atlantic Ridge,usp0006t2b
-1995-10-24 14:39:30.150000,5.2,mw,52.163,-30.194,10000.0,northern Mid-Atlantic Ridge,usp00075pn
-1996-03-14 12:02:19.160000,5.3,mwc,51.965,-30.166,10000.0,northern Mid-Atlantic Ridge,usp0007ert
-1996-03-15 09:43:33.380000,5.2,mwc,52.147,-30.01,8000.0,northern Mid-Atlantic Ridge,usp0007ete
-1997-07-09 14:47:16.830000,5.4,mwc,52.22,-31.594,10000.0,northern Mid-Atlantic Ridge,usp00084kp
-1999-03-10 13:12:55.650000,5.3,mwc,52.432,-31.849,10000.0,northern Mid-Atlantic Ridge,usp0009485
-2004-01-24 13:01:45.700000,5.9,mwb,52.122,-30.179,10000.0,northern Mid-Atlantic Ridge,usp000cjk2
-2007-05-23 04:41:46.540000,5.7,mwc,52.352,-31.814,10000.0,northern Mid-Atlantic Ridge,usp000fcj4
-2012-08-11 17:47:30.920000,5.2,mb,52.149,-31.541,10000.0,northern Mid-Atlantic Ridge,usp000jq67
-2015-02-13 18:48:17.890000,5.3,mb,52.5081,-31.8737,17560.0,Northern Mid-Atlantic Ridge,usb000tp5k
-2015-02-13 18:59:12.230000,7.1,mww,52.6487,-31.9016,16680.0,Northern Mid-Atlantic Ridge,usb000tp5q
 2019-09-05 11:52:06.491000,5.5,mww,52.5864,-31.916,10000.0,Northern Mid-Atlantic Ridge,us70005c9r
+2015-02-13 18:59:12.230000,7.1,mww,52.6487,-31.9016,16680.0,Northern Mid-Atlantic Ridge,usb000tp5q
+2015-02-13 18:48:17.890000,5.3,mb,52.5081,-31.8737,17560.0,Northern Mid-Atlantic Ridge,usb000tp5k
+2012-08-11 17:47:30.920000,5.2,mb,52.149,-31.541,10000.0,northern Mid-Atlantic Ridge,usp000jq67
+2007-05-23 04:41:46.540000,5.7,mwc,52.352,-31.814,10000.0,northern Mid-Atlantic Ridge,usp000fcj4
+2004-01-24 13:01:45.700000,5.9,mwb,52.122,-30.179,10000.0,northern Mid-Atlantic Ridge,usp000cjk2
+1999-03-10 13:12:55.650000,5.3,mwc,52.432,-31.849,10000.0,northern Mid-Atlantic Ridge,usp0009485
+1997-07-09 14:47:16.830000,5.4,mwc,52.22,-31.594,10000.0,northern Mid-Atlantic Ridge,usp00084kp
+1996-03-15 09:43:33.380000,5.2,mwc,52.147,-30.01,8000.0,northern Mid-Atlantic Ridge,usp0007ete
+1996-03-14 12:02:19.160000,5.3,mwc,51.965,-30.166,10000.0,northern Mid-Atlantic Ridge,usp0007ert
+1995-10-24 14:39:30.150000,5.2,mw,52.163,-30.194,10000.0,northern Mid-Atlantic Ridge,usp00075pn
+1995-02-16 14:52:52.370000,5.3,mw,52.136,-30.225,10000.0,northern Mid-Atlantic Ridge,usp0006t2b
+1990-08-28 03:03:12.470000,5.3,mw,52.85,-31.887,28600.0,northern Mid-Atlantic Ridge,usp0004dzy
+1982-03-22 10:07:01.080000,5.2,mb,52.437,-31.7,10000.0,northern Mid-Atlantic Ridge,usp0001k9f
+1977-10-24 05:58:27.800000,5.0,ms,52.175,-31.556,33000.0,northern Mid-Atlantic Ridge,usp0000r6x
+1974-10-16 05:45:09.800000,6.9,ms,52.636,-32.07,33000.0,Reykjanes Ridge,usp00008eb
+1961-04-30 07:33:55,5.7,mw,52.438,-31.81,15000.0,northern Mid-Atlantic Ridge,iscgem876484
+1956-06-11 08:22:10,5.6,mw,52.163,-31.777,15000.0,northern Mid-Atlantic Ridge,iscgem888357
+1954-12-11 12:57:13,6.3,mw,52.73,-32.013,15000.0,Reykjanes Ridge,iscgem891342

@@ -1,34 +1,34 @@
 time,mag,magType,lat,lon,dep,text,id
-1953-12-16 02:39:57,6.0,mw,-54.006,5.939,20000.0,Bouvet Island region,iscgem892293
-1965-06-27 09:45:45,5.7,mw,-54.437,4.965,10000.0,Bouvet Island region,iscgem856447
-1971-12-07 03:26:19,6.2,mw,-54.438,5.837,15000.0,Bouvet Island region,iscgem777545
-1973-01-12 03:11:33.100000,5.7,ms,-54.358,5.297,33000.0,Bouvet Island region,usp0000041
-1973-01-12 03:16:02.800000,5.7,mb,-54.408,5.357,33000.0,Bouvet Island region,usp0000042
-1973-01-12 04:01:26.300000,5.1,mb,-54.388,5.187,33000.0,Bouvet Island region,usp0000043
-1974-03-23 14:21:29.800000,5.6,mb,-54.043,7.105,33000.0,Bouvet Island region,usp00005q8
-1979-11-17 18:51:09.900000,5.2,mb,-54.369,5.82,10000.0,Bouvet Island region,usp000142e
-1982-10-20 18:15:17.680000,5.4,ms,-54.031,6.942,10000.0,Bouvet Island region,usp0001qcx
-1986-11-08 03:24:30.080000,5.0,mb,-54.171,6.239,10000.0,Bouvet Island region,usp0002zsq
-1992-10-15 20:28:19.840000,5.4,mw,-53.851,6.9,10000.0,Bouvet Island region,usp0005fcp
-1997-05-30 20:35:28.240000,5.6,mwc,-54.096,6.049,10000.0,Bouvet Island region,usp00082zt
-1998-10-30 08:33:10.180000,5.1,mwc,-54.404,5.387,10000.0,Bouvet Island region,usp0008x9q
-2000-07-28 05:48:42.590000,5.2,mb,-54.377,5.299,10000.0,Bouvet Island region,usp0009xaj
-2003-02-14 23:17:52.220000,5.7,mwc,-54.471,5.742,10000.0,Bouvet Island region,usp000bqpz
-2003-04-30 00:47:08.810000,5.0,mwc,-54.405,5.032,10000.0,Bouvet Island region,usp000bw8r
-2005-02-25 07:47:18.770000,5.1,mwc,-54.084,6.942,10000.0,Bouvet Island region,usp000dgxa
-2005-04-05 19:58:41.940000,5.1,mwc,-54.054,7.024,10000.0,Bouvet Island region,usp000dmbt
-2005-11-02 00:46:44.680000,5.0,mwc,-54.389,5.241,10000.0,Bouvet Island region,usp000e3av
-2006-01-15 06:49:41.640000,5.1,mwc,-54.043,6.977,10000.0,Bouvet Island region,usp000e88w
-2007-04-30 15:38:52.540000,5.6,mwc,-53.999,6.081,10000.0,Bouvet Island region,usp000fay5
-2008-02-14 07:33:16.880000,5.1,mwc,-54.423,5.352,10000.0,Bouvet Island region,usp000fyvu
-2008-04-29 09:00:13.440000,5.0,mwc,-54.362,5.784,10000.0,Bouvet Island region,usp000g53j
-2009-06-16 20:05:56.990000,6.1,mwc,-54.366,5.871,10000.0,Bouvet Island region,usp000gy9c
-2009-06-19 17:54:40,5.1,mwc,-53.75,6.75,10000.0,Bouvet Island region,gcmtc200906191754a
-2009-11-18 01:42:47.740000,5.5,mwc,-53.965,6.484,10000.0,Bouvet Island region,usp000h45f
-2014-01-16 20:02:45.570000,5.2,mb,-54.0729,6.9359,10000.0,"236km E of Bouvet Island, Bouvet Island",usb000m2ca
-2014-01-16 21:38:00.480000,5.2,mb,-53.9902,6.9807,10000.0,"241km E of Bouvet Island, Bouvet Island",usb000m2h5
-2015-10-23 01:40:06.320000,6.2,mww,-54.2258,6.1653,11000.0,"183km E of Bouvet Island, Bouvet Island",us10003qvc
-2016-10-12 20:32:53.820000,5.1,mb,-54.4418,5.9023,10000.0,"165km E of Bouvet Island, Bouvet Island",us20007dlp
-2019-11-17 06:18:34.530000,5.4,mww,-54.0961,6.1445,10000.0,"185km E of Bouvet Island, Bouvet Island",us7000692c
-2020-01-12 02:27:00.348000,5.6,mww,-54.3946,5.2056,10000.0,"120km E of Bouvet Island, Bouvet Island",us70006yla
 2020-02-20 06:42:24.887000,5.0,mb,-54.5632,5.4124,10000.0,"134km E of Bouvet Island, Bouvet Island",us70007tf6
+2020-01-12 02:27:00.348000,5.6,mww,-54.3946,5.2056,10000.0,"120km E of Bouvet Island, Bouvet Island",us70006yla
+2019-11-17 06:18:34.530000,5.4,mww,-54.0961,6.1445,10000.0,"185km E of Bouvet Island, Bouvet Island",us7000692c
+2016-10-12 20:32:53.820000,5.1,mb,-54.4418,5.9023,10000.0,"165km E of Bouvet Island, Bouvet Island",us20007dlp
+2015-10-23 01:40:06.320000,6.2,mww,-54.2258,6.1653,11000.0,"183km E of Bouvet Island, Bouvet Island",us10003qvc
+2014-01-16 21:38:00.480000,5.2,mb,-53.9902,6.9807,10000.0,"241km E of Bouvet Island, Bouvet Island",usb000m2h5
+2014-01-16 20:02:45.570000,5.2,mb,-54.0729,6.9359,10000.0,"236km E of Bouvet Island, Bouvet Island",usb000m2ca
+2009-11-18 01:42:47.740000,5.5,mwc,-53.965,6.484,10000.0,Bouvet Island region,usp000h45f
+2009-06-19 17:54:40,5.1,mwc,-53.75,6.75,10000.0,Bouvet Island region,gcmtc200906191754a
+2009-06-16 20:05:56.990000,6.1,mwc,-54.366,5.871,10000.0,Bouvet Island region,usp000gy9c
+2008-04-29 09:00:13.440000,5.0,mwc,-54.362,5.784,10000.0,Bouvet Island region,usp000g53j
+2008-02-14 07:33:16.880000,5.1,mwc,-54.423,5.352,10000.0,Bouvet Island region,usp000fyvu
+2007-04-30 15:38:52.540000,5.6,mwc,-53.999,6.081,10000.0,Bouvet Island region,usp000fay5
+2006-01-15 06:49:41.640000,5.1,mwc,-54.043,6.977,10000.0,Bouvet Island region,usp000e88w
+2005-11-02 00:46:44.680000,5.0,mwc,-54.389,5.241,10000.0,Bouvet Island region,usp000e3av
+2005-04-05 19:58:41.940000,5.1,mwc,-54.054,7.024,10000.0,Bouvet Island region,usp000dmbt
+2005-02-25 07:47:18.770000,5.1,mwc,-54.084,6.942,10000.0,Bouvet Island region,usp000dgxa
+2003-04-30 00:47:08.810000,5.0,mwc,-54.405,5.032,10000.0,Bouvet Island region,usp000bw8r
+2003-02-14 23:17:52.220000,5.7,mwc,-54.471,5.742,10000.0,Bouvet Island region,usp000bqpz
+2000-07-28 05:48:42.590000,5.2,mb,-54.377,5.299,10000.0,Bouvet Island region,usp0009xaj
+1998-10-30 08:33:10.180000,5.1,mwc,-54.404,5.387,10000.0,Bouvet Island region,usp0008x9q
+1997-05-30 20:35:28.240000,5.6,mwc,-54.096,6.049,10000.0,Bouvet Island region,usp00082zt
+1992-10-15 20:28:19.840000,5.4,mw,-53.851,6.9,10000.0,Bouvet Island region,usp0005fcp
+1986-11-08 03:24:30.080000,5.0,mb,-54.171,6.239,10000.0,Bouvet Island region,usp0002zsq
+1982-10-20 18:15:17.680000,5.4,ms,-54.031,6.942,10000.0,Bouvet Island region,usp0001qcx
+1979-11-17 18:51:09.900000,5.2,mb,-54.369,5.82,10000.0,Bouvet Island region,usp000142e
+1974-03-23 14:21:29.800000,5.6,mb,-54.043,7.105,33000.0,Bouvet Island region,usp00005q8
+1973-01-12 04:01:26.300000,5.1,mb,-54.388,5.187,33000.0,Bouvet Island region,usp0000043
+1973-01-12 03:16:02.800000,5.7,mb,-54.408,5.357,33000.0,Bouvet Island region,usp0000042
+1973-01-12 03:11:33.100000,5.7,ms,-54.358,5.297,33000.0,Bouvet Island region,usp0000041
+1971-12-07 03:26:19,6.2,mw,-54.438,5.837,15000.0,Bouvet Island region,iscgem777545
+1965-06-27 09:45:45,5.7,mw,-54.437,4.965,10000.0,Bouvet Island region,iscgem856447
+1953-12-16 02:39:57,6.0,mw,-54.006,5.939,20000.0,Bouvet Island region,iscgem892293

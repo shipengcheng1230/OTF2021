@@ -1,12 +1,12 @@
 time,mag,magType,lat,lon,dep,text,id
-1955-01-20 03:48:52,6.0,mw,15.112,-104.609,15000.0,"off the coast of Michoacan, Mexico",iscgem889142
-1975-01-31 16:14:31,5.2,ms,15.372,-104.752,44000.0,"off the coast of Michoacan, Mexico",usp00009r9
-1978-10-22 14:07:00.200000,5.2,mb,15.176,-104.448,33000.0,"off the coast of Michoacan, Mexico",usp0000x3e
-1978-10-22 14:17:14.400000,5.2,mb,15.313,-104.486,33000.0,"off the coast of Michoacan, Mexico",usp0000x3f
-1980-08-05 20:26:11.700000,5.0,ms,14.875,-105.116,10000.0,northern East Pacific Rise,usp000199c
-1990-02-10 10:35:57.830000,5.0,mb,15.327,-104.36,33000.0,"off the coast of Michoacan, Mexico",usp000459k
-2002-12-25 01:43:34.170000,5.1,mwc,15.149,-104.701,33000.0,"off the coast of Michoacan, Mexico",usp000bmc4
-2008-02-10 18:09:32.500000,5.2,mwc,15.653,-104.36,32900.0,"off the coast of Michoacan, Mexico",usp000fym9
-2009-10-12 20:03:37.900000,5.3,mwc,15.216,-105.208,10000.0,"off the coast of Michoacan, Mexico",usp000h2tq
-2009-10-12 20:10:00,5.1,mwc,15.75,-105.25,10000.0,"off the coast of Michoacan, Mexico",gcmtc200910122009a
 2011-01-22 01:27:29.330000,5.4,mwc,15.216,-104.474,10000.0,"off the coast of Michoacan, Mexico",usp000htfs
+2009-10-12 20:10:00,5.1,mwc,15.75,-105.25,10000.0,"off the coast of Michoacan, Mexico",gcmtc200910122009a
+2009-10-12 20:03:37.900000,5.3,mwc,15.216,-105.208,10000.0,"off the coast of Michoacan, Mexico",usp000h2tq
+2008-02-10 18:09:32.500000,5.2,mwc,15.653,-104.36,32900.0,"off the coast of Michoacan, Mexico",usp000fym9
+2002-12-25 01:43:34.170000,5.1,mwc,15.149,-104.701,33000.0,"off the coast of Michoacan, Mexico",usp000bmc4
+1990-02-10 10:35:57.830000,5.0,mb,15.327,-104.36,33000.0,"off the coast of Michoacan, Mexico",usp000459k
+1980-08-05 20:26:11.700000,5.0,ms,14.875,-105.116,10000.0,northern East Pacific Rise,usp000199c
+1978-10-22 14:17:14.400000,5.2,mb,15.313,-104.486,33000.0,"off the coast of Michoacan, Mexico",usp0000x3f
+1978-10-22 14:07:00.200000,5.2,mb,15.176,-104.448,33000.0,"off the coast of Michoacan, Mexico",usp0000x3e
+1975-01-31 16:14:31,5.2,ms,15.372,-104.752,44000.0,"off the coast of Michoacan, Mexico",usp00009r9
+1955-01-20 03:48:52,6.0,mw,15.112,-104.609,15000.0,"off the coast of Michoacan, Mexico",iscgem889142

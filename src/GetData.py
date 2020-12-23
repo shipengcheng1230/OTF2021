@@ -61,7 +61,7 @@ class FaultData(AbstractFaultProcess):
 
     def getCatalog(self, minMag=5.0, extent=0.5,
                    startTime=UTCDateTime("1950-01-01"),
-                   endTime=UTCDateTime("2020-06-01"),
+                   endTime=UTCDateTime("2020-12-01"),
                    suffix="",
                    mt=True,
                    ):
@@ -75,7 +75,7 @@ class FaultData(AbstractFaultProcess):
                 maxlatitude=self.df['maxlat'].iloc[0] + extent,
                 minlongitude=self.df['minlon'].iloc[0] - extent,
                 maxlongitude=self.df['maxlon'].iloc[0] + extent,
-                orderby="time-asc",
+                orderby="time",
             )
         except FDSNNoDataException:
             print(f"No data for {self.faultName}!")
@@ -337,36 +337,35 @@ class FaultData(AbstractFaultProcess):
 def getAllData(name: str):
     print(name)
     f = FaultData(name)
-    # f.getCatalog()
+    f.getCatalog()
     # f.getCandidateStations()
-    # f.getCandidateEvents()
-    # f.getEventPairs()
-    f.getWaveform()
+    f.getCandidateEvents()
+    f.getEventPairs()
+    # f.getWaveform()
     return 0
 
 if __name__ == "__main__":
 
-    df2 = dfFaults.loc[dfFaults["Good Bathymetry"] == 1]
+    df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] == 1) | (dfFaults["key"] < 80)]
     names = df2["Name"].to_list()
-    # for name in names:
-    #     print(name)
-    #     getAllData(name.strip())
+    for name in names:
+        getAllData(name.strip())
 
     # You may get refused by the server if you open too many clients at the same time
     # You may not get all the waveform on the first request
     # Keep trying until no more
-    i = 0
-    while True:
-        with ProcessPoolExecutor(max_workers=12) as executor:
-            futures = []
-            for name in names:
-                futures.append(executor.submit(getAllData, name))
-            try:
-                # [future.result() for future in as_completed(futures)]
-                wait(futures)
-            except Exception as e:
-                print(f"Retry {i} ......")
-                i += 1
-            else:
-                # exit()
-                pass
+    # i = 0
+    # while True:
+    #     with ProcessPoolExecutor(max_workers=12) as executor:
+    #         futures = []
+    #         for name in names:
+    #             futures.append(executor.submit(getAllData, name))
+    #         try:
+    #             # [future.result() for future in as_completed(futures)]
+    #             wait(futures)
+    #         except Exception as e:
+    #             print(f"Retry {i} ......")
+    #             i += 1
+    #         else:
+    #             # exit()
+    #             pass
