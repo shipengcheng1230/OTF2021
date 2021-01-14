@@ -32,6 +32,9 @@ from GetData import AbstractFaultProcess
 from scalebar import dist_func_complete, scale_bar
 from utils import *
 
+GMRT_BATHY_GRID = "/mnt/disk6/pshi/otfloc/bathy2"
+
+
 class PlotProcedure(AbstractFaultProcess):
 
     def __init__(self, name):
@@ -119,13 +122,48 @@ class PlotProcedure(AbstractFaultProcess):
         ax1pos = ax1.get_position().bounds
         ax2pos = ax2.get_position().bounds
 
-        for x in [ax1, ax2]:
-            x.add_wms(
-                # wms="https://www.gmrt.org/services/mapserver/wms_merc?",
-                wms="https://www.gebco.net/data_and_products/gebco_web_services/2019/mapserv?",
-                layers=["GEBCO_2019_Grid"],
-                cmap=plt.cm.get_cmap("ocean"),
-            )
+        if self.name != "Gofar":
+            for x in [ax1, ax2]:
+                x.add_wms(
+                    # wms="https://www.gmrt.org/services/mapserver/wms_merc?",
+                    wms="https://www.gebco.net/data_and_products/gebco_web_services/2019/mapserv?",
+                    layers=["GEBCO_2019_Grid"],
+                )
+        else:
+            def getBathymetryFromGMRTByExtent(name):
+                f = netCDF4.Dataset(os.path.join(GMRT_BATHY_GRID, name + ".grd"))
+                x_range = f.variables["x_range"][:]
+                y_range = f.variables["y_range"][:]
+                dims = f.variables["dimension"][:]
+                xx = np.linspace(x_range[0], x_range[1], dims[0])
+                yy = np.linspace(y_range[0], y_range[1], dims[1])
+                zz = f.variables["z"][:]
+                # zz = -np.abs(zz) # wrong GMRT data perhaps
+                zz = np.reshape(zz, (dims[1], dims[0]))
+                return xx, yy, zz, [x_range[0], x_range[1], y_range[0], y_range[1]]
+
+            bathylon, bathylat, bathyelv, bathyextent = getBathymetryFromGMRTByExtent(name)
+            maxelv, minelv = np.nanmin(bathyelv), np.nanmax(bathyelv)
+            elvmaxnorm = maxelv + (minelv - maxelv) * 1.1
+            dx = bathylon[len(bathylon)//2] - bathylon[len(bathylon)//2-1]
+            dy = bathylat[len(bathylat)//2] - bathylat[len(bathylat)//2-1]
+            dy = 111200 * dy
+            dx = 111200 * dx * np.cos(np.radians(np.nanmean(bathylat))) # dx vary with latitude
+            ls = LightSource(azdeg=self.df["strike"].values[0]-45.0, altdeg=45)
+            cmapBathy = plt.cm.get_cmap("YlGnBu_r")
+            origin = "upper"
+            shade_data = np.where(np.isnan(bathyelv.data), 0.0, bathyelv.data)
+            print("here1")
+            z = ls.shade(
+                shade_data, # nan val corrupt lightsource
+                cmap=cmapBathy, vert_exag=50.0, dx=dx, dy=dy, blend_mode="overlay", fraction=1.0,
+                vmin=maxelv, vmax=elvmaxnorm)
+            print("here")
+            ax1.get_position().bounds
+            ax2.get_position().bounds
+            ax2.imshow(z, extent=bathyextent, origin=origin, transform=ccrs.PlateCarree(), cmap=cmapBathy, interpolation='nearest')
+            ax1.imshow(z, extent=bathyextent, origin=origin, transform=ccrs.PlateCarree(), cmap=cmapBathy, interpolation='nearest')
+
         gl = ax1.gridlines(draw_labels=True, color='black', alpha=0.5, linestyle='--', zorder=1, x_inline=False, y_inline=False)
         gl.ylabels_left = False
         gl.ylabels_right = True
@@ -306,35 +344,56 @@ class PlotProcedure(AbstractFaultProcess):
             arr, rr = func(xdist, xs, mws)
             arr2, rr2 = func(xdist, xs2, mws2)
             arr3, rr3 = func(xdist, xs3, mws3)
-            ax3.plot(rr, arr / (2020-1950) / 1e20, color="lightslategray", label="since 1950")
-            ax3.plot(rr2, arr2 / (2020-1990) / 1e20, color="royalblue", label="since 1990")
-            ax3.plot(rr3, arr3 / (2020-1990) / 1e20, color="deeppink", label="relocated only") # relocate attempt after 1990
+            ax3.plot(rr, arr / (2020-1950) / 1e13, color="lightslategray", label="since 1950")
+            ax3.plot(rr2, arr2 / (2020-1990) / 1e13, color="royalblue", label="since 1990")
+            ax3.plot(rr3, arr3 / (2020-1990) / 1e13, color="deeppink", label="relocated only") # relocate attempt after 1990
             ax3.legend(
                 loc="lower center", ncol=3, title="$E_{\mathrm{year}}[ \Sigma (M_{0}/L) ]$",
-                bbox_to_anchor=(0.5, 0.80), fontsize='xx-small', title_fontsize="xx-small")
-            ax3.set_ylim(bottom=0)
-            ax3.set_ylabel("Unit Moment Rate\n($ 10 ^{20} \cdot \mathrm{N} \;/ \;\mathrm{yr}$)")
+                bbox_to_anchor=(0.5, 0.99), fontsize='xx-small', title_fontsize="xx-small")
+            ax3.set_ylabel("Unit Moment Rate\n($ 10 ^{13} \cdot \mathrm{N} \;/ \;\mathrm{yr}$)")
 
             if "edge" in self.config:
-                l = self.config["edge"]["l"]
-                r = self.config["edge"]["r"]
+                li = self.config["edge"]["l"]
+                ri = self.config["edge"]["r"]
                 edges = []
-                for x in [l, r]:
+                for x in [li, ri]:
                     xp, yp = transform_xy_xyproj(rotatedpole, x[1], x[0])
                     xr, _ = transform_xyproj_xyr(ax1, xp, yp)
                     edges.append(xr)
                 if edges[0] > edges[1]:
                     edges.reverse()
 
-                rect = Rectangle((edges[0], 0), edges[1] - edges[0], 1, transform=ax3.transAxes, fc="lightgray", alpha=0.6)
-                ax3.add_patch(rect)
-                thrd = 0.05
-                peak = np.max(arr3) / (2020-1990) / 1e20
+                # rect = Rectangle((edges[0], 0), edges[1] - edges[0], 1, transform=ax3.transAxes, fc="lightgray", alpha=0.6)
+                # ax3.add_patch(rect)
+                thrd = 0.1
+                peak = np.max(arr3) / (2020-1990) / 1e13
                 creepPct = creepPercentage(arr3 / (2020-1990), rr3, edges[0], edges[1], thrd)
-                ax3.plot([0.0, 1.0], [thrd * peak, thrd * peak], linestyle=":", color="green", linewidth=1.0)
+                creepIndex, shape = creepMask(arr3 / (2020-1990), rr3, edges[0], edges[1], thrd)
+
+                for x in creepIndex:
+                    rect = Rectangle((rr3[x[0]], 0), rr3[x[1]] - rr3[x[0]], 1, transform=ax3.transAxes, fc="lightgray", alpha=0.6)
+                    ax3.add_patch(rect)
+
                 self.config["creepPercentage"] = creepPct
                 self.updateConfig()
-                ax3.text(0.90, 0.8, f"{creepPct:.2f}", transform=ax3.transAxes)
+                # ax3.text(0.90, 0.8, f"{creepPct:.2f}", transform=ax3.transAxes)
+
+                expected = self.df["At"] * 1e6 * 3e10 * self.df["Vpl (mm/yr)"] / 1e3 / self.df["Length (km)"] / 1e3
+                expected /= 1e13
+                if not np.isnan(expected.values[0]):
+                    ax3.plot([0.0, 1.0], [expected, expected], linestyle=":", color="green", linewidth=1.0)
+                    ax3.text(0.9, expected, "$A_{T}$", color="green")
+
+                ax3.set_ylim(bottom=0)
+
+                with open(os.path.join(self.dir, "umrr.json"), "w") as fp:
+                    d = {
+                        "relocated": {
+                            "x": list(rr3), "y": list(arr3 / (2020-1990) / 1e13), "index": [y for x in creepIndex for y in x],
+                        },
+                        "At": expected.values[0],
+                    }
+                    json.dump(d, fp, indent=4)
 
         momentHist()
 
@@ -349,6 +408,17 @@ class PlotProcedure(AbstractFaultProcess):
             loc="lower center", title="Mw", fancybox=True, labelspacing=1.0, framealpha=1.0,
             handletextpad=0.2, borderaxespad=1.2, fontsize='small', title_fontsize="small")
 
+        for t, x in zip(["A", "B", "C", "D"], [ax0, ax1, ax3, ax2]):
+            loc = "lower left" if t == "A" else "lower right"
+            at = AnchoredText(t, loc=loc, frameon=True,)
+            at.patch.set_boxstyle("round,pad=0.,rounding_size=0.2")
+            x.add_artist(at)
+
+        ax2.text(0.3, 0.55, "G3", transform=ax2.transAxes, color="Purple", backgroundcolor="white")
+        ax2.text(0.56, 0.62, "G2", transform=ax2.transAxes, color="Purple", backgroundcolor="white")
+        ax2.text(0.76, 0.70, "G1", transform=ax2.transAxes, color="Purple", backgroundcolor="white")
+
+
         print(f"Saving link simple plot {self.name} ...")
         fig.savefig(output, dpi=600)
         plt.close(fig)
@@ -357,7 +427,7 @@ if __name__ == "__main__":
 
     df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] == 1) | (dfFaults["key"] < 80)]
     names = df2["Name"].to_list()
-    # names = ["Tasman"]
+    names = ["Gofar"]
     for name in names:
         print(name)
         f = PlotProcedure(name.strip())

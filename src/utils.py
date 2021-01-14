@@ -31,7 +31,8 @@ def angularDiff(x, y):
     return min(360 - xy, xy)
 
 def mag2moment(x):
-    return 10 ** (x * 3/2 + 16.1)
+    # https://en.wikipedia.org/wiki/Moment_magnitude_scale
+    return 10 ** (x * 3/2 + 16.1) / 1e7
 
 def mag2mw(m, magType):
 
@@ -103,6 +104,25 @@ def momentAlongStrikeEllipsoid(xdist, xrs, mws, npts=500):
         for i in range(ileft, iright):
             arr[i] += np.sqrt((1 - (rr[i] - left - a) ** 2 / a ** 2) * b ** 2) / xdist / 1e3
     return arr, rr
+
+def creepMask(arr, rr, left, right, thred):
+    mask = np.zeros(len(arr))
+    ileft = np.argmax(rr >= left)
+    iright = np.argmax(rr > right)
+    thred = np.max(arr) * thred
+
+    for i in range(ileft, iright):
+        if arr[i] <= thred:
+            mask[i] = 1
+
+    p1, p2 = [], []
+    for i in range(1, len(mask)):
+        if mask[i] == 0 and mask[i - 1] == 1:
+            p2.append(i)
+        if mask[i] == 1 and mask[i - 1] == 0:
+            p1.append(i)
+
+    return list(zip(p1, p2)), mask[ileft: iright]
 
 def creepPercentage(arr, rr, left, right, thred):
     ileft = np.argmax(rr >= left)

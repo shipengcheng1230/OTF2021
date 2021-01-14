@@ -335,37 +335,37 @@ class FaultData(AbstractFaultProcess):
 
 
 def getAllData(name: str):
-    print(name)
+    # print(name)
     f = FaultData(name)
-    f.getCatalog()
+    # f.getCatalog()
     # f.getCandidateStations()
-    f.getCandidateEvents()
-    f.getEventPairs()
-    # f.getWaveform()
+    # f.getCandidateEvents()
+    # f.getEventPairs()
+    f.getWaveform()
     return 0
 
 if __name__ == "__main__":
 
     df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] == 1) | (dfFaults["key"] < 80)]
     names = df2["Name"].to_list()
-    for name in names:
-        getAllData(name.strip())
+    # for name in names:
+    #     getAllData(name.strip())
 
     # You may get refused by the server if you open too many clients at the same time
     # You may not get all the waveform on the first request
     # Keep trying until no more
-    # i = 0
-    # while True:
-    #     with ProcessPoolExecutor(max_workers=12) as executor:
-    #         futures = []
-    #         for name in names:
-    #             futures.append(executor.submit(getAllData, name))
-    #         try:
-    #             # [future.result() for future in as_completed(futures)]
-    #             wait(futures)
-    #         except Exception as e:
-    #             print(f"Retry {i} ......")
-    #             i += 1
-    #         else:
-    #             # exit()
-    #             pass
+    i = 0
+    while True:
+        with ProcessPoolExecutor(max_workers=12) as executor:
+            futures = []
+            for name in names:
+                futures.append(executor.submit(getAllData, name))
+            try:
+                # [future.result() for future in as_completed(futures)]
+                wait(futures)
+            except Exception as e:
+                print(f"Retry {i} ......")
+                i += 1
+            else:
+                # exit()
+                pass
