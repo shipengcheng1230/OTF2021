@@ -45,6 +45,7 @@ class PlotProcedure(AbstractFaultProcess):
         for i in range(2, 5):
             self.config["adjust"].setdefault(str(i), {"lat": 0.0, "lon": 0.0})
 
+
     def plotTimeSpaceLayout2(self, overWrite=True):
         output = os.path.join(self.dir, "layout2.pdf")
         if not overWrite and os.path.isfile(output):
@@ -180,18 +181,18 @@ class PlotProcedure(AbstractFaultProcess):
         gl.xlocator = mticker.MaxNLocator(4)
         gl.ylocator = mticker.MaxNLocator(4)
 
-        scale_bar(ax1, (0.80, 0.90), self.config["ruler"], color='black', angle=0, text_offset=0.015)
+        scale_bar(ax1, (0.80, 0.10), self.config["ruler"], color='black', angle=0, text_offset=0.015)
         xdist = dist_func_complete(ax1, [0.0, 0.5], [1.0, 0.5])
         ratio = self.config["ruler"] / xdist * 1e3
-        ax0.plot([0.1, 0.1 + ratio], [datetime(1952, 1, 1), datetime(1952, 1, 1)], lw=3.0, color="k")
-        ax0.text(0.1 + ratio / 2, datetime(1953, 1, 1), s=f"{self.config['ruler']:.0f} km" ,horizontalalignment='center', verticalalignment='center')
+        ax0.plot([0.8, 0.8 + ratio], [datetime(1952, 1, 1), datetime(1952, 1, 1)], lw=3.0, color="k")
+        ax0.text(0.8 + ratio / 2, datetime(1953, 1, 1), s=f"{self.config['ruler']:.0f} km" ,horizontalalignment='center', verticalalignment='center')
 
         ax0.set_ylim(bottom=clipped_date_post1950, top=datetime(2022, 1, 1))
         ax0.set_xlim(left=0, right=1)
         ax0.xaxis.set_major_formatter(NullFormatter())
         ax0.xaxis.set_ticks_position('none')
         ax0.set_xticklabels([])
-        ax0.set_ylabel("Occurrence Time")
+        ax0.set_ylabel("Time")
         ax0.yaxis.set_major_locator(mdates.YearLocator(10))
         ax0.yaxis.set_major_formatter(mdates.DateFormatter('%Y'))
         ax0.grid(True, which="major", axis="x")
@@ -204,10 +205,6 @@ class PlotProcedure(AbstractFaultProcess):
         ax3.yaxis.tick_right()
         ax3.yaxis.set_label_position('right')
         ax3.set_xlabel("Scaled Along Strike Position", labelpad=2.0, fontsize="x-small")
-
-        sub_ax = fig.add_axes([ax2pos[0]-0.05, ax2pos[1], 0.10, 0.10], projection=ccrs.NearsidePerspective(self.df["Longitude"].iloc[0], self.df["Latitude"].iloc[0]))
-        sub_ax.stock_img()
-        sub_ax.scatter(self.df["Longitude"].iloc[0], self.df["Latitude"].iloc[0], s=50, marker="*", c="orange")
 
         def full_extent(ax, pad=0.0):
             # https://stackoverflow.com/questions/14712665/matplotlib-subplot-background-axes-face-labels-colour-or-figure-axes-coor
@@ -235,7 +232,7 @@ class PlotProcedure(AbstractFaultProcess):
         #     transform=ax1.transAxes)
         # ax1.patches.append(rect)
 
-        at = AnchoredText(f"{self.name} | {self.df['Vpl (mm/yr)'].iloc[0]:.0f} mm/yr | {self.df['Length (km)'].iloc[0]:.0f} km", loc='upper left', frameon=True,)
+        at = AnchoredText(f"{self.name} | {self.df['Vpl (mm/yr)'].iloc[0]:.0f} mm/yr | {self.df['Length (km)'].iloc[0]:.0f} km", loc='upper right', frameon=True,)
         at.patch.set_boxstyle("round,pad=0.,rounding_size=0.2")
         ax1.add_artist(at)
 
@@ -255,6 +252,8 @@ class PlotProcedure(AbstractFaultProcess):
         def _get_fm_fc_(eid, isrelocated=True):
             np1 = self.fm[str(eid)]["np1"]
             bcc = "tab:red" if isrelocated else "silver"
+            if eid in anchors:
+                bcc = "darkgoldenrod"
             if np.isnan(self.fm[str(eid)]["np1"][0]):
                 if np.isnan(self.fm[str(eid)]["mt"][0]):
                     _fm = [1.0, 1.0, 1.0, 0.0, 0.0, 0.0] # mimic scatter solid circle
@@ -307,6 +306,16 @@ class PlotProcedure(AbstractFaultProcess):
                 ax2.scatter(x, y, s=3**2, fc=bcc, ec="k", transform=ccrs.PlateCarree())
 
         dfMerged = pd.read_csv(os.path.join(self.dir, "catalog-merged.csv"))
+        adjust = self.config["adjust"]
+        anchors = set()
+        for k in adjust:
+            if "anchor" in adjust[k]:
+                rr = dfMerged[dfMerged["id"] == adjust[k]["anchor"]["id"]]
+                anchors.add(adjust[k]["anchor"]["id"])
+                adjust[k]["lon"] = adjust[k]["anchor"]["lon"] - rr.lon.values[0]
+                adjust[k]["lat"] = adjust[k]["anchor"]["lat"] - rr.lat.values[0]
+                print(f"adjust: {rr.group.values[0]}, lat: {adjust[k]['lat']}, lon: {adjust[k]['lon']}")
+
         for r in dfMerged.itertuples():
             _add_beachball(r, r.group != -1)
 
@@ -344,12 +353,13 @@ class PlotProcedure(AbstractFaultProcess):
             arr, rr = func(xdist, xs, mws)
             arr2, rr2 = func(xdist, xs2, mws2)
             arr3, rr3 = func(xdist, xs3, mws3)
-            ax3.plot(rr, arr / (2020-1950) / 1e13, color="lightslategray", label="since 1950")
-            ax3.plot(rr2, arr2 / (2020-1990) / 1e13, color="royalblue", label="since 1990")
+            ax3.plot(rr, arr / (2020-1950) / 1e13, color="cadetblue", label="since 1950")
+            # ax3.plot(rr2, arr2 / (2020-1990) / 1e13, color="royalblue", label="since 1990")
             ax3.plot(rr3, arr3 / (2020-1990) / 1e13, color="deeppink", label="relocated only") # relocate attempt after 1990
             ax3.legend(
-                loc="lower center", ncol=3, title="$E_{\mathrm{year}}[ \Sigma (M_{0}/L) ]$",
-                bbox_to_anchor=(0.5, 0.99), fontsize='xx-small', title_fontsize="xx-small")
+                loc="upper center", ncol=3, title="$E_{\mathrm{year}}[ \Sigma (M_{0}/L) ]$",
+                # bbox_to_anchor=(0.5, 0.99),
+                fontsize='xx-small', title_fontsize="xx-small")
             ax3.set_ylabel("Unit Moment Rate\n($ 10 ^{13} \cdot \mathrm{N} \;/ \;\mathrm{yr}$)")
 
             if "edge" in self.config:
@@ -376,13 +386,13 @@ class PlotProcedure(AbstractFaultProcess):
 
                 self.config["creepPercentage"] = creepPct
                 self.updateConfig()
-                # ax3.text(0.90, 0.8, f"{creepPct:.2f}", transform=ax3.transAxes)
+                ax3.text(0.76, 0.9, f"CSF = {creepPct:.2f}", transform=ax3.transAxes, ha="left", va="center")
 
                 expected = self.df["At"] * 1e6 * 3e10 * self.df["Vpl (mm/yr)"] / 1e3 / self.df["Length (km)"] / 1e3
                 expected /= 1e13
                 if not np.isnan(expected.values[0]):
-                    ax3.plot([0.0, 1.0], [expected, expected], linestyle=":", color="green", linewidth=1.0)
-                    ax3.text(0.9, expected, "$A_{T}$", color="green")
+                    ax3.plot([0.0, 1.0], [expected, expected], linestyle=":", color="forestgreen", linewidth=1.0)
+                    ax3.text(0.9, expected, "$A_{T}$", color="forestgreen")
 
                 ax3.set_ylim(bottom=0)
 
@@ -409,24 +419,29 @@ class PlotProcedure(AbstractFaultProcess):
             handletextpad=0.2, borderaxespad=1.2, fontsize='small', title_fontsize="small")
 
         for t, x in zip(["A", "B", "C", "D"], [ax0, ax1, ax3, ax2]):
-            loc = "lower left" if t == "A" else "lower right"
+            loc = "upper left"
             at = AnchoredText(t, loc=loc, frameon=True,)
             at.patch.set_boxstyle("round,pad=0.,rounding_size=0.2")
             x.add_artist(at)
 
-        ax2.text(0.3, 0.55, "G3", transform=ax2.transAxes, color="Purple", backgroundcolor="white")
-        ax2.text(0.56, 0.62, "G2", transform=ax2.transAxes, color="Purple", backgroundcolor="white")
-        ax2.text(0.76, 0.70, "G1", transform=ax2.transAxes, color="Purple", backgroundcolor="white")
+        if self.name == "Gofar":
+            ax2.text(0.3, 0.55, "G3", transform=ax2.transAxes, color="Purple", backgroundcolor="white")
+            ax2.text(0.56, 0.62, "G2", transform=ax2.transAxes, color="Purple", backgroundcolor="white")
+            ax2.text(0.76, 0.70, "G1", transform=ax2.transAxes, color="Purple", backgroundcolor="white")
 
+        sub_ax = fig.add_axes([ax2pos[0]-0.01, ax2pos[1], 0.10, 0.10], projection=ccrs.NearsidePerspective(self.df["Longitude"].iloc[0], self.df["Latitude"].iloc[0]))
+        sub_ax.set_adjustable("datalim")
+        sub_ax.stock_img()
+        sub_ax.scatter(self.df["Longitude"].iloc[0], self.df["Latitude"].iloc[0], s=50, marker="*", c="orange")
 
         print(f"Saving link simple plot {self.name} ...")
-        fig.savefig(output, dpi=600)
+        fig.savefig(output, dpi=600, bbox_inches="tight")
         plt.close(fig)
 
 if __name__ == "__main__":
 
     df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] == 1) | (dfFaults["key"] < 80)]
-    names = df2["Name"].to_list()
+    # names = df2["Name"].to_list()
     names = ["Gofar"]
     for name in names:
         print(name)
