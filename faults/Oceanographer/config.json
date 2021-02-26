@@ -6,8 +6,13 @@
     "magCutOff": 5.0,
     "adjust": {
         "1": {
-            "lon": -0.2,
-            "lat": 0.0
+            "lon": -0.16223269870000223,
+            "lat": -0.2738078208000019,
+            "anchor": {
+                "lat": 35.131,
+                "lon": -36.146,
+                "id": "usp000b5jw"
+            }
         },
         "2": {
             "lat": 0.0,
@@ -39,5 +44,6 @@
         35.5
     ],
     "ruler": 10,
-    "creepPercentage": 0.36875
+    "creepPercentage": 0.390625,
+    "creepPercentage1950": 0.390625
 }

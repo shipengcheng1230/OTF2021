@@ -33,11 +33,12 @@
         ]
     },
     "extent": [
-        -15.5,
-        -13.0,
-        -12.6,
-        -11.2
+        -14.3,
+        -10.9,
+        -8,
+        -6.2
     ],
     "ruler": 10,
-    "creepPercentage": NaN
+    "creepPercentage": 0.8102981029810298,
+    "creepPercentage1950": 0.8102981029810298
 }

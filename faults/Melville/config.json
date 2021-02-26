@@ -39,5 +39,6 @@
         -29.1
     ],
     "ruler": 10,
-    "creepPercentage": 1.0
+    "creepPercentage": 1.0,
+    "creepPercentage1950": 0.9581993569131833
 }

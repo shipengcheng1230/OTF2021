@@ -385,6 +385,7 @@ class PlotProcedure(AbstractFaultProcess):
                     ax3.add_patch(rect)
 
                 self.config["creepPercentage"] = creepPct
+                self.config["creepPercentage1950"] = creepPercentage(arr / (2020-1950), rr, edges[0], edges[1], thrd)
                 self.updateConfig()
                 ax3.text(0.76, 0.9, f"CSF = {creepPct:.2f}", transform=ax3.transAxes, ha="left", va="center")
 
@@ -441,8 +442,9 @@ class PlotProcedure(AbstractFaultProcess):
 if __name__ == "__main__":
 
     df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] == 1) | (dfFaults["key"] < 80)]
-    # names = df2["Name"].to_list()
-    names = ["Gofar"]
+    names = df2["Name"].to_list()
+    # names = ["Gofar"]
+    names = ["Ascension"]
     for name in names:
         print(name)
         f = PlotProcedure(name.strip())
