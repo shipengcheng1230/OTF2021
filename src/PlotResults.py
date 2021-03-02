@@ -402,6 +402,9 @@ class PlotProcedure(AbstractFaultProcess):
                         "relocated": {
                             "x": list(rr3), "y": list(arr3 / (2020-1990) / 1e13), "index": [y for x in creepIndex for y in x],
                         },
+                        "1950": {
+                            "x": list(rr), "y": list(arr / (2020-1950) / 1e13),
+                        },
                         "At": expected.values[0],
                     }
                     json.dump(d, fp, indent=4)
@@ -444,7 +447,7 @@ if __name__ == "__main__":
     df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] == 1) | (dfFaults["key"] < 80)]
     names = df2["Name"].to_list()
     # names = ["Gofar"]
-    names = ["Ascension"]
+    names = ["Discovery", "Hayes", "Andrew Bain", "Bouvet", "Pitman"]
     for name in names:
         print(name)
         f = PlotProcedure(name.strip())
