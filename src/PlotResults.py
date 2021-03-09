@@ -48,6 +48,7 @@ class PlotProcedure(AbstractFaultProcess):
 
     def plotTimeSpaceLayout2(self, overWrite=True):
         output = os.path.join(self.dir, "layout2.pdf")
+
         if not overWrite and os.path.isfile(output):
             return
 
@@ -63,6 +64,8 @@ class PlotProcedure(AbstractFaultProcess):
             rotlon0 = self.df["Longitude"].iloc[0] + 90
             rotlat0 = 90 + rotatediff
         rotatedpole = ccrs.RotatedPole(rotlon0, rotlat0, 0.0)
+
+        dfMerged = pd.read_csv(os.path.join(self.dir, "catalog-merged.csv"))
 
         figsize = (10, 8)
         fig = plt.figure(figsize=figsize)
@@ -123,7 +126,7 @@ class PlotProcedure(AbstractFaultProcess):
         ax1pos = ax1.get_position().bounds
         ax2pos = ax2.get_position().bounds
 
-        if self.name != "Gofar":
+        if self.name != "Gofar1":
             for x in [ax1, ax2]:
                 x.add_wms(
                     # wms="https://www.gmrt.org/services/mapserver/wms_merc?",
@@ -246,7 +249,22 @@ class PlotProcedure(AbstractFaultProcess):
         # https://stackoverflow.com/questions/14827650/pyplot-scatter-plot-marker-size/47403507#47403507
         # https://stackoverflow.com/questions/48172928/scale-matplotlib-pyplot-axes-scatter-markersize-by-x-scale/48174228#48174228
         sqrtsizeinpoint = ax0.get_window_extent().width / (ax0.get_xlim()[1] - ax0.get_xlim()[0]) * 72 / fig.dpi
-        beachballSizePt2x = lambda x: (x - 3.0) * 5 / sqrtsizeinpoint
+
+        # scaling of scatter plot
+        normalization = 12
+        dftmp = dfMerged.copy()
+        lats = dftmp["lat"].to_numpy() + np.array([self.config["adjust"].get(str(x), {'lat': 0, 'lon': 0})['lat'] for x in dftmp["group"]])
+        lons = dftmp["lon"].to_numpy() + np.array([self.config["adjust"].get(str(x), {'lat': 0, 'lon': 0})['lon'] for x in dftmp["group"]])
+        dftmp['lat'] = lats
+        dftmp['lon'] = lons
+        dftmp = dftmp[(dftmp['lat'] >= extent0[2]) & (dftmp['lat'] <= extent0[3]) & (dftmp['lon'] >= extent0[0]) & (dftmp['lon'] <= extent0[1])]
+        mmag = dftmp["mag"].max()
+        # mmag = max(mmag, 5.6)
+        normalization *= (5.6 ** (mmag - 3)) / (5.6 ** (6.1 - 3))
+
+        # beachballSizePt2x = lambda x: (x - 3.0) * 5 / sqrtsizeinpoint
+        beachballSizePt2x = lambda x: 5.6 ** (x - 3.0) / normalization / sqrtsizeinpoint
+        # beachballSizePt2x = lambda x: np.sqrt(10 ** (x * 3/2)) / 3e3 / sqrtsizeinpoint
         beachballSizePt2xOnMap = lambda x: beachballSizePt2x(x) * (ax1.get_xlim()[1] - ax1.get_xlim()[0])
 
         def _get_fm_fc_(eid, isrelocated=True):
@@ -305,7 +323,6 @@ class PlotProcedure(AbstractFaultProcess):
             if isrelocated:
                 ax2.scatter(x, y, s=3**2, fc=bcc, ec="k", transform=ccrs.PlateCarree())
 
-        dfMerged = pd.read_csv(os.path.join(self.dir, "catalog-merged.csv"))
         adjust = self.config["adjust"]
         anchors = set()
         for k in adjust:
@@ -379,15 +396,16 @@ class PlotProcedure(AbstractFaultProcess):
                 peak = np.max(arr3) / (2020-1990) / 1e13
                 creepPct = creepPercentage(arr3 / (2020-1990), rr3, edges[0], edges[1], thrd)
                 creepIndex, shape = creepMask(arr3 / (2020-1990), rr3, edges[0], edges[1], thrd)
+                creepPct1950 = creepPercentage(arr / (2020-1950), rr, edges[0], edges[1], thrd)
 
                 for x in creepIndex:
                     rect = Rectangle((rr3[x[0]], 0), rr3[x[1]] - rr3[x[0]], 1, transform=ax3.transAxes, fc="lightgray", alpha=0.6)
                     ax3.add_patch(rect)
 
                 self.config["creepPercentage"] = creepPct
-                self.config["creepPercentage1950"] = creepPercentage(arr / (2020-1950), rr, edges[0], edges[1], thrd)
+                self.config["creepPercentage1950"] = creepPct1950
                 self.updateConfig()
-                ax3.text(0.76, 0.9, f"CSF = {creepPct:.2f}", transform=ax3.transAxes, ha="left", va="center")
+                ax3.text(0.725, 0.9, f"CSF = {creepPct:.2f}|{creepPct1950:.2f}", transform=ax3.transAxes, ha="left", va="center", fontsize=9)
 
                 expected = self.df["At"] * 1e6 * 3e10 * self.df["Vpl (mm/yr)"] / 1e3 / self.df["Length (km)"] / 1e3
                 expected /= 1e13
@@ -412,15 +430,24 @@ class PlotProcedure(AbstractFaultProcess):
         momentHist()
 
         ls = []
-        magLengendSize = [5.0, 5.5, 6.0]
-        magLengendLabel = ["5.0", "5.5", "6.0"]
+        if mmag < 5.8:
+            magLengendSize = [5.0, 5.3, 5.6]
+        elif mmag < 6.3:
+            magLengendSize = [5.0, 5.5, 6.0]
+        elif mmag < 6.8:
+            magLengendSize = [5.5, 6.0, 6.5]
+        else:
+            magLengendSize = [6.0, 6.5, 7.0]
+
+        magLengendSize = [mmag - 1, mmag - 0.5, mmag]
+        magLengendLabel = [f"{x:.1f}" for x in magLengendSize]
         for i in range(len(magLengendSize)):
             l = ax0.scatter([],[], ec="gray", fc="white", s=(beachballSizePt2x(magLengendSize[i])*sqrtsizeinpoint)**2)
             ls.append(l)
         leg = ax0.legend(
             ls, magLengendLabel, ncol=3, frameon=True, borderpad=0.4, bbox_to_anchor=(0.5, 1.0),
             loc="lower center", title="Mw", fancybox=True, labelspacing=1.0, framealpha=1.0,
-            handletextpad=0.2, borderaxespad=1.2, fontsize='small', title_fontsize="small")
+            handletextpad=1.2, borderaxespad=1.2, fontsize='small', title_fontsize="small")
 
         for t, x in zip(["A", "B", "C", "D"], [ax0, ax1, ax3, ax2]):
             loc = "upper left"
@@ -447,7 +474,8 @@ if __name__ == "__main__":
     df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] == 1) | (dfFaults["key"] < 80)]
     names = df2["Name"].to_list()
     # names = ["Gofar"]
-    names = ["Discovery", "Hayes", "Andrew Bain", "Bouvet", "Pitman"]
+    # names = ["Discovery", "Hayes", "Andrew Bain", "Bouvet", "Pitman"]
+    # names = ["Heemskerck"]
     for name in names:
         print(name)
         f = PlotProcedure(name.strip())

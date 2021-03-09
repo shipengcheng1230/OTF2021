@@ -7,7 +7,7 @@
     "adjust": {
         "1": {
             "lon": 0.0,
-            "lat": 0.0
+            "lat": -0.5
         },
         "2": {
             "lat": 0.0,
@@ -39,6 +39,6 @@
         -46.6
     ],
     "ruler": 20,
-    "creepPercentage": 0.8436578171091446,
-    "creepPercentage1950": 0.8436578171091446
+    "creepPercentage": 0.8112094395280236,
+    "creepPercentage1950": 0.8112094395280236
 }
