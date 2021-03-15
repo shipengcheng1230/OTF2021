@@ -369,6 +369,7 @@ class PlotProcedure(AbstractFaultProcess):
 
                 if x < extent0[0] or x > extent0[1] or y < extent0[2] or y > extent0[3]:
                     continue
+                    # pass
 
                 xp, yp = transform_xy_xyproj(rotatedpole, x, y)
                 xr, _ = transform_xyproj_xyr(ax1, xp, yp)
@@ -484,12 +485,12 @@ class PlotProcedure(AbstractFaultProcess):
 
 if __name__ == "__main__":
 
-    df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] == 1) | (dfFaults["key"] < 80)]
+    df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] != 1) & (dfFaults["key"] >= 80)]
     names = df2["Name"].to_list()
     # names = names[86:]
     # names = ["Gofar"]
     # names = ["Discovery", "Hayes", "Andrew Bain", "Bouvet", "Pitman"]
-    names = ["MAR 21S"]
+    # names = ["Zeehaen"]
     for i, name in enumerate(names):
         print(f"{i + 1}/{len(names)}: {name}")
         f = PlotProcedure(name.strip())
