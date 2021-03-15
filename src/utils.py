@@ -56,10 +56,11 @@ def mag2mw(m, magType):
 
 def isTransform(fm, criterion=25.0):
     # check rake angle, transform event should have small rake angle
+    # if no fm, we pressume it is strike slip event
     if fm == [1.0, 1.0, 1.0, 0.0, 0.0, 0.0]:
-        return False
+        return True
     if np.isnan(fm[0]):
-        return False
+        return True
     rake = fm[-1] % 180
     return rake <= criterion or (180.0 - rake) <= criterion
 
@@ -118,9 +119,14 @@ def creepMask(arr, rr, left, right, thred):
     p1, p2 = [], []
     for i in range(1, len(mask)):
         if mask[i] == 0 and mask[i - 1] == 1:
+            if len(p2) >= len(p1):
+                p1.append(ileft)
             p2.append(i)
         if mask[i] == 1 and mask[i - 1] == 0:
             p1.append(i)
+
+    if len(p2) < len(p1):
+        p2.append(iright)
 
     return list(zip(p1, p2)), mask[ileft: iright]
 

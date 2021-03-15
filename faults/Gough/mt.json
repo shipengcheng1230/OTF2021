@@ -1,0 +1,262 @@
+{
+    "usp000h6n7": {
+        "np1": [
+            158.0,
+            43.0,
+            -108.0
+        ],
+        "np2": [
+            2.0,
+            49.0,
+            -74.0
+        ],
+        "mt": [
+            -1.18e+17,
+            5000000000000000.0,
+            1.13e+17,
+            -2.5e+16,
+            -1.7e+16,
+            -1.9e+16
+        ]
+    },
+    "usp000hf3g": {
+        "np1": [
+            2.0,
+            44.0,
+            -72.0
+        ],
+        "np2": [
+            157.0,
+            49.0,
+            -107.0
+        ],
+        "mt": [
+            -8.34e+16,
+            800000000000000.0,
+            8.26e+16,
+            -2.05e+16,
+            4000000000000000.0,
+            -1.58e+16
+        ]
+    },
+    "usp000jsab": {
+        "np1": [
+            NaN,
+            NaN,
+            NaN
+        ],
+        "np2": [
+            NaN,
+            NaN,
+            NaN
+        ],
+        "mt": [
+            NaN,
+            NaN,
+            NaN,
+            NaN,
+            NaN,
+            NaN
+        ]
+    },
+    "usc000tt3i": {
+        "np1": [
+            NaN,
+            NaN,
+            NaN
+        ],
+        "np2": [
+            NaN,
+            NaN,
+            NaN
+        ],
+        "mt": [
+            NaN,
+            NaN,
+            NaN,
+            NaN,
+            NaN,
+            NaN
+        ]
+    },
+    "usp000czuy": {
+        "np1": [
+            163.0,
+            41.0,
+            -98.0
+        ],
+        "np2": [
+            354.0,
+            50.0,
+            -83.0
+        ],
+        "mt": [
+            -5.61e+16,
+            -400000000000000.0,
+            5.65e+16,
+            -3300000000000000.0,
+            -1.04e+16,
+            -1.17e+16
+        ]
+    },
+    "usp00054ab": {
+        "np1": [
+            NaN,
+            NaN,
+            NaN
+        ],
+        "np2": [
+            NaN,
+            NaN,
+            NaN
+        ],
+        "mt": [
+            NaN,
+            NaN,
+            NaN,
+            NaN,
+            NaN,
+            NaN
+        ]
+    },
+    "usp0001nke": {
+        "np1": [
+            NaN,
+            NaN,
+            NaN
+        ],
+        "np2": [
+            NaN,
+            NaN,
+            NaN
+        ],
+        "mt": [
+            NaN,
+            NaN,
+            NaN,
+            NaN,
+            NaN,
+            NaN
+        ]
+    },
+    "usp0000r1q": {
+        "np1": [
+            NaN,
+            NaN,
+            NaN
+        ],
+        "np2": [
+            NaN,
+            NaN,
+            NaN
+        ],
+        "mt": [
+            NaN,
+            NaN,
+            NaN,
+            NaN,
+            NaN,
+            NaN
+        ]
+    },
+    "usp0001hte": {
+        "np1": [
+            NaN,
+            NaN,
+            NaN
+        ],
+        "np2": [
+            NaN,
+            NaN,
+            NaN
+        ],
+        "mt": [
+            NaN,
+            NaN,
+            NaN,
+            NaN,
+            NaN,
+            NaN
+        ]
+    },
+    "usp0002ncd": {
+        "np1": [
+            NaN,
+            NaN,
+            NaN
+        ],
+        "np2": [
+            NaN,
+            NaN,
+            NaN
+        ],
+        "mt": [
+            NaN,
+            NaN,
+            NaN,
+            NaN,
+            NaN,
+            NaN
+        ]
+    },
+    "usb000t03g": {
+        "np1": [
+            NaN,
+            NaN,
+            NaN
+        ],
+        "np2": [
+            NaN,
+            NaN,
+            NaN
+        ],
+        "mt": [
+            NaN,
+            NaN,
+            NaN,
+            NaN,
+            NaN,
+            NaN
+        ]
+    },
+    "usp000jsad": {
+        "np1": [
+            166.0,
+            43.0,
+            -99.0
+        ],
+        "np2": [
+            358.0,
+            47.0,
+            -81.0
+        ],
+        "mt": [
+            -2.56e+17,
+            1.4e+16,
+            2.43e+17,
+            -2.7e+16,
+            -2e+16,
+            -3.3e+16
+        ]
+    },
+    "usp0000hq6": {
+        "np1": [
+            NaN,
+            NaN,
+            NaN
+        ],
+        "np2": [
+            NaN,
+            NaN,
+            NaN
+        ],
+        "mt": [
+            NaN,
+            NaN,
+            NaN,
+            NaN,
+            NaN,
+            NaN
+        ]
+    }
+}

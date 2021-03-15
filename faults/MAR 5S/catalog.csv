@@ -1,0 +1,32 @@
+time,mag,magType,lat,lon,dep,text,id
+2018-10-05 15:13:28.060000,5.1,mb,-5.5936,-11.4009,10000.0,Ascension Island region,us1000h7kj
+2017-04-13 21:11:36.380000,5.0,mb,-5.2811,-11.5131,10000.0,Ascension Island region,us10008he4
+2015-02-15 12:10:41.640000,5.1,mb,-4.3677,-12.0393,10000.0,North of Ascension Island,usb000tpig
+2010-12-22 04:03:43.430000,5.1,mwc,-4.966,-11.674,10000.0,north of Ascension Island,usp000hreu
+2009-10-08 19:09:38.610000,5.1,mb,-4.878,-11.593,10000.0,north of Ascension Island,usp000h2m0
+2007-08-12 08:01:27.450000,5.1,mwc,-5.588,-11.479,10000.0,Ascension Island region,usp000fjfn
+2007-08-11 06:32:54.500000,5.1,mwc,-5.545,-11.546,10000.0,Ascension Island region,usp000fjd7
+2007-02-13 00:58:19.440000,5.0,mb,-4.768,-12.439,10000.0,north of Ascension Island,usp000f4s8
+2003-01-11 07:30:06.450000,5.1,mwc,-4.887,-11.606,10000.0,north of Ascension Island,usp000bnd0
+2002-06-26 06:38:13.470000,5.0,mwc,-4.742,-12.304,10000.0,north of Ascension Island,usp000b6ya
+2002-06-26 01:00:11.460000,5.2,mwc,-4.775,-12.336,10000.0,north of Ascension Island,usp000b6xv
+2002-06-25 22:59:11.890000,5.2,mwc,-4.955,-12.384,10000.0,north of Ascension Island,usp000b6xj
+2002-06-25 21:47:23.720000,5.6,mwc,-4.928,-12.384,10000.0,north of Ascension Island,usp000b6xc
+2002-06-25 20:15:57.620000,5.3,mwc,-5.038,-12.296,10000.0,Ascension Island region,usp000b6x5
+2002-06-25 19:55:58.890000,5.3,mwc,-4.83,-12.266,10000.0,north of Ascension Island,usp000b6x4
+2000-12-15 14:08:17.480000,5.3,mwc,-5.508,-11.528,10000.0,Ascension Island region,usp000a648
+2000-06-14 21:16:38.040000,5.3,mwc,-4.917,-12.373,10000.0,north of Ascension Island,usp0009ukb
+1990-07-30 10:06:15.020000,5.1,mb,-4.349,-10.819,10000.0,north of Ascension Island,usp0004cqy
+1990-07-08 17:29:08.580000,5.1,ms,-4.521,-12.294,10000.0,north of Ascension Island,usp0004bjf
+1987-01-13 20:57:33.910000,5.1,mb,-5.32,-11.241,10000.0,Ascension Island region,usp00031n6
+1987-01-13 15:17:59.390000,5.0,mb,-5.228,-11.428,10000.0,Ascension Island region,usp00031mv
+1987-01-13 06:47:49.780000,5.2,mb,-5.196,-11.516,10000.0,Ascension Island region,usp00031mm
+1986-04-18 08:56:56.700000,5.1,mb,-4.906,-11.507,10000.0,north of Ascension Island,usp0002t07
+1984-06-01 11:14:03.190000,5.1,mw,-5.229,-11.539,10000.0,Ascension Island region,usp00024sr
+1982-01-06 06:32:17.920000,5.1,mb,-5.575,-11.518,10000.0,Ascension Island region,usp0001hwr
+1979-03-08 11:07:00.700000,5.0,mb,-5.401,-11.493,10000.0,Ascension Island region,usp0000z7e
+1978-06-02 12:44:48.300000,5.0,ms,-4.449,-12.337,21000.0,north of Ascension Island,usp0000uvp
+1978-02-24 07:02:39.600000,5.5,mb,-4.61,-12.37,10000.0,north of Ascension Island,usp0000t4b
+1978-02-24 00:43:22.900000,5.0,mb,-4.671,-12.312,10000.0,north of Ascension Island,usp0000t48
+1977-04-09 04:44:29.600000,5.0,mb,-5.168,-11.485,33000.0,Ascension Island region,usp0000nag
+1961-06-07 14:15:22,5.8,mw,-5.525,-11.55,15000.0,Ascension Island region,iscgem876722

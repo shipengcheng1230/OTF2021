@@ -32,6 +32,9 @@ from GetData import AbstractFaultProcess
 from scalebar import dist_func_complete, scale_bar
 from utils import *
 
+import warnings
+warnings.filterwarnings("ignore")
+
 GMRT_BATHY_GRID = "/mnt/disk6/pshi/otfloc/bathy2"
 
 
@@ -258,8 +261,17 @@ class PlotProcedure(AbstractFaultProcess):
         dftmp['lat'] = lats
         dftmp['lon'] = lons
         dftmp = dftmp[(dftmp['lat'] >= extent0[2]) & (dftmp['lat'] <= extent0[3]) & (dftmp['lon'] >= extent0[0]) & (dftmp['lon'] <= extent0[1])]
-        mmag = dftmp["mag"].max()
-        # mmag = max(mmag, 5.6)
+        dftmp['time'] = pd.to_datetime(dftmp['time'])
+        dftmp = dftmp[dftmp['time'] > datetime(1990, 1, 1,)]
+        dftmp['istransform'] = dftmp['id'].apply(lambda x: isTransform(self.fm[x]['np1']))
+        dftmp = dftmp[dftmp['istransform']]
+        if dftmp.shape[0] == 0:
+            mmag = dfMerged["mag"].max()
+        else:
+            dftmp = dftmp[dftmp['group'] != -1]
+            mmag = dftmp["mag"].max()
+            if np.isnan(mmag):
+                mmag = dfMerged["mag"].max()
         normalization *= (5.6 ** (mmag - 3)) / (5.6 ** (6.1 - 3))
 
         # beachballSizePt2x = lambda x: (x - 3.0) * 5 / sqrtsizeinpoint
@@ -418,7 +430,8 @@ class PlotProcedure(AbstractFaultProcess):
                 with open(os.path.join(self.dir, "umrr.json"), "w") as fp:
                     d = {
                         "relocated": {
-                            "x": list(rr3), "y": list(arr3 / (2020-1990) / 1e13), "index": [y for x in creepIndex for y in x],
+                            "x": list(rr3), "y": list(arr3 / (2020-1990) / 1e13),
+                            "index": [int(y) for x in creepIndex for y in x],
                         },
                         "1950": {
                             "x": list(rr), "y": list(arr / (2020-1950) / 1e13),
@@ -465,7 +478,7 @@ class PlotProcedure(AbstractFaultProcess):
         sub_ax.stock_img()
         sub_ax.scatter(self.df["Longitude"].iloc[0], self.df["Latitude"].iloc[0], s=50, marker="*", c="orange")
 
-        print(f"Saving link simple plot {self.name} ...")
+        # print(f"Saving link simple plot {self.name} ...")
         fig.savefig(output, dpi=600, bbox_inches="tight")
         plt.close(fig)
 
@@ -473,10 +486,11 @@ if __name__ == "__main__":
 
     df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] == 1) | (dfFaults["key"] < 80)]
     names = df2["Name"].to_list()
+    # names = names[86:]
     # names = ["Gofar"]
     # names = ["Discovery", "Hayes", "Andrew Bain", "Bouvet", "Pitman"]
-    # names = ["Heemskerck"]
-    for name in names:
-        print(name)
+    names = ["MAR 21S"]
+    for i, name in enumerate(names):
+        print(f"{i + 1}/{len(names)}: {name}")
         f = PlotProcedure(name.strip())
         f.plotTimeSpaceLayout2()

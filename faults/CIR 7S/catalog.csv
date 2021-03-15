@@ -1,0 +1,32 @@
+time,mag,magType,lat,lon,dep,text,id
+2017-12-31 20:27:49.390000,5.1,mww,-8.1161,68.0644,10000.0,Chagos Archipelago region,us1000bylw
+2015-05-11 17:42:02.020000,5.3,mb,-7.7592,67.8257,10000.0,Mid-Indian Ridge,us20002edu
+2011-06-30 13:37:26.250000,5.4,mwc,-7.106,68.005,10000.0,Chagos Archipelago region,usp000j3zu
+2011-05-10 06:37:05.260000,5.0,mwc,-6.996,68.334,10000.0,Chagos Archipelago region,usp000j1a0
+2010-11-13 23:03:28.310000,5.1,mwc,-6.98,68.087,10000.0,Chagos Archipelago region,usp000hphj
+2010-07-24 20:28:05.630000,5.1,mwc,-8.137,68.032,10000.0,Chagos Archipelago region,usp000hgqm
+2010-03-14 21:17:17.980000,5.4,mwc,-7.091,67.978,10000.0,Mid-Indian Ridge,usp000h9dn
+2009-05-26 05:39:15.140000,5.0,mwc,-7.671,67.831,10000.0,Mid-Indian Ridge,usp000gxhq
+2009-05-20 15:18:36.600000,5.0,mb,-7.134,68.029,10000.0,Chagos Archipelago region,usp000gxbj
+2009-05-20 10:03:12.420000,5.0,mwc,-7.101,68.021,10000.0,Chagos Archipelago region,usp000gxbb
+2009-05-20 09:57:42.490000,5.3,mwb,-7.143,67.966,10000.0,Mid-Indian Ridge,usp000gxba
+2009-05-19 07:22:43.710000,5.0,mwc,-7.045,68.025,10000.0,Chagos Archipelago region,usp000gxa8
+2009-05-19 07:04:16.580000,5.0,mwc,-7.106,67.865,10000.0,Mid-Indian Ridge,usp000gxa7
+2004-10-15 22:40:25.070000,5.0,mwc,-8.051,68.084,10000.0,Chagos Archipelago region,usp000d6ez
+2004-01-12 18:14:53.550000,5.0,mwc,-7.422,68.405,10000.0,Chagos Archipelago region,usp000chrt
+2000-10-03 02:46:59.250000,5.4,mwc,-7.123,67.926,10000.0,Mid-Indian Ridge,usp000a162
+2000-10-03 02:39:31.040000,5.0,mb,-7.145,67.998,10000.0,Mid-Indian Ridge,usp000a160
+1999-12-28 07:30:33.990000,5.0,mwc,-7.711,67.773,10000.0,Mid-Indian Ridge,usp0009kcx
+1999-06-06 04:33:33.990000,5.0,mb,-8.117,67.879,10000.0,Mid-Indian Ridge,usp00099ce
+1999-05-24 14:38:11.480000,5.3,mwc,-8.183,68.053,10000.0,Chagos Archipelago region,usp00098nn
+1999-03-14 17:52:58.630000,5.2,mwc,-7.197,67.869,10000.0,Mid-Indian Ridge,usp00094gz
+1999-02-25 09:55:30.030000,5.2,mwc,-7.089,68.024,10000.0,Chagos Archipelago region,usp00093d8
+1995-08-29 12:45:25.730000,5.4,mw,-7.575,67.964,10000.0,Mid-Indian Ridge,usp00072mn
+1993-11-03 13:18:10.800000,5.6,mw,-7.123,67.916,10000.0,Mid-Indian Ridge,usp000634a
+1993-09-16 21:30:11.200000,5.0,ms,-8.024,68.029,10000.0,Chagos Archipelago region,usp00060g6
+1991-07-17 17:27:32.660000,5.0,ms,-7.234,67.978,10000.0,Mid-Indian Ridge,usp0004u9j
+1989-07-12 02:41:39.250000,5.8,mw,-8.129,68.355,10000.0,Chagos Archipelago region,usp0003x8n
+1982-09-16 12:19:07.300000,5.1,mb,-6.959,67.778,10000.0,Carlsberg Ridge,usp0001pn7
+1981-10-11 11:14:45.360000,5.3,ms,-7.856,68.409,10000.0,Chagos Archipelago region,usp0001gde
+1978-06-01 04:29:25.800000,5.3,mb,-7.06,68.047,33000.0,Chagos Archipelago region,usp0000uva
+1958-09-14 21:31:58,5.8,mw,-7.357,68.006,15000.0,Chagos Archipelago region,iscgem885129

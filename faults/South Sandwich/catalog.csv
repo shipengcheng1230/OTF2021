@@ -1,0 +1,213 @@
+time,mag,magType,lat,lon,dep,text,id
+2020-09-25 03:54:51.351000,5.0,mb,-60.1332,-26.2439,10000.0,South Sandwich Islands region,us6000c0zv
+2020-07-26 03:59:19.516000,5.2,mb,-60.5823,-25.3469,10000.0,South Sandwich Islands region,us6000b48x
+2020-07-26 00:53:59.061000,6.4,mww,-60.7833,-25.413,10000.0,South Sandwich Islands region,us6000b46r
+2020-04-16 08:15:20.636000,5.1,mb,-60.4237,-27.0364,10000.0,South Sandwich Islands region,us70008xeu
+2020-03-19 20:16:38.229000,5.0,mb,-60.7272,-25.489,10000.0,"197km SSE of Bristol Island, South Sandwich Islands",us70008cgx
+2020-02-10 19:52:01.465000,5.1,mb,-59.8258,-25.8756,10000.0,"95km SSE of Bristol Island, South Sandwich Islands",us70007mr1
+2020-02-08 18:26:00.235000,5.0,mb,-60.6386,-25.4234,10000.0,"189km SSE of Bristol Island, South Sandwich Islands",us70007q6a
+2020-02-08 14:32:58.625000,6.0,mww,-59.9212,-25.5526,16000.0,"113km SSE of Bristol Island, South Sandwich Islands",us70007lik
+2020-01-22 22:14:48.754000,5.2,mww,-60.341,-27.1563,18760.0,"150km SSW of Bristol Island, South Sandwich Islands",us60007d99
+2019-10-26 12:33:15.184000,5.0,mb,-60.1367,-18.5616,10000.0,East of the South Sandwich Islands,us60006397
+2019-08-28 20:19:53.923000,5.1,mb,-60.6255,-26.5508,10000.0,"177km S of Bristol Island, South Sandwich Islands",us700059b8
+2019-08-28 10:07:49.931000,5.1,mb,-60.4656,-26.3806,10000.0,"159km S of Bristol Island, South Sandwich Islands",us7000594h
+2019-08-28 09:24:02.341000,5.3,mb,-60.337,-26.4242,10000.0,"145km S of Bristol Island, South Sandwich Islands",us7000593s
+2019-08-28 08:00:45.169000,5.5,mb,-60.5584,-26.8518,10000.0,"170km S of Bristol Island, South Sandwich Islands",us70005934
+2019-08-28 07:59:02.264000,5.6,mww,-60.3573,-26.5291,10000.0,"147km S of Bristol Island, South Sandwich Islands",us7000592z
+2019-08-27 23:55:19.187000,6.6,mww,-60.2152,-26.5801,16000.0,"131km S of Bristol Island, South Sandwich Islands",us700058yy
+2019-08-19 03:44:17.941000,5.2,mb,-60.5912,-25.1972,10000.0,"188km SSE of Bristol Island, South Sandwich Islands",us600056vm
+2019-05-19 11:48:33.440000,5.1,mb,-60.4342,-26.7517,10000.0,"156km S of Bristol Island, South Sandwich Islands",us70003n8j
+2019-02-17 23:18:54.100000,5.1,mb,-59.879,-25.8795,10000.0,"100km SSE of Bristol Island, South Sandwich Islands",us2000jjd0
+2018-11-14 18:56:24.800000,5.0,mb,-60.4493,-26.7037,10000.0,"158km S of Bristol Island, South Sandwich Islands",us1000hrsc
+2018-09-24 17:13:10.730000,5.3,mww,-60.6299,-25.702,10000.0,"183km SSE of Bristol Island, South Sandwich Islands",us2000hjd3
+2018-07-21 22:50:57.840000,5.1,mb,-60.624,-26.1912,10000.0,"178km S of Bristol Island, South Sandwich Islands",us2000gayp
+2018-07-20 00:24:58.700000,5.2,mww,-60.5632,-27.3614,10000.0,"176km SSW of Bristol Island, South Sandwich Islands",us2000g9f7
+2018-05-19 18:25:46.090000,5.0,mb,-60.4351,-26.1729,10000.0,"157km S of Bristol Island, South Sandwich Islands",us1000e8mz
+2018-05-18 16:34:37.600000,5.1,mb,-60.4946,-26.7157,24080.0,"163km S of Bristol Island, South Sandwich Islands",us1000e83f
+2017-10-31 22:25:52.160000,5.3,mb,-60.0608,-26.6715,10000.0,"114km S of Bristol Island, South Sandwich Islands",us1000azey
+2017-09-04 21:53:16.200000,5.0,mb,-60.6819,-26.0782,10000.0,"185km S of Bristol Island, South Sandwich Islands",us2000arng
+2017-05-15 08:22:54.500000,5.1,mb,-60.1694,-24.1515,10000.0,"184km SE of Bristol Island, South Sandwich Islands",us10008sif
+2017-05-03 05:09:53.800000,5.0,mb,-59.8077,-27.4014,134360.0,"99km SSW of Bristol Island, South Sandwich Islands",us10008nqa
+2016-12-27 18:04:31.810000,5.4,mb,-60.6952,-26.083,34870.0,"186km S of Bristol Island, South Sandwich Islands",us10007n23
+2016-05-02 07:37:47.290000,5.1,mb,-59.8608,-25.9292,10000.0,"98km SSE of Bristol Island, South Sandwich Islands",us10005czb
+2015-10-10 08:56:05.410000,5.5,mww,-60.7167,-20.8492,10000.0,East of the South Sandwich Islands,us10003mns
+2015-05-17 19:43:34.410000,5.4,mb,-60.5228,-20.8594,10210.0,East of the South Sandwich Islands,us10002a0q
+2015-04-30 10:19:08.200000,5.8,mwb,-60.3933,-26.9077,10000.0,"153km S of Bristol Island, South Sandwich Islands",us20002ag2
+2014-11-07 06:51:00.990000,5.1,mb,-60.135,-26.8567,53880.0,"124km S of Bristol Island, South Sandwich Islands",usc000svae
+2014-07-26 11:13:48.110000,5.8,mwc,-60.0379,-18.6749,10000.0,East of the South Sandwich Islands,usb000rxjy
+2014-07-26 10:59:29.520000,5.1,mb,-60.0038,-18.5575,10000.0,East of the South Sandwich Islands,usb000rxjv
+2014-03-19 20:17:43.540000,5.5,mww,-60.731,-25.3287,10000.0,"200km SSE of Bristol Island, South Sandwich Islands",usc000nhe7
+2014-03-13 17:12:32.460000,5.3,mb,-60.7641,-19.6945,10000.0,East of the South Sandwich Islands,usc000nac6
+2014-03-11 02:44:05.830000,6.4,mww,-60.8623,-19.9775,10000.0,East of the South Sandwich Islands,usc000n7bm
+2014-03-08 18:29:08.030000,5.4,mb,-60.6515,-19.056,9160.0,East of the South Sandwich Islands,usc000n5gj
+2014-03-06 23:47:01.630000,5.1,mb,-60.7149,-27.0384,10000.0,"189km S of Bristol Island, South Sandwich Islands",usc000n4km
+2013-12-09 09:00:41.190000,5.1,mb,-60.914,-22.9528,10000.0,"288km SE of Bristol Island, South Sandwich Islands",usb000ldz7
+2013-09-21 06:43:10.350000,5.0,mb,-60.0906,-26.3416,9310.0,"118km S of Bristol Island, South Sandwich Islands",usb000jx2m
+2013-07-21 22:04:02.470000,5.0,mb,-60.357,-26.239,35000.0,South Sandwich Islands region,usp000k28q
+2013-07-16 23:05:13.130000,5.1,mb,-59.884,-26.305,30000.0,"87km SE of Bristol Island, South Sandwich Islands",usb000ifsy
+2013-07-15 14:03:39.880000,7.3,mww,-60.857,-25.07,11000.0,"218km SSE of Bristol Island, South Sandwich Islands",usb000ief9
+2013-03-23 13:14:02.240000,5.0,mb,-60.729,-19.315,10000.0,East of the South Sandwich Islands,usb000frir
+2013-03-02 17:32:47.160000,5.1,mb,-60.289,-26.764,63800.0,"150km S of Bristol Island, South Sandwich Islands",usc000ff9d
+2012-10-10 22:49:33.050000,5.4,mb,-60.326,-26.573,35000.0,South Sandwich Islands region,usp000jtu6
+2012-06-09 20:25:26.710000,5.0,mb,-60.883,-23.239,10000.0,South Sandwich Islands region,usp000jmjj
+2012-06-09 09:53:51.510000,5.1,mb,-60.577,-26.424,10000.0,South Sandwich Islands region,usp000jmj4
+2012-06-03 21:00:59.350000,5.3,mb,-60.562,-25.57,35000.0,South Sandwich Islands region,usp000jm9y
+2012-03-25 10:26:54.060000,5.2,mb,-60.835,-23.863,40400.0,South Sandwich Islands region,usp000jgrr
+2012-01-14 11:34:56.850000,5.0,mb,-60.695,-26.086,10000.0,South Sandwich Islands region,usp000jdg5
+2012-01-13 16:02:23.030000,5.6,mwc,-60.548,-27.073,10000.0,South Sandwich Islands region,usp000jdeq
+2012-01-13 15:54:41.080000,5.0,mb,-60.597,-27.208,10000.0,South Sandwich Islands region,usp000jden
+2011-12-28 20:32:28.390000,5.2,mwc,-60.651,-25.928,10000.0,South Sandwich Islands region,usp000jcsf
+2011-12-17 20:54:24.390000,5.1,mwc,-59.809,-26.555,98300.0,South Sandwich Islands region,usp000jcbh
+2011-07-16 08:58:23.260000,5.3,mwc,-60.547,-26.659,10000.0,South Sandwich Islands region,usp000j50q
+2011-07-15 13:26:02.950000,6.1,mww,-60.762,-23.523,10000.0,South Sandwich Islands region,usp000j4yz
+2011-05-08 04:30:00.560000,5.3,mwc,-60.75,-23.926,48100.0,South Sandwich Islands region,usp000j16r
+2011-01-20 03:44:25.820000,5.2,mwc,-59.942,-27.48,129700.0,South Sandwich Islands region,usp000htcu
+2010-11-04 16:48:32.750000,5.0,mwc,-60.709,-24.785,37000.0,South Sandwich Islands region,usp000hp20
+2010-10-27 18:46:02.470000,5.3,mwc,-60.492,-24.357,35000.0,South Sandwich Islands region,usp000hnp7
+2009-12-23 18:40:15.800000,5.1,mb,-60.424,-26.912,39100.0,South Sandwich Islands region,usp000h59x
+2009-05-30 06:47:54.050000,5.5,mwc,-60.424,-26.111,10000.0,South Sandwich Islands region,usp000gxph
+2009-04-16 15:13:18.220000,5.0,mb,-60.236,-26.938,10000.0,South Sandwich Islands region,usp000gw7p
+2009-04-16 15:03:40.730000,5.0,mb,-60.382,-26.924,19800.0,South Sandwich Islands region,usp000gw7n
+2009-04-16 14:57:06.200000,6.7,mwc,-60.203,-26.858,20000.0,South Sandwich Islands region,usp000gw7m
+2009-03-12 05:18:08.350000,5.5,mwc,-60.861,-23.81,10000.0,South Sandwich Islands region,usp000guws
+2009-02-28 14:33:06.350000,6.3,mwc,-60.525,-24.796,15000.0,South Sandwich Islands region,usp000gufy
+2008-12-14 20:36:29.840000,5.5,mwc,-60.078,-18.762,10000.0,east of the South Sandwich Islands,usp000gqm7
+2008-07-08 18:23:00.480000,5.1,mwc,-60.069,-18.713,10000.0,east of the South Sandwich Islands,usp000gbns
+2008-02-10 12:22:02.650000,6.6,mwc,-60.797,-25.586,8000.0,South Sandwich Islands region,usp000fykt
+2007-08-19 01:32:39.990000,5.4,mwc,-60.276,-26.473,7700.0,South Sandwich Islands region,usp000fk5t
+2007-08-19 01:04:51.520000,5.2,mwc,-60.317,-26.569,7800.0,South Sandwich Islands region,usp000fk5p
+2007-08-19 00:41:28.150000,5.1,mwc,-60.345,-26.673,10000.0,South Sandwich Islands region,usp000fk5k
+2007-08-19 00:04:31.290000,5.5,mwc,-60.39,-26.863,30100.0,South Sandwich Islands region,usp000fk5h
+2007-08-02 14:14:03.930000,5.1,mb,-60.373,-26.63,21900.0,South Sandwich Islands region,usp000fhqc
+2007-07-15 12:09:48.590000,5.2,mwc,-59.987,-26.104,10700.0,South Sandwich Islands region,usp000fg7p
+2007-06-05 15:27:02.100000,5.7,mwc,-60.182,-26.728,10000.0,South Sandwich Islands region,usp000fdea
+2007-05-30 19:35:21.440000,5.5,mwb,-59.972,-26.457,35000.0,South Sandwich Islands region,usp000fd22
+2007-05-04 18:01:26.040000,5.0,mwc,-60.867,-20.124,10000.0,east of the South Sandwich Islands,usp000fb89
+2007-04-28 14:02:37.910000,6.1,mwc,-60.789,-20.208,10000.0,east of the South Sandwich Islands,usp000fat8
+2007-03-22 00:49:16.720000,5.0,mb,-60.335,-26.231,35000.0,South Sandwich Islands region,usp000f74v
+2006-07-25 07:57:33.020000,5.1,mwc,-60.554,-25.271,45100.0,South Sandwich Islands region,usp000ephu
+2006-01-02 06:10:49.760000,7.4,mwc,-60.957,-21.606,13000.0,east of the South Sandwich Islands,usp000e7dd
+2005-11-22 13:21:23.310000,5.5,mwc,-60.726,-25.319,13500.0,South Sandwich Islands region,usp000e4q9
+2005-02-07 14:23:51.420000,5.1,mwc,-59.888,-27.08,118300.0,South Sandwich Islands region,usp000dfns
+2004-08-14 08:43:26.820000,5.0,mwc,-60.568,-25.549,35000.0,South Sandwich Islands region,usp000d24g
+2003-10-30 06:00:45.070000,5.9,mwc,-60.711,-25.152,10000.0,South Sandwich Islands region,usp000cbm5
+2003-10-29 19:54:19.300000,5.4,mwc,-60.572,-25.298,33000.0,South Sandwich Islands region,usp000cbjv
+2003-10-23 07:47:23.440000,5.4,mwc,-60.354,-26.712,33000.0,South Sandwich Islands region,usp000cb2b
+2003-05-19 00:21:36.430000,5.2,mwc,-60.085,-26.903,33000.0,South Sandwich Islands region,usp000bxgd
+2002-04-18 14:17:23.940000,5.8,mwc,-60.657,-25.843,10000.0,South Sandwich Islands region,usp000b2p3
+2002-04-15 07:11:26.180000,5.0,mb,-60.009,-26.471,33000.0,South Sandwich Islands region,usp000b2eg
+2001-12-06 11:59:07.130000,5.1,mwc,-59.903,-26.34,33000.0,South Sandwich Islands region,usp000au3t
+2001-11-08 22:57:52.600000,5.6,mwc,-60.8,-25.65,33000.0,South Sandwich Islands region,usp000asgq
+2000-08-01 08:39:17.240000,5.0,mb,-60.302,-26.598,33000.0,South Sandwich Islands region,usp0009xjk
+1999-05-21 03:12:17.680000,5.7,mwc,-60.788,-24.952,40800.0,South Sandwich Islands region,usp00098eg
+1998-03-09 14:34:52.900000,5.0,mwc,-59.905,-22.893,33000.0,South Sandwich Islands region,usp0008h7k
+1997-09-18 18:19:41.320000,5.7,mwc,-60.722,-24.479,33000.0,South Sandwich Islands region,usp00087pr
+1997-07-18 14:45:51.290000,5.1,mwc,-60.534,-24.975,33000.0,South Sandwich Islands region,usp000850r
+1997-05-16 09:25:40.390000,5.2,mwc,-59.981,-18.646,10000.0,east of the South Sandwich Islands,usp00082cg
+1996-12-25 06:59:44.680000,5.8,mwc,-60.451,-19.943,10000.0,east of the South Sandwich Islands,usp0007uz0
+1996-07-02 16:03:32.450000,5.2,mwc,-60.894,-21.217,33000.0,east of the South Sandwich Islands,usp0007kmh
+1996-06-16 00:06:17.770000,5.2,mb,-60.275,-26.288,33000.0,South Sandwich Islands region,usp0007ju4
+1996-01-22 23:19:57.450000,6.2,mwb,-60.614,-25.901,10100.0,South Sandwich Islands region,usp0007bjd
+1995-04-14 13:15:17.350000,6.5,mwb,-60.774,-20.074,10500.0,east of the South Sandwich Islands,usp0006vnq
+1994-07-31 14:44:33.150000,5.3,mw,-60.694,-24.863,33000.0,South Sandwich Islands region,usp0006gc9
+1994-05-06 18:20:37.820000,5.8,mw,-59.982,-18.55,10000.0,east of the South Sandwich Islands,usp0006c6m
+1993-12-03 12:36:25.520000,5.5,mw,-60.353,-20.446,10000.0,east of the South Sandwich Islands,usp00064kr
+1993-09-19 04:18:36.340000,5.3,mw,-60.079,-26.967,45500.0,South Sandwich Islands region,usp00060kw
+1993-05-02 21:15:23.580000,5.5,mw,-59.852,-26.302,33000.0,South Sandwich Islands region,usp0005s48
+1993-04-05 09:24:59.200000,5.1,mb,-59.896,-26.23,33000.0,South Sandwich Islands region,usp0005qpu
+1993-04-05 05:54:32.940000,5.1,mb,-59.894,-26.234,33000.0,South Sandwich Islands region,usp0005qpf
+1993-04-05 05:33:47.290000,5.1,mb,-59.892,-26.125,33000.0,South Sandwich Islands region,usp0005qpe
+1993-04-05 05:02:39,5.1,mb,-59.894,-26.257,33000.0,South Sandwich Islands region,usp0005qpd
+1993-04-05 04:56:22.690000,5.2,mb,-59.974,-26.137,33000.0,South Sandwich Islands region,usp0005qpb
+1993-04-05 04:52:32.080000,5.8,ms,-59.806,-26.352,33000.0,South Sandwich Islands region,usp0005qpa
+1993-04-05 04:34:57.410000,5.2,mb,-59.888,-26.287,33000.0,South Sandwich Islands region,usp0005qp9
+1993-04-05 04:00:05.390000,6.3,mwb,-59.801,-26.312,33000.0,South Sandwich Islands region,usp0005qp7
+1993-03-15 17:10:38.900000,5.0,mb,-59.979,-25.967,33000.0,South Sandwich Islands region,usp0005pj8
+1993-03-10 17:05:29,5.0,mb,-60.411,-26.059,33000.0,South Sandwich Islands region,usp0005p9f
+1993-03-09 22:40:41.090000,5.4,mw,-59.868,-25.996,33000.0,South Sandwich Islands region,usp0005p85
+1993-03-09 10:02:09.070000,5.2,mb,-59.879,-25.699,33000.0,South Sandwich Islands region,usp0005p79
+1992-06-22 04:00:41,6.5,mwb,-60.728,-21.969,11800.0,east of the South Sandwich Islands,usp00059fc
+1992-04-22 21:43:13.050000,5.3,mw,-60.776,-22.815,33000.0,South Sandwich Islands region,usp0005663
+1991-03-28 03:17:22.410000,5.0,mb,-60.699,-26.174,33000.0,South Sandwich Islands region,usp0004pnj
+1991-03-28 02:04:26.750000,5.0,mb,-60.833,-26.542,33000.0,South Sandwich Islands region,usp0004pnc
+1990-12-06 11:29:00.040000,5.0,mb,-60.601,-22.411,33000.0,South Sandwich Islands region,usp0004ht3
+1990-09-14 09:20:18.910000,6.0,mw,-60.689,-22.794,33000.0,South Sandwich Islands region,usp0004eq3
+1990-04-06 07:52:02.010000,6.0,mw,-60.527,-25.482,33000.0,South Sandwich Islands region,usp00047j3
+1990-03-23 11:43:27.980000,5.1,mb,-60.023,-26.572,33000.0,South Sandwich Islands region,usp00046z2
+1989-11-04 06:16:57.880000,5.3,mb,-60.547,-26.469,33000.0,South Sandwich Islands region,usp00041qb
+1989-08-03 11:07:17.970000,5.8,mw,-59.994,-26.68,33300.0,South Sandwich Islands region,usp0003y07
+1988-12-09 07:49:25.770000,5.9,mw,-59.873,-25.983,33000.0,South Sandwich Islands region,usp0003pq2
+1988-11-30 01:31:04.760000,5.4,mb,-59.959,-27.185,33000.0,South Sandwich Islands region,usp0003pcb
+1988-08-19 18:28:18.930000,5.9,mw,-60.893,-23.382,14700.0,South Sandwich Islands region,usp0003k5m
+1988-07-19 23:57:27.220000,5.4,mw,-60.37,-26.69,33000.0,South Sandwich Islands region,usp0003j0n
+1988-07-19 16:30:56.110000,5.4,mw,-60.484,-26.89,19000.0,South Sandwich Islands region,usp0003j09
+1987-12-31 06:29:33.550000,5.5,mw,-60.069,-26.522,14800.0,South Sandwich Islands region,usp0003bph
+1987-12-29 10:14:40.590000,5.0,mb,-59.978,-26.642,31600.0,South Sandwich Islands region,usp0003bmx
+1987-12-16 05:07:18.800000,5.1,mb,-60.671,-25.995,39000.0,South Sandwich Islands region,usp0003bav
+1987-12-13 10:53:55.160000,5.3,mb,-59.864,-18.54,10000.0,east of the South Sandwich Islands,usp0003b8m
+1987-12-13 10:42:26.670000,5.6,mw,-60.003,-18.499,10000.0,east of the South Sandwich Islands,usp0003b8j
+1987-06-10 19:51:30.330000,6.2,mw,-60.167,-26.954,33000.0,South Sandwich Islands region,usp00035pt
+1987-06-10 12:41:10.220000,5.4,mb,-60.598,-26.556,33000.0,South Sandwich Islands region,usp00035ph
+1987-06-01 04:17:04.990000,5.1,mb,-59.858,-26.536,39000.0,South Sandwich Islands region,usp00035em
+1987-02-21 10:59:09.350000,5.2,ms,-60.428,-26.454,33000.0,South Sandwich Islands region,usp00032n4
+1987-01-31 19:30:03.350000,5.3,mb,-60.327,-26.657,33800.0,South Sandwich Islands region,usp000322v
+1987-01-31 08:43:44.100000,5.4,mw,-60.079,-26.461,31000.0,South Sandwich Islands region,usp000322b
+1987-01-31 04:40:16.590000,5.4,mw,-60.09,-26.477,33000.0,South Sandwich Islands region,usp0003227
+1987-01-31 03:19:32.510000,5.1,mb,-60.476,-27.146,33000.0,South Sandwich Islands region,usp0003223
+1987-01-31 02:24:50.160000,5.0,mb,-59.905,-26.327,33000.0,South Sandwich Islands region,usp0003221
+1987-01-31 02:21:06.420000,5.4,mb,-60.145,-26.563,30100.0,South Sandwich Islands region,usp000321z
+1987-01-31 02:03:00.560000,5.0,mb,-60.4,-26.737,33000.0,South Sandwich Islands region,usp000321y
+1987-01-31 01:53:38.800000,5.1,mb,-60.402,-26.662,33000.0,South Sandwich Islands region,usp000321x
+1987-01-31 01:49:11.340000,5.1,mb,-60.204,-26.542,28400.0,South Sandwich Islands region,usp000321w
+1987-01-31 00:22:26.270000,5.1,mb,-60.085,-26.642,34900.0,South Sandwich Islands region,usp000321t
+1987-01-30 22:29:42.090000,7.0,mw,-60.063,-26.916,47600.0,South Sandwich Islands region,usp000321p
+1986-09-24 11:54:30.920000,5.3,mb,-61.241,-25.787,33000.0,South Sandwich Islands region,usp0002yb9
+1985-07-28 22:59:54.580000,6.4,mw,-60.241,-26.883,33000.0,South Sandwich Islands region,usp0002h5q
+1985-02-19 13:53:19.720000,5.2,mw,-61.084,-23.692,33000.0,South Sandwich Islands region,usp0002c14
+1984-05-25 21:49:52.290000,5.6,mw,-60.106,-26.91,33000.0,South Sandwich Islands region,usp00024mp
+1984-05-11 22:18:44.030000,5.2,mb,-59.922,-26.692,33000.0,South Sandwich Islands region,usp00024a1
+1983-10-28 06:01:14.150000,5.4,mb,-60.281,-24.94,33000.0,South Sandwich Islands region,usp0001zbh
+1983-10-23 02:35:40.970000,5.1,mb,-60.388,-25.312,33000.0,South Sandwich Islands region,usp0001z6e
+1983-10-22 22:08:28.920000,5.5,mb,-60.282,-25.249,33000.0,South Sandwich Islands region,usp0001z65
+1983-10-22 13:07:39.170000,6.5,mw,-60.62,-25.392,33000.0,South Sandwich Islands region,usp0001z5u
+1983-10-22 05:53:23.710000,6.3,mb,-60.404,-24.865,33000.0,South Sandwich Islands region,usp0001z5h
+1983-10-22 05:32:10.060000,5.4,mb,-60.49,-25.682,33000.0,South Sandwich Islands region,usp0001z5g
+1983-10-22 04:21:35.010000,7.2,mw,-60.665,-25.451,24000.0,South Sandwich Islands region,usp0001z5e
+1983-09-17 12:46:55.950000,5.5,mb,-60.371,-27.067,33000.0,South Sandwich Islands region,usp0001yej
+1983-01-24 11:28:33.710000,5.0,mb,-60.791,-20.411,10000.0,east of the South Sandwich Islands,usp0001sj6
+1982-11-12 20:55:42.110000,5.3,mb,-61.061,-22.143,10000.0,South Sandwich Islands region,usp0001qvd
+1982-09-28 13:03:31.580000,5.1,mb,-59.817,-26.296,33000.0,South Sandwich Islands region,usp0001pvy
+1982-06-18 13:32:51.530000,5.3,mb,-59.975,-18.494,10000.0,east of the South Sandwich Islands,usp0001n01
+1982-05-07 05:38:34.890000,6.7,ms,-60.597,-20.877,10000.0,east of the South Sandwich Islands,usp0001m51
+1981-09-13 07:25:11.540000,5.6,ms,-60.843,-19.751,10000.0,east of the South Sandwich Islands,usp0001fuy
+1981-08-17 05:04:44.340000,5.0,mb,-60.013,-25.887,33000.0,South Sandwich Islands region,usp0001fb8
+1978-06-04 15:14:21.200000,5.3,mb,-60.606,-25.257,33000.0,South Sandwich Islands region,usp0000uwv
+1977-05-19 17:35:15,5.1,mb,-60.617,-26.746,33000.0,South Sandwich Islands region,usp0000nyc
+1977-05-19 17:02:53,5.2,mb,-60.351,-26.56,33000.0,South Sandwich Islands region,usp0000nyb
+1977-04-04 02:29:32.600000,5.2,ms,-60.586,-27.235,33000.0,South Sandwich Islands region,usp0000n8g
+1977-02-10 22:41:06.200000,6.3,mb,-60.933,-23.09,33000.0,South Sandwich Islands region,usp0000mh3
+1975-12-19 13:40:10.700000,5.1,mb,-60.513,-27.005,33000.0,South Sandwich Islands region,usp0000dz7
+1975-08-14 05:04:17,5.1,mb,-60.851,-20.799,33000.0,east of the South Sandwich Islands,usp0000cfc
+1974-09-27 12:17:33,5.0,mb,-59.859,-25.621,62000.0,South Sandwich Islands region,usp0000868
+1974-08-12 14:28:50,5.4,mb,-60.698,-19.397,33000.0,east of the South Sandwich Islands,usp00007k9
+1974-05-30 00:18:51.800000,5.0,mb,-60.47,-26.231,33000.0,South Sandwich Islands region,usp00006jn
+1974-04-01 20:24:11.400000,5.4,mb,-60.326,-26.914,33000.0,South Sandwich Islands region,usp00005u5
+1973-10-06 15:07:37.300000,7.0,ms,-60.823,-21.549,33000.0,east of the South Sandwich Islands,usp00003qs
+1972-02-25 01:17:16,6.3,mw,-60.759,-25.668,35000.0,South Sandwich Islands region,iscgem776454
+1970-08-11 20:10:52,5.7,mw,-60.571,-25.255,20000.0,South Sandwich Islands region,iscgem792780
+1969-10-01 19:53:15,5.7,mw,-60.793,-19.785,10000.0,east of the South Sandwich Islands,iscgem802980
+1967-08-22 13:17:02,5.7,mw,-60.898,-23.378,10000.0,South Sandwich Islands region,iscgem832490
+1967-08-22 13:02:05,6.6,mw,-60.761,-24.301,10000.0,South Sandwich Islands region,iscgem832489
+1966-10-11 06:25:55,6.1,mw,-60.354,-26.485,20000.0,South Sandwich Islands region,iscgem842387
+1966-09-15 11:51:56,6.2,mw,-60.256,-26.922,20000.0,South Sandwich Islands region,iscgem843527
+1966-09-14 23:18:42,6.7,mw,-60.244,-27.199,20000.0,South Sandwich Islands region,iscgem843497
+1965-10-01 22:34:23,6.0,mw,-60.468,-24.551,10000.0,South Sandwich Islands region,iscgem852823
+1963-07-18 04:58:06,5.8,mw,-61.009,-22.047,15000.0,South Sandwich Islands region,iscgem872747
+1960-11-09 03:17:59,6.4,mw,-60.607,-25.489,15000.0,South Sandwich Islands region,iscgem880728
+1960-06-21 21:33:51,5.8,mw,-60.587,-20.847,15000.0,east of the South Sandwich Islands,iscgem879596
+1960-04-05 12:36:18,5.9,mw,-60.633,-24.838,15000.0,South Sandwich Islands region,iscgem878748
+1960-04-05 07:17:48,6.0,mw,-60.562,-24.872,15000.0,South Sandwich Islands region,iscgem878746
+1959-12-15 12:15:55,5.8,mw,-59.815,-26.042,25000.0,South Sandwich Islands region,iscgem883473
+1959-12-14 23:22:03,7.0,mw,-59.935,-26.266,25000.0,South Sandwich Islands region,iscgem883464
+1957-05-12 04:47:48,6.0,mw,-60.5,-24.277,15000.0,South Sandwich Islands region,iscgem886537
+1951-10-13 22:28:11,6.3,mw,-61.11,-22.11,10000.0,South Sandwich Islands region,iscgem894807

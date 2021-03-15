@@ -1,0 +1,12 @@
+time,mag,magType,lat,lon,dep,text,id
+2019-09-25 20:18:31,5.4,mb,-40.4946,-16.8308,10000.0,Southern Mid-Atlantic Ridge,us70005lby
+2019-09-25 20:15:54.022000,5.2,mb,-40.6554,-16.7941,10000.0,Southern Mid-Atlantic Ridge,us70005lbu
+2015-02-25 13:48:31.150000,5.0,mb,-40.088,-16.3752,10000.0,Southern Mid-Atlantic Ridge,usc000tt3i
+2010-07-10 06:18:23.650000,5.2,mwc,-39.923,-16.526,10000.0,southern Mid-Atlantic Ridge,usp000hf3g
+2010-02-11 11:51:53.980000,5.5,mwc,-40.593,-16.769,10000.0,southern Mid-Atlantic Ridge,usp000h766
+2004-06-17 22:04:08.920000,5.4,mwc,-40.924,-16.78,10000.0,southern Mid-Atlantic Ridge,usp000cy4w
+2002-06-11 17:58:01.620000,5.4,mwc,-40.511,-16.682,10000.0,southern Mid-Atlantic Ridge,usp000b5z0
+1988-07-27 21:26:07.580000,5.0,mb,-40.868,-16.792,10000.0,southern Mid-Atlantic Ridge,usp0003ja3
+1981-02-16 08:27:31.800000,5.3,ms,-40.585,-16.326,10000.0,southern Mid-Atlantic Ridge,usp0001c7f
+1977-10-14 16:46:51.700000,5.5,mb,-39.752,-15.941,33000.0,Tristan da Cunha region,usp0000r1q
+1976-12-26 19:33:55.900000,5.8,ms,-40.572,-16.711,33000.0,southern Mid-Atlantic Ridge,usp0000kyd

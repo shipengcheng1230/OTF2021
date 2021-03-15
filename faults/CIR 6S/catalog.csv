@@ -1,0 +1,24 @@
+time,mag,magType,lat,lon,dep,text,id
+2017-01-13 05:30:51.930000,5.1,mb,-6.7394,68.5291,10000.0,Chagos Archipelago region,us10007t0z
+2011-06-30 13:37:26.250000,5.4,mwc,-7.106,68.005,10000.0,Chagos Archipelago region,usp000j3zu
+2011-05-10 06:37:05.260000,5.0,mwc,-6.996,68.334,10000.0,Chagos Archipelago region,usp000j1a0
+2010-11-13 23:03:28.310000,5.1,mwc,-6.98,68.087,10000.0,Chagos Archipelago region,usp000hphj
+2010-03-14 21:17:17.980000,5.4,mwc,-7.091,67.978,10000.0,Mid-Indian Ridge,usp000h9dn
+2009-05-26 05:39:15.140000,5.0,mwc,-7.671,67.831,10000.0,Mid-Indian Ridge,usp000gxhq
+2009-05-20 15:18:36.600000,5.0,mb,-7.134,68.029,10000.0,Chagos Archipelago region,usp000gxbj
+2009-05-20 10:03:12.420000,5.0,mwc,-7.101,68.021,10000.0,Chagos Archipelago region,usp000gxbb
+2009-05-20 09:57:42.490000,5.3,mwb,-7.143,67.966,10000.0,Mid-Indian Ridge,usp000gxba
+2009-05-19 07:22:43.710000,5.0,mwc,-7.045,68.025,10000.0,Chagos Archipelago region,usp000gxa8
+2009-05-19 07:04:16.580000,5.0,mwc,-7.106,67.865,10000.0,Mid-Indian Ridge,usp000gxa7
+2004-01-12 18:14:53.550000,5.0,mwc,-7.422,68.405,10000.0,Chagos Archipelago region,usp000chrt
+2000-10-03 02:46:59.250000,5.4,mwc,-7.123,67.926,10000.0,Mid-Indian Ridge,usp000a162
+2000-10-03 02:39:31.040000,5.0,mb,-7.145,67.998,10000.0,Mid-Indian Ridge,usp000a160
+1999-03-14 17:52:58.630000,5.2,mwc,-7.197,67.869,10000.0,Mid-Indian Ridge,usp00094gz
+1999-02-25 09:55:30.030000,5.2,mwc,-7.089,68.024,10000.0,Chagos Archipelago region,usp00093d8
+1995-08-29 12:45:25.730000,5.4,mw,-7.575,67.964,10000.0,Mid-Indian Ridge,usp00072mn
+1993-11-03 13:18:10.800000,5.6,mw,-7.123,67.916,10000.0,Mid-Indian Ridge,usp000634a
+1991-07-17 17:27:32.660000,5.0,ms,-7.234,67.978,10000.0,Mid-Indian Ridge,usp0004u9j
+1982-09-16 12:19:07.300000,5.1,mb,-6.959,67.778,10000.0,Carlsberg Ridge,usp0001pn7
+1978-06-01 04:29:25.800000,5.3,mb,-7.06,68.047,33000.0,Chagos Archipelago region,usp0000uva
+1975-09-20 06:11:50,5.4,mb,-6.736,68.309,33000.0,Chagos Archipelago region,usp0000cvu
+1958-09-14 21:31:58,5.8,mw,-7.357,68.006,15000.0,Chagos Archipelago region,iscgem885129

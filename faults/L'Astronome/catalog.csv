@@ -1,0 +1,21 @@
+time,mag,magType,lat,lon,dep,text,id
+2019-07-27 10:07:56.554000,5.6,mww,-59.846,-151.6538,10000.0,Pacific-Antarctic Ridge,us60004wg9
+2019-07-27 09:55:08.207000,5.7,mww,-59.6436,-150.9124,10000.0,Pacific-Antarctic Ridge,us60004wfx
+2017-12-16 22:40:50.460000,5.5,mww,-59.6236,-151.1228,10000.0,Pacific-Antarctic Ridge,us2000c5bf
+2017-12-16 05:05:58.550000,5.0,mb,-59.6197,-150.6322,10000.0,Pacific-Antarctic Ridge,us2000c565
+2015-03-02 02:50:47.880000,5.5,mwb,-59.561,-150.6522,13000.0,Pacific-Antarctic Ridge,usc000tuyv
+2012-07-07 20:32:26.830000,5.0,mb,-59.52,-150.669,10000.0,Pacific-Antarctic Ridge,usp000jnqt
+2011-05-13 03:36:50.490000,5.7,mwc,-59.438,-151.353,10000.0,Pacific-Antarctic Ridge,usp000j1h0
+2009-12-31 09:56:05.880000,5.4,mwc,-59.635,-151.214,10000.0,Pacific-Antarctic Ridge,usp000h5j4
+2009-12-31 09:29:44.900000,5.6,mwc,-59.395,-151.034,10000.0,Pacific-Antarctic Ridge,usp000h5j3
+2009-12-31 09:23:24.010000,6.0,mwc,-59.401,-150.975,10000.0,Pacific-Antarctic Ridge,usp000h5j2
+2008-01-23 13:00:32,5.0,mwc,-60.25,-151.25,10000.0,Pacific-Antarctic Ridge,gcmtc200801231300a
+2006-06-24 00:05:19.980000,5.0,mwc,-59.25,-151.532,10000.0,Pacific-Antarctic Ridge,usp000em3y
+2006-06-15 13:06:23.430000,5.0,mwc,-59.558,-151.506,10000.0,Pacific-Antarctic Ridge,usp000ekee
+2001-12-04 07:22:20.980000,5.4,mwc,-59.37,-150.888,10000.0,Pacific-Antarctic Ridge,usp000atzc
+1998-08-07 01:40:16.240000,5.9,mwc,-59.586,-150.715,10000.0,Pacific-Antarctic Ridge,usp0008sw3
+1998-08-07 01:08:22.710000,5.3,mwc,-59.443,-151.034,10000.0,Pacific-Antarctic Ridge,usp0008sw0
+1995-08-07 05:27:52.520000,5.7,mw,-59.378,-151.161,10000.0,Pacific-Antarctic Ridge,usp00071j6
+1984-09-27 12:01:59,5.8,mw,-59.281,-150.589,10000.0,Pacific-Antarctic Ridge,iscgem545335
+1979-11-10 07:41:27.100000,5.8,ms,-59.463,-150.892,10000.0,Pacific-Antarctic Ridge,usp00013y4
+1974-07-04 22:01:54.600000,5.3,mb,-59.847,-150.725,33000.0,Pacific-Antarctic Ridge,usp000070c

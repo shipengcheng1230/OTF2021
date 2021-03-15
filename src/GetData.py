@@ -335,7 +335,7 @@ class FaultData(AbstractFaultProcess):
 
 
 def getAllData(name: str):
-    # print(name)
+    print(name)
     f = FaultData(name)
     # f.getCatalog()
     # f.getCandidateStations()
@@ -346,9 +346,11 @@ def getAllData(name: str):
 
 if __name__ == "__main__":
 
-    df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] == 1) | (dfFaults["key"] < 80)]
+    df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] == 0) & (dfFaults["key"] >= 80)]
     names = df2["Name"].to_list()
-    # for name in names:
+    # names = names[23:]
+    # for i, name in enumerate(names):
+    #     print(i)
     #     getAllData(name.strip())
 
     # You may get refused by the server if you open too many clients at the same time

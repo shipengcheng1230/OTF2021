@@ -1,0 +1,14 @@
+time,mag,magType,lat,lon,dep,text,id
+2015-02-25 13:48:31.150000,5.0,mb,-40.088,-16.3752,10000.0,Southern Mid-Atlantic Ridge,usc000tt3i
+2014-11-25 19:47:53.740000,5.1,mb,-39.705,-15.9408,13890.0,Tristan da Cunha region,usb000t03g
+2012-09-14 07:18:38.380000,5.5,mwc,-39.676,-16.01,10000.0,southern Mid-Atlantic Ridge,usp000jsad
+2012-09-14 06:56:16.840000,5.1,mb,-39.644,-16.021,10000.0,southern Mid-Atlantic Ridge,usp000jsab
+2010-07-10 06:18:23.650000,5.2,mwc,-39.923,-16.526,10000.0,southern Mid-Atlantic Ridge,usp000hf3g
+2010-01-26 15:22:06.230000,5.3,mwc,-39.257,-15.9,10000.0,Tristan da Cunha region,usp000h6n7
+2004-07-09 15:37:53.210000,5.1,mwc,-39.536,-16.072,10000.0,southern Mid-Atlantic Ridge,usp000czuy
+1992-03-15 19:21:54.530000,5.2,mw,-39.599,-15.325,10000.0,Tristan da Cunha region,usp00054ab
+1985-11-29 14:01:20.080000,5.1,mw,-39.707,-15.847,10000.0,Tristan da Cunha region,usp0002ncd
+1982-07-23 11:45:11.300000,5.3,mb,-39.398,-15.982,10000.0,Tristan da Cunha region,usp0001nke
+1981-12-30 21:40:01.420000,5.2,mb,-39.875,-15.413,10000.0,Tristan da Cunha region,usp0001hte
+1977-10-14 16:46:51.700000,5.5,mb,-39.752,-15.941,33000.0,Tristan da Cunha region,usp0000r1q
+1976-08-03 17:53:11.500000,5.0,mb,-39.758,-15.788,33000.0,Tristan da Cunha region,usp0000hq6

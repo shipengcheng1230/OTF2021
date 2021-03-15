@@ -273,7 +273,7 @@ def cc(fa, id1, t1, lat1, lon1, mag1, id2, t2, lat2, lon2, mag2):
         l2 = ax0.scatter([], [], fc='tab:green', s=15, marker="o", ec="black")
         l3 = ax0.scatter([], [], fc='white', s=15, marker="o", ec="black")
         ax1.legend([l1, l2, l3], ["Cosine Fitting", "Observation (cc $\geq \;$" +
-                                  f"{outlierCC:.2f})", f"Observation (cc $>$ {outlierCC:.2f})"], loc="lower center", bbox_to_anchor=(0.5, -0.3))
+                                  f"{outlierCC:.2f})", f"Observation (cc $<$ {outlierCC:.2f})"], loc="lower center", bbox_to_anchor=(0.5, -0.3))
 
         l1, = ax2.plot([], [], color="tab:pink", linestyle="-")
         l2, = ax2.plot([], [], color="gray", linestyle="--")
@@ -667,7 +667,7 @@ def optimize(fa):
 
 if __name__ == "__main__":
 
-    df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] == 1) | (dfFaults["key"] < 80)]
+    df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] == 0) & (dfFaults["key"] >= 80)]
     names = df2["Name"].to_list()
     for name in names:
         print(name)
