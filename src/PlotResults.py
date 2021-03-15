@@ -490,7 +490,7 @@ if __name__ == "__main__":
     # names = names[86:]
     # names = ["Gofar"]
     # names = ["Discovery", "Hayes", "Andrew Bain", "Bouvet", "Pitman"]
-    # names = ["Zeehaen"]
+    names = ["SEIR 96E (A)"]
     for i, name in enumerate(names):
         print(f"{i + 1}/{len(names)}: {name}")
         f = PlotProcedure(name.strip())

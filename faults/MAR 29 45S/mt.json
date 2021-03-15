@@ -1,45 +1,25 @@
 {
-    "usp0001qzb": {
-        "np1": [
-            NaN,
-            NaN,
-            NaN
-        ],
-        "np2": [
-            NaN,
-            NaN,
-            NaN
-        ],
-        "mt": [
-            NaN,
-            NaN,
-            NaN,
-            NaN,
-            NaN,
-            NaN
-        ]
-    },
-    "us1000cflk": {
-        "np1": [
-            NaN,
-            NaN,
-            NaN
-        ],
-        "np2": [
-            NaN,
-            NaN,
-            NaN
-        ],
-        "mt": [
-            NaN,
-            NaN,
-            NaN,
-            NaN,
-            NaN,
-            NaN
-        ]
-    },
     "usp0006e1r": {
+        "np1": [
+            NaN,
+            NaN,
+            NaN
+        ],
+        "np2": [
+            NaN,
+            NaN,
+            NaN
+        ],
+        "mt": [
+            NaN,
+            NaN,
+            NaN,
+            NaN,
+            NaN,
+            NaN
+        ]
+    },
+    "usp0001qzb": {
         "np1": [
             NaN,
             NaN,
@@ -77,6 +57,26 @@
             -6900000000000000.0,
             7200000000000000.0,
             -2.02e+16
+        ]
+    },
+    "us1000cflk": {
+        "np1": [
+            NaN,
+            NaN,
+            NaN
+        ],
+        "np2": [
+            NaN,
+            NaN,
+            NaN
+        ],
+        "mt": [
+            NaN,
+            NaN,
+            NaN,
+            NaN,
+            NaN,
+            NaN
         ]
     }
 }

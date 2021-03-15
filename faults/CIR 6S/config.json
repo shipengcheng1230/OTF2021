@@ -34,11 +34,11 @@
     },
     "extent": [
         67.88,
-        68.49,
-        -7.19,
-        -6.61
+        68.6,
+        -7.59,
+        -6.21
     ],
     "ruler": 10,
-    "creepPercentage": 0.8916876574307305,
-    "creepPercentage1950": 0.6801007556675063
+    "creepPercentage": 0.746875,
+    "creepPercentage1950": 0.6
 }
