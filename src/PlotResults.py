@@ -426,8 +426,6 @@ class PlotProcedure(AbstractFaultProcess):
                     ax3.plot([0.0, 1.0], [expected, expected], linestyle=":", color="forestgreen", linewidth=1.0)
                     ax3.text(0.9, expected, "$A_{T}$", color="forestgreen")
 
-                ax3.set_ylim(bottom=0)
-
                 with open(os.path.join(self.dir, "umrr.json"), "w") as fp:
                     d = {
                         "relocated": {
@@ -440,6 +438,7 @@ class PlotProcedure(AbstractFaultProcess):
                         "At": expected.values[0],
                     }
                     json.dump(d, fp, indent=4)
+            ax3.set_ylim(bottom=0)
 
         momentHist()
 
@@ -490,7 +489,7 @@ if __name__ == "__main__":
     # names = names[86:]
     # names = ["Gofar"]
     # names = ["Discovery", "Hayes", "Andrew Bain", "Bouvet", "Pitman"]
-    names = ["SEIR 96E (A)"]
+    names = ["Zeewolf"]
     for i, name in enumerate(names):
         print(f"{i + 1}/{len(names)}: {name}")
         f = PlotProcedure(name.strip())
