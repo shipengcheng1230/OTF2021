@@ -669,6 +669,7 @@ if __name__ == "__main__":
 
     df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] == 0) & (dfFaults["key"] >= 80)]
     names = df2["Name"].to_list()
+    names = ["Charlie Gibbs (A)"]
     for name in names:
         print(name)
         f = RelocationProcedure(name.strip())

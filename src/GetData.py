@@ -139,11 +139,12 @@ class FaultData(AbstractFaultProcess):
         return np1, np2, mt
 
     def getCandidateStations(self, minDist=1000.0, ddeg=6.0, nnearest=1, plot=True):
-        NET = dfStations['#Network '].to_list()
-        STA = dfStations[' Station '].to_list()
-        LAT = dfStations[' Latitude '].to_list()
-        LON = dfStations[' Longitude '].to_list()
-        DEP = dfStations[' Elevation '].to_list()
+        dfStations_ = dfStations
+        NET = dfStations_['#Network '].to_list()
+        STA = dfStations_[' Station '].to_list()
+        LAT = dfStations_[' Latitude '].to_list()
+        LON = dfStations_[' Longitude '].to_list()
+        DEP = dfStations_[' Elevation '].to_list()
 
         degs = np.arange(0.0, 359.0, step=ddeg)
         sep = [(degs[x], degs[x+1]) for x in range(len(degs)-1)]
@@ -154,6 +155,7 @@ class FaultData(AbstractFaultProcess):
             'station', ['net', 'sta', 'lat', 'lon', 'dep', 'azi', 'dist'])
         stas = [[] for _ in range(len(sep))]
         lon, lat = self.df["Longitude"].iloc[0], self.df["Latitude"].iloc[0]
+        pools = {}
         for i in range(len(STA)):
             fz, _, d = geod.inv(lon, lat, LON[i], LAT[i])
             if fz < 0:
@@ -162,13 +164,22 @@ class FaultData(AbstractFaultProcess):
             if d < minDist:
                 continue
             id = int(np.floor(fz / ddeg))
-            stas[id].append(
-                staType(NET[i], STA[i], LAT[i], LON[i], DEP[i], fz, d))
+            target = staType(NET[i], STA[i], LAT[i], LON[i], DEP[i], fz, d)
+            stas[id].append(target)
+            pools[f"{NET[i]}-{STA[i]}"] = target
 
         stass = []
         for sta in stas:
             heapq.heapify(sta)
-            stass.extend(heapq.nsmallest(nnearest, sta, key=lambda x: x.dist))
+            selected = heapq.nsmallest(nnearest, sta, key=lambda x: x.dist)
+            stass.extend(selected)
+            [pools.pop(f"{x.net}-{x.sta}") for x in selected]
+
+        if "additionalStations" in self.config:
+            for x in self.config["additionalStations"]:
+                k = f"{x[0]}-{x[1]}"
+                if k in pools:
+                    stass.append(pools.pop(k))
 
         content = {
             'net': [x.net for x in stass],
@@ -337,11 +348,11 @@ class FaultData(AbstractFaultProcess):
 def getAllData(name: str):
     print(name)
     f = FaultData(name)
-    f.getCatalog()
-    f.getCandidateStations()
-    f.getCandidateEvents()
-    f.getEventPairs()
-    # f.getWaveform()
+    # f.getCatalog()
+    # f.getCandidateStations()
+    # f.getCandidateEvents()
+    # f.getEventPairs()
+    f.getWaveform()
     return 0
 
 if __name__ == "__main__":
@@ -349,26 +360,26 @@ if __name__ == "__main__":
     df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] == 0) & (dfFaults["key"] >= 80)]
     names = df2["Name"].to_list()
     # names = names[23:]
-    names = ["MAR 29 45S"]
-    for i, name in enumerate(names):
-        print(i)
-        getAllData(name.strip())
+    names = ["Charlie Gibbs (A)"]
+    # for i, name in enumerate(names):
+    #     print(i)
+    #     getAllData(name.strip())
 
     # You may get refused by the server if you open too many clients at the same time
     # You may not get all the waveform on the first request
     # Keep trying until no more
-    # i = 0
-    # while True:
-    #     with ProcessPoolExecutor(max_workers=12) as executor:
-    #         futures = []
-    #         for name in names:
-    #             futures.append(executor.submit(getAllData, name))
-    #         try:
-    #             # [future.result() for future in as_completed(futures)]
-    #             wait(futures)
-    #         except Exception as e:
-    #             print(f"Retry {i} ......")
-    #             i += 1
-    #         else:
-    #             # exit()
-    #             pass
+    i = 0
+    while True:
+        with ProcessPoolExecutor(max_workers=1) as executor:
+            futures = []
+            for name in names:
+                futures.append(executor.submit(getAllData, name))
+            try:
+                # [future.result() for future in as_completed(futures)]
+                wait(futures)
+            except Exception as e:
+                print(f"Retry {i} ......")
+                i += 1
+            else:
+                # exit()
+                pass

@@ -3,6 +3,24 @@
         "lat": 52.466383,
         "lon": -43.725078
     },
+    "additionalStations": [
+        [
+            "II",
+            "ASCN"
+        ],
+        [
+            "II",
+            "HOPE"
+        ],
+        [
+            "II",
+            "SHEL"
+        ],
+        [
+            "II",
+            "SUR"
+        ]
+    ],
     "magCutOff": 5.0,
     "adjust": {
         "1": {
@@ -39,6 +57,6 @@
         53.4
     ],
     "ruler": 20,
-    "creepPercentage": 0.8195266272189349,
-    "creepPercentage1950": 0.3994082840236686
+    "creepPercentage": 0.5946745562130178,
+    "creepPercentage1950": 0.3106508875739645
 }
