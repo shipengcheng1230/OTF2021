@@ -5,6 +5,8 @@ import pandas as pd
 import numpy as np
 from obspy.clients.fdsn import Client
 from obspy.clients.fdsn.header import FDSNException, FDSNNoDataException
+from pyproj import Geod
+
 
 baseDir = os.path.join(os.path.dirname(__file__), "..")
 faultsDir = os.path.join(baseDir, "faults")
@@ -19,20 +21,63 @@ try:
 except FDSNException:
     print("Client not accessible, retry later.")
 
+
 def angularMean(angles_deg: List[float]):
     N = len(angles_deg)
     angles_deg = np.array(angles_deg)
     mean_c = 1.0 / N * np.sum(np.exp(1j * angles_deg * np.pi/180.0))
     return np.angle(mean_c, deg=True)
 
+
+def extentZoom(extent, angle):
+    llx, urx, lly, ury = extent
+    midx, midy = (llx + urx) / 2, (lly + ury) / 2
+    dx, dy = urx - llx, ury - lly
+    zoom = (0.5 - 0.95) * (1 - np.abs(angle - 45) / 45) + 0.95 # linear expand
+    _dx, _dy = dx * zoom / 2, dy * zoom / 2
+    return [midx - _dx, midx + _dx, midy - _dy, midy + _dy]
+
+
+def setExtentByRatio(extent, ratio=2.00, angle=None):
+        geod = Geod(ellps="WGS84")
+        x0 = angularMean([extent[0], extent[1]])
+        y0 = angularMean([extent[2], extent[3]])
+        dx = extent[1] - extent[0]
+        dy = extent[3] - extent[2]
+        _, _, ddx = geod.inv(x0, y0, x0+dx/2, y0)
+        _, _, ddy = geod.inv(x0, y0, x0, y0+dy/2)
+        _d1, _d2 = max(ddx, ddy), min(ddx, ddy)
+        if _d1 / _d2 > ratio:
+            _d2 = _d1 / ratio
+        else:
+            _d1 = _d2 * ratio
+        if angle:
+            if np.abs(angle) < 45:
+                ddx, ddy = _d1, _d2
+            else:
+                ddx, ddy = _d2, _d1
+        else:
+            if dx > dy:
+                ddx, ddy = _d1, _d2
+            else:
+                ddx, ddy = _d2, _d1
+        maxlon, _, _ = geod.fwd(x0, y0, 90.0, ddx)
+        minlon, _, _ = geod.fwd(x0, y0, -90.0, ddx)
+        _, maxlat, _ = geod.fwd(x0, y0, 0.0, ddy)
+        _, minlat, _ = geod.fwd(x0, y0, 180.0, ddy)
+        return [minlon, maxlon, minlat, maxlat]
+
+
 def angularDiff(x, y):
     # suppose x, y both [0,360)
     xy = abs(x - y)
     return min(360 - xy, xy)
 
+
 def mag2moment(x):
     # https://en.wikipedia.org/wiki/Moment_magnitude_scale
     return 10 ** (x * 3/2 + 16.1) / 1e7
+
 
 def mag2mw(m, magType):
 
@@ -54,6 +99,7 @@ def mag2mw(m, magType):
     else:
         return m
 
+
 def isTransform(fm, criterion=25.0):
     # check rake angle, transform event should have small rake angle
     # if no fm, we pressume it is strike slip event
@@ -64,6 +110,7 @@ def isTransform(fm, criterion=25.0):
     rake = fm[-1] % 180
     return rake <= criterion or (180.0 - rake) <= criterion
 
+
 def moment2RuptureLength(mw):
     # Wells, D. L., & Coppersmith, K. J. (1994).
     # New empirical relationships among magnitude, rupture length, rupture width, rupture area, and surface displacement.
@@ -71,6 +118,7 @@ def moment2RuptureLength(mw):
 
     # subsurface rupture length
     return 10 ** (-2.57 + 0.62 * mw)
+
 
 def momentAlongStrike(xdist, xrs, mws, npts=500):
     # notice xdist in [km]
@@ -86,6 +134,7 @@ def momentAlongStrike(xdist, xrs, mws, npts=500):
         iright = np.argmax(rr > right)
         arr[ileft: iright] += mag2moment(mw) / l / 1e3
     return arr, rr
+
 
 def momentAlongStrikeEllipsoid(xdist, xrs, mws, npts=500):
     arr = np.zeros(npts)
@@ -105,6 +154,7 @@ def momentAlongStrikeEllipsoid(xdist, xrs, mws, npts=500):
         for i in range(ileft, iright):
             arr[i] += np.sqrt((1 - (rr[i] - left - a) ** 2 / a ** 2) * b ** 2) / xdist / 1e3
     return arr, rr
+
 
 def creepMask(arr, rr, left, right, thred):
     mask = np.zeros(len(arr))
@@ -129,6 +179,7 @@ def creepMask(arr, rr, left, right, thred):
         p2.append(iright)
 
     return list(zip(p1, p2)), mask[ileft: iright]
+
 
 def creepPercentage(arr, rr, left, right, thred):
     ileft = np.argmax(rr >= left)

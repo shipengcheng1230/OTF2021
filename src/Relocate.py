@@ -95,7 +95,7 @@ def cc(fa, id1, t1, lat1, lon1, mag1, id2, t2, lat2, lon2, mag2):
             x_azi.append(res.x[2])
         return nsigma*np.std(x_cmt), nsigma*np.std(x_dist), nsigma*np.std(x_azi)
 
-    fm1, fm2 = fa.fm[str(id1)]["np1"], fa.fm[str(id1)]["np1"]
+    fm1, fm2 = fa.fm[str(id1)]["np1"], fa.fm[str(id2)]["np1"]
     wv1, wv2 = [], []
     content = {x: [] for x in ["azi", "dt",
                                "cc", "net", "sta", "staLat", "staLon"]}
@@ -667,9 +667,10 @@ def optimize(fa):
 
 if __name__ == "__main__":
 
-    df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] == 0) & (dfFaults["key"] >= 80)]
-    names = df2["Name"].to_list()
-    names = ["Charlie Gibbs (A)"]
+    # df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] == 0) & (dfFaults["key"] >= 80)]
+
+    names = dfFaults["Name"].to_list()
+    names = ["Challenger"]
     for name in names:
         print(name)
         f = RelocationProcedure(name.strip())

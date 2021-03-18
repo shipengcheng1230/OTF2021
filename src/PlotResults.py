@@ -35,7 +35,7 @@ from utils import *
 import warnings
 warnings.filterwarnings("ignore")
 
-GMRT_BATHY_GRID = "/mnt/disk6/pshi/otfloc/bathy2"
+GMRT_BATHY_GRID = "/mnt/disk6/pshi/otfloc2/bathy"
 
 
 class PlotProcedure(AbstractFaultProcess):
@@ -84,43 +84,6 @@ class PlotProcedure(AbstractFaultProcess):
         ax1.set_adjustable('datalim')
         ax2.set_adjustable('datalim')
 
-        def extentZoom(extent, angle):
-            llx, urx, lly, ury = extent
-            midx, midy = (llx + urx) / 2, (lly + ury) / 2
-            dx, dy = urx - llx, ury - lly
-            zoom = (0.5 - 0.95) * (1 - np.abs(angle - 45) / 45) + 0.95 # linear expand
-            _dx, _dy = dx * zoom / 2, dy * zoom / 2
-            return [midx - _dx, midx + _dx, midy - _dy, midy + _dy]
-
-        def setExtentByRatio(extent, ratio=2.00, angle=None):
-            geod = Geod(ellps="WGS84")
-            x0 = angularMean([extent[0], extent[1]])
-            y0 = angularMean([extent[2], extent[3]])
-            dx = extent[1] - extent[0]
-            dy = extent[3] - extent[2]
-            _, _, ddx = geod.inv(x0, y0, x0+dx/2, y0)
-            _, _, ddy = geod.inv(x0, y0, x0, y0+dy/2)
-            _d1, _d2 = max(ddx, ddy), min(ddx, ddy)
-            if _d1 / _d2 > ratio:
-                _d2 = _d1 / ratio
-            else:
-                _d1 = _d2 * ratio
-            if angle:
-                if np.abs(angle) < 45:
-                    ddx, ddy = _d1, _d2
-                else:
-                    ddx, ddy = _d2, _d1
-            else:
-                if dx > dy:
-                    ddx, ddy = _d1, _d2
-                else:
-                    ddx, ddy = _d2, _d1
-            maxlon, _, _ = geod.fwd(x0, y0, 90.0, ddx)
-            minlon, _, _ = geod.fwd(x0, y0, -90.0, ddx)
-            _, maxlat, _ = geod.fwd(x0, y0, 0.0, ddy)
-            _, minlat, _ = geod.fwd(x0, y0, 180.0, ddy)
-            return [minlon, maxlon, minlat, maxlat]
-
         extent0 = self.config["extent"]
         extent = setExtentByRatio(extent0, angle=90 - self.df["strike"].iloc[0] % 180)
         ax1.set_extent(extentZoom(extent, np.abs(rotatediff)), crs=ccrs.PlateCarree())
@@ -129,7 +92,7 @@ class PlotProcedure(AbstractFaultProcess):
         ax1pos = ax1.get_position().bounds
         ax2pos = ax2.get_position().bounds
 
-        if self.name != "Gofar1":
+        if self.name == "":
             for x in [ax1, ax2]:
                 x.add_wms(
                     # wms="https://www.gmrt.org/services/mapserver/wms_merc?",
@@ -160,12 +123,10 @@ class PlotProcedure(AbstractFaultProcess):
             cmapBathy = plt.cm.get_cmap("YlGnBu_r")
             origin = "upper"
             shade_data = np.where(np.isnan(bathyelv.data), 0.0, bathyelv.data)
-            print("here1")
             z = ls.shade(
                 shade_data, # nan val corrupt lightsource
                 cmap=cmapBathy, vert_exag=50.0, dx=dx, dy=dy, blend_mode="overlay", fraction=1.0,
                 vmin=maxelv, vmax=elvmaxnorm)
-            print("here")
             ax1.get_position().bounds
             ax2.get_position().bounds
             ax2.imshow(z, extent=bathyextent, origin=origin, transform=ccrs.PlateCarree(), cmap=cmapBathy, interpolation='nearest')
@@ -482,15 +443,28 @@ class PlotProcedure(AbstractFaultProcess):
         fig.savefig(output, dpi=600, bbox_inches="tight")
         plt.close(fig)
 
+def plotting(name):
+    f = PlotProcedure(name.strip())
+    f.plotTimeSpaceLayout2()
+
 if __name__ == "__main__":
 
-    df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] != 1) & (dfFaults["key"] >= 80)]
-    names = df2["Name"].to_list()
+    # df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] != 1) & (dfFaults["key"] >= 80)]
+
+    names = dfFaults["Name"].to_list()
     # names = names[86:]
     # names = ["Gofar"]
     # names = ["Discovery", "Hayes", "Andrew Bain", "Bouvet", "Pitman"]
-    names = ["Charlie Gibbs (A)"]
-    for i, name in enumerate(names):
+    # names = ["Alula Fartak"]
+    # names = ["Tasman"]
+    for i, name in enumerate(names[3:]):
         print(f"{i + 1}/{len(names)}: {name}")
         f = PlotProcedure(name.strip())
         f.plotTimeSpaceLayout2()
+
+    # with ProcessPoolExecutor(max_workers=2) as executor:
+    #     futures = []
+    #     for i, name in enumerate(names):
+    #         print(f"{i + 1}/{len(names)}: {name}")
+    #         futures.append(executor.submit(plotting, name))
+    #     wait(futures)

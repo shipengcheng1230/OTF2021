@@ -349,7 +349,7 @@ def getAllData(name: str):
     print(name)
     f = FaultData(name)
     # f.getCatalog()
-    # f.getCandidateStations()
+    # f.getCandidateStations(ddeg=6.0, nnearest=2)
     # f.getCandidateEvents()
     # f.getEventPairs()
     f.getWaveform()
@@ -357,10 +357,9 @@ def getAllData(name: str):
 
 if __name__ == "__main__":
 
-    df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] == 0) & (dfFaults["key"] >= 80)]
-    names = df2["Name"].to_list()
-    # names = names[23:]
-    names = ["Charlie Gibbs (A)"]
+    # df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] == 0) & (dfFaults["key"] >= 80)]
+    # names = df2["Name"].to_list()
+    names = ["Chain", "Challenger"]
     # for i, name in enumerate(names):
     #     print(i)
     #     getAllData(name.strip())
@@ -370,7 +369,7 @@ if __name__ == "__main__":
     # Keep trying until no more
     i = 0
     while True:
-        with ProcessPoolExecutor(max_workers=1) as executor:
+        with ProcessPoolExecutor(max_workers=2) as executor:
             futures = []
             for name in names:
                 futures.append(executor.submit(getAllData, name))

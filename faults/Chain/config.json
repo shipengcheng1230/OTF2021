@@ -3,7 +3,7 @@
         "lat": -2.176208,
         "lon": -18.401922
     },
-    "magCutOff": 6.0,
+    "magCutOff": 5.6,
     "adjust": {
         "1": {
             "lon": 0.0,
@@ -39,6 +39,6 @@
         -0.5
     ],
     "ruler": 50,
-    "creepPercentage": 0.654891304347826,
-    "creepPercentage1950": 0.27445652173913043
+    "creepPercentage": 0.4945652173913043,
+    "creepPercentage1950": 0.23097826086956522
 }
