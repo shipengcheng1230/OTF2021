@@ -50,7 +50,7 @@ class PlotProcedure(AbstractFaultProcess):
 
 
     def plotTimeSpaceLayout2(self, overWrite=True):
-        output = os.path.join(self.dir, "layout2.pdf")
+        output = os.path.join(self.dir, "layout3.pdf")
 
         if not overWrite and os.path.isfile(output):
             return
@@ -371,9 +371,11 @@ class PlotProcedure(AbstractFaultProcess):
                 creepPct = creepPercentage(arr3 / (2020-1990), rr3, edges[0], edges[1], thrd)
                 creepIndex, shape = creepMask(arr3 / (2020-1990), rr3, edges[0], edges[1], thrd)
                 creepPct1950 = creepPercentage(arr / (2020-1950), rr, edges[0], edges[1], thrd)
+                creepIndex1950, shape1950 = creepMask(arr / (2020-1950), rr, edges[0], edges[1], thrd)
 
-                for x in creepIndex:
-                    rect = Rectangle((rr3[x[0]], 0), rr3[x[1]] - rr3[x[0]], 1, transform=ax3.transAxes, fc="lightgray", alpha=0.6)
+                rrp, cpidx = rr, creepIndex1950
+                for x in cpidx:
+                    rect = Rectangle((rrp[x[0]], 0), rrp[x[1]] - rrp[x[0]], 1, transform=ax3.transAxes, fc="lightgray", alpha=0.6)
                     ax3.add_patch(rect)
 
                 self.config["creepPercentage"] = creepPct
@@ -453,11 +455,11 @@ if __name__ == "__main__":
 
     names = dfFaults["Name"].to_list()
     # names = names[86:]
-    # names = ["Gofar"]
+    # names = ["Wilkes"]
     # names = ["Discovery", "Hayes", "Andrew Bain", "Bouvet", "Pitman"]
     # names = ["Alula Fartak"]
     # names = ["Tasman"]
-    for i, name in enumerate(names[3:]):
+    for i, name in enumerate(names):
         print(f"{i + 1}/{len(names)}: {name}")
         f = PlotProcedure(name.strip())
         f.plotTimeSpaceLayout2()
