@@ -7,3 +7,5 @@ faults/*/cc/*.json
 collections/
 bathy/
 __pycache__
+
+!extra/cosine-fitting-samples/*.pdf
