@@ -668,9 +668,8 @@ def optimize(fa):
 if __name__ == "__main__":
 
     names = dfFaults["Name"].to_list()
-    names = ["SEIR 96E (B)"]
     for name in names:
         print(name)
         f = RelocationProcedure(name.strip())
         crossCorrelate(f)
-        # optimize(f)
+        optimize(f)
