@@ -27,9 +27,15 @@ This repo consists of relocated (surface wave cross-correlation) earthquakes in 
 
 - `stations.csv`: our selected seismic station pool
 
+- `extra`:
+
+    - `ISC-EHB`: the corresponding catalogs from ISC-EHB for Fig-1
+
+    - `cosine-fitting-samples`: intermediate results from from SEIR 96E (B)
+
 
 ### What excludes:
 
 - seismic waveforms
 
-- cosine fitting results
+- complete cosine fitting results
