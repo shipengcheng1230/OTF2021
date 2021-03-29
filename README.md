@@ -2,7 +2,7 @@
 
 This repo consists of relocated (surface wave cross-correlation) earthquakes in major oceanic transform faults.
 
-*The ubiquitous creeping segments on oceanic transform faults, Pengcheng Shi, Meng Wei, Robert Pockalny, 2021, to submit to Geology*
+*The ubiquitous creeping segments on oceanic transform faults, Pengcheng Shi, Meng Wei, Robert Pockalny, 2021, submitted to Geology*
 
 ### What includes:
 
@@ -14,7 +14,7 @@ This repo consists of relocated (surface wave cross-correlation) earthquakes in 
 
     - `mt.json`: moment tensor solutions (the latest one) from USGS server
 
-    - `config.json`: plotting parameters and CSF results
+    - `config.json`: plotting-related parameters, such as map extent, cluster offset, and CSF results
 
     - `stations.csv`: stations we tried to retrieve waveform
 
@@ -27,11 +27,11 @@ This repo consists of relocated (surface wave cross-correlation) earthquakes in 
 
 - `stations.csv`: our selected seismic station pool
 
-- `extra`:
+- `/extra`:
 
-    - `ISC-EHB`: the corresponding catalogs from ISC-EHB for Fig-1
+    - `/ISC-EHB`: the corresponding catalogs from ISC-EHB for Fig-1
 
-    - `cosine-fitting-samples`: intermediate results from from SEIR 96E (B)
+    - `/cosine-fitting-samples`: results from SEIR 96E (B)
 
 
 ### What excludes:
