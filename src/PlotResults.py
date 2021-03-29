@@ -32,7 +32,6 @@ from GetData import AbstractFaultProcess
 from scalebar import dist_func_complete, scale_bar
 from utils import *
 
-import warnings
 warnings.filterwarnings("ignore")
 
 GMRT_BATHY_GRID = "/mnt/disk6/pshi/otfloc2/bathy"
@@ -49,8 +48,8 @@ class PlotProcedure(AbstractFaultProcess):
             self.config["adjust"].setdefault(str(i), {"lat": 0.0, "lon": 0.0})
 
 
-    def plotTimeSpaceLayout2(self, overWrite=True):
-        output = os.path.join(self.dir, "layout3.pdf")
+    def plotTimeSpaceLayout(self, overWrite=True):
+        output = os.path.join(self.dir, "layout.pdf")
 
         if not overWrite and os.path.isfile(output):
             return
@@ -373,7 +372,9 @@ class PlotProcedure(AbstractFaultProcess):
                 creepPct1950 = creepPercentage(arr / (2020-1950), rr, edges[0], edges[1], thrd)
                 creepIndex1950, shape1950 = creepMask(arr / (2020-1950), rr, edges[0], edges[1], thrd)
 
+                # plot 1950 or relocated
                 rrp, cpidx = rr, creepIndex1950
+                # rrp, cpidx = rr3, creepIndex
                 for x in cpidx:
                     rect = Rectangle((rrp[x[0]], 0), rrp[x[1]] - rrp[x[0]], 1, transform=ax3.transAxes, fc="lightgray", alpha=0.6)
                     ax3.add_patch(rect)
@@ -441,29 +442,22 @@ class PlotProcedure(AbstractFaultProcess):
         sub_ax.stock_img()
         sub_ax.scatter(self.df["Longitude"].iloc[0], self.df["Latitude"].iloc[0], s=50, marker="*", c="orange")
 
-        # print(f"Saving link simple plot {self.name} ...")
         fig.savefig(output, dpi=600, bbox_inches="tight")
         plt.close(fig)
 
 def plotting(name):
     f = PlotProcedure(name.strip())
-    f.plotTimeSpaceLayout2()
+    f.plotTimeSpaceLayout()
 
 if __name__ == "__main__":
 
-    # df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] != 1) & (dfFaults["key"] >= 80)]
-
     names = dfFaults["Name"].to_list()
-    # names = names[86:]
-    # names = ["Wilkes"]
-    # names = ["Discovery", "Hayes", "Andrew Bain", "Bouvet", "Pitman"]
-    # names = ["Alula Fartak"]
-    # names = ["Tasman"]
     for i, name in enumerate(names):
         print(f"{i + 1}/{len(names)}: {name}")
         f = PlotProcedure(name.strip())
-        f.plotTimeSpaceLayout2()
+        f.plotTimeSpaceLayout()
 
+    # parallel plotting does not correctly render figures
     # with ProcessPoolExecutor(max_workers=2) as executor:
     #     futures = []
     #     for i, name in enumerate(names):

@@ -1,3 +1,6 @@
+# This code is copied from https://stackoverflow.com/a/50674451/8697614
+# All credits goes to the original author.
+
 import numpy as np
 import cartopy.crs as ccrs
 import cartopy.geodesic as cgeo

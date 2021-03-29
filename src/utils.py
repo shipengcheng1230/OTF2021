@@ -1,12 +1,11 @@
 import os
 from typing import *
 
-import pandas as pd
 import numpy as np
+import pandas as pd
 from obspy.clients.fdsn import Client
 from obspy.clients.fdsn.header import FDSNException, FDSNNoDataException
 from pyproj import Geod
-
 
 baseDir = os.path.join(os.path.dirname(__file__), "..")
 faultsDir = os.path.join(baseDir, "faults")
@@ -14,12 +13,6 @@ if not os.path.isdir(faultsDir):
     os.mkdir(faultsDir)
 dfFaults = pd.read_excel(os.path.join(baseDir, "faults.xlsx"), engine='openpyxl')
 dfStations = pd.read_csv(os.path.join(baseDir, "stations.csv"))
-try:
-    # clientUSGS = Client("USGS", timeout=30)
-    # clientIRIS = Client("IRIS", timeout=30)
-    pass
-except FDSNException:
-    print("Client not accessible, retry later.")
 
 
 def angularMean(angles_deg: List[float]):

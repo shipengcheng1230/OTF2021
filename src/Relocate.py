@@ -1,21 +1,21 @@
+import copy
 import itertools
 import json
 import multiprocessing as mp
 import operator
 import os
 import shutil
-from collections import namedtuple, deque
+from collections import deque, namedtuple
 from concurrent.futures import ProcessPoolExecutor, as_completed, wait
 from copy import copy
 from datetime import datetime
 
 import cartopy.crs as ccrs
 import cartopy.feature as cfeature
-import copy
 import matplotlib.pyplot as plt
 import networkx as nx
-import numpy as np
 import nlopt
+import numpy as np
 import pandas as pd
 from matplotlib import gridspec
 from obspy import read
@@ -667,10 +667,7 @@ def optimize(fa):
 
 if __name__ == "__main__":
 
-    # df2 = dfFaults.loc[(dfFaults["Good Bathymetry"] == 0) & (dfFaults["key"] >= 80)]
-
     names = dfFaults["Name"].to_list()
-    names = ["Challenger"]
     for name in names:
         print(name)
         f = RelocationProcedure(name.strip())
