@@ -41,6 +41,12 @@ This repo consists of relocated (surface wave cross-correlation) earthquakes in 
 - complete cosine fitting results
 
 
-### Errata
+### Changelog
 
-In panel (C) of all supplementary figures of those earthquake relocation results, the green symbol $A_T$ should be changed to $\dot{M}_E$, corresponding to the definition in the main context. 
+v1.0.1
+
+In panel (C) of all supplementary figures of those earthquake relocation results, the green symbol $A_T$ is changed to $\dot{M}_{E}$, corresponding to the definition in the main context.
+
+v1.0.0
+
+Initial version.

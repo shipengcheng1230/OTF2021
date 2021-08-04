@@ -388,7 +388,7 @@ class PlotProcedure(AbstractFaultProcess):
                 expected /= 1e13
                 if not np.isnan(expected.values[0]):
                     ax3.plot([0.0, 1.0], [expected, expected], linestyle=":", color="forestgreen", linewidth=1.0)
-                    ax3.text(0.9, expected, "$A_{T}$", color="forestgreen")
+                    ax3.text(0.9, expected, "$\dot{M}_{E}$", color="forestgreen")
 
                 with open(os.path.join(self.dir, "umrr.json"), "w") as fp:
                     d = {
