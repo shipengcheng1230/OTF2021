@@ -39,3 +39,8 @@ This repo consists of relocated (surface wave cross-correlation) earthquakes in 
 - seismic waveforms
 
 - complete cosine fitting results
+
+
+### Errata
+
+In panel (C) of all supplementary figures of those earthquake relocation results, the green symbol $A_T$ should be changed to $\dot{M}_E$, corresponding to the definition in the main context. 
